@@ -5,7 +5,7 @@ description:
 order: 2
 image: ../infections/adeno-virus.svg
 author: Maximilian Heeg
-date: 2022-11-27
+date: last-modified
 ---
 
 ## Day 1: Activate T cells
@@ -22,14 +22,14 @@ See [CD8 Selection and Activation](/protocols/t_cells/cd8_selection.html)
 -   Make Polybrene mix (70x)\
     For 100ul
 
-    -   8ul Polybrene
-    -   10 ul BME (Mercaptoethanol)
-    -   82 ul Optimem
+    -   8 µl Polybrene
+    -   10 µl BME (Mercaptoethanol)
+    -   82 µl Optimem
 
 -   Combine Virus and Polybrene Mix
 
-    -   For 140 ul virus, add 2ul mix
-    -   e.g. 2ml virus --\> 28.5 ul mix
+    -   For 140 µl virus, add 2 µl mix
+    -   e.g. 2ml virus --\> 28.5 µl mix
 
 -   Transfer media from 6 well into 15ml falcon, keep warm
 
