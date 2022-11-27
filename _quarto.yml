@@ -2,10 +2,10 @@ project:
   type: website
 
 website:
-  title: "protocols"
+  title: "protocols.heeg.io"
   twitter-card: true
   page-navigation: true
-  repo-url: https://github.com/maximilian-heeg/heeg.io
+  repo-url: https://github.com/maximilian-heeg/protocols.heeg.io
   repo-actions: [edit, issue]
   search:
     location: sidebar
@@ -13,6 +13,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: protocols/
+        text: Protocols
       - about.qmd
   sidebar:
     collapse-level: 1
@@ -23,10 +25,6 @@ website:
     center: 
       - text: "About"
         href: about.qmd
-      - text: "License"
-        href: license.qmd
-      - text: "Trademark"
-        href: trademark.qmd
   
 format:
   html:
