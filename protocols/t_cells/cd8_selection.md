@@ -1,6 +1,11 @@
 ---
-title: CD8 Selection & Activation
+title: CD8^+^ Selection & Activation
+description: 
+  Learn how to perform a CD8^+^ selection and how to activate T cells.<br>
+  This could also be adapted to CD4^+^ T cells
 order: 1
+author: Maximilian Heeg
+date: 2022-11-27
 ---
 
 ## Preparation

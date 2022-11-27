@@ -1,0 +1,7 @@
+---
+title: "Protocols"
+listing: 
+  - id: sections
+    type: grid
+    contents: "/*/index.?(q)md"
+---

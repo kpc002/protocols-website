@@ -1,6 +1,9 @@
 ---
 order: 100
 title: "Contribute"
+description: "Want to get involved? Check out some information here."
+listing: 
+  type: grid
 ---
 
 ## Via Github
