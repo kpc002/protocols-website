@@ -1,6 +1,11 @@
 ---
 title: Ficoll protocol for removing dead cells
 order: 18
+author: Maximilian Heeg
+date: last-modified
+description: 
+  "Remove dead cells by doing a Ficoll"
+image: ficoll.webp
 ---
 
 Usually used when culturing cells in vitro & prior to transfer in vitro
