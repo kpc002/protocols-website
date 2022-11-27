@@ -556,8 +556,6 @@ topTable(fit)
 ```
 
 ```{r}
-#| label: tbl-summary_gsva
-#| fig-cap: Summary of differential GSVA pathways
 # Multiple Testing Across Genes and Contrasts 
 summary(res_limma <- decideTests(fit))
 ```
