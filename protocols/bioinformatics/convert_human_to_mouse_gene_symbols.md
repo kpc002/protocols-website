@@ -1,10 +1,12 @@
 ---
-weight: 4
+order: 4
 title: Convert human genes to mouse
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Convert human gene symbols to to mouse gene symbols.
+image: human_to_mouse.png
 ---
-
-# Convert human gene symbols to to mouse gene symbols.
-
 
 Converting human gene symbols to mouse gene symbols in R.
 
