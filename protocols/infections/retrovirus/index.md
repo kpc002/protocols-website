@@ -29,7 +29,7 @@ Use Medium without PenStrep. This improves the transfection.
 -   Remove media, add fresh media from Plat E cells
 
 ::: panel-tabset
-## 10cm dish"
+## 10cm dish
 - Mix: 
   - 5µg (=50µl) pCL-Eco with 550 ul OptiMEM for each well 
   - Aliquot mix in 15ml falcons -  600µl each (per plate) 
@@ -38,7 +38,7 @@ Use Medium without PenStrep. This improves the transfection.
   - 45µl Mirus + 655µl OptiMEM (for each well)
   - Add 700 µl of mix to each falcon 
   
-## 6  well plate"
+## 6  well plate
 - Mix: 
   - 0.5µg pCL-Eco with 125 µl OptiMEM for each well 
   - Aliquot mix in 1.5ml feppis - 125 each (per well) 
