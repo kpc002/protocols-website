@@ -1,23 +1,27 @@
 ---
-weight: 1
+order: 1
 title: "Setup environment"
---- 
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Setup of the conda environment for pySCENIC
+image: python-conda.png
+---
 
-# Setup of the conda environment for pySCENIC
+# 
 
-The environments are needed on both your computer and on the TSCC. Here, we assuse you have already have a working conda on your system. If not, I recommend having a look at https://mamba.readthedocs.io/en/latest/installation.html and https://github.com/conda-forge/miniforge#mambaforge
+The environments are needed on both your computer and on the TSCC. Here, we assuse you have already have a working conda on your system. If not, I recommend having a look at [Mamba](https://mamba.readthedocs.io/en/latest/installation.html) and [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge).
 
-{{< hint info >}}
+::: callout-tip
 I prefere using mamba instead of conda as this is a lot faster in resolving the package dependencies.
-{{< /hint >}}
+:::
 
 ## Create a YAML file
 
 Create a file called `env.yaml` with the following content:
 
-{{< details "env.yaml"  >}}
 
-```yaml
+``` yaml
 name: pyscenic
 channels:
   - anaconda
@@ -263,17 +267,15 @@ dependencies:
 prefix: /home/max/mambaforge/envs/pyscenic
 ```
 
-{{< /details >}}
-
 
 ## Create the environment
 
 Create the conda environment by running
 
-```bash
+``` bash
 mamba env create -f env.yaml
 # or
 conda env create -f env.yaml
-``` 
+```
 
 Activate the environment by running `conda activate pyscenic`. You are now ready to get started.

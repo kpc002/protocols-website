@@ -3,6 +3,9 @@ weight: 1
 title: Introduction to DESeq2
 description: Basic workflow for differentially expressed genes analysis, GSEA and GSVA.
 cache: true
+author: Maximilian Heeg
+date: last-modified
+image: fig-distance-1.png
 ---
 
 A good way to document our R code is to use a R Markdown document (Rmd), which allows you to have R and text blocks within one document. [Click here for an introduction to R Markdown](https://rmarkdown.rstudio.com/lesson-1.html)
@@ -435,7 +438,6 @@ fgsea.res <- fgsea(pathways_kegg,
 ## inspect the results
 head(fgsea.res[order(pval), -c("leadingEdge")])
 ```
-
 
 In this example we do not get any significant results from the GSEA analysis. If there are ties in the preranked stats, the p-value might change form run to run a little.\`
 

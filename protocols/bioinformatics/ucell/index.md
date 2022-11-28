@@ -1,17 +1,20 @@
 ---
-weight: 2
+order: 2
 title: Pathway analysis in scRNA with UCell
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Infer the activity of a pathway or gene set in single cell seq data
+filters:
+   - lightbox
+lightbox: auto
 ---
-
-
-# Pathway analysis in singe cell RNASeq with UCell
 
 ## Preprocessing
 
 ### Download and load the dataset
 
-Let’s download the example dataset from 10x genomics and load that as a
-`Seurat` object.
+Let's download the example dataset from 10x genomics and load that as a `Seurat` object.
 
 ``` r
 library(BiocFileCache)
@@ -44,9 +47,7 @@ pbmc
 
 ### Filtering, Clustering and UMAP
 
-These steps are all taken from the Seurat tutorial. Please see there for
-further information
-<https://satijalab.org/seurat/articles/pbmc3k_tutorial.html>
+These steps are all taken from the Seurat tutorial. Please see there for further information <https://satijalab.org/seurat/articles/pbmc3k_tutorial.html>
 
 ``` r
 pbmc[["percent.mt"]] <- PercentageFeatureSet(pbmc, pattern = "^MT-")
@@ -195,16 +196,9 @@ DimPlot(pbmc, reduction = "umap")
 
 ## Get gene signatures
 
-This function get the MSigDB pathways. If a pathway ends witt `_UP` and
-`+` will be added to the gene to mark it as up-regulated. Vice versa, if
-there the pathways ends with `_DN` a `-` will be added.
+This function get the MSigDB pathways. If a pathway ends witt `_UP` and `+` will be added to the gene to mark it as up-regulated. Vice versa, if there the pathways ends with `_DN` a `-` will be added.
 
-Additionally if there are two pathways containing the UP and DOWN
-signatures, they will be merged. E.g.
-`GOLDRATH_EFF_VS_MEMORY_CD8_TCELL_UP` and
-`GOLDRATH_EFF_VS_MEMORY_CD8_TCELL_DN` will be merged in
-`GOLDRATH_EFF_VS_MEMORY_CD8_TCELL`. In that list, the genes that are
-up-regulated are marked by a `+` and the down-regulated genes by a `-`
+Additionally if there are two pathways containing the UP and DOWN signatures, they will be merged. E.g. `GOLDRATH_EFF_VS_MEMORY_CD8_TCELL_UP` and `GOLDRATH_EFF_VS_MEMORY_CD8_TCELL_DN` will be merged in `GOLDRATH_EFF_VS_MEMORY_CD8_TCELL`. In that list, the genes that are up-regulated are marked by a `+` and the down-regulated genes by a `-`
 
 ``` r
 library(magrittr)
@@ -238,9 +232,7 @@ getMSigDBPathways <- function(categories, species = "Mus musculus"){
 }
 ```
 
-Let’s see how that works in an example. Note that we need to set the
-specied to “Homo sapiens” as we are using a human scRNA dataset. But the
-function can be used the same way with mice data.
+Let's see how that works in an example. Note that we need to set the specied to "Homo sapiens" as we are using a human scRNA dataset. But the function can be used the same way with mice data.
 
 ``` r
 # Example
@@ -263,10 +255,7 @@ ht(pathways$GOLDRATH_EFF_VS_MEMORY_CD8_TCELL, 10)
 
 ## Run UCell
 
-UCell has a function called `AddModuleScore_UCell` that adds the score
-directly to the `Seurat`object. I will not use this here, as I want to
-run `limma` on the scores matrix. We will add the scores manually to the
-`Seurat` object in a later step.
+UCell has a function called `AddModuleScore_UCell` that adds the score directly to the `Seurat`object. I will not use this here, as I want to run `limma` on the scores matrix. We will add the scores manually to the `Seurat` object in a later step.
 
 ``` r
 library(UCell)
@@ -304,14 +293,11 @@ scores[1:5, 1:5]
     ## AAACCGTGCTTCCG-1           0.2331970
     ## AAACCGTGTATGCG-1           0.1219242
 
-## “Differential expression” with `limma`
+## "Differential expression" with `limma`
 
-Using the `limma` package we can see which pathways are differentially
-between two clusters. But for that we need to switch rows
-(=observations) and columns (=samples/cells).
+Using the `limma` package we can see which pathways are differentially between two clusters. But for that we need to switch rows (=observations) and columns (=samples/cells).
 
-In this example we will compare cluster3 (B cells) vs cluster 0 and 2
-(CD4 cells).
+In this example we will compare cluster3 (B cells) vs cluster 0 and 2 (CD4 cells).
 
 ``` r
 library(limma)
@@ -337,28 +323,33 @@ top <- topTable(fit, number = Inf) %>%
 top[1:20, ]
 ```
 
-| pathway                                                                                                                                   | logFC              | AveExpr           | t                 | P.Value | adj.P.Val | B                |
-|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------|-------------------|-------------------|---------|-----------|------------------|
-| SOBOLEV_PBMC_PANDEMRIX_AGE_18_64YO_MEDIUM_HIGH_ADVERSE_EVENT_SUBJECTS_1DY_UCell                                                           | 0.126648009270756  | 0.057337211562761 | 103.072674947176  | 0       | 0         | 2116.8839169302  |
-| SOBOLEV_PBMC_PANDEMRIX_AGE_18_64YO_HIGH_VS_LOW_RESPONDERS_MEDIUM_HIGH_ADVERSE_EVENTS_SCORE_1DY_CORRELATED_WITH_TRANSITIONAL_B_CELLS_UCell | 0.174565703301626  | 0.034752211271165 | 98.2410795425678  | 0       | 0         | 2016.6306515114  |
-| KEGG_ASTHMA_UCell                                                                                                                         | 0.232809951388     | 0.117191672984584 | 80.3762848985127  | 0       | 0         | 1620.88861912753 |
-| GSE29618_BCELL_VS_MONOCYTE_UCell                                                                                                          | 0.056365991677203  | 0.014359945688333 | 78.6521407525925  | 0       | 0         | 1580.60342780014 |
-| GSE3982_BCELL_VS_CENT_MEMORY_CD4_TCELL_UCell                                                                                              | 0.048696526588387  | 0.016502537669401 | 76.3510124759989  | 0       | 0         | 1526.28039984072 |
-| KEGG_INTESTINAL_IMMUNE_NETWORK_FOR_IGA_PRODUCTION_UCell                                                                                   | 0.147865935825099  | 0.098235653062084 | 72.7873862266304  | 0       | 0         | 1440.93146946918 |
-| LUI_THYROID_CANCER_CLUSTER_4_UCell                                                                                                        | 0.199639371744963  | 0.136529724298109 | 70.0395500296777  | 0       | 0         | 1374.14890528798 |
-| GSE29618_BCELL_VS_MDC_DAY7_FLU_VACCINE_UCell                                                                                              | 0.038007853534524  | 0.005150556438023 | 68.8459304813632  | 0       | 0         | 1344.88860725392 |
-| GSE22886_NAIVE_CD8_TCELL_VS_DC_UCell                                                                                                      | -0.078376085639075 | 0.049082996422193 | -68.2058900827913 | 0       | 0         | 1329.13842768732 |
-| GSE3982_BCELL_VS_EFF_MEMORY_CD4_TCELL_UCell                                                                                               | 0.042024786161555  | 0.013926522521361 | 65.7961915095323  | 0       | 0         | 1269.47850109547 |
-| KEGG_AUTOIMMUNE_THYROID_DISEASE_UCell                                                                                                     | 0.125845994513671  | 0.150514300363523 | 65.5650483141624  | 0       | 0         | 1263.72684715868 |
-| GSE29618_BCELL_VS_MONOCYTE_DAY7_FLU_VACCINE_UCell                                                                                         | 0.05886674575098   | 0.02576935202354  | 65.3535674130366  | 0       | 0         | 1258.46017763889 |
-| KEGG_ALLOGRAFT_REJECTION_UCell                                                                                                            | 0.176729706070747  | 0.200274945529305 | 65.1186241566344  | 0       | 0         | 1252.6044533117  |
-| KEGG_GRAFT_VERSUS_HOST_DISEASE_UCell                                                                                                      | 0.158362691932928  | 0.183825027583104 | 64.1426432867401  | 0       | 0         | 1228.22663068787 |
-| FOURATI_BLOOD_TWINRIX_AGE_65_81Y0_RESPONDERS_VS_POOR_RESPONDERS_TRAINING_SET_0DY_NETWORK_INFERENCE_UCell                                  | 0.180440596390948  | 0.037989620563919 | 62.772526829005   | 0       | 0         | 1193.86709741313 |
-| KEGG_TYPE_I_DIABETES_MELLITUS_UCell                                                                                                       | 0.148510266913546  | 0.178178876409777 | 62.3795533905701  | 0       | 0         | 1183.98400147905 |
-| RICKMAN_HEAD_AND_NECK_CANCER_D_UCell                                                                                                      | 0.061133787030304  | 0.021137054586808 | 59.8591242975195  | 0       | 0         | 1120.3227465619  |
-| SHIN_B_CELL_LYMPHOMA_CLUSTER_9_UCell                                                                                                      | 0.100171677718511  | 0.040996096191958 | 59.7793370645804  | 0       | 0         | 1118.3002742325  |
-| GSE10325_BCELL_VS_MYELOID_UCell                                                                                                           | 0.049986455460947  | 0.020289995660968 | 59.3232442600431  | 0       | 0         | 1106.7312891303  |
-| GSE10325_LUPUS_CD4_TCELL_VS_LUPUS_MYELOID_UCell                                                                                           | -0.070118906587563 | 0.045476404329073 | -59.2687879074764 | 0       | 0         | 1105.34910959777 |
+
+::: {style="overflow:scroll;"}
+
+| pathway                                                                                                                                    | logFC              | AveExpr           | t                 | P.Value | adj.P.Val | B                |
+|-----------------------------|-------|-------|-------|-------|-------|-------|
+| SOBOLEV_PBMC_PANDEMRIX_AGE_18_64YO_MEDIUM_HIGH_ADVERSE_EVENT_SUBJECTS_1DY_UCell                                                            | 0.126648009270756  | 0.057337211562761 | 103.072674947176  | 0       | 0         | 2116.8839169302  |
+| SOBOLEV_PBMC_PANDEMRIX_AGE_18_64YO_HIGH_VS_LOW_RESPONDERS_MEDIUM_HIGH_ADVERSE_EVENTS_SCORE_1DY_CORRELATED_WITH_TRANSITIONAL_B\_CELLS_UCell | 0.174565703301626  | 0.034752211271165 | 98.2410795425678  | 0       | 0         | 2016.6306515114  |
+| KEGG_ASTHMA_UCell                                                                                                                          | 0.232809951388     | 0.117191672984584 | 80.3762848985127  | 0       | 0         | 1620.88861912753 |
+| GSE29618_BCELL_VS_MONOCYTE_UCell                                                                                                           | 0.056365991677203  | 0.014359945688333 | 78.6521407525925  | 0       | 0         | 1580.60342780014 |
+| GSE3982_BCELL_VS_CENT_MEMORY_CD4_TCELL_UCell                                                                                               | 0.048696526588387  | 0.016502537669401 | 76.3510124759989  | 0       | 0         | 1526.28039984072 |
+| KEGG_INTESTINAL_IMMUNE_NETWORK_FOR_IGA_PRODUCTION_UCell                                                                                    | 0.147865935825099  | 0.098235653062084 | 72.7873862266304  | 0       | 0         | 1440.93146946918 |
+| LUI_THYROID_CANCER_CLUSTER_4\_UCell                                                                                                        | 0.199639371744963  | 0.136529724298109 | 70.0395500296777  | 0       | 0         | 1374.14890528798 |
+| GSE29618_BCELL_VS_MDC_DAY7_FLU_VACCINE_UCell                                                                                               | 0.038007853534524  | 0.005150556438023 | 68.8459304813632  | 0       | 0         | 1344.88860725392 |
+| GSE22886_NAIVE_CD8_TCELL_VS_DC_UCell                                                                                                       | -0.078376085639075 | 0.049082996422193 | -68.2058900827913 | 0       | 0         | 1329.13842768732 |
+| GSE3982_BCELL_VS_EFF_MEMORY_CD4_TCELL_UCell                                                                                                | 0.042024786161555  | 0.013926522521361 | 65.7961915095323  | 0       | 0         | 1269.47850109547 |
+| KEGG_AUTOIMMUNE_THYROID_DISEASE_UCell                                                                                                      | 0.125845994513671  | 0.150514300363523 | 65.5650483141624  | 0       | 0         | 1263.72684715868 |
+| GSE29618_BCELL_VS_MONOCYTE_DAY7_FLU_VACCINE_UCell                                                                                          | 0.05886674575098   | 0.02576935202354  | 65.3535674130366  | 0       | 0         | 1258.46017763889 |
+| KEGG_ALLOGRAFT_REJECTION_UCell                                                                                                             | 0.176729706070747  | 0.200274945529305 | 65.1186241566344  | 0       | 0         | 1252.6044533117  |
+| KEGG_GRAFT_VERSUS_HOST_DISEASE_UCell                                                                                                       | 0.158362691932928  | 0.183825027583104 | 64.1426432867401  | 0       | 0         | 1228.22663068787 |
+| FOURATI_BLOOD_TWINRIX_AGE_65_81Y0_RESPONDERS_VS_POOR_RESPONDERS_TRAINING_SET_0DY_NETWORK_INFERENCE_UCell                                   | 0.180440596390948  | 0.037989620563919 | 62.772526829005   | 0       | 0         | 1193.86709741313 |
+| KEGG_TYPE_I\_DIABETES_MELLITUS_UCell                                                                                                       | 0.148510266913546  | 0.178178876409777 | 62.3795533905701  | 0       | 0         | 1183.98400147905 |
+| RICKMAN_HEAD_AND_NECK_CANCER_D\_UCell                                                                                                      | 0.061133787030304  | 0.021137054586808 | 59.8591242975195  | 0       | 0         | 1120.3227465619  |
+| SHIN_B\_CELL_LYMPHOMA_CLUSTER_9\_UCell                                                                                                     | 0.100171677718511  | 0.040996096191958 | 59.7793370645804  | 0       | 0         | 1118.3002742325  |
+| GSE10325_BCELL_VS_MYELOID_UCell                                                                                                            | 0.049986455460947  | 0.020289995660968 | 59.3232442600431  | 0       | 0         | 1106.7312891303  |
+| GSE10325_LUPUS_CD4_TCELL_VS_LUPUS_MYELOID_UCell                                                                                            | -0.070118906587563 | 0.045476404329073 | -59.2687879074764 | 0       | 0         | 1105.34910959777 |
+
+:::
 
 ``` r
 library(patchwork)
@@ -376,9 +367,7 @@ top %>%
 
 ![](ucell_files/figure-markdown_github/unnamed-chunk-19-1.png)
 
-One of the top pathways is
-“GSE3982_BCELL_VS_CENT_MEMORY_CD4_TCELL_UCell”. And we can easily see
-that this pathway was put together by an UP and DN list.
+One of the top pathways is "GSE3982_BCELL_VS_CENT_MEMORY_CD4_TCELL_UCell". And we can easily see that this pathway was put together by an UP and DN list.
 
 ``` r
 selected = "GSE3982_BCELL_VS_CENT_MEMORY_CD4_TCELL_UCell"
@@ -394,8 +383,7 @@ ht(pathways[[gsub("_UCell$", "", selected)]], 10)
 
 ## Visualization of the results
 
-To use `Seurat`’s plotting function, we need to add the pathway scores
-to the object’s metadata. Then we can use `VlnPlot` etc as usual.
+To use `Seurat`'s plotting function, we need to add the pathway scores to the object's metadata. Then we can use `VlnPlot` etc as usual.
 
 ``` r
 pbmc <- Seurat::AddMetaData(pbmc, as.data.frame(scores))
@@ -412,7 +400,6 @@ p_umap + inset_element(p_vln, left = .5, right = 1, top = .5, bottom = .0)
 ```
 
 ![](ucell_files/figure-markdown_github/vizualization-1.png)
-
 
 ## Session info
 

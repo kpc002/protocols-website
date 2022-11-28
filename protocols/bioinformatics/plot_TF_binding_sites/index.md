@@ -1,16 +1,23 @@
 ---
-weight: 17
-bookFlatSection: false
+order: 17
 title: "Visualize TF binding sites in a Peak"
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Create a plot that shows where TF are binding next to a gene or within a promoter.
+filters:
+   - lightbox
+lightbox: auto
 ---
-
-# Visualize TF binding sites in a Peak
 
 ## Generate a table of binding sites
 
 We start by generating a table with the predicted binding sites for TF. This can be done with either [FIMO](https://meme-suite.org/meme/tools/fimo) or Jaspar or any other tool that you like.
 
-You should get a table that looks similar to this one:
+You should get a table that looks similar to this one: 
+
+::: {style="overflow:scroll;"}
+
 | tf                                 | start | stop | strand | score   | p-value     | q-value  | matched_sequence     |
 |------------------------------------|-------|------|--------|---------|-------------|----------|----------------------|
 | Zfp281                             | 363   | 377  | -      | 19.1091 | 0.000000138 | 0.000363 | CCCCTCTCCCACCCC      |
@@ -23,12 +30,15 @@ You should get a table that looks similar to this one:
 | (Zfp770)_(Homo_sapiens)_(DBD_0.94) | 699   | 709  | -      | 14.897  | 0.00000275  | 0.0076   | CCCTAGCCTCC          |
 | Esrra                              | 1429  | 1437 | -      | 12.1988 | 0.00000403  | 0.0114   | CAAGGTCAT            |
 
+: Transcription factor binding predictions {#tbl-tf-pred}
+
+:::
 
 ## Generate the plot
 
 Using this table, we can create a plot showing where the TF motif is found within the peak/region. We can put that in a small helper function.
 
-```r
+``` r
 library(tidyverse)
 
 #' plotTFSites
@@ -95,7 +105,7 @@ plotTFSites <- function(data, start = 0, end = max(data$stop)) {
 
 And here's an example of how it could look like.
 
-```r
+``` r
 data <- read_tsv(file ="fimo.csv")
 
 # we only want to keep tf that occur more than twice
@@ -106,4 +116,4 @@ data <- data %>%
 plotTFSites(data)
 ```
 
-{{< lightbox src="plotTFSites.png" caption="Exemplary Plot" >}} 
+![Exemplary Plot](plotTFSites.png){#fig-example}

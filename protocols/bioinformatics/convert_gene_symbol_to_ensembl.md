@@ -1,10 +1,12 @@
 ---
-weight: 3
+order: 3
 title: Convert gene symbols
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Convert gene symbols to ensembl ids and back.
+image: convert_gene_symbol.png
 ---
-
-# Convert gene symbols to ensembl ids and back.
-
 
 Converting gene symbols to ENSEMBL IDs in R is fast and easy.
 

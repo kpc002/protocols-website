@@ -1,25 +1,31 @@
 ---
-weight: 2
+order: 2
 title: "HIC1 and TRM score in human scRNA"
---- 
-
-# Example Workflow: HIC1 and TRM score in human scRNA
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Example workflow to analyze human scRNA data with SingleR, Magic and UCell.
+image: images/04_cluster-4.png
+filters:
+   - lightbox
+lightbox: auto
+---
 
 Here, we analyse the human scRNA data from John Change, annotate the cell types, look for differential expression and pathway enrichment in the samples.
 
-Data is published here: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE125527
+Data is published on [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE125527)
 
-**Aims:**
-- See if HIC1 expression is also up in the gut in humans
-- Validate TRM score derived from mice in a human dataset
-- Check if IEL in human are also TGFb dependent. 
+**Aims:** 
 
+- See if HIC1 expression is also up in the gut in humans 
+- Validate TRM score derived from mice in a human dataset 
+- Check if IEL in human are also TGFb dependent.
 
 The different scRNA samples have been merged with `cellranger aggr`.
 
-## Required Packages 
+## Required Packages
 
-```r
+``` r
 suppressPackageStartupMessages({
   library(Matrix)
   library(SingleCellExperiment)
@@ -37,12 +43,11 @@ suppressPackageStartupMessages({
   library(AUCell)
   library(DropletUtils)
 })
-``` 
+```
 
 ## Import data
 
-
-```r
+``` r
 sce <- DropletUtils::read10xCounts("data/filtered_feature_bc_matrix/")
 sce
 ```
@@ -51,7 +56,7 @@ Since we import the filtered data (not the raw), we do not need to remove empty 
 
 ## QC
 
-```r
+``` r
 
 # remove genes that are not expression
 summary(rowSums(counts(sce))>0)
@@ -89,15 +94,21 @@ rm(unfiltered)
 summary(qc$discard)
 rm(qc)
 gc()
-
 ```
 
-{{< lightbox src="images/02_QC-1.png" caption="QC part 1" >}} 
-{{< lightbox src="images/02_QC-2.png" caption="QC part 2" >}} 
+::: {#fig-qc layout-ncol="2"}
+
+![QC part 1](images/02_QC-1.png){#fig-qc-1}
+
+![QC part 2](images/02_QC-2.png){#fig-qc-2}
+
+Quality control
+:::
+
 
 ## Add annotation
 
-```r
+``` r
 # Add the annotation from cellraner aggr.
 # sample id is appended to the barcode, extrcat with regex
 colnames(sce) <- sce$Barcode
@@ -122,12 +133,11 @@ sce$Location <- forcats::fct_recode(sce$Location,
 sce$Location <- forcats::fct_relevel(sce$Location, "PBMC", "Intestine", "Rectum")
 ```
 
-## Normalization & variance-modelling 
-
+## Normalization & variance-modelling
 
 ### Normalization
 
-```r
+``` r
 set.seed(101000110)
 # Block by patient ID, this  is faster and makes more sense
 clusters <- quickCluster(sce, BPPARAM=MulticoreParam(16),
@@ -140,11 +150,11 @@ plot(librarySizeFactors(sce), sizeFactors(sce), pch=16,
      xlab="Library size factors", ylab="Deconvolution factors", log="xy")
 ```
 
-{{< lightbox src="images/03_normalization-1.png" caption="Normalization" >}} 
+![Normalization](images/03_normalization-1.png){#fig-normalization}
 
 ### Variance-modelling
 
-```r
+``` r
 set.seed(00010101)
 dec.sce <- modelGeneVarByPoisson(sce, BPPARAM=MulticoreParam(16))
 top.sce <- getTopHVGs(dec.sce, prop=0.1)
@@ -154,11 +164,12 @@ plot(dec.sce$mean, dec.sce$total, pch=16, cex=0.5,
 curfit <- metadata(dec.sce)
 curve(curfit$trend(x), col='dodgerblue', add=TRUE, lwd=2)
 ```
-{{< lightbox src="images/03_normalization-2.png" caption="Variance-modelling" >}} 
+
+![Variance-modelling](images/03_normalization-2.png){#fig-variance-modelling}
 
 ## Dimensional reduction
 
-```r
+``` r
 set.seed(101010011)
 sce <- denoisePCA(sce, technical=dec.sce, subset.row=top.sce)
 # tsne take too long
@@ -168,7 +179,7 @@ sce <- runUMAP(sce, dimred="PCA", BPPARAM=MulticoreParam(16))
 
 ## Clustering
 
-```r
+``` r
 snn.gr <- buildSNNGraph(sce, use.dimred="PCA", k=25)
  
 #  walktrap to slow .... so I prefer to use leiden (or louvain)
@@ -181,20 +192,28 @@ plotUMAP(sce, colour_by="Location")
 plotUMAP(sce, colour_by="Location", other_fields = "Location") + facet_grid(~Location)
 plotUMAP(sce, colour_by="Disease")
 plotUMAP(sce, colour_by="Patient_ID")
-
 ```
 
-{{< lightbox src="images/04_cluster-1.png" caption="UMAP colored by Location" >}} 
-{{< lightbox src="images/04_cluster-2.png" caption="UMAP facet by Location" >}} 
-{{< lightbox src="images/04_cluster-3.png" caption="UMAP colored by Disease" >}} 
-{{< lightbox src="images/04_cluster-4.png" caption="UMAP colored by Patient ID" >}} 
+
+::: {#fig-cluster layout-ncol="2"}
+
+![UMAP colored by Location](images/04_cluster-1.png){#fig-cluster-1}
+
+![UMAP facet by Location](images/04_cluster-2.png){#fig-cluster-2}
+
+![UMAP colored by Disease](images/04_cluster-3.png){#fig-cluster-3}
+
+![UMAP colored by Patient ID](images/04_cluster-4.png){#fig-cluster-4}
+
+UMAP plots
+:::
 
 
 ## SingleR
 
 Cell annotation with SingleR. MonacoImmuneData as reference.
- 
-```r
+
+``` r
 ref <- MonacoImmuneData(ensembl = TRUE)
 pred <- SingleR(test=sce, ref=ref, labels=ref$label.main,
                 #de.method="wilcox",
@@ -261,17 +280,24 @@ plotTableHeatmap(x = sce$Location,
                  label_y = "SingleR labels",
                  margin = 1
 )
-
 ```
 
-{{< lightbox src="images/05_singleR-1.png" caption="Label fine and label main" >}}
-{{< lightbox src="images/05_singleR-2.png" caption="Celltype by patient" >}}
-{{< lightbox src="images/05_singleR-3.png" caption="Celltype by location" >}} 
+::: {#fig-singleR layout-ncol="2"}
+
+![Label fine and label main](images/05_singleR-1.png){#fig-singleR-1}
+
+![Celltype by patient](images/05_singleR-2.png){#fig-singleR-2}
+
+![Celltype by location](images/05_singleR-3.png){#fig-singleR-3}
+
+Single R results
+:::
 
 ## Subsetting
+
 ### Subset to T cells
 
-```r
+``` r
 tcell_subsets <- c("CD4+ T cells", "CD8+ T cells", "T cells")
 sce <- sce[, sce$singleR_labels %in% tcell_subsets]
 sce
@@ -279,14 +305,14 @@ sce
 
 ### Subset on Controls
 
-```r
+``` r
 sce <- sce[, sce$Disease == "Control"]
 sce
 ```
 
 ## MAGIC imputation
 
-```r
+``` r
 sce <- magieR(sce, n.jobs = 30)
 
 colData(altExp(sce, "magic")) <- colData(sce)
@@ -297,10 +323,9 @@ plotExpression(altExp(sce, "magic"), features="HIC1",
                 swap_rownames = "Symbol",
                 x = "Location",
                 other_fields = "Disease") + facet_grid(~Disease)
-
 ```
 
-{{< lightbox src="images/07_plots-1.png" caption="HIC1 expression" >}}
+![HIC1 expression](images/07_plots-1.png){#fig-magic-hic1}
 
 
 ## AUCell
@@ -309,7 +334,7 @@ This is for getting a score for a gene list.
 
 ### TGFb Signature and TRM signature
 
-```r
+``` r
 # Load the TGFbeta list from tys paper
 signature_tgfb <- readr::read_csv("signatures/TGFbeta.txt", col_names = FALSE)[[1]]
 signature_trm <- readxl::read_excel("signatures/Gene Signatures and Counts.xlsx", sheet=2)[[1]]
@@ -342,7 +367,7 @@ geneSets <- list(
 
 ### Get score using AUC
 
-```r
+``` r
 library(AUCell)
 
 # we need to split the matrix, it is just too big
@@ -384,7 +409,7 @@ colData(sce)<- cbind(colData(sce), t(scores))
 
 ### Plots
 
-```r
+``` r
 # rename T cells to other T cells
 sce$singleR_labels2 <- ifelse(sce$singleR_labels == "T cells", 
                               "other T cells",
@@ -438,15 +463,20 @@ p_tgfb
 p_trm
 ```
 
- 
-{{< lightbox src="images/07_plots-2.png" caption="TGFb score" >}} 
-{{< lightbox src="images/07_plots-3.png" caption="TRM score" >}} 
+::: {#fig-scores layout-ncol="2"}
+
+![TGFb score](images/07_plots-2.png){#fig-score-tgf}
+
+![TRM score](images/07_plots-3.png){#fig-score-trm}
+
+UCell Score
+:::
 
 ## Differential expression
 
 ### For gene expression
 
-```r
+``` r
 summed <- aggregateAcrossCells(sce, 
                                id=colData(sce)[,c("singleR_labels2", "Location", "Patient_ID")],
                                use.altexps=FALSE)
@@ -498,11 +528,11 @@ DEGenesWithoutAbundanceFilter <- function(summed, subset, contrasts=c("LocationI
 pval_cd4 <- DEGenesWithoutAbundanceFilter(summed, "CD4+ T cells")
 pval_cd8 <- DEGenesWithoutAbundanceFilter(summed, "CD8+ T cells")
 pval_other_Tcells <- DEGenesWithoutAbundanceFilter(summed, "other T cells")
-``` 
+```
 
 ### For AUC score
 
-```r
+``` r
 summed_auc <- aggregateAcrossCells(SingleCellExperiment(list(counts = scores),
                                                                                                                 colData = colData(sce)), 
                                id=colData(sce)[,c("singleR_labels2", "Location", "Patient_ID")],
@@ -541,7 +571,7 @@ pvals_auc_otherTcells <-DEAucLimma(summed = summed_auc, subset = "other T cells"
 
 ## Plots with p-values
 
-```r
+``` r
 library(dplyr)
 
 # make a df with the pvalues that can be added to the plot
@@ -612,4 +642,7 @@ ggsave(filename = "tscc/plot_hic1_tgfb_trm_with_pvals.png",
        width = 8,
        height = 12)
 ```
-{{< lightbox src="images/plot_hic1_tgfb_trm_with_pvals.png" caption="Final plot" >}} 
+
+
+![Final plot](images/plot_hic1_tgfb_trm_with_pvals.png){#fig-final}
+

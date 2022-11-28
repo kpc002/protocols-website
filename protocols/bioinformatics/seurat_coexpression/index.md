@@ -1,11 +1,14 @@
 ---
-weight: 16
-bookFlatSection: false
-title: "Visualize co-expression of two genes"
+order: 16
+title: "Co-expression of two genes"
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Visualize co-expression of two genes in Seurat by blending colors
+filters:
+   - lightbox
+lightbox: auto
 ---
-
-# Visualize co-expression of two genes in Seurat by blending colors
-
 
 In `Seurat` you can scale and blend expression values to visualize coexpression of two features by using the `blend` parameter in `FeaturePlot`. But you cannot change the color scale then, which can be quite ugly.
 
@@ -13,7 +16,7 @@ Here is a example of how you can create a similar function that allows you to us
 
 ## Code
 
-```r
+``` r
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -133,8 +136,19 @@ MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .2,
 
 The resulting images look like this:
 
-{{< lightbox src="plots/Rplot1.png" caption="MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1')" >}} 
-{{< lightbox src="plots/Rplot2.png" caption="MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .95)" >}} 
-{{< lightbox src="plots/Rplot3.png" caption="MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = 0)" >}} 
-{{< lightbox src="plots/Rplot4.png" caption="MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .2, col_fun = my_colors)" >}} 
-{{< lightbox src="plots/Rplot5.png" caption="MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .2, col_fun = my_colors, n = 100)" >}} 
+::: {#fig-results layout-ncol=2}
+
+![MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1')](plots/Rplot1.png){#fig-res-1}
+
+![MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .95)](plots/Rplot2.png){#fig-res-2}
+
+![MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = 0)](plots/Rplot3.png){#fig-res-3}
+
+![MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .2, col_fun = my_colors)](plots/Rplot4.png){#fig-res-4}
+
+![MaxBetterOverlayPlot(seu, 'Itgae', 'Klrg1', bg = .2, col_fun = my_colors, n = 100)](plots/Rplot5.png){#fig-res-5}
+
+Resulting plots
+:::
+
+

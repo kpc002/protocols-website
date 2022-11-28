@@ -1,20 +1,20 @@
 ---
-weight: 30
-bookFlatSection: false
+order: 30
 title: "Build cellranger reference with YFP"
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Create a mouse reference for cellranger with YFP for single cell RNA Seq.
+image: yfp.png
 ---
 
-# Create a mouse reference for cellranger with YFP
-
-This script will create a mouse reference that includes YFP. The reference can be used to align single-cel# RNA-Seq samples using cellranger.
-For a long explanation on how to build the mouse reference see here: https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/build#mm10_2020A.
+This script will create a mouse reference that includes YFP. The reference can be used to align single-cell RNA-Seq samples using cellranger. For a long explanation on how to build the mouse reference see the protocol on the [10x website](https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/build#mm10_2020A).
 
 ## Prepare mouse fasta and GTF
 
 First we need to download the fasta and GTF file and set some metadata for the refernce genome.
 
-
-```bash
+``` bash
 # Set metadata
 genome="mm10-YFP"
 version="2020-A"
@@ -44,8 +44,7 @@ if [ ! -f "$fasta_in" ]; then
 fi
 ```
 
-
-```bash
+``` bash
 # Modify sequence headers in the Ensembl FASTA to match the file
 # "GRCm38.primary_assembly.genome.fa" from GENCODE. Unplaced and unlocalized
 # sequences such as "GL456210.1" have the same names in both versions.
@@ -67,8 +66,7 @@ cat "$fasta_in" \
     > "$fasta_modified"
 ```
 
-
-```bash
+``` bash
 # Remove version suffix from transcript, gene, and exon IDs in order to match
 # previous Cell Ranger reference packages
 #
@@ -86,9 +84,7 @@ cat "$gtf_in" \
     > "$gtf_modified"
 ```
 
-
-
-```bash
+``` bash
 # Define string patterns for GTF tags
 # NOTES:
 # - Since GENCODE release 31/M22 (Ensembl 97), the "lincRNA" and "antisense"
@@ -110,9 +106,7 @@ TX_PATTERN="transcript_type \"${BIOTYPE_PATTERN}\""
 READTHROUGH_PATTERN="tag \"readthrough_transcript\""
 ```
 
-
-
-```bash
+``` bash
 # Construct the gene ID allowlist. We filter the list of all transcripts
 # based on these criteria:
 #   - allowable gene_type (biotype)
@@ -131,10 +125,7 @@ cat "$gtf_modified" \
     > "${build}/gene_allowlist"
 ```
 
-
-
-
-```bash
+``` bash
 # Filter the GTF file based on the gene allowlist
 gtf_filtered="${build}/$(basename "$gtf_in").filtered"
 # Copy header lines beginning with "#"
@@ -146,10 +137,9 @@ grep -Ff "${build}/gene_allowlist" "$gtf_modified" \
 
 ## Add the YFP
 
-Now, we can add our "custom" gene to the fasta and GTF file. I downloaded the YFP fasta from the internet. We can inpsect it using the `cat` command.  
+Now, we can add our "custom" gene to the fasta and GTF file. I downloaded the YFP fasta from the internet. We can inspect it using the `cat` command.
 
-
-```bash
+``` bash
 cat YFP.fasta
 ```
 
@@ -164,14 +154,11 @@ cat YFP.fasta
     CCCCATCGGCGACGGCCCCGTGCTGCTGCCCGACAACCACTACCTGAGCTACCAGTCCGCCCTGAGCAAAGACCCCAACG
     AGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACGAGCTGTACAAGTAA
 
+There are special characters such as "\|" and spaces in the header (all text after the \>) of this FASTA sequence. These can be problematic for downstream applications. It can be helpful to change the header to be more informative and also to remove these characters. The following command opens the file and uses the stream editor (sed) function to search for a pattern (the original header), replace it with new text (YFP), then directs the output to a new output file, YFP.mod.fasta.
 
+Also, you have to make sure, that the fasta file ends with an empty line. This is especially important if you are trying to add multiple genes to the reference (e.g. YFP and GFP). If the fasta file does not end with a new line, the \>\> command that we use later will create an output similar to `...ACAAGTA>eGFP...`. This is of course not correct (`>eGFP` needs to be at the start of a new line) and will result in an error when trying to create the reference genome.
 
-There are special characters such as "|" and spaces in the header (all text after the >) of this FASTA sequence. These can be problematic for downstream applications. It can be helpful to change the header to be more informative and also to remove these characters. The following command opens the file and uses the stream editor (sed) function to search for a pattern (the original header), replace it with new text (YFP), then directs the output to a new output file, YFP.mod.fasta.
-
-Also, you have to make sure, that the fasta file ends with an empty line. This is especially important if you are trying to add multiple genes to the reference (e.g. YFP and GFP). If the fasta file does not end with a new line, the >> command that we use later will create an output similar to `...ACAAGTA>eGFP...`. This is of course not correct (`>eGFP` needs to be at the start of a new line) and will result in an error when trying to create the reference genome.
-
-
-```bash
+``` bash
 cat YFP.fasta | sed s/\>.*$/\>YFP/ > YFP.mod.fasta
 cat YFP.mod.fasta
 ```
@@ -187,53 +174,37 @@ cat YFP.mod.fasta
     CCCCATCGGCGACGGCCCCGTGCTGCTGCCCGACAACCACTACCTGAGCTACCAGTCCGCCCTGAGCAAAGACCCCAACG
     AGAAGCGCGATCACATGGTCCTGCTGGAGTTCGTGACCGCCGCCGGGATCACTCTCGGCATGGACGAGCTGTACAAGTAA
 
-
-
-To find the number of bases in this sequence, we will use the `grep -v "^>"` command to search all lines that don't start with the `>` character, which removes line returns with `tr -d "\n"` so they aren't counted, and then counts the number of characters with the command `wc -c`. Each command is sent to the next step with the pipe "|" command.
+To find the number of bases in this sequence, we will use the `grep -v "^>"` command to search all lines that don't start with the `>` character, which removes line returns with `tr -d "\n"` so they aren't counted, and then counts the number of characters with the command `wc -c`. Each command is sent to the next step with the pipe "\|" command.
 
 The results of this command shows there are 720 bases. This is important to know for the next step.
 
-
-```bash
+``` bash
 cat YFP.mod.fasta | grep -v "^>" | tr -d "\n" | wc -c
 ```
 
     720
-    
-
-
 
 Now, make a custom GTF for GFP with the following command. This command uses the function echo -e (prints everything in quotes; the -e enables interpretation of the backslash, e.g. \t). Use \t to insert the tabs that separate the 9 columns of information required for GTF.
 
-
-```bash
+``` bash
 echo -e 'YFP\tunknown\texon\t1\t720\t.\t+\t.\tgene_id "YFP"; transcript_id "YFP"; gene_name "YFP"; gene_biotype "protein_coding";' > YFP.gtf
 cat YFP.gtf
 ```
 
-    YFP	unknown	exon	1	720	.	+	.	gene_id "YFP"; transcript_id "YFP"; gene_name "YFP"; gene_biotype "protein_coding";
-    
+    YFP unknown exon    1   720 .   +   .   gene_id "YFP"; transcript_id "YFP"; gene_name "YFP"; gene_biotype "protein_coding";
 
+Next, add the YFP..mod.fasta to the end of the genome FASTA. But first, make a copy so that the original is unchanged. Then, append the YFP.mod.fasta to the end of the reference fasta file. The \>\> means append. Note: Do not use \>, which overwrites the original file.
 
-
-Next, add the YFP..mod.fasta to the end of the genome FASTA. But first, make a copy so that the original is unchanged. Then, append the YFP.mod.fasta to the end of the reference fasta file. The >> means append. Note: Do not use >, which overwrites the original file.
-
-
-```bash
+``` bash
 fasta_modified_yfp="$fasta_modified.yfp"
 
 cp $fasta_modified $fasta_modified_yfp
 cat YFP.mod.fasta >> $fasta_modified_yfp
 ```
 
+To confirm that the GFP entry was added to the FASTA file, use the grep "\>" command to search for lines with the \> character:
 
-
-
-
-To confirm that the GFP entry was added to the FASTA file, use the grep ">" command to search for lines with the > character:
-
-
-```bash
+``` bash
 grep ">" $fasta_modified_yfp
 ```
 
@@ -265,47 +236,34 @@ grep ">" $fasta_modified_yfp
     >JH584292.1 JH584292.1
     >JH584295.1 JH584295.1
     >YFP
-    
-
-
 
 Now, we do the exact same thing for the GTF file. We copy the GTF to a new location and append the YFP GTF at the end. Finally, we use `tail` to see if it was added correctly.
 
-
-```bash
+``` bash
 gtf_filtered_yfp="$gtf_filtered.yfp"
 cp $gtf_filtered $gtf_filtered_yfp
 cat YFP.gtf >> $gtf_filtered_yfp
 tail $gtf_filtered_yfp
 ```
 
-    JH584304.1	ENSEMBL	exon	56986	57151	.	-	.	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 2; exon_id "ENSMUSE00001053862"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	CDS	56986	57151	.	-	1	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 2; exon_id "ENSMUSE00001053862"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	exon	55112	55701	.	-	.	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	CDS	55483	55701	.	-	0	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	stop_codon	55480	55482	.	-	0	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	exon	52691	54867	.	-	.	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 4; exon_id "ENSMUSE00001045433"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	UTR	58617	59690	.	-	.	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 1; exon_id "ENSMUSE00001037709"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	UTR	55112	55482	.	-	.	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    JH584304.1	ENSEMBL	UTR	52691	54867	.	-	.	gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 4; exon_id "ENSMUSE00001045433"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
-    YFP	unknown	exon	1	720	.	+	.	gene_id "YFP"; transcript_id "YFP"; gene_name "YFP"; gene_biotype "protein_coding";
-    
-
-
+    JH584304.1  ENSEMBL exon    56986   57151   .   -   .   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 2; exon_id "ENSMUSE00001053862"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL CDS 56986   57151   .   -   1   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 2; exon_id "ENSMUSE00001053862"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL exon    55112   55701   .   -   .   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL CDS 55483   55701   .   -   0   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL stop_codon  55480   55482   .   -   0   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL exon    52691   54867   .   -   .   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 4; exon_id "ENSMUSE00001045433"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL UTR 58617   59690   .   -   .   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 1; exon_id "ENSMUSE00001037709"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL UTR 55112   55482   .   -   .   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 3; exon_id "ENSMUSE00000986146"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    JH584304.1  ENSEMBL UTR 52691   54867   .   -   .   gene_id "ENSMUSG00000095041"; gene_version "7"; transcript_id "ENSMUST00000178343"; transcript_version "1"; gene_type "protein_coding"; gene_name "AC149090.1"; transcript_type "protein_coding"; transcript_name "AC149090.1-202"; exon_number 4; exon_id "ENSMUSE00001045433"; exon_version "1"; level 3; protein_id "ENSMUSP00000136649.1"; transcript_support_level "1"; tag "basic";
+    YFP unknown exon    1   720 .   +   .   gene_id "YFP"; transcript_id "YFP"; gene_name "YFP"; gene_biotype "protein_coding";
 
 We can now create the reference package using the Fasta File with YFP and the GTF file with YFP. Since I am running that on TSCC, I need to load cellranger first.
 
-
-```bash
+``` bash
 module load cellranger/6.0.0
 ```
 
-    
-
-
-
-
-```bash
+``` bash
 # Create reference package
 cellranger mkref --ref-version="$version" \
     --genome="$genome" --fasta="$fasta_modified_yfp" --genes="$gtf_filtered_yfp" \
@@ -315,16 +273,16 @@ cellranger mkref --ref-version="$version" \
     ['/opt/cellranger-6.0.0/bin/rna/mkref', '--ref-version=2020-A', '--genome=mm10-YFP', '--fasta=scratch/mm10-2020-A_build_YFP/Mus_musculus.GRCm38.dna.primary_assembly.fa.modified.yfp', '--genes=scratch/mm10-2020-A_build_YFP/gencode.vM23.primary_assembly.annotation.gtf.filtered.yfp', '--nthreads', '24']
     Creating new reference folder at /path_to_folder/mm10-YFP
     ...done
-    
+
     Writing genome FASTA file into reference folder...
     ...done
-    
+
     Indexing genome FASTA file...
     ...done
-    
+
     Writing genes GTF file into reference folder...
     ...done
-    
+
     Generating STAR genome index (may take over 8 core hours for a 3Gb genome)...
     Sep 01 19:33:11 ..... started STAR run
     Sep 01 19:33:11 ... starting to generate Genome files
@@ -341,22 +299,17 @@ cellranger mkref --ref-version="$version" \
     Sep 01 20:04:36 ... writing SAindex to disk
     Sep 01 20:04:43 ..... finished successfully
     ...done.
-    
+
     Writing genome metadata JSON file into reference folder...
     Computing hash of genome FASTA file...
     ...done
-    
+
     Computing hash of genes GTF file...
     ...done
-    
+
     ...done
-    
+
     >>> Reference successfully created! <<<
-    
+
     You can now specify this reference on the command line:
     cellranger --transcriptome=/path_to_folder/mm10-YFP ...
-    
-
-
-
-

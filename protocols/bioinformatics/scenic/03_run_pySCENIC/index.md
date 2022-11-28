@@ -1,35 +1,37 @@
 ---
-weight: 3
+order: 3
 title: "Run pySCENIC"
---- 
-
-
-# Run the pySCENIC pipeline and integrate the results with our `anndata` object.
+author: Maximilian Heeg
+date: last-modified
+description: 
+  Run the pySCENIC pipeline and integrate the results with our anndata object.
+filters:
+   - lightbox
+lightbox: auto
+---
 
 In this part, we will run the pySCENIC pipeline. This pipeline has three parts and especially the first part requires a lot of computational power. Although this could in theory be done on a personal computer, I recommend using the TSCC for that.
 
+In addition to the `loom` file we created in the previous part, we need some additional files for the mouse genome and mouse transcription factors. These can be downloaded from the SCENIC website. We need the 
 
-In addition to the `loom` file we created in the previous part, we need some additioinal files for the mouse genome and mouse transcription factors. These can be downloaded from the SCENIC website. We need the 
-- mm_mgi_tfs.txt from https://github.com/aertslab/pySCENIC/tree/master/resources
-- mm10__refseq-r80__500bp_up_and_100bp_down_tss.mc9nr.feather
-- mm10__refseq-r80__10kb_up_and_down_tss.mc9nr.feather
-- motifs-v9-nr.mgi-m0.001-o0.0.tbl 
+- mm_mgi_tfs.txt from [https://github.com/aertslab/pySCENIC/tree/master/resources](https://github.com/aertslab/pySCENIC/tree/master/resources) 
+- mm10\_\_refseq-r80\_\_500bp_up_and_100bp_down_tss.mc9nr.feather 
+- mm10\_\_refseq-r80\_\_10kb_up_and_down_tss.mc9nr.feather 
+- motifs-v9-nr.mgi-m0.001-o0.0.tbl
 
-The last three files can be found on https://resources.aertslab.org/cistarget/
-
+The last three files can be found on [https://resources.aertslab.org/cistarget/](https://resources.aertslab.org/cistarget/)
 
 ## Run SCENIC
 
-More details on the workflow can be found in this publication: https://www.nature.com/articles/s41596-020-0336-2
-
+More details on the workflow can be found in this [publication](https://www.nature.com/articles/s41596-020-0336-2).
 
 ### Infer gene regulatory network
 
-In the first step a gene regulatory network is created. This is the most computational intensiv step. I did have some issues to get this working on the supercomputer (for some reasons that I did not unterstand the `dask` framework caused an error). But using a fallback option by running `arboreto_with_multiprocessing.py` work flawlessly. The downside of that is, that I cannot use multiple nodes (but it can use multiple cores).
+In the first step a gene regulatory network is created. This is the most computational intensive step. I did have some issues to get this working on the supercomputer (for some reasons that I did not understand the `dask` framework caused an error). But using a fallback option by running `arboreto_with_multiprocessing.py` work flawlessly. The downside of that is, that I cannot use multiple nodes (but it can use multiple cores).
 
-Create a file called `pyscenic_grn.sh` with the following content. Make sure to adapt e-mail adress and paths in the script for your needs. Make sure, that you have the conda environment created on the supercomputer too.
+Create a file called `pyscenic_grn.sh` with the following content. Make sure to adapt e-mail address and paths in the script for your needs. Make sure, that you have the conda environment created on the supercomputer too.
 
-```bash
+``` bash
 #!/bin/bash
 #PBS -q home-yeo
 #PBS -N pyscenic_grn
@@ -71,12 +73,11 @@ echo "done"
 
 Finally, submit the job by running `qsub pyscenic_grn.sh`. For my dataset, this step took approximately 14 hours.
 
-
 ### Module generation and Motif enrichment and TF-regulon prediction
 
-Again crreate a files called `pyscenic_ctx.sh` 
+Again create a files called `pyscenic_ctx.sh`
 
-```bash
+``` bash
 #!/bin/bash
 #PBS -q home-yeo
 #PBS -N pyscenic_ctx
@@ -112,7 +113,7 @@ Submit with `qsub pyscenic_ctx.sh` or automatically from the first step.
 
 Again, we create a bash script called `pyscenic_auc.sh`
 
-```bash
+``` bash
 #!/bin/bash
 #PBS -q home-yeo
 #PBS -N pyscenic_aucell
@@ -139,12 +140,11 @@ echo "done"
 
 Submit with `qsub pyscenic_auc.sh` or automatically from the second step.
 
-
 ## Integrate the output
 
 We can now work on our computer again. Load the libraries and open the `anndata` file.
 
-```python
+``` python
 import anndata
 from os import listdir
 import pandas as pd
@@ -159,13 +159,11 @@ import re
 adata = sc.read_h5ad('pySCENIC/pyscenic.h5ad')
 ```
 
-
 It is important to check that most cells have a substantial fraction of expressed/detected genes in the calculation of the AUC. The following histogram gives an idea of the distribution and allows selection of an appropriate threshold. In this plot, a few thresholds are highlighted, with the number of genes selected shown in red text and the corresponding percentile in parentheses). See the relevant section in the R tutorial for more information.
 
 By using the default setting for --auc_threshold of 0.05, we see that 672 genes are selected for the rankings based on the plot below.
 
-
-```python
+``` python
 nGenesDetectedPerCell = adata.obs['n_genes']
 percentiles = np.quantile(nGenesDetectedPerCell, [.01, .05, .10, .50, 1])
 print(percentiles)
@@ -173,9 +171,7 @@ print(percentiles)
 
     [ 433.  672.  787. 1187. 2995.]
 
-
-
-```python
+``` python
 fig, ax = plt.subplots(1, 1, figsize=(8, 5), dpi=150)
 sns.distplot(nGenesDetectedPerCell, norm_hist=False, kde=False, bins='fd')
 for i,x in enumerate(percentiles):
@@ -186,18 +182,13 @@ ax.set_ylabel('# of cells')
 fig.tight_layout()
 ```
 
-{{< lightbox src="pySCENIC_part1_41_0.png" caption="Histogram of expressed genes" >}} 
-    
-
-
+![Histogram of expressed genes](pySCENIC_part1_41_0.png)
 
 ## Visualization of SCENIC's AUC matrix
 
 Next, load the relevant data from the `loom` file that was created in the script `pyscenic_auc.sh`. Then we calculate a UMAP and a TSNE from the AUC matrix (AUC values for each regulon for each cell)
 
-
-
-```python
+``` python
 import json
 import zlib
 import base64
@@ -224,7 +215,7 @@ pd.DataFrame(dr_tsne, columns=['X', 'Y'], index=auc_mtx.index).to_csv( "scenic_t
 
 Here, we combine the results from SCENIC and the Scanpy analysis into a SCope-compatible loom file
 
-```python
+``` python
 # scenic output
 lf = lp.connect( 'pySCENIC_output.loom', mode='r+', validate=False )
 meta = json.loads(zlib.decompress(base64.b64decode( lf.attrs.MetaData )))
@@ -236,13 +227,9 @@ dr_tsne = pd.read_csv( 'scenic_tsne.txt', sep='\t', header=0, index_col=0 )
 ###
 ```
 
-
-
 Fix regulon objects to display properly in SCope:
 
-
-
-```python
+``` python
 auc_mtx.columns = auc_mtx.columns.str.replace('\(','_(')
 regulons.dtype.names = tuple( [ x.replace("(","_(") for x in regulons.dtype.names ] )
 
@@ -253,11 +240,9 @@ for i,x in enumerate(rt):
     x.update( {'regulon': tmp} )
 ```
 
-
 Concatenate embeddings (tSNE, UMAP, etc.)
 
-
-```python
+``` python
 tsneDF = pd.DataFrame(adata.obsm['X_tsne'], columns=['_X', '_Y'])
 
 Embeddings_X = pd.DataFrame( index=lf.ca.CellID )
@@ -281,8 +266,7 @@ Embeddings_Y.columns = ['1','2','3','4']
 
 Create the Metadata for the loom file
 
-
-```python
+``` python
 metaJson = {}
 
 metaJson['embeddings'] = [
@@ -355,9 +339,7 @@ clusterings["0"] = adata.obs['leiden'].values.astype(np.int64)
 
 Assemble loom file row and column attributes
 
-
-
-```python
+``` python
 def dfToNamedMatrix(df):
     arr_ip = [tuple(i) for i in df.values]
     dtyp = np.dtype(list(zip(df.dtypes.index, df.dtypes)))
@@ -400,7 +382,7 @@ attrs['MetaData'] = base64.b64encode(zlib.compress(json.dumps(metaJson).encode('
 
 Create a final `loom` file that can be inpsected in: [SCOPE](https://scope.aertslab.org)
 
-```python
+``` python
 lp.create(
     filename = 'pySCENIC_final.loom' ,
     layers=lf[:,:],
