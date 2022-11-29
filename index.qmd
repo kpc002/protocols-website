@@ -43,6 +43,6 @@ Potions tutorial and cell media recipes.
 
 How do I book flow time? How do I sort? Where can I find a database of all antibodies.
 
-### [{{< fa donate >}} Contribute](/protocols/contribute)
+### [{{< fa donate >}} Contribute](contribute.md)
 
 Get involved and learn how to add protocols or correct mistakes. This section also includes a list of shortcodes.
