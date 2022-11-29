@@ -12,7 +12,11 @@ date: last-modified
 
 ## Preparation
 
-2Hrs before plating: prepare 6-well plate with GAH-IgG - Dilute GAH-IgG Ab 1:30 in sterile PBS - Aliquot 550 μL/well into a round-bottom 6-well plate; tap plate to distribute liquid equally across bottom of wells - Incubate at 37°C for at least 2 hrs
+2Hrs before plating: prepare 6-well plate with GAH-IgG 
+
+- Dilute GAH-IgG Ab 1:30 in sterile PBS 
+- Aliquot 550 μL/well into a round-bottom 6-well plate; tap plate to distribute liquid equally across bottom of wells 
+- Incubate at 37°C for at least 2 hrs
 
 ### Biotin-Ab stain
 
