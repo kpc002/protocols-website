@@ -1,7 +1,7 @@
 ---
 order: 20
 title: "Organizational"
-description: "Learn about Room and Flow time booking."
+description: "Learn about cell sorting and Flow time booking."
 listing: 
   type: grid
 ---
