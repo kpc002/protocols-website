@@ -37,6 +37,8 @@ format:
       dark: [darkly, styles.scss]
     toc: true
     code-line-numbers: false
+    include-in-header:
+      - umami.js
 
 editor: source
 
