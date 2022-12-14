@@ -3,6 +3,7 @@ project:
 
 website:
   title: "protocols.heeg.io"
+  site-url: https://protocols.heeg.io
   twitter-card: true
   page-navigation: true
   repo-url: https://github.com/maximilian-heeg/protocols.heeg.io
@@ -39,6 +40,8 @@ format:
     code-line-numbers: false
     include-in-header:
       - umami.js
+    link-external-icon: true
+    link-external-newwindow: true
 
 editor: source
 
