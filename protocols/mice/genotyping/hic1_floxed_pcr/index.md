@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 10
 title: "Hic1 Flox/Cre PCR Protocol"
 author: Maximilian Heeg
 date: last-modified
@@ -112,19 +112,27 @@ A touchdown PCR tries to minimize the incidence non-specific, contaminating prod
 ### Hic1 Cre Expected Bands:
 
 -   Hic1 Cre -/+: 1 band \@ 450bp; other \@ 500bp
--   Hic1 Cre -/-: 1 band \@ 500bp
+-   Hic1 Cre +/+: 1 band \@ 500bp
 -   Hic1 Cre WT: 1 band \@ 450bp
+-   Example in @fig-hic1-cre
 
 ### tdTomato Expected Bands:
 
 -   tdTomato mutant: 1 band \@ 200bp
 -   tdTomato heterozygous: 1 band \@ 200bp; other \@ 297bp
 -   tdTomato WT: 1 band \@ 297bp
+-   Example in @fig-tomato
 
-::: {#fig-examples layout-nrow="2"}
+### Examples
+
+::: {#fig-examples layout-ncol="1"}
 ![Hic1 floxed: Bigger (upper) lane corresponds to the floxed allel, the lower is wild-type. Mice with two bands are heterozygous)](Hic1_floxed.jpg){#fig-hic1-fl}
 
 ![CRE: The bigger (upper) band is a internal control. It shows that the PCR worked. If a mouse has a second, lower band at 100bp, it is Cre positive.](Cre.jpg){#fig-cre}
+
+![Hic1-Cre-ER^T2^: The bigger (upper) band is the Hic1-CreER^T2^ positive, the lower band is Hic1 wilde type. Two bands are heterozygous mice.](hic1_creert2.jpg){#fig-hic1-cre}
+
+![tdTomato: The bigger (upper) band is the wild type, the lower band is tdTomato. Two bands are heterozygous mice.](tomato.jpg){#fig-tomato}
 
 Examples of PCR results
 :::
