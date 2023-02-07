@@ -20,6 +20,8 @@ The final concentration of gp33 should be 10nM. Our stock has a concentration of
 -   Incubate at 37°C for 4 hours.
 -   Stain
 
-*If staining for CD107a, add antibody and gp33 peptide first for 30 mins-1 hour. Then add Protein Transport Inhibitor Cocktail for remaining stim time. 
+::: callout-info
+If staining for CD107a, add antibody and gp33 peptide first for 30 mins-1 hour. Then add Protein Transport Inhibitor Cocktail for remaining stim time. 
+:::
 
 ![Exemplary plot of IFNy and TNF after 4h stimulation with gp33](ex_vivo_stimulation.png)
