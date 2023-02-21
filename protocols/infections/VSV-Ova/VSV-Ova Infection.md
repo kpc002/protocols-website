@@ -3,7 +3,6 @@ weight: 1
 title: "Infection with VSV-Ova"
 author: Kennidy Takehara
 date: last-modified
-image: '../adeno-virus.svg'
 description: 
   Diluting the VSV-Ova stock for infection with VSV-Ova
 ---
@@ -15,4 +14,4 @@ Our stock is at 2x10^9.mL, 20ul per tube
 We need 10^5 PFU which is a 1:4000 dilution 
 
 Can use LCMV calculator below: 
-https://lab.heeg.io/lcmv
+[https://lab.heeg.io/lcmv](https://lab.heeg.io/lcmv)
