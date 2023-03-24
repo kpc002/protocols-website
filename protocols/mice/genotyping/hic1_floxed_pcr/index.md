@@ -24,7 +24,7 @@ lightbox: auto
     3.  Zeb2 primers: Zeb1, Zeb2, Zeb3 (Shannon's box); working on finding primer stock
         -   Zeb2 + control: Zeb2 +
         -   Zeb2 - control: Zeb2 - and H2O
-    4.  Hic1 Cre primers: 133, 134, 135 (Max's primer box)
+    4.  Hic1 Cre primers: 133, 148, 135 (Max's primer box)
         -   Hic1 Cre +: CT2
         -   Hic1 Cre -: cKO and H2O
     5.  tdTomato primers: 136, 137, 138, 139 (Max's primer box)
@@ -111,9 +111,9 @@ A touchdown PCR tries to minimize the incidence non-specific, contaminating prod
 
 ### Hic1 Cre Expected Bands:
 
--   Hic1 Cre -/+: 1 band \@ 450bp; other \@ 500bp
+-   Hic1 Cre -/+: 1 band \@ 374bp; other \@ 500bp
 -   Hic1 Cre +/+: 1 band \@ 500bp
--   Hic1 Cre WT: 1 band \@ 450bp
+-   Hic1 Cre WT: 1 band \@ 374bp
 -   Example in @fig-hic1-cre
 
 ### tdTomato Expected Bands:
