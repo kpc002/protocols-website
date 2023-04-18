@@ -82,7 +82,7 @@ suppressPackageStartupMessages({
 
 # Set a custom theme for the plots, not requiered, but it looks better
 theme_max <- function(base_size = 12, base_family="Avenir Next"){ 
-  theme_bw() %+replace%    #replace elements we want to change
+    theme_bw(base_size = base_size, base_family = base_family) %+replace%    #replace elements we want to change
     theme(
       panel.grid = element_blank(), 
       strip.background = element_rect(fill = "#EEEEEE", colour = NA)
