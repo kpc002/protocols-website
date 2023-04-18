@@ -27,7 +27,7 @@ It is important to keep in mind, that the floxed allele is only excised when a C
 
 However, with these systems, it is not possible to timely control the kockout of a gene. To address that, a different version of the Cre recombinase can be used: Cre-ER^T2^. Here, the Cre is fused to a mutated form estrogen receptor, that does not bind to estrogen, but only [tamoxifen](https://en.wikipedia.org/wiki/Tamoxifen). These Cre-ER^T2^ fusion proteins are sequestered in the cytoplasm and can therefor not induce DNA recombination of DNA in the nucleus. Only upon binding to tamoxifen, this fusion enzyme translocates to the nucleus and becomes functionally active. We can exploit that and treat mice with tamoxifen at certain times to activate the Cre-ER^T2^ and induce KO (or reporter expression) at chosen time points.
 
-In the case of the [Hic1 floxed mice](hic1_floxed_pcr/index.md), I use a Cre-ER^T2^ that is included in the ROSA26 locus and expressed constitutively. If we isolate P14 cells and transfer them into new recipients, we can **i**nduce the KO (**i**KO) specifically in P14 cells by administration of tamoxifen. The best control to use is a CreERT2- Hic1^fl/fl^ P14, that also contains the loxP sites, but does not express the Cre fusion enzyme.
+In the case of the [Hic1 floxed mice](genotyping/hic1_floxed_pcr/index.md), I use a Cre-ER^T2^ that is included in the ROSA26 locus and expressed constitutively. If we isolate P14 cells and transfer them into new recipients, we can **i**nduce the KO (**i**KO) specifically in P14 cells by administration of tamoxifen. The best control to use is a CreERT2- Hic1^fl/fl^ P14, that also contains the loxP sites, but does not express the Cre fusion enzyme.
 
 ## Make a Tamoxifen stock
 
