@@ -10,7 +10,7 @@ description:
 
 ## Create a nextflow conda environment
 
-If you already have a working conda installation, you can create a new environment with the following command: `mamba create -n nextflow nextflow `. Note that if you are using conda instead of the much faster mamba package manager, you need to repace `mamba` with `conda`. To activate the environment run `conda activate nextflow nextflow -c bioconda`.
+If you already have a working conda installation, you can create a new environment with the following command: `mamba create -n nextflow nextflow -c bioconda `. Note that if you are using conda instead of the much faster mamba package manager, you need to repace `mamba` with `conda`. To activate the environment run `conda activate nextflow`.
 
 ## Downlod the RNA Seq data: fastq files
 
@@ -30,7 +30,7 @@ Let's start the pipeline and download the files:
 
 ``` bash
 # activate the conda environment
-conda activate nextflow nextflow -c bioconda
+conda activate nextflow
 
 # start the pipeline
 nextflow  run nf-core/fetchngs\
