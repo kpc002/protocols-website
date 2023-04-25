@@ -18,9 +18,9 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          path: .
+        run: |
+          quarto render .
+        shell: bash
           
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
