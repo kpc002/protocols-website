@@ -10,11 +10,11 @@ description:
 
 ## Create a nextflow conda environment
 
-If you already have a working conda installation, you can create a new environment with the following command: `mamba create -n nextflow nextflow`. Note that if you are using conda instead of the much faster mamba package manager, you need to repace `mamba` with `conda`. To activate the environment run `conda activate nextflow`.
+If you already have a working conda installation, you can create a new environment with the following command: `mamba create -n nextflow nextflow `. Note that if you are using conda instead of the much faster mamba package manager, you need to repace `mamba` with `conda`. To activate the environment run `conda activate nextflow nextflow -c bioconda`.
 
 ## Downlod the RNA Seq data: fastq files
 
-Nextflow provides a pipeline that automatically download the data from GEO: https://nf-co.re/fetchngs. In this example, we will download files from [GSE198874](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198874). On the bottom of that page, you can see a link `SRA Run Selector`. Click on that. On the next page click on `Accession List` to download the file. Save it! Next, on you computer (I use TSCC), create a directory for you project. e.g. `mkdir MY_EXCITING_PROJECT && cd MY_EXCITING_PROJECT`. Within that, create a folder where we download the fastq files. E.g. `mkdir 01_download_fastq`. To run nextflow on the TSCC, we need to create a config file to tell the programm which queues to use. Eg `home-yeo` or `condo`. Create a file called `nextflow.config` with the following content:
+Nextflow provides a pipeline that automatically download the data from GEO: https://nf-co.re/fetchngs. In this example, we will download files from [GSE198874](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198874). On the bottom of that page, you can see a link `SRA Run Selector`. Click on that. On the next page click on `Accession List` to download the file. Save it! Next, on you computer (I use TSCC), create a directory for you project. e.g. `mkdir MY_EXCITING_PROJECT && cd MY_EXCITING_PROJECT`. Within that, create a folder where we download the fastq files. E.g. `mkdir 01_download_fastq`. To run nextflow on the TSCC, we need to create a config file to tell the programm which queues to use. Eg `home-yeo` or `condo`. Create a file using vim called `nextflow.config` with the following content:
 
 ``` txt
 process {
@@ -30,7 +30,7 @@ Let's start the pipeline and download the files:
 
 ``` bash
 # activate the conda environment
-conda activate nextflow 
+conda activate nextflow nextflow -c bioconda
 
 # start the pipeline
 nextflow  run nf-core/fetchngs\
