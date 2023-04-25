@@ -403,7 +403,6 @@ p_umap + inset_element(p_vln, left = .5, right = 1, top = .5, bottom = .0)
 
 ## Session info
 
-{{< details "Session info">}}
     > sessionInfo()
     R version 4.1.1 (2021-08-10)
     Platform: x86_64-pc-linux-gnu (64-bit)
@@ -447,4 +446,4 @@ p_umap + inset_element(p_vln, left = .5, right = 1, top = .5, bottom = .0)
     [103] tibble_3.1.4          crayon_1.4.1          KernSmooth_2.23-20    utf8_1.2.2            spatstat.geom_2.2-2   plotly_4.9.4.1       
     [109] grid_4.1.1            blob_1.2.2            digest_0.6.27         xtable_1.8-4          tidyr_1.1.3           httpuv_1.6.3         
     [115] munsell_0.5.0         viridisLite_0.4.0  
-{{< /details >}}
+
