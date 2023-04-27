@@ -70,7 +70,9 @@ The `--igenomes_base` is optional, but it is a lot faster if you don't need to d
 
 ## Basic analysis in DESeq2
 
-Importing the data into R is quite easy. One of the outputs of the pipeline is an `rds` file with the counts data. We can import that, make some minor adjustments and then run DESeq2.
+Importing the data into R is quite easy. One of the outputs of the pipeline is an `rds` file with the counts data.
+The file can be found in the follwoing location: `./02_RNA-Seq/star_salmon/salmon.merged.gene_counts.rds`. For the analysis, you don't need to use the supercomputer anymore. Any laptop should be fast enough. So copy that file to your computer.
+We can then import that, make some minor adjustments and finally run DESeq2.
 
 ```{r}
 #| message: false
