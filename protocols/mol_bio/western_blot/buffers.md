@@ -20,7 +20,8 @@ image: tbs.png
 add fresh: 
 
 - 1x protease inhibitor ([Sigma](https://www.sigmaaldrich.com/US/en/product/roche/coedtafro?context=product)) 
-- 1mM DTT - Benzamidine (1mM)
+- 1mM DTT
+- Benzamidine (1mM)
 
 If analyzing phosphorylation:
 
