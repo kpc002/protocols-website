@@ -14,8 +14,8 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
 
-      - name: restore timestamps
-        uses: chetan/git-restore-mtime-action@v2
+      - name: Fix timestamps
+        run:  bash .github/scripts/fix-timestamps
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
