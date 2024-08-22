@@ -16,7 +16,6 @@ website:
         text: Home
       - href: protocols/
         text: Protocols
-      - about.qmd
       - contribute.md
   sidebar:
     collapse-level: 1
@@ -26,10 +25,6 @@ website:
       - auto: protocols/**
       - text: "---"
       - contribute.md
-  page-footer:
-    center: 
-      - text: "About"
-        href: about.qmd
   
 format:
   html:
