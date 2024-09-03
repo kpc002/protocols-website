@@ -77,7 +77,7 @@ Gut specific materials\*:
     1. I bring 10mL of NBF in 15mL conical tubes directly to mouse room. Put spleen in PBS first then move to NBF
 4. Incubate for 24 hours in shaker incubator (set to 4 degrees)
 
-# Prostate
+#### Prostate
 
 1. Cut rubber squares and place in 6 well plate
 2. Harvest prostate in cold PBS
