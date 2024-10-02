@@ -55,6 +55,5 @@ Keep the virus cold for all following steps!
 3. Keeping the virus cold, aliquot and snap freeze in liquid nitrogen. Pre-chill cryo-tubes in cold room.
 4. Protocol yields ~20-25 mL virus containing supernatant at a target of ~2x10^8^ pfu/mL.
     - Infecting at 2x10 6 pfu/mouse (100 uL of 2x10 7 pfu/mL), this corresponds to enough virus to infect 2000 mice per T175 of LCMV Clone 13.
-    - Diluting the stock by 10x immediately, to be in the 10^7^ range, would yield ~200 mL to aliquot per flask.
 5. Titrate the virus. Make sure to titrate an aliquot that has been frozen and
 thawed to get a representative value for what the titer will be when you inject from a thawed aliquot (rather than titrating the supernatant directly).
