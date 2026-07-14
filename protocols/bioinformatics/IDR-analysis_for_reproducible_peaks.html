@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Giovanni Galletti">
+<meta name="dcterms.date" content="2023-02-08">
+<meta name="description" content="Clean up your ATAC by IDR analysis.">
+
+<title>IDR analysis for reproducible peaks – protocols.heeg.io</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../protocols/bioinformatics/pca_genes.html" rel="next">
+<link href="../../protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-8b9122fd9187f0babbe9f08863b763f6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-a696a2b03a30d02068407cb6867918f4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-8b9122fd9187f0babbe9f08863b763f6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" defer="" src="https://analytics.umami.is/script.js" data-website-id="378b2581-4c19-4552-a28b-be65291d1b74"></script>
+
+
+<meta name="twitter:title" content="IDR analysis for reproducible peaks – protocols.heeg.io">
+<meta name="twitter:description" content="Clean up your ATAC by IDR analysis.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">protocols.heeg.io</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../protocols/"> 
+<span class="menu-text">Protocols</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../contribute.html" aria-current="page"> 
+<span class="menu-text">Contribute</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols/bioinformatics/index.html">Bioinformatics</a></li><li class="breadcrumb-item"><a href="../../protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html">IDR analysis for reproducible peaks</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/t_cells/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T cells</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/cd8_selection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CD8^+^ Selection &amp; Activation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/transduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Retroviral transduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/Cas9_RNP_electroporation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cas9 RNP Electroporation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/trm_in_vitro_differentiation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">T<sub>RM</sub> <em>in vitro</em> differentiation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/ex_vivo_stimulation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><em>Ex vivo</em> stimulation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/ficoll_dead_cells.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ficoll protocol for removing dead cells</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/ctv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CellTrace Violet</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/t_cells/guava.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Guava Protocols</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/infections/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Infections</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/infections/lcmv/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LCMV</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/infections/lcmv/infection_lcmv_arm.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Infection with LCMV Armstrong</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/infections/lcmv/stock.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Making LCMV stocks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/infections/listeria/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Listeria</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/infections/listeria/infection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Infection with Listeria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/infections/listeria/growing_a_stock.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Growing a Listeria stock</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/infections/VSV-Ova/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VSV</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/infections/VSV-Ova/VSV-Ova Infection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Infection with VSV-Ova</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/infections/retrovirus/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Make Retrovirus</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/mice/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mice</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/spleen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Spleen processing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/lymphnode.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphnode processing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/blood.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Blood processing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/tamoxifen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tamoxifen treatment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/tissue_prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lymphocyte isolation from mouse tissues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/ffpe_embedding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tissue Preparation for FFPE Embedding - Xenium</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/mice/genotyping/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Genotyping</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/genotyping/tails.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Processing Tails</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/genotyping/hic1_floxed_pcr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hic1 Flox/Cre PCR Protocol</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mice/genotyping/etv3_floxed_pcr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Etv3 Flox/Cre PCR Protocol</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/mol_bio/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Molecular biology</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/RNA_isolation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trizol RNA Isolation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/cDNA.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">cDNA Synthesis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/crispr_validation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Crispr KO validation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/mol_bio/western_blot/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Western Blot</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/western_blot/protein_lysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Protein Lysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/western_blot/BCA_assay.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BCA assay</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/western_blot/run_gel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Run Western Blot</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/western_blot/buffers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Western Blot Buffers</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/LsgA_cloning/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LsgA Cloning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/RNA_isolation_tissue.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RNA Isolation from tissues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/mol_bio/Primerdesign.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Designing Primers</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/bioinformatics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bioinformatics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/ucell/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pathway analysis in scRNA with UCell</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/convert_gene_symbol_to_ensembl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Convert gene symbols</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Convert human genes to mouse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">IDR analysis for reproducible peaks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/pca_genes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PCA: get most important genes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/seurat_coexpression/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Co-expression of two genes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/plot_TF_binding_sites/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualize TF binding sites in a Peak</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/bash_snippets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bash code snippets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/create reference with YFP.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build cellranger reference with YFP</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/introduction-to-deseq2/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to DESeq2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/nextflow_rna_seq/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Download and align RNA Seq files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/bioinformatics/scenic/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SCENIC</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/scenic/01_setup_conda_env.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup environment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/scenic/02_prepare_input/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Perpare the input</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/scenic/03_run_pySCENIC/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Run pySCENIC</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/scenic/04_downstream_analysis/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Downstream analysis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/bioinformatics/examples/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Examples</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HIC1 and TRM score in human scRNA</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/recipes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Recipes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-13" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-13" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/recipes/cell_culture_media.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cell culture media</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/recipes/takedown_media.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Takedown media</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/recipes/macs_buffer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MACS &amp; FACS Buffer</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/recipes/facs_panels/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FACS Panels</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-14" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-14" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/recipes/facs_panels/ot1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OT-1 Phenotyping</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/recipes/facs_panels/mixed_transfer_ametrine.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mixed transfer Ametrine</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/recipes/facs_panels/mixed_transfer_gfp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mixed transfer GFP</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../protocols/orga/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Organizational</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-15" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-15" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/orga/flow_and_sorting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Flow and FACS sorting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/orga/Aria_training_checklist.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Aria Training Checklist</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/orga/google_docs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Google Docs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/orga/mouse_order_allen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Allen Institute Mouse order</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false">
+ <span class="menu-text">Mouse Transfer</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-16" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-16" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../protocols/orga/mouse_transfer/nsb_to_pac_hall.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NSB to Pac Hall</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../contribute.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contribute</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../protocols/bioinformatics/index.html">Bioinformatics</a></li><li class="breadcrumb-item"><a href="../../protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html">IDR analysis for reproducible peaks</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">IDR analysis for reproducible peaks</h1>
+</div>
+
+<div>
+  <div class="description">
+    Clean up your ATAC by IDR analysis.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Giovanni Galletti </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 8, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="b8cb8e84" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">WARNING</span><span class="co">: Sample 'WT_IEL_CD69lo_CD103lo_1_S19_L005_R1_001.fastq.gz' is incomplete</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># We performed manual Trim Galore! before starting NextFlow pipeline</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># specify the directory containing the input files</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>INPUT_DIR<span class="op">=~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># specify the output directory</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>OUTPUT_DIR<span class="op">=</span>.<span class="op">/</span>TrimGalore<span class="op">/</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># loop through all .fastq.gz files in the input directory</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> $INPUT_DIR<span class="op">/</span>WT_<span class="op">*</span>.fastq.gz</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>do</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># trim the adapter sequences from the input file</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  trim_galore $file <span class="op">-</span>o $OUTPUT_DIR <span class="op">--</span>phred33</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="8b263ca1" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">WARNING</span><span class="co">: Sample 'WT_IEL_CD69lo_CD103lo_1_S19_L005_R1_001.fastq.gz' is incomplete</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Run Nextflow for ATAC-Seq skipping FastQC and trimming to avoid errors</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Useful reference: https://nf-co.re/atacseq</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>.<span class="op">/</span>nextflow run nf<span class="op">-</span>core<span class="op">/</span>atacseq <span class="op">--</span><span class="bu">input</span> samples.csv <span class="op">--</span>genome mm10 <span class="op">-</span>profile singularity <span class="op">--</span>read_length <span class="dv">75</span> <span class="op">--</span>outdir output <span class="op">--</span>skip_fastqc <span class="op">--</span>skip_trimming <span class="op">--</span>email ggalletti<span class="op">@</span>ucsd.edu <span class="op">-</span>resume</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li>Running the DESeq2 pipeline on the FeatureCounts file showed low degree of similarity between replicates</li>
+<li>Useful reference: <a href="../../protocols/bioinformatics/introduction-to-deseq2/index.html">Introduction to DESeq2</a></li>
+</ul>
+<p>– The following analysis is performed to improve the similarity of replicates –</p>
+<div id="e986eed8" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># To run IDR the narrowPeak files have to be sorted by the -log10(p-value) column</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Useful reference: https://hbctraining.github.io/Intro-to-ChIPseq/lessons/07_handling-replicates-idr.html</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> IEL_69h103h_REP1.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>IEL_69h103h_REP1.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> IEL_69h103h_REP2.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>IEL_69h103h_REP2.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> IEL_69h103l_REP1.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>IEL_69h103l_REP1.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> IEL_69h103l_REP2.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>IEL_69h103l_REP2.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> IEL_69l103l_REP1.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>IEL_69l103l_REP1.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> IEL_69l103l_REP2.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>IEL_69l103l_REP2.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> SP_MPEC_REP1.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>SP_MPEC_REP1.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>sort <span class="op">-</span>k8,<span class="dv">8</span><span class="er">nr</span> SP_MPEC_REP2.mLb.clN_peaks.broadPeak <span class="op">&gt;</span> <span class="op">~/</span>projects<span class="op">/</span><span class="dv">190703</span><span class="er">_ATAC_SQ_TGFbrKO</span><span class="op">/</span>idr<span class="op">/</span>SP_MPEC_REP2.mLb.clN_peaks.broadPeak</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Run IDR on the replicates</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>module load gcc python3essential idr</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>idr <span class="op">--</span>samples .<span class="op">/</span>raw_sorted<span class="op">/</span>IEL_69h103h_REP1.mLb.clN_peaks.broadPeak .<span class="op">/</span>raw_sorted<span class="op">/</span>IEL_69h103h_REP2.mLb.clN_peaks.broadPeak <span class="op">\</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="op">--</span><span class="bu">input</span><span class="op">-</span><span class="bu">file</span><span class="op">-</span><span class="bu">type</span> broadPeak <span class="op">\</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>rank p.value <span class="op">\</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>output<span class="op">-</span><span class="bu">file</span> <span class="dv">69</span><span class="er">h103h</span><span class="op">-</span>idr <span class="op">\</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>plot <span class="op">\</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>log<span class="op">-</span>output<span class="op">-</span><span class="bu">file</span> <span class="dv">69</span><span class="er">h103h</span>.idr.log</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>idr <span class="op">--</span>samples .<span class="op">/</span>raw_sorted<span class="op">/</span>IEL_69h103l_REP1.mLb.clN_peaks.broadPeak .<span class="op">/</span>raw_sorted<span class="op">/</span>IEL_69h103l_REP2.mLb.clN_peaks.broadPeak <span class="op">\</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="op">--</span><span class="bu">input</span><span class="op">-</span><span class="bu">file</span><span class="op">-</span><span class="bu">type</span> broadPeak <span class="op">\</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>rank p.value <span class="op">\</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>output<span class="op">-</span><span class="bu">file</span> <span class="dv">69</span><span class="er">h103l</span><span class="op">-</span>idr <span class="op">\</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>plot <span class="op">\</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>log<span class="op">-</span>output<span class="op">-</span><span class="bu">file</span> <span class="dv">69</span><span class="er">h103l</span>.idr.log</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>idr <span class="op">--</span>samples .<span class="op">/</span>raw_sorted<span class="op">/</span>IEL_69l103l_REP1.mLb.clN_peaks.broadPeak .<span class="op">/</span>raw_sorted<span class="op">/</span>IEL_69l103l_REP2.mLb.clN_peaks.broadPeak <span class="op">\</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="op">--</span><span class="bu">input</span><span class="op">-</span><span class="bu">file</span><span class="op">-</span><span class="bu">type</span> broadPeak <span class="op">\</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>rank p.value <span class="op">\</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>output<span class="op">-</span><span class="bu">file</span> <span class="dv">69l</span><span class="er">103l</span><span class="op">-</span>idr <span class="op">\</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>plot <span class="op">\</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>log<span class="op">-</span>output<span class="op">-</span><span class="bu">file</span> <span class="dv">69l</span><span class="er">103l</span>.idr.log</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>idr <span class="op">--</span>samples .<span class="op">/</span>raw_sorted<span class="op">/</span>SP_MPEC_REP1.mLb.clN_peaks.broadPeak .<span class="op">/</span>raw_sorted<span class="op">/</span>SP_MPEC_REP2.mLb.clN_peaks.broadPeak <span class="op">\</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="op">--</span><span class="bu">input</span><span class="op">-</span><span class="bu">file</span><span class="op">-</span><span class="bu">type</span> broadPeak <span class="op">\</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>rank p.value <span class="op">\</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>output<span class="op">-</span><span class="bu">file</span> MPEC<span class="op">-</span>idr <span class="op">\</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>plot <span class="op">\</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="op">--</span>log<span class="op">-</span>output<span class="op">-</span><span class="bu">file</span> MPEC.idr.log</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="ff101cf7" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run DiffBind to generate new count file with improved peaks</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Useful reference: https://hbctraining.github.io/In-depth-NGS-Data-Analysis-Course/sessionV/lessons/08_diffbind_differential_peaks.html</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"DiffBind"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"tidyverse"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"ChIPpeakAnno"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"ChIPseeker"</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"GenomicRanges"</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"org.Mm.eg.db"</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"TxDb.Mmusculus.UCSC.mm10.knownGene"</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>library(<span class="st">"biomaRt"</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>samples <span class="op">&lt;-</span> read.csv(<span class="st">'annotation.csv'</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>dbObj <span class="op">&lt;-</span> dba(sampleSheet<span class="op">=</span>samples)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>dbObj</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>dbObj <span class="op">&lt;-</span> dba.count(dbObj, bUseSummarizeOverlaps<span class="op">=</span>TRUE)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"dbaPCA.pdf"</span>, <span class="dv">12</span>, <span class="dv">7</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>dba.plotPCA(dbObj,  attributes<span class="op">=</span>DBA_FACTOR, label<span class="op">=</span>DBA_ID)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>plot(dbObj)</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>dev.off()</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>counts <span class="op">&lt;-</span> dba.peakset(dbObj, bRetrieve<span class="op">=</span>T, DataType<span class="op">=</span>DBA_DATA_FRAME)</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>write.table(counts, <span class="bu">file</span><span class="op">=</span><span class="st">"./featureCounts.txt"</span>, sep<span class="op">=</span><span class="st">"</span><span class="ch">\t</span><span class="st">"</span>, quote<span class="op">=</span>F, row.names<span class="op">=</span>F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="afdbaead" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate an annotation file with the new intervals annotated</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to GRanges</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>gr <span class="op">&lt;-</span> makeGRangesFromDataFrame(counts, ignore.strand <span class="op">=</span> T, seqnames.field <span class="op">=</span> <span class="st">"CHR"</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                                 start.field <span class="op">=</span> <span class="st">"START"</span>, end.field <span class="op">=</span> <span class="st">"END"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Give ranges numeric names in order</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>names(gr) <span class="op">&lt;-</span> c(<span class="dv">1</span>:length(gr))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create GRanges object with annotations from TxDb database</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>annoData <span class="op">&lt;-</span> toGRanges(TxDb.Mmusculus.UCSC.mm10.knownGene, feature<span class="op">=</span><span class="st">"gene"</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Annotate granges with the nearest TSS</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>annot <span class="op">&lt;-</span> annotatePeakInBatch(gr, </span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>                               AnnotationData<span class="op">=</span>annoData, </span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>                               featureType <span class="op">=</span> <span class="st">"TSS"</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>                               output<span class="op">=</span><span class="st">"nearestLocation"</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>                               PeakLocForDistance <span class="op">=</span> <span class="st">"start"</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># annotate with ChIPseeker</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>peak.anno <span class="op">&lt;-</span> annotatePeak(peak <span class="op">=</span> annot, tssRegion <span class="op">=</span> c(<span class="op">-</span><span class="dv">1000</span>, <span class="dv">1000</span>), TxDb <span class="op">=</span> TxDb.Mmusculus.UCSC.mm10.knownGene, annoDb <span class="op">=</span> <span class="st">"org.Mm.eg.db"</span>)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"peak_anno.pdf"</span>, <span class="dv">12</span>, <span class="dv">7</span>)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>plotAnnoPie(peak.anno)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>dev.off()</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>dfPA <span class="op">=</span> <span class="im">as</span>.data.frame(peak.anno)</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>write.table(dfPA, <span class="bu">file</span><span class="op">=</span><span class="st">"./peak_anno.csv"</span>, col.names <span class="op">=</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="a7330cb2" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform the standard DESeq2 pipeline on the new FeatureCounts file</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Useful reference: https://protocols.beetletun.de/docs/bioinformatics/introduction-to-deseq2/</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># BiocManager is an excellent source for R packages used in bioinformatics</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="op">!</span>requireNamespace(<span class="st">"BiocManager"</span>, quietly <span class="op">=</span> TRUE))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    install.packages(<span class="st">"BiocManager"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># these are the packages that we are going to need.</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>.of.packages <span class="op">&lt;-</span> c(<span class="st">"ggplot2"</span>, <span class="st">"DESeq2"</span>, <span class="st">"readr"</span>, <span class="st">"readxl"</span>, <span class="st">"pheatmap"</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"RColorBrewer"</span>, <span class="st">"EnhancedVolcano"</span>, <span class="st">"fgsea"</span>, <span class="st">"org.Mm.eg.db"</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"AnnotationDbi"</span>, <span class="st">"gage"</span>, <span class="st">"plotly"</span>, <span class="st">"dplyr"</span>, <span class="st">"ComplexHeatmap"</span>,</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"patchwork"</span>, <span class="st">"GSVA"</span>, <span class="st">"limma"</span>, <span class="st">"magrittr"</span>, <span class="st">"purrr"</span>)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># check, which packages have not been installed so far</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>new.packages <span class="op">&lt;-</span> <span class="bu">list</span>.of.packages[<span class="op">!</span>(<span class="bu">list</span>.of.packages <span class="op">%</span><span class="kw">in</span><span class="op">%</span> installed.packages()[,<span class="st">"Package"</span>])]</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># install the missing packages. If a package is not in Bioconductor, it will be installed from cran. this can take a while</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(length(new.packages)) BiocManager::install(new.packages)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="1bc6cd78" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load libraries</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>.libPaths( c( <span class="st">"~/R/x86_64-pc-linux-gnu-library/3.6"</span> , .libPaths() ) )</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>library(readr)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>library(dplyr)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the FeatureCount file</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>counts <span class="op">&lt;-</span> read.table(<span class="st">"./featureCounts.txt"</span>, header <span class="op">=</span> T)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>colnames(counts) <span class="op">&lt;-</span> c(<span class="st">'Chr'</span>,<span class="st">'Start'</span>,<span class="st">'End'</span>,<span class="st">'69H_103H_1'</span>,<span class="st">'69H_103H_2'</span>,<span class="st">'69H_103L_1'</span>,<span class="st">'69H_103L_2'</span>,<span class="st">'69L_103L_1'</span>,<span class="st">'69L_103L_2'</span>,<span class="st">'MPEC_1'</span>,<span class="st">'MPEC_2'</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Annotate the FeatureCount file</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>annot <span class="op">&lt;-</span> read.table(<span class="st">"./peak_anno.csv"</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>annot <span class="op">&lt;-</span> select(annot, seqnames, start, end, annotation, distanceToTSS, SYMBOL, ENSEMBL)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>colnames(annot) <span class="op">&lt;-</span> c(<span class="st">'Chr'</span>,<span class="st">'Start'</span>,<span class="st">'End'</span>,<span class="st">'Annot'</span>,<span class="st">'DistToTSS'</span>,<span class="st">'GeneSymbol'</span>,<span class="st">'ENS_ID'</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>counts_temp <span class="op">&lt;-</span> counts <span class="op">%&gt;%</span> inner_join(annot, by<span class="op">=</span>c(<span class="st">'Chr'</span>,<span class="st">'Start'</span>,<span class="st">'End'</span>))</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>counts_temp <span class="op">&lt;-</span> counts_temp[<span class="op">!</span><span class="kw">is</span>.na(counts_temp$GeneSymbol),]</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>counts_temp$Interval <span class="op">&lt;-</span> rownames(counts_temp)</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>counts_temp[rownames(counts_temp) <span class="op">==</span> <span class="st">'12455'</span>,]</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>annot[rownames(annot) <span class="op">==</span> <span class="st">'12455'</span>,]</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>counts <span class="op">&lt;-</span> counts_temp</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the sample annotation file</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>annotation <span class="op">&lt;-</span> read_csv(<span class="st">"/home/ggalletti/projects/190703_ATAC_SQ_TGFbrKO/TrimGalore/output/bwa/merged_replicate/macs2/broad_peak/consensus/annotation.csv"</span>)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>head(counts)</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>head(annotation)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="co"># to set to rownames, we first have to convert the table to a data.frame</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>counts <span class="op">&lt;-</span> <span class="im">as</span>.data.frame(counts)</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the column Geneid as the rownames of the table.</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>rownames(counts) <span class="op">&lt;-</span> counts$Interval</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove GeneSymbol from the table</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>counts$Interval <span class="op">&lt;-</span> NULL</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>head(counts)</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="co"># set rownames</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>annotation <span class="op">&lt;-</span> <span class="im">as</span>.data.frame(annotation)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>rownames(annotation) <span class="op">&lt;-</span> annotation$sample</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>annotation$sample <span class="op">&lt;-</span> NULL</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="co"># check if all rownames in annotation correspond to a column in counts</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a><span class="bu">all</span>(rownames(annotation) <span class="op">%</span><span class="kw">in</span><span class="op">%</span> colnames(counts))  <span class="co"># --&gt; this should return TRUE</span></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a><span class="co"># check if they are in the same order</span></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="co"># if this does not return TRUE, do not worry about that. We will sort the columns of counts accordingly.</span></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="bu">all</span>(rownames(annotation) <span class="op">==</span> colnames(counts))</span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="co"># reorder the columns of counts</span></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>counts <span class="op">&lt;-</span> counts[, rownames(annotation)]</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a><span class="co"># now, this sould return TRUE</span></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="bu">all</span>(rownames(annotation) <span class="op">==</span> colnames(counts))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="696f1762" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages(library(DESeq2))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>dds <span class="op">&lt;-</span> DESeqDataSetFromMatrix(countData <span class="op">=</span> <span class="bu">round</span>(counts),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                              colData <span class="op">=</span> annotation,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>                              design <span class="op">=</span> <span class="op">~</span> subset)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Annotate the deseq2 dataset</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>match_rows <span class="op">&lt;-</span> match(row.names(annot), row.names(dds))</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>annot <span class="op">&lt;-</span> annot[order(match_rows),]</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>metadata <span class="op">&lt;-</span> DataFrame(GeneSymbol<span class="op">=</span>annot$GeneSymbol, Annotation<span class="op">=</span>annot$Annot, DistToTSS<span class="op">=</span>annot$DistToTSS, ENS_ID<span class="op">=</span>annot$ENS_ID)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>mcols(dds) <span class="op">&lt;-</span> metadata</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>dds <span class="op">&lt;-</span> DESeq(dds)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>dds</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>keep <span class="op">&lt;-</span> rowSums(counts(dds)) <span class="op">&gt;=</span> <span class="dv">10</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>dds <span class="op">&lt;-</span> dds[keep,]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="1fc5737d" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># PCA</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>ntd <span class="op">&lt;-</span> normTransform(dds)  <span class="co">## log2(n +1)</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>vsd <span class="op">&lt;-</span> vst(dds, blind<span class="op">=</span>FALSE)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>rld <span class="op">&lt;-</span> rlog(dds, blind<span class="op">=</span>FALSE)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"PCA.pdf"</span>, <span class="dv">12</span>, <span class="dv">7</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>plotPCA(ntd, intgroup<span class="op">=</span>c(<span class="st">"subset"</span>)) <span class="op">+</span> ggplot2::theme_bw()</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>plotPCA(vsd, intgroup<span class="op">=</span>c(<span class="st">"subset"</span>)) <span class="op">+</span> ggplot2::theme_bw()</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>plotPCA(rld, intgroup<span class="op">=</span>c(<span class="st">"subset"</span>)) <span class="op">+</span> ggplot2::theme_bw()</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>dev.off()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="d243f130" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sample distance matrix</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>library(pheatmap)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>library(RColorBrewer)</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>sampleDists <span class="op">&lt;-</span> dist(t(assay(vsd)))</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>sampleDistMatrix <span class="op">&lt;-</span> <span class="im">as</span>.matrix(sampleDists)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>rownames(sampleDistMatrix) <span class="op">&lt;-</span> paste(vsd$sample, vsd$tissue, vsd$site, sep<span class="op">=</span><span class="st">"-"</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>colnames(sampleDistMatrix) <span class="op">&lt;-</span> NULL</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>colors <span class="op">&lt;-</span> colorRampPalette( rev(brewer.pal(<span class="dv">9</span>, <span class="st">"Blues"</span>)) )(<span class="dv">255</span>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"Distance.pdf"</span>, <span class="dv">12</span>, <span class="dv">7</span>)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>pheatmap(sampleDistMatrix,</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>         clustering_distance_rows<span class="op">=</span>sampleDists,</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>         clustering_distance_cols<span class="op">=</span>sampleDists,</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>         col<span class="op">=</span>colors)</span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>dev.off()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="21dc005b" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create new grouping variable and convert it to a factor</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>dds$subset_tissue <span class="op">&lt;-</span> factor(paste(dds$subset, dds$tissue, sep<span class="op">=</span><span class="st">"-"</span>))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>dds$subset_tissue</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># update design</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>design(dds) <span class="op">&lt;-</span> <span class="op">~</span> subset_tissue</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>design(dds)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>dds <span class="op">&lt;-</span> DESeq(dds)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co"># we want to compare all the conditions</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>res_HH_HL <span class="op">&lt;-</span> results(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103H-IEL"</span>, <span class="st">"69H_103L-IEL"</span>))</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>res_HH_LL <span class="op">&lt;-</span> results(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103H-IEL"</span>, <span class="st">"69L_103L-IEL"</span>))</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>res_HL_LL <span class="op">&lt;-</span> results(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103L-IEL"</span>, <span class="st">"69L_103L-IEL"</span>))</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>res_HH_MPEC <span class="op">&lt;-</span> results(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103H-IEL"</span>, <span class="st">"MPEC-SPL"</span>))</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>res_HL_MPEC <span class="op">&lt;-</span> results(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103L-IEL"</span>, <span class="st">"MPEC-SPL"</span>))</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>res_LL_MPEC <span class="op">&lt;-</span> results(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69L_103L-IEL"</span>, <span class="st">"MPEC-SPL"</span>))</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"MA.pdf"</span>, <span class="dv">12</span>, <span class="dv">7</span>)</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>plotMA(res_HH_HL, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>plotMA(res_HH_LL, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>plotMA(res_HL_LL, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>plotMA(res_HH_MPEC, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>plotMA(res_HL_MPEC, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>plotMA(res_LL_MPEC, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>dev.off()</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL <span class="op">&lt;-</span> lfcShrink(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103H-IEL"</span>, <span class="st">"69H_103L-IEL"</span>), <span class="bu">type</span><span class="op">=</span><span class="st">"normal"</span>)</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL <span class="op">&lt;-</span> lfcShrink(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103H-IEL"</span>, <span class="st">"69L_103L-IEL"</span>), <span class="bu">type</span><span class="op">=</span><span class="st">"normal"</span>)</span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL <span class="op">&lt;-</span> lfcShrink(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103L-IEL"</span>, <span class="st">"69L_103L-IEL"</span>), <span class="bu">type</span><span class="op">=</span><span class="st">"normal"</span>)</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC <span class="op">&lt;-</span> lfcShrink(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103H-IEL"</span>, <span class="st">"MPEC-SPL"</span>))</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC <span class="op">&lt;-</span> lfcShrink(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69H_103L-IEL"</span>, <span class="st">"MPEC-SPL"</span>))</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC <span class="op">&lt;-</span> lfcShrink(dds, contrast <span class="op">=</span> c(<span class="st">"subset_tissue"</span>, <span class="st">"69L_103L-IEL"</span>, <span class="st">"MPEC-SPL"</span>))</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC</span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>library(EnhancedVolcano)</span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a report pdf with QC plots and Volcano plots</span></span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"LFC_plots.pdf"</span>, <span class="dv">6</span>, <span class="dv">8</span>)</span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>plotMA(resLFC_HH_HL, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a>plotMA(resLFC_HH_LL, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a>plotMA(resLFC_HL_LL, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a>plotMA(resLFC_HH_MPEC, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a>plotMA(resLFC_HL_MPEC, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>plotMA(resLFC_LL_MPEC, ylim<span class="op">=</span>c(<span class="op">-</span><span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>plot(res_HH_HL$pvalue, resLFC_HH_HL$pvalue)</span>
+<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a>plot(res_HH_LL$pvalue, resLFC_HH_LL$pvalue)</span>
+<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a>plot(res_HL_LL$pvalue, resLFC_HL_LL$pvalue)</span>
+<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a>plot(res_HH_MPEC$pvalue, resLFC_HH_MPEC$pvalue)</span>
+<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a>plot(res_HL_MPEC$pvalue, resLFC_HL_MPEC$pvalue)</span>
+<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a>plot(res_LL_MPEC$pvalue, resLFC_LL_MPEC$pvalue)</span>
+<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a>EnhancedVolcano(resLFC_HH_HL,</span>
+<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a>    lab <span class="op">=</span> mcols(dds)$GeneSymbol,</span>
+<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'log2FoldChange'</span>,</span>
+<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'padj'</span>, <span class="co">## use pvalue for unadjusted p values</span></span>
+<span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a>    ylim <span class="op">=</span> c(<span class="op">-</span><span class="fl">0.5</span>,<span class="dv">6</span>),</span>
+<span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>    pCutoff <span class="op">=</span> <span class="fl">10e-2</span>,</span>
+<span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">"Volcano plot"</span>,</span>
+<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a>    subtitle <span class="op">=</span> <span class="st">"Comparison HH vs HL"</span>)</span>
+<span id="cb11-65"><a href="#cb11-65" aria-hidden="true" tabindex="-1"></a>EnhancedVolcano(resLFC_HH_LL,</span>
+<span id="cb11-66"><a href="#cb11-66" aria-hidden="true" tabindex="-1"></a>    lab <span class="op">=</span> mcols(dds)$GeneSymbol,</span>
+<span id="cb11-67"><a href="#cb11-67" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'log2FoldChange'</span>,</span>
+<span id="cb11-68"><a href="#cb11-68" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'padj'</span>, <span class="co">## use pvalue for unadjusted p values</span></span>
+<span id="cb11-69"><a href="#cb11-69" aria-hidden="true" tabindex="-1"></a>    ylim <span class="op">=</span> c(<span class="op">-</span><span class="fl">0.5</span>,<span class="dv">6</span>),</span>
+<span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>    pCutoff <span class="op">=</span> <span class="fl">10e-2</span>,</span>
+<span id="cb11-71"><a href="#cb11-71" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">"Volcano plot"</span>,</span>
+<span id="cb11-72"><a href="#cb11-72" aria-hidden="true" tabindex="-1"></a>    subtitle <span class="op">=</span> <span class="st">"Comparison HH vs LL"</span>)</span>
+<span id="cb11-73"><a href="#cb11-73" aria-hidden="true" tabindex="-1"></a>EnhancedVolcano(resLFC_HL_LL,</span>
+<span id="cb11-74"><a href="#cb11-74" aria-hidden="true" tabindex="-1"></a>    lab <span class="op">=</span> mcols(dds)$GeneSymbol,</span>
+<span id="cb11-75"><a href="#cb11-75" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'log2FoldChange'</span>,</span>
+<span id="cb11-76"><a href="#cb11-76" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'padj'</span>, <span class="co">## use pvalue for unadjusted p values</span></span>
+<span id="cb11-77"><a href="#cb11-77" aria-hidden="true" tabindex="-1"></a>    ylim <span class="op">=</span> c(<span class="op">-</span><span class="fl">0.5</span>,<span class="dv">4</span>),</span>
+<span id="cb11-78"><a href="#cb11-78" aria-hidden="true" tabindex="-1"></a>    pCutoff <span class="op">=</span> <span class="fl">10e-2</span>,</span>
+<span id="cb11-79"><a href="#cb11-79" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">"Volcano plot"</span>,</span>
+<span id="cb11-80"><a href="#cb11-80" aria-hidden="true" tabindex="-1"></a>    subtitle <span class="op">=</span> <span class="st">"Comparison HL vs LL"</span>)</span>
+<span id="cb11-81"><a href="#cb11-81" aria-hidden="true" tabindex="-1"></a>EnhancedVolcano(resLFC_HH_MPEC,</span>
+<span id="cb11-82"><a href="#cb11-82" aria-hidden="true" tabindex="-1"></a>    lab <span class="op">=</span> mcols(dds)$GeneSymbol,</span>
+<span id="cb11-83"><a href="#cb11-83" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'log2FoldChange'</span>,</span>
+<span id="cb11-84"><a href="#cb11-84" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'padj'</span>, <span class="co">## use pvalue for unadjusted p values</span></span>
+<span id="cb11-85"><a href="#cb11-85" aria-hidden="true" tabindex="-1"></a>    ylim <span class="op">=</span> c(<span class="op">-</span><span class="fl">0.5</span>,<span class="dv">40</span>),</span>
+<span id="cb11-86"><a href="#cb11-86" aria-hidden="true" tabindex="-1"></a>    pCutoff <span class="op">=</span> <span class="fl">10e-2</span>,</span>
+<span id="cb11-87"><a href="#cb11-87" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">"Volcano plot"</span>,</span>
+<span id="cb11-88"><a href="#cb11-88" aria-hidden="true" tabindex="-1"></a>    subtitle <span class="op">=</span> <span class="st">"Comparison HH vs MPEC"</span>)</span>
+<span id="cb11-89"><a href="#cb11-89" aria-hidden="true" tabindex="-1"></a>EnhancedVolcano(resLFC_HL_MPEC,</span>
+<span id="cb11-90"><a href="#cb11-90" aria-hidden="true" tabindex="-1"></a>    lab <span class="op">=</span> mcols(dds)$GeneSymbol,</span>
+<span id="cb11-91"><a href="#cb11-91" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'log2FoldChange'</span>,</span>
+<span id="cb11-92"><a href="#cb11-92" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'padj'</span>, <span class="co">## use pvalue for unadjusted p values</span></span>
+<span id="cb11-93"><a href="#cb11-93" aria-hidden="true" tabindex="-1"></a>    <span class="co">#ylim = c(-1,5),</span></span>
+<span id="cb11-94"><a href="#cb11-94" aria-hidden="true" tabindex="-1"></a>    pCutoff <span class="op">=</span> <span class="fl">10e-2</span>,</span>
+<span id="cb11-95"><a href="#cb11-95" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">"Volcano plot"</span>,</span>
+<span id="cb11-96"><a href="#cb11-96" aria-hidden="true" tabindex="-1"></a>    subtitle <span class="op">=</span> <span class="st">"Comparison HL vs MPEC"</span>)</span>
+<span id="cb11-97"><a href="#cb11-97" aria-hidden="true" tabindex="-1"></a>EnhancedVolcano(resLFC_LL_MPEC,</span>
+<span id="cb11-98"><a href="#cb11-98" aria-hidden="true" tabindex="-1"></a>    lab <span class="op">=</span> mcols(dds)$GeneSymbol,</span>
+<span id="cb11-99"><a href="#cb11-99" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">'log2FoldChange'</span>,</span>
+<span id="cb11-100"><a href="#cb11-100" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">'padj'</span>, <span class="co">## use pvalue for unadjusted p values</span></span>
+<span id="cb11-101"><a href="#cb11-101" aria-hidden="true" tabindex="-1"></a>    ylim <span class="op">=</span> c(<span class="op">-</span><span class="fl">0.5</span>,<span class="fl">12.5</span>),</span>
+<span id="cb11-102"><a href="#cb11-102" aria-hidden="true" tabindex="-1"></a>    pCutoff <span class="op">=</span> <span class="fl">10e-2</span>,</span>
+<span id="cb11-103"><a href="#cb11-103" aria-hidden="true" tabindex="-1"></a>    title <span class="op">=</span> <span class="st">"Volcano plot"</span>,</span>
+<span id="cb11-104"><a href="#cb11-104" aria-hidden="true" tabindex="-1"></a>    subtitle <span class="op">=</span> <span class="st">"Comparison LL vs MPEC"</span>)</span>
+<span id="cb11-105"><a href="#cb11-105" aria-hidden="true" tabindex="-1"></a>plotCounts(dds, gene<span class="op">=</span>which.<span class="bu">min</span>(resLFC_HH_HL$padj), intgroup<span class="op">=</span><span class="st">"subset_tissue"</span>)</span>
+<span id="cb11-106"><a href="#cb11-106" aria-hidden="true" tabindex="-1"></a>plotCounts(dds, gene<span class="op">=</span>which.<span class="bu">min</span>(resLFC_HH_LL$padj), intgroup<span class="op">=</span><span class="st">"subset_tissue"</span>)</span>
+<span id="cb11-107"><a href="#cb11-107" aria-hidden="true" tabindex="-1"></a>plotCounts(dds, gene<span class="op">=</span>which.<span class="bu">min</span>(resLFC_HL_LL$padj), intgroup<span class="op">=</span><span class="st">"subset_tissue"</span>)</span>
+<span id="cb11-108"><a href="#cb11-108" aria-hidden="true" tabindex="-1"></a>plotCounts(dds, gene<span class="op">=</span>which.<span class="bu">min</span>(resLFC_HH_MPEC$padj), intgroup<span class="op">=</span><span class="st">"subset_tissue"</span>)</span>
+<span id="cb11-109"><a href="#cb11-109" aria-hidden="true" tabindex="-1"></a>plotCounts(dds, gene<span class="op">=</span>which.<span class="bu">min</span>(resLFC_HL_MPEC$padj), intgroup<span class="op">=</span><span class="st">"subset_tissue"</span>)</span>
+<span id="cb11-110"><a href="#cb11-110" aria-hidden="true" tabindex="-1"></a>plotCounts(dds, gene<span class="op">=</span>which.<span class="bu">min</span>(resLFC_LL_MPEC$padj), intgroup<span class="op">=</span><span class="st">"subset_tissue"</span>)</span>
+<span id="cb11-111"><a href="#cb11-111" aria-hidden="true" tabindex="-1"></a>dev.off()</span>
+<span id="cb11-112"><a href="#cb11-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-113"><a href="#cb11-113" aria-hidden="true" tabindex="-1"></a>summary(resLFC_HH_HL)</span>
+<span id="cb11-114"><a href="#cb11-114" aria-hidden="true" tabindex="-1"></a>summary(resLFC_HH_LL)</span>
+<span id="cb11-115"><a href="#cb11-115" aria-hidden="true" tabindex="-1"></a>summary(resLFC_HL_LL)</span>
+<span id="cb11-116"><a href="#cb11-116" aria-hidden="true" tabindex="-1"></a>summary(resLFC_HH_MPEC)</span>
+<span id="cb11-117"><a href="#cb11-117" aria-hidden="true" tabindex="-1"></a>summary(resLFC_HL_MPEC)</span>
+<span id="cb11-118"><a href="#cb11-118" aria-hidden="true" tabindex="-1"></a>summary(resLFC_LL_MPEC)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="04631eaa" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">## important: check columns before you change the order of the results!</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL$Intervals <span class="op">&lt;-</span> rownames(resLFC_HH_HL)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL$GeneSymbol <span class="op">&lt;-</span> mcols(dds)$GeneSymbol</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL$Annotation <span class="op">&lt;-</span> mcols(dds)$Annotation</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL$DistToTSS <span class="op">&lt;-</span> mcols(dds)$DistToTSS</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>resLFC_HH_HL$ENS_ID <span class="op">&lt;-</span> mcols(dds)$ENS_ID</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>head(resLFC_HH_HL)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>resOrdered_HH_HL <span class="op">&lt;-</span> resLFC_HH_HL[order(resLFC_HH_HL$padj),]</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>resOrdered_HH_HL <span class="op">&lt;-</span> na.omit(resOrdered_HH_HL)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>head(resOrdered_HH_HL)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>write_csv(<span class="im">as</span>.data.frame(resOrdered_HH_HL), <span class="st">"de_HH_HL.csv"</span>)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL$Intervals <span class="op">&lt;-</span> rownames(resLFC_HH_LL)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL$GeneSymbol <span class="op">&lt;-</span> mcols(dds)$GeneSymbol</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL$Annotation <span class="op">&lt;-</span> mcols(dds)$Annotation</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL$DistToTSS <span class="op">&lt;-</span> mcols(dds)$DistToTSS</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>resLFC_HH_LL$ENS_ID <span class="op">&lt;-</span> mcols(dds)$ENS_ID</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>head(resLFC_HH_LL)</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>resOrdered_HH_LL <span class="op">&lt;-</span> resLFC_HH_LL[order(resLFC_HH_LL$padj),]</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>resOrdered_HH_LL <span class="op">&lt;-</span> na.omit(resOrdered_HH_LL)</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>head(resOrdered_HH_LL)</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>write_csv(<span class="im">as</span>.data.frame(resOrdered_HH_LL), <span class="st">"de_HH_LL.csv"</span>)</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL$Intervals <span class="op">&lt;-</span> rownames(resLFC_HL_LL)</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL$GeneSymbol <span class="op">&lt;-</span> mcols(dds)$GeneSymbol</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL$Annotation <span class="op">&lt;-</span> mcols(dds)$Annotation</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL$DistToTSS <span class="op">&lt;-</span> mcols(dds)$DistToTSS</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>resLFC_HL_LL$ENS_ID <span class="op">&lt;-</span> mcols(dds)$ENS_ID</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>head(resLFC_HL_LL)</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>resOrdered_HL_LL <span class="op">&lt;-</span> resLFC_HL_LL[order(resLFC_HL_LL$padj),]</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>resOrdered_HL_LL <span class="op">&lt;-</span> na.omit(resOrdered_HL_LL)</span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>head(resOrdered_HL_LL)</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>write_csv(<span class="im">as</span>.data.frame(resOrdered_HL_LL), <span class="st">"de_HL_LL.csv"</span>)</span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC$Intervals <span class="op">&lt;-</span> rownames(resLFC_HH_MPEC)</span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC$GeneSymbol <span class="op">&lt;-</span> mcols(dds)$GeneSymbol</span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC$Annotation <span class="op">&lt;-</span> mcols(dds)$Annotation</span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC$DistToTSS <span class="op">&lt;-</span> mcols(dds)$DistToTSS</span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a>resLFC_HH_MPEC$ENS_ID <span class="op">&lt;-</span> mcols(dds)$ENS_ID</span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a>head(resLFC_HH_MPEC)</span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>resOrdered_HH_MPEC <span class="op">&lt;-</span> resLFC_HH_MPEC[order(resLFC_HH_MPEC$padj),]</span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>resOrdered_HH_MPEC <span class="op">&lt;-</span> na.omit(resOrdered_HH_MPEC)</span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>head(resOrdered_HH_MPEC)</span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>write_csv(<span class="im">as</span>.data.frame(resOrdered_HH_MPEC), <span class="st">"de_HH_MPEC.csv"</span>)</span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC$Intervals <span class="op">&lt;-</span> rownames(resLFC_HL_MPEC)</span>
+<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC$GeneSymbol <span class="op">&lt;-</span> mcols(dds)$GeneSymbol</span>
+<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC$Annotation <span class="op">&lt;-</span> mcols(dds)$Annotation</span>
+<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC$DistToTSS <span class="op">&lt;-</span> mcols(dds)$DistToTSS</span>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a>resLFC_HL_MPEC$ENS_ID <span class="op">&lt;-</span> mcols(dds)$ENS_ID</span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a>head(resLFC_HL_MPEC)</span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a>resOrdered_HL_MPEC <span class="op">&lt;-</span> resLFC_HL_MPEC[order(resLFC_HL_MPEC$padj),]</span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a>resOrdered_HL_MPEC <span class="op">&lt;-</span> na.omit(resOrdered_HL_MPEC)</span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a>head(resOrdered_HL_MPEC)</span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a>write_csv(<span class="im">as</span>.data.frame(resOrdered_HL_MPEC), <span class="st">"de_HL_MPEC.csv"</span>)</span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC$Intervals <span class="op">&lt;-</span> rownames(resLFC_LL_MPEC)</span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC$GeneSymbol <span class="op">&lt;-</span> mcols(dds)$GeneSymbol</span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC$Annotation <span class="op">&lt;-</span> mcols(dds)$Annotation</span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC$DistToTSS <span class="op">&lt;-</span> mcols(dds)$DistToTSS</span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a>resLFC_LL_MPEC$ENS_ID <span class="op">&lt;-</span> mcols(dds)$ENS_ID</span>
+<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a>head(resLFC_LL_MPEC)</span>
+<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a>resOrdered_LL_MPEC <span class="op">&lt;-</span> resLFC_LL_MPEC[order(resLFC_LL_MPEC$padj),]</span>
+<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a>resOrdered_LL_MPEC <span class="op">&lt;-</span> na.omit(resOrdered_LL_MPEC)</span>
+<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a>head(resOrdered_LL_MPEC)</span>
+<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a>write_csv(<span class="im">as</span>.data.frame(resOrdered_LL_MPEC), <span class="st">"de_LL_MPEC.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="50472022" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a heatmap including all samples vs all samples and annotating the gene of interest</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>ddsLRT <span class="op">&lt;-</span> DESeq(dds, test<span class="op">=</span><span class="st">"LRT"</span>, reduced<span class="op">=</span> <span class="op">~</span> <span class="dv">1</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>resLRT <span class="op">&lt;-</span> results(ddsLRT)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co"># we are using which here, as some pvalues are NA.</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>de_intervals <span class="op">&lt;-</span> rownames(resLRT)[which(resLRT$padj<span class="op">&lt;</span><span class="fl">0.05</span>)]</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># extract count data and filter rows.</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>m <span class="op">&lt;-</span> assay(ntd)[de_intervals,]  <span class="co">## or rld (for rlog) or vsd (for vst)</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co"># keep only the samples, that we compared.</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co">#m &lt;- m[, dds$subset_tissue %in% c("69H_103H-IEL", "69H_103L-IEL", "69L_103L-IEL", "MPEC-SPL")]</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>suppressPackageStartupMessages(library(ComplexHeatmap))</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify the intervals/peaks corresponding to your gene(s) of interest</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>Rasa3 <span class="op">&lt;-</span> annot[annot$GeneSymbol <span class="op">==</span> <span class="st">'Rasa3'</span>, ]</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>Rasa3 <span class="op">&lt;-</span> Rasa3[<span class="op">!</span><span class="kw">is</span>.na(Rasa3$GeneSymbol),]</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>Rasa3 <span class="op">&lt;-</span> select(Rasa3, GeneSymbol, Intervals)</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>selected_intervals <span class="op">&lt;-</span> which(rownames(m) <span class="op">%</span><span class="kw">in</span><span class="op">%</span> c(rownames(Rasa3)))</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>selected_intervals</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Run heatmap</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>Heatmap <span class="op">&lt;-</span> Heatmap(t(scale(t(m))),     <span class="co"># we want to normalize the counts per row. </span></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># scale() normalizes per column.</span></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># therefore we first transponse the matrix, </span></span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># then call scale and then transpose again.</span></span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>        col <span class="op">=</span> c(<span class="st">'white'</span>, <span class="st">'light blue'</span>, <span class="st">'blue'</span>),</span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>        show_row_names <span class="op">=</span> F,</span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>        <span class="co">#row_names_gp = gpar(fontsize = 1),</span></span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>        <span class="co">#column_split = 2,</span></span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>        <span class="co">#row_split = 2,</span></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span><span class="st">"z-score"</span>) </span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot heatmap and be sure to manually write down the name of the gene(s) as many times as the number of intervals you have</span></span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Did not want to spend more time figuring out how to automatically markdown the gene name</span></span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>pdf(<span class="st">"heatmap.pdf"</span>, <span class="dv">6</span>, <span class="dv">7</span>)</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a>Heatmap <span class="op">+</span> rowAnnotation(link <span class="op">=</span> row_anno_link(at <span class="op">=</span> c(selected_intervals), labels <span class="op">=</span> c(<span class="st">"Rasa3"</span>,<span class="st">"Rasa3"</span>,<span class="st">"Rasa3"</span>,<span class="st">"Rasa3"</span>,<span class="st">"Rasa3"</span>,<span class="st">"Rasa3"</span>,<span class="st">"Rasa3"</span>)))</span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>dev.off()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/protocols\.heeg\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html" class="pagination-link" aria-label="Convert human genes to mouse">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Convert human genes to mouse</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../protocols/bioinformatics/pca_genes.html" class="pagination-link" aria-label="PCA: get most important genes">
+        <span class="nav-page-text">PCA: get most important genes</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.dev/maximilian-heeg/protocols.heeg.io/blob/main/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/maximilian-heeg/protocols.heeg.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
