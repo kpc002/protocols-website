@@ -9,3 +9,5 @@
 *_cache/
 /cache/
 /.luarc.json
+
+**/*.quarto_ipynb

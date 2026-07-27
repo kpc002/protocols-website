@@ -1,1 +1,0 @@
-<script async defer src="https://analytics.umami.is/script.js" data-website-id="378b2581-4c19-4552-a28b-be65291d1b74"></script>

@@ -1,0 +1,1176 @@
+---
+title: "Goldrath Lab Oligos Database updated at 121213"
+description: 'Converted spreadsheet contents.'
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+---
+
+# Goldrath Lab Oligos Database updated at 121213
+
+## Genotyping
+
+| Location | Name | Sequence | Use | Tm | User | Last Ordered | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| G1-1 | Id2 F | TGCAGGCTGACGATAGTG | For genotyping Id2 knockout mice |  | Jamie |  |  |
+| G1-2 | Id2 R | ACCGCACAGTGTTCCTAC | For genotyping Id2 knockout mice |  | Jamie |  |  |
+| G1-3 | BIM 1851 | cat tct cgt aag tcc gag tct | For genotyping Bim knockout mice |  | Jamie |  |  |
+| G1-4 | BIM 1852 | gtg cta act gaa acc aga tta | For genotyping Bim knockout mice |  | Jamie |  |  |
+| G1-5 | BIM 1853 | ctc agt cca ttc atc aac ag | For genotyping Bim knockout mice |  | Jamie |  |  |
+| G1-6 | Va2 F | TGACCCGGGAGCTTCAGTCTAGGAGGAATG | For genotyping smarta mice |  | Jamie |  |  |
+| G1-7 | Va2 R | TATGCGGCCGCTATCAGGTACTTACTGGGG | For genotyping smarta mice |  | Jamie |  |  |
+| G1-8 | Vb5 F | AAGGTGGAGAGAGACAAAGGA | genotyping OT-I mice |  | Jamie |  |  |
+| G1-9 | Vb5 R | CCAGTGCATGCATACCTCAG | genotyping OT-I mice |  | Jamie |  |  |
+| G1-10 | 1348 | CAC TGA TAT TGT AAG TAG TTT GC | For genotyping ACT FLPe mice |  | Jamie |  |  |
+| G1-11 | 1349 | CTA GTG CGA AGT AGT GAT CAG G | For genotyping ACT FLPe mice |  | Jamie |  |  |
+| G1-12 | Id2 ProF | GAGGAATTAATCATTAATTGAAGGG | For genotyping Id2 Conditional mice |  | Jamie |  |  |
+| G1-13 | Id2 LoxP-F | TACCACATAGGCATGAAGGG | For genotyping Id2 Conditional mice |  | Jamie |  |  |
+| G1-14 | Id2 LoxP-R | TTTGGATCTCTAACAGCCCG | For genotyping Id2 Conditional mice |  | Jamie |  |  |
+| G1-15 | Id2 Neo-F | TATCAGGACATAGCGTTGGC  |  |  | Jamie |  |  |
+| G1-16 | Cre F | gCggTCTggCAgTAAAAACTATC | genotyping all Cre mice except dlck-cre |  | Jamie |  |  |
+| G1-17 | Cre R | gtgaaacagcattgctgtcactt | genotyping all Cre mice except dlck-cre |  | Jamie |  |  |
+| G1-18 | RFP F | CCC CGT AAT GCA GAA GAA GA | For genotyping RFP mice |  | Jamie |  |  |
+| G1-19 | RFP R | CTT GGC CAT GTA GGT GGT CT | For genotyping RFP mice |  | Jamie |  |  |
+| G1-20 | dlck Cre F | atggtgcccaagaagaagag | For genotyping dlck-cre mice: band size 300bp |  | Louise |  |  |
+| G1-21 | dlck Cre R | caggtgctgttggatggtct | For genotyping dlck-cre mice: band size 300bp |  | Louise |  |  |
+| G1-22 | CD4Cre F | gcggtctggcagtaaaaactatc  | genotyping all Cre mice except dlck-cre: band size 100bp |  | Louise |  |  |
+| G1-23 | CD4Cre R | gtgaaacagcattgctgtcactt  | genotyping all Cre mice except dlck-cre: band size 100bp |  | Louise |  |  |
+| G1-24 | HEBflox F | CTG GGA CAG AAG TTC AGC ACT TAG TAC | For genotying HEBflox mice: deleted band is 0.5kb, flox band is 1.3kb, wt band is 1.1kb |  | Louise |  |  |
+| G1-25 | HEBflox R | CAT TCC TAT ACA TCA GCT TCT TGG ACG | For genotying HEBflox mice: deleted band is 0.5kb, flox band is 1.3kb, wt band is 1.1kb |  | Louise |  |  |
+| G1-26 | CD14 F | GCTCAAACTTTCAGAATCTA |  |  | Louise |  |  |
+| G1-27 | CD14 R | AGTCAGTTCGTGGAGGCCG |  |  | Louise |  |  |
+| G1-28 | IL-2 F | ctaggccacagaattgaaagatct | amplifies genomic IL-2 DNA, control in genotyping PCRs for template tenability and quality |  | Louise |  |  |
+| G1-29 | IL-2 R | gtaggtggaaattctagcatcatcc | amplifies genomic IL-2 DNA, control in genotyping PCRs for template tenability and quality |  | Louise |  |  |
+| G1-30 | YZ 104 | ATG TGT GGT GGC CCA CAC TTG T | Originally used for genotyping E2Aflox mice. No longer in use. |  | Louise |  |  |
+| G1-31 | YZ 150 | ACATGGCTGAATATCGACGGT | Used for genotyping with E2Aflox F1 and E2Aflox R3: WT band 850bp, flox band 1kb |  | Louise |  |  |
+| G1-32 | YZ 164 | AAG AAC GAG GCC TTC CGT GTC | Originally used for genotyping E2Aflox mice. No longer in use. |  | Louise |  |  |
+| G1-33 | YZ 198 | GAT CCT CGT CTT CAT TGG TAC TG | Use with PGKneo and E2Aflox F to check E2A deletion. Deleted band 0.5kb, flox band 1.2kb |  | Louise |  |  |
+| G1-34 | 5' E2A | GAC GAG GAC GAG GAC GAC CTT CT | For genotyping E2A straight knock out mice: wt band 200bp, KO band 1.5kb |  | Louise |  |  |
+| G1-35 | 3' E2A | TGG TGC AGG ATG AGC AGT TT | For genotyping E2A straight knock out mice: wt band 200bp, KO band 1.5kb |  | Louise |  |  |
+| G1-36 | E2Aflox F | CTG CAC TCC GAA TTG TGC CTG | Use with PGKneo and YZ198 for to check E2A deletion. Deleted band 0.5kb, flox band 1.2kb |  | Louise |  |  |
+| G1-37 | E2-2 wt | GAAAGCCTCGTTGATATCTCG | For genotyping E2-2 straight knock-out mice: use wt and com together for WT band: 1.1kb |  | Louise |  |  |
+| G1-38 | E2-2 com | CAATGTTTCTCAAGCACAGGA | For genotyping E2-2 straight knock-out mice |  | Louise |  |  |
+| G1-39 | E2-2 mut | GTTGTGCCCAGTCATAGCCG | For genotyping E2-2 straight knock-out mice: use mut and com together for KO band: 1.6kb |  | Louise |  |  |
+| G1-40 | PGKNeo F | GCC CAT TCG ACC ACC AAG CG | Use with E2Aflox F and YZ198 for to check E2A deletion. Deleted band 0.5kb, flox band 1.2kb |  | Louise |  |  |
+| G1-41 | E47R 5' | cacaaccccgccgggcacatgtga |  |  | Louise |  |  |
+| G1-42 | E47R | tcacatgtgcccggcggggttgtg |  |  | Louise |  |  |
+| G1-43 | HEB wt | TCT GAC TTG CTG TTC TAG ACT | Use all three HEB primers together for genotyping HEB straight knock out mice: wt band 200bp, KO band 800bp |  | Louise |  |  |
+| G1-44 | HEB ko | TGG ATT CAT CGA CTG TGG | Use all three HEB primers together for genotyping HEB straight knock out mice: wt band 200bp, KO band 800bp |  | Louise |  |  |
+| G1-45 | HEB com | GAA GGA GAG GCG GAT GGC TAA | Use all three HEB primers together for genotyping HEB straight knock out mice: wt band 200bp, KO band 800bp |  | Louise |  |  |
+| G1-46 | Va14 geno F (iNKT) | CTAAGCACAGCACGCTGCACA  | For genotyping Valpha14 transgenic mice: product sixe is 135bp |  | Louise |  |  |
+| G1-47 | Va14 geno R (iNKT) | CAGGTATGACAATCAGCTGAGTCC | For genotyping Valpha14 transgenic mice: product sixe is 135bp |  | Louise |  |  |
+| G1-48 | IL7 BAC F | cgagctttctctgctgcac | For IL-7YFP reporter genotyping. Amplifies 5' junction of transgene. Band size: 597bp. Use with ExYFP 5' R2 |  | Louise |  |  |
+| G1-49 | ExYFP 5' R2 | tccagctcgaccaggatg | For IL-7YFP reporter genotyping. Amplifies 5' junction of transgene. Band size: 597bp. Use with IL7 BAC F |  | Louise |  |  |
+| G1-50 | YFP 3' F | aggagcgcaccatcttctt | For IL-7YFP reporter genotyping. Amplifies 3' junction of transgene. Band size: 566bp. Use with IL7-H2-5' R |  | Louise |  |  |
+| G1-51 | IL7-H2-5' R | cagagagcagcgcttacCAT | For IL-7YFP reporter genotyping. Amplifies 3' junction of transgene. Band size: 566bp. Use with YFP 3' F |  | Louise |  |  |
+| G1-52 | E2Aflox F1 | GCCACCAGCACATCGTGCCTA | genotyping E2Awt/fl mice. Use with YZ 150. WT band 850bp, flox band 1kb |  | Louise |  |  |
+| G1-53 | E2Aflox R3 | CCACATAAGAGGGCATGGAAG | genotyping E2Awt/fl mice. Use with YZ 150. WT band 850bp, flox band 1kb |  | Louise |  |  |
+| G1-54 | GzmB geno F1 | ACACAAGTACTCAGAAGACGTCA |  |  | Adam |  |  |
+| G1-55 | GzmB geno R1 | TGAACACTGGGGAACCACT |  |  | Adam |  |  |
+| G1-56 | Sip1 geno P1 F | GAGCAGGTAACCGCAAGTTCAAGTG |  |  | Adam |  |  |
+| G1-57 | Sip1 geno P2 R | CTGTAGGACCCAGAATGAGAGAAGC |  |  | Adam |  |  |
+| G1-58 | Sip1 geno P3 R | ATCGGAGTCTGTCATGTCATCTAGG |  |  | Adam |  |  |
+| G1-59 | Vbeta8 | CAT GGA GGC TGC AGT CAC CC |  |  | Kitty/Ed |  |  |
+| G1-60 | Cbeta2 | GTT TGT TTG CGA GCT CTG TTT TGA TGG CT |  |  | Kitty/Ed |  |  |
+| G1-61 | R055 | gcc ttt gac acc tac cag ga | ltao geno (L gene) |  | Kitty/Ed |  |  |
+| G1-62 | R056 | atg cgg agc agc tct agg t | ltao geno (L gene) |  | Kitty/Ed |  |  |
+| G1-63 | R095 | GTCTCAGGACAGCACCCTCT |  |  | Kitty/Ed |  |  |
+| G1-64 | R097 | GCCGAATATCATGGTGGAAA |  |  | Kitty/Ed |  |  |
+| G1-65 | TCRa WT-1 | ACTGTGCTGGACATGAAAGC | ltao geno (C gene) |  | Kitty/Ed |  |  |
+| G1-66 | TCRa WT-2 | CCATAGATTTGAGCCAGGAGG | ltao geno (C gene) |  | Kitty/Ed |  |  |
+| G1-67 | Neo-1 | CTT GGG TGG AGA GGC TAT TC | ltao geno (C gene) |  | Kitty/Ed |  |  |
+| G1-68 | Neo-2 | AGG TGA GAT GAC AGG AGA TC | ltao geno (C gene) |  | Kitty/Ed |  |  |
+| G1-69 | ExYFP 3'F | aggagcgcaccatcttctt |  |  | Cliff |  |  |
+| G1-70 | ExYFP 5'R | agatcagcttcagggtcagc |  |  | Cliff |  |  |
+| G1-71 | Id2 BAC F | gctctgggaattggaataagg |  |  | Cliff |  |  |
+| G1-72 | Id2 BAC R | CCAGTTCCTTGAGCTTGGAG |  |  | Cliff |  |  |
+| G1-73 | Neo 3'F | GAGCTTGCGGAACCCTTAAT |  |  | Cliff |  |  |
+| G1-74 | Id2 geno R2 | aagagtgacagctcgggaga |  |  | Cliff |  |  |
+| G1-75 | IL-7Ra 13 | CTTGGGTGGAGAGGCTAT |  |  | Cliff |  |  |
+| G1-76 | IL-7Ra 14 | AGGTGAGATGACAGGAGA |  |  | Cliff |  |  |
+| G1-77 | IL-7Ra 461 | CTGTGTCTGTATGACCCAC |  |  | Cliff |  |  |
+| G1-78 | IL-7Ra 462 | CAGGAGTTTCCTAAGCAAC |  |  | Cliff |  |  |
+| G1-79 | Tbet IMR 1717 | gcgcgaaggggccaccaaagaacggag |  |  | Cliff |  |  |
+| G1-80 | Tbet IMR 1718 | gactgaagccccgacccccactcctaag |  |  | Cliff |  |  |
+| G1-81 | Tbet IMR 1719 | tgggcatacaggaggcagcaacaaata |  |  | Cliff |  |  |
+| G2-1 | Id3-GFP F | CGCACTGTTTGCTGCTTTAGG |  |  | Cliff |  |  |
+| G2-2 | Id3-GFP R | GACTTGAAGAAGTCGTGCTGC |  |  | Cliff |  |  |
+| G2-3 | Id3 F | CGCACTGTTTGCTGCTTTAGG |  |  | Cliff |  |  |
+| G2-4 | Id3 R | CTCTGCCAGGACCACCTG |  |  | Cliff |  |  |
+| G2-5 | CD19 cre WT F | AATGTTGTGCTGCCATGCCTC | Genotyping CD19 Cre mice |  | Adam | 2010-05-05 00:00:00 |  |
+| G2-6 | CD19 cre WT R | GTCTGAAGCATTCCACCGGAA | Genotyping CD19 Cre mice |  | Adam | 2010-05-05 00:00:00 |  |
+| G2-7 | CD19 cre MUT F | CTGCGTGCAATCCATCTTGTT | Genotyping CD19 Cre mice |  | Adam | 2010-05-05 00:00:00 |  |
+| G2-8 | RagWT F | GAG GTT CCG CTA CGA CTC TG | Genotyping RAGko and wt mice (2 band PCR to distinguish homozygous and heterozygous) |  | Jamie/Ed | 2010-06-15 00:00:00 |  |
+| G2-9 | Rag R | CCG GAC AAG TTT TTC ATC GT | Genotyping RAGko and wt mice (2 band PCR to distinguish homozygous and heterozygous) |  | Jamie/Ed | 2010-06-15 00:00:00 |  |
+| G2-10 | RagKO F | TGG ATG TGG AAT GTG TGC GAG | Genotyping RAGko and wt mice (2 band PCR to distinguish homozygous and heterozygous) |  | Jamie/Ed | 2010-06-15 00:00:00 |  |
+| G2-11 | OT-I Ch3F | TCCCCTAAAAAGTGGAGCAA | Genotyping OTI mice (2 band PCR to distinguish homozygous and heterozygous) |  | Jamie/Ed |  |  |
+| G2-12 | OT-I Ch3R | TGTGTATCCAGGTCCAAAAGC | Genotyping OTI mice (2 band PCR to distinguish homozygous and heterozygous) |  | Jamie/Ed |  |  |
+| G2-13 | OT-I Vb5R | GACCTGCAGGTCGACCTCGA | Genotyping OTI mice (2 band PCR to distinguish homozygous and heterozygous) |  | Jamie/Ed |  |  |
+| G2-14 | rora wt F | TCT CCC TTC TCA GTC CTG ACA  | roralpha wt genotyping: WT band 318bp |  | Louise | 2010-06-10 00:00:00 |  |
+| G2-15 | rora wt R | TAT ATT CCA CCA CAC GGC AA | roralpha wt genotyping: WT band 318bp |  | Louise | 2010-06-10 00:00:00 |  |
+| G2-16 | rora ko F | GAT TGA AAG CTG ACT CGT TCC  | roralpha ko genotyping: KO band 450bp |  | Louise | 2010-06-10 00:00:00 |  |
+| G2-17 | rora ko R | CGT TTG GCA AAC TCC ACC  | roralpha ko genotyping: KO band 450bp |  | Louise | 2010-06-10 00:00:00 |  |
+| G2-18 | SRY F | agagatcagcaagcagctgg | Genotyping male mice (use for OTII) |  | Jamie  |  |  |
+| G2-19 | SRY R | TCTTGCCTGTATGTGATGGC | Genotyping male mice (use for OTII) |  | Jamie  |  |  |
+| G2-20 | VHL-2 | CTGACTTCCACTGATGCTTGTCACAG | VHL GENOTYPING PCR |  | andrew |  |  |
+| G2-21 | VHL-1 | CTAGGCACCGAGCTTAGAGGTTTGCG | VHL GENOTYPING PCR |  | andrew |  |  |
+| G2-22 | HIF#25 | GGAGCTATCTCTCTAGACC | HIF1a FLOX genotyping PCR |  | andrew |  |  |
+| G2-23 | HIF#24 | GCAGTTAAGAGCACTAGTTG | HIF1a FLOX genotyping PCR |  | andrew |  |  |
+| G2-24 | 3'CRE | CTAGAGCCTGTTTTGCACGTTC | Genotyping |  | andrew |  |  |
+| G2-25 | 5'CRE | TGCAAGTTGAATAACCGGAAA | Genotyping |  | andrew |  |  |
+| G2-26 | VHL 2 | CTGACTTCCACTGATGCTTGTCACAG      SAME AS 20 | VHL Flox Genotyping |  | andrew |  |  |
+| G2-27 | VHL 1 | CTAGGCACCGAGCTTAGAGGTTTGCG     SAME AS 21 | VHL Flox Genotyping |  | andrew |  |  |
+| G2-28 | PLZF Cre F | CGA TGC AAC GAG TGA TGA  | genotyping plzf cre mice |  | Louise |  |  |
+| G2-29 | PLZF Cre R | ATC GCT CGA CCA GTT TAG T | genotyping plzf cre mice |  | Louise |  |  |
+| G2-30 | CD1d common | AGG GCT GTG TAG AAC TCT GGC GCT A | genotyping CD1dko mice |  | Louise |  |  |
+| G2-31 | CD1d mutant | AGG GCC AGC TCA TTC CTC CAC T | genotyping CD1dko mice |  | Louise |  |  |
+| G2-32 | CD1d wild type | GCA GGC AGC GGA AGG TGT AAT T | genotyping CD1dko mice |  | Louise |  |  |
+| G2-33 | Id2flox F | TTGTGCATAATTAATCGCATCA | genotyping Id2flox mice |  | Louise | 2011-11-28 00:00:00 |  |
+| G2-34 | Id2flox R | TTGGGAAGTCACATTTGTAGTG | genotyping Id2flox mice |  | Louise | 2011-11-28 00:00:00 |  |
+| G2-35 | Id3flox F | GCTCTGAGGTCATAAATCCC | genotyping Id3flox mice |  | Louise | 2011-11-28 00:00:00 |  |
+| G2-36 | Id3flox R | CCATTTGGTTCTATGTATGCCCGTG | genotyping Id3flox mice |  | Louise | 2011-11-28 00:00:00 |  |
+| G2-37 | RAG1 mutant | CCG CTT CCA TTG CTC AGC GG |  |  |  |  |  |
+| G2-38 | RAG1 common | CCA GTA GAT ACC ATT GCG AAG |  |  |  |  |  |
+| G2-39 | RAG1 wild type | ccgct tccat tgctc agcgg |  |  |  |  |  |
+| G2-40 | ID3 mut 800 fd | CTT GTC CTT GGA GAT CAC |  |  |  |  |  |
+| G2-41 | ID3 mut PMC1_rev | ACT GCA TCT GCG TGT TCG |  |  |  |  |  |
+| G2-42 | ID3 WT fd | AAG GCC CTG AGC CCG GTG |  |  |  |  |  |
+| G2-43 | ID3 WT 698_rev | CTC TGC CAG GAC CAC CTG |  |  |  |  |  |
+| G2-44 | IL 10 Common |  |  |  |  |  |  |
+| G2-45 | IL10 Mut R |  |  |  |  |  |  |
+| G2-46 | IL10 WT R |  |  |  |  |  |  |
+| G2-47 | ID2_NF1_F | GCC ACC TAC ACT GAA GGG |  |  |  |  |  |
+| G2-48 | ID2_NF1_R | GCG CGC TTT TGG GAA GTC AC |  |  |  |  |  |
+| G2_49 | HIF2F_JAX | GAG AGC AGC TTC TCC TGG AA  | genotype hif2a flox mice. Wt gives 182 bp, Mutant gives ~220, and Het gives both bands. |  |  |  |  |
+| G2_50 | HIF2R_JAX | TGT AGG CAA GGA AAC CAA GG | genotype hif2a flox mice. Wt gives 182 bp, Mutant gives ~220, and Het gives both bands. |  |  |  |  |
+| G2-51 |  |  |  |  |  |  |  |
+| G2-52 |  |  |  |  |  |  |  |
+| G2-53 |  |  |  |  |  |  |  |
+| G2-54 |  |  |  |  |  |  |  |
+| G2-55 |  |  |  |  |  |  |  |
+| G2-56 |  |  |  |  |  |  |  |
+| G2-57 |  |  |  |  |  |  |  |
+| G2-58 |  |  |  |  |  |  |  |
+| G2-59 |  |  |  |  |  |  |  |
+| G2-60 |  |  |  |  |  |  |  |
+| G2-61 |  |  |  |  |  |  |  |
+| G2-62 |  |  |  |  |  |  |  |
+| G2-63 |  |  |  |  |  |  |  |
+| G2-64 |  |  |  |  |  |  |  |
+| G2-65 |  |  |  |  |  |  |  |
+| G2-66 |  |  |  |  |  |  |  |
+| G2-67 |  |  |  |  |  |  |  |
+| G2-68 |  |  |  |  |  |  |  |
+| G2-69 |  |  |  |  |  |  |  |
+| G2-70 |  |  |  |  |  |  |  |
+| G2-71 |  |  |  |  |  |  |  |
+| G2-72 |  |  |  |  |  |  |  |
+| G2-73 |  |  |  |  |  |  |  |
+| G2-74 |  |  |  |  |  |  |  |
+| G2-75 |  |  |  |  |  |  |  |
+| G2-76 |  |  |  |  |  |  |  |
+| G2-77 |  |  |  |  |  |  |  |
+| G2-78 |  |  |  |  |  |  |  |
+| G2-79 |  |  |  |  |  |  |  |
+| G2-80 |  |  |  |  |  |  |  |
+| G2-81 |  |  |  |  |  |  |  |
+|  | HIF2-380 | CAGGCAGTATGCCTGGCTAAT | original hif2a flox genotype primer. Not currently in use because users reported issue. Use G2-49 instead |  |  |  |  |
+|  | HIF2-381 | CTTCTTCCATCATCTGGGATC | original hif2a flox genotype primer. Not currently in use because users reported issue. Use G2-49 instead |  |  |  |  |
+|  | HIF2-430 | GCTAACACTGTACTGTCTGAA | original hif2a flox genotype primer. Not currently in use because users reported issue. Use G2-49 instead |  |  |  |  |
+|  | Input your primers below |  |  |  |  |  |  |
+|  | ID2_NF1_F | GCC ACC TAC ACT GAA GGG |  |  |  |  |  |
+|  | ID2_NF1_R | GCG CGC TTT TGG GAA GTC AC |  |  |  |  |  |
+|  | dlck Cre F | checked |  |  |  |  |  |
+|  | dlck Cre R | checked |  |  |  |  |  |
+|  | CD4Cre F | checked |  |  |  |  |  |
+|  | CD4Cre R | checked |  |  |  |  |  |
+|  | PLZF Cre F |  |  |  |  |  |  |
+|  | PLZF Cre R |  |  |  |  |  |  |
+|  | ER-CRE #1 |  |  |  |  |  |  |
+|  | ER-CRE #2 |  |  |  |  |  |  |
+|  | ER-CRE #3 |  |  |  |  |  |  |
+|  | Id3flox F |  |  |  |  |  |  |
+|  | Id3flox R |  |  |  |  |  |  |
+|  | E2-2 wt |  |  |  |  |  |  |
+|  | E2-2 com |  |  |  |  |  |  |
+|  | E2-2 mut |  |  |  |  |  |  |
+|  | IFCommon loxp_F |  |  |  |  |  |  |
+|  | 2/4F usp1 Intron2-3FA |  |  |  |  |  |  |
+|  | 2R Common enz-R |  |  |  |  |  |  |
+|  | 3F common - 3F |  |  |  |  |  |  |
+|  | 3/4R USP1 Intron 3-4RA |  |  |  |  |  |  |
+|  | VHL-2 | checked |  |  |  |  |  |
+|  | VHL-1 | checked |  |  |  |  |  |
+|  | HIF#25 | checked |  |  |  |  |  |
+|  | HIF#24 | checked |  |  |  |  |  |
+|  | HIF2F_JAX | checked |  |  |  |  |  |
+|  | HIF2R_JAX | checked |  |  |  |  |  |
+|  | Chovash primer2 + primer3 |  |  |  |  |  |  |
+|  | Id2KI_Cre_F_3 |  |  |  |  |  |  |
+|  | Id2KI_Cre_R_3 |  |  |  |  |  |  |
+|  | Id2/3_Geno_R_2 |  |  |  |  |  |  |
+|  | Id2/3_Geno_WT_F_2 |  |  |  |  |  |  |
+
+## Genotyping(for printing)
+
+| G1-1 | Id2 F | G1-36 | E2Aflox F | G1-71 | Id2 BAC F | G2-24 | 3'CRE |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| G1-2 | Id2 R | G1-37 | E2-2 wt | G1-72 | Id2 BAC R | G2-25 | 5'CRE |  |  |
+| G1-3 | BIM 1851 | G1-38 | E2-2 com | G1-73 | Neo 3'F | G2-26 | VHL 2 |  |  |
+| G1-4 | BIM 1852 | G1-39 | E2-2 mut | G1-74 | Id2 geno R2 | G2-27 | VHL 1 |  |  |
+| G1-5 | BIM 1853 | G1-40 | PGKNeo F | G1-75 | IL-7Ra 13 | G2-28 | PLZF Cre F |  |  |
+| G1-6 | Va2 F | G1-41 | E47R 5' | G1-76 | IL-7Ra 14 | G2-29 | PLZF Cre R |  |  |
+| G1-7 | Va2 R | G1-42 | E47R | G1-77 | IL-7Ra 461 | G2-30 | CD1d common |  |  |
+| G1-8 | Vb5 F | G1-43 | HEB wt | G1-78 | IL-7Ra 462 | G2-31 | CD1d mutant |  |  |
+| G1-9 | Vb5 R | G1-44 | HEB ko | G1-79 | Tbet IMR 1717 | G2-32 | CD1d wild type |  |  |
+| G1-10 | 1348 | G1-45 | HEB com | G1-80 | Tbet IMR 1718 | G2-33 | Id2flox F |  |  |
+| G1-11 | 1349 | G1-46 | Va14 geno F (iNKT) | G1-81 | Tbet IMR 1719 | G2-34 | Id2flox R |  |  |
+| G1-12 | Id2 ProF | G1-47 | Va14 geno R (iNKT) |  |  | G2-35 | Id3flox F |  |  |
+| G1-13 | Id2 LoxP-F | G1-48 | IL7 BAC F | G2-1 | Id3-GFP F | G2-36 | Id3flox R |  |  |
+| G1-14 | Id2 LoxP-R | G1-49 | ExYFP 5' R2 | G2-2 | Id3-GFP R | G2-37 | RAG1 mutant |  |  |
+| G1-15 | Id2 Neo-F | G1-50 | YFP 3' F | G2-3 | Id3 F | G2-38 | RAG1 common |  |  |
+| G1-16 | Cre F | G1-51 | IL7-H2-5' R | G2-4 | Id3 R | G2-39 | RAG1 wild type |  |  |
+| G1-17 | Cre R | G1-52 | E2Aflox F1 | G2-5 | CD19 cre WT F | G2-40 | ID3 mut 800 fd |  |  |
+| G1-18 | RFP F | G1-53 | E2Aflox R3 | G2-6 | CD19 cre WT R | G2-41 | ID3 mut PMC1_rev |  |  |
+| G1-19 | RFP R | G1-54 | GzmB geno F1 | G2-7 | CD19 cre MUT F | G2-42 | ID3 WT fd |  |  |
+| G1-20 | dlck Cre F | G1-55 | GzmB geno R1 | G2-8 | RagWT F | G2-43 | ID3 WT 698_rev |  |  |
+| G1-21 | dlck Cre R | G1-56 | Sip1 geno P1 F | G2-9 | Rag R | G2-44 | IL 10 Common |  |  |
+| G1-22 | CD4Cre F | G1-57 | Sip1 geno P2 R | G2-10 | RagKO F | G2-45 | IL10 Mut R |  |  |
+| G1-23 | CD4Cre R | G1-58 | Sip1 geno P3 R | G2-11 | OT-I Ch3F | G2-46 | IL10 WT R |  |  |
+| G1-24 | HEBflox F | G1-59 | Vbeta8 | G2-12 | OT-I Ch3R | G2-47 | ID2_NF1_F |  |  |
+| G1-25 | HEBflox R | G1-60 | Cbeta2 | G2-13 | OT-I Vb5R | G2-48 | ID2_NF1_R |  |  |
+| G1-26 | CD14 F | G1-61 | R055 | G2-14 | rora wt F | G2_49 | HIF2F_JAX |  |  |
+| G1-27 | CD14 R | G1-62 | R056 | G2-15 | rora wt R | G2_50 | HIF2R_JAX |  |  |
+| G1-28 | IL-2 F | G1-63 | R095 | G2-16 | rora ko F |  |  |  |  |
+| G1-29 | IL-2 R | G1-64 | R097 | G2-17 | rora ko R |  |  |  |  |
+| G1-30 | YZ 104 | G1-65 | TCRa WT-1 | G2-18 | SRY F |  |  |  |  |
+| G1-31 | YZ 150 | G1-66 | TCRa WT-2 | G2-19 | SRY R |  |  |  |  |
+| G1-32 | YZ 164 | G1-67 | Neo-1 | G2-20 | VHL-2 |  |  |  |  |
+| G1-33 | YZ 198 | G1-68 | Neo-2 | G2-21 | VHL-1 |  |  |  |  |
+| G1-34 | 5' E2A | G1-69 | ExYFP 3'F | G2-22 | HIF#25 |  |  |  |  |
+| G1-35 | 3' E2A | G1-70 | ExYFP 5'R | G2-23 | HIF#24 |  |  |  |  |
+
+## ChIP
+
+| Location | Name | Sequence | Use | Tm | User | Last Ordered | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Ch1-1 | bcl2 F 1836 | ACGCTCTCCACACACATGAC | from Chip seq data (Ebox), product 150 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-2 | bcl2 R 1836 | CGCAGAGATGTCCAGTCAGC | from Chip seq data (Ebox), product 150 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-3 | bcl2 (2) F | TCTACTTCCTCCGCAATGCT | runs over secound E box in 5'UTR product 172 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-4 | bcl2 (2) R | CTTCAAGTGCATTCAAGCAAA | runs over secound E box in 5'UTR product 172 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-5 | bcl2 157 F | TTCTTGGATGAAGGGGTGTC | Ebox site in bcl2 gene at position 108609621 on chromosome 1 (E2A/E47) | 59.9 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-6 | bcl2 157 R | AGCATTGCGGAGGAAGTAGA | Ebox site in bcl2 gene at position 108609621 on chromosome 1 (E2A/E47) | 59.98 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-7 | bcl2 322 F | TCTACTTCCTCCGCAATGCT | Ebox site in bcl2 gene at position 108609786 on chromosome 1 (E2A/E12/E47) | 59.98 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-8 | bcl2 322 R | CCATGGACGCGTTTGAAATA | Ebox site in bcl2 gene at position 108609786 on chromosome 1 (E2A/E12/E47) |  | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-9 | bcl2 787 F | TCAGGAGGGTTTCCAGATTG | Ebox site in bcl2 gene at position 108610251 on chromosome 1 (E2A/E12) | 60.04 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-10 | bcl2 787 R | CTGCAAATGCTGGACTGAAA | Ebox site in bcl2 gene at position 108610251 on chromosome 1 (E2A/E12) | 59.99 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-11 | bcl2 F 285844 | CCAGATGTACAGGTGGCAAA | from Chip seq data (Ebox), product 153 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-12 | bcl2 R 285844 | CTGAAGGGCTACAGCAGACA | from Chip seq data (Ebox), product 153 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-13 | bclxl (1) F | ACGGCAAAGGCTCCCATT | run over first E box in 5'UTR, product size 152 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-14 | bclxl (1) R | ATACTTCCCAGCCGCAAAAC | run over first E box in 5'UTR, product size 152 bp |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-15 | bclxl 0160 F | GGAGAGAAAGTCGACCACCA | Ebox site in bclxl gene in the 3'UTR at position 0160 (E2A/E12/E47) | 60.24 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-16 | bclxl 0160 R | TGGTACCTGGAGGAGGAATG | Ebox site in bclxl gene in the 3'UTR at position 0160 (E2A/E12/E47) | 59.92 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-17 | bclxl 1613 F | CTCTCTGGAAGGAGGGGTCT | Ebox site in bclxl gene in the 3'UTR at position 1613 (E2A/E12/E47) | 59.8 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-18 | bclxl 1613 R | AAACGCCCTAGTGTCTGGAA | Ebox site in bclxl gene in the 3'UTR at position 1613 (E2A/E12/E47) | 59.73 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-19 | bclxl 2247/2275 F | GGCTGTGGTTCACAGAGTCA | 2 Ebox sites in bclxl gene at positions 152606473 and 152606501 on chromosome 2 (E2A/E12/E47) | 59.87 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-20 | bclxl 2247/2275 R | GAGACTGACAGCCTGATGCTC | 2 Ebox sites in bclxl gene at positions 152606473 and 152606501 on chromosome 2 (E2A/E12/E47) | 60.16 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-21 | bclxl 2834 F | CTCTTCTTCCTGCCCTTCCT | Ebox site in bclxl gene at position 152607060 on chromosome 2 (E2A/E12) | 59.95 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-22 | bclxl 2834 R | ACCATGACTGAGGGACCAAT | Ebox site in bclxl gene at position 152607060 on chromosome 2 (E2A/E12) | 59.23 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-23 | bim 0098 F | GGAGAGAAAGTCGACCACCA | Ebox site in bcl2l11 gene at position 15255762 on chromosome 2 in 5'UTR/gene (E2A) | 60.24 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-24 | bim 0098 R | TGGTACCTGGAGGAGGAATG | Ebox site in bcl2l11 gene at position 15255762 on chromosome 2 in 5'UTR/gene (E2A) | 59.92 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-25 | bim 0789 F | gtgttgccctctctcctctg | Ebox site in bcl2l11 gene at position 127983984 on chromosome 2 in 3'UTR (E2A) | 59.99 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-26 | bim 0789 R | gggaagcaggaaaagtgtga | Ebox site in bcl2l11 gene at position 127983984 on chromosome 2 in 3'UTR (E2A) | 60.23 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-27 | bim 1557 F | CTCTCTGGAAGGAGGGGTCT | Ebox site in bcl2l11 gene at position 152657221 on chromosome 2 in 5'UTR/gene (E2A/E12/E47) | 59.8 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-28 | bim 1557 R | AAACGCCCTAGTGTCTGGAA | Ebox site in bcl2l11 gene at position 152657221 on chromosome 2 in 5'UTR/gene (E2A/E12/E47) | 59.73 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-29 | bim 2900 F | attgatgaattgggggaagg | Ebox site in bcl2l11 gene at position 127986884 on chromosome 2 in 3'UTR (E2A) | 60.88 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-30 | bim 2900 R | caaagaaaggtaaagggaacaca | Ebox site in bcl2l11 gene at position 127986884 on chromosome 2 in 3'UTR (E2A) | 59.56 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-31 | bim 3450 F | ctgccggtgagataccctaa | Ebox site in bcl2l11 gene at position 127987434 on chromosome 2 in 3'UTR (E2A) | 60.09 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-32 | bim 3450 R | gcccttctcttacccaggac | Ebox site in bcl2l11 gene at position 127987434 on chromosome 2 in 3'UTR (E2A) | 60.07 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-33 | bim 3453 F | ctgccggtgagataccctaa | Ebox site in bcl2l11 gene at position 127987437 on chromosome 2 in 3'UTR (E2A) | 60.09 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-34 | bim 3453 R | cctcaagaggcagcaggata | Ebox site in bcl2l11 gene at position 127987437 on chromosome 2 in 3'UTR (E2A) | 60.5 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-35 | bim 3455 F | gcagctggcttctgagaaaa | Ebox site in bcl2l11 gene at position 127987439 on chromosome 2 in 3'UTR (E2A) | 60.8 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-36 | bim 3455 R | cttacccaggacagccattc | Ebox site in bcl2l11 gene at position 127987439 on chromosome 2 in 3'UTR (E2A) | 59.55 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-37 | bim 3651 F | gctggtgggacctgtttcta | Ebox site in bcl2l11 gene at position 127987635 on chromosome 2 in 3'UTR (E2A) | 60.11 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-38 | bim 3651 R | gctggcctaaagcagtgaac | Ebox site in bcl2l11 gene at position 127987635 on chromosome 2 in 3'UTR (E2A) | 60.02 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-39 | bim 3653 F | gctggtgggacctgtttcta | Ebox site in bcl2l11 gene at position 127987637 on chromosome 2 in 3'UTR (E2A) | 60.11 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-40 | bim 3653 R | ttcagtgagccatcttgacg | Ebox site in bcl2l11 gene at position 127987637 on chromosome 2 in 3'UTR (E2A) | 59.98 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-41 | bim 3757 F | GGGTGAGTGGGAGGAGAGA | Ebox site in bcl2l11 gene at position 127998258 on chromosome 2 in 3'UTR (E2A) | 60.19 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-42 | bim 3757 R | GATACGGGTTAGCCGTGAAA | Ebox site in bcl2l11 gene at position 127998258 on chromosome 2 in 3'UTR (E2A) |  | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-43 | bim 3907 F | cgtcaagatggctcactgaa | Ebox site in bcl2l11 gene at position 127987891 on chromosome 2 in 3'UTR (E2A) | 59.98 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-44 | bim 3907 R | aacttgagggtgctttgtgc | Ebox site in bcl2l11 gene at position 127987891 on chromosome 2 in 3'UTR (E2A) | 60.3 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-45 | bim 4118 F | cctcaagttcccagcaaagt | Ebox site in bcl2l11 gene at position 127988102 on chromosome 2 in 3'UTR (E2A) | 59.33 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-46 | bim 4118 R | tgcacaggtacagtggcaat | Ebox site in bcl2l11 gene at position 127988102 on chromosome 2 in 3'UTR (E2A) | 60.18 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-47 | bim 6507 F | CACCGTTGTCCACACTCATC | Ebox site in bcl2l11 gene at position 128005036 on chromosome 2 in 3'UTR (E2A) | 60 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-48 | bim 6507 R | ATGGGCACTGGTAAGAGCTG | Ebox site in bcl2l11 gene at position 128005036 on chromosome 2 in 3'UTR (E2A) | 60.28 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-49 | bim 8317 F | TTAAGGAGCGTTGGCTGATT | Ebox site in blc2l11 gene at position 127992301 on chromosome 2 in 3'UTR (E2A) | 59.85 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-50 | bim 8317 R | AGACGTTCACAGGCAGAAGC | Ebox site in blc2l11 gene at position 127992301 on chromosome 2 in 3'UTR (E2A) | 60.6 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-51 | bim 25749 F | GGGTTTCATTTTGGGGCTAT | Ebox site in blc2l11 gene at position 128024278 on chromosome 2 (E2A) | 60.02 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-52 | bim 25749 R | AAGTGCAGGAGACGGAAAGA | Ebox site in blc2l11 gene at position 128024278 on chromosome 2 (E2A) | 59.99 | Jamie | 2009-11-09 00:00:00 | Pulldown with E2A/HEB, qPCR at 60C |
+| Ch1-53 | Cd122 pro F |  |  |  |  |  |  |
+| Ch1-54 | Cd122 pro R |  |  |  |  |  |  |
+| Ch1-55 | cxcr6 3' utr F | ggacagctgcagcattacaa | Ebox site in cxcr6 gene |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-56 | cxcr6 3' utr R | cttcacatcctttgcccatt | Ebox site in cxcr6 gene |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-57 | cxcr6 39315 F | CTGGTGGTCCTTAGCTTTGC | Ebox site in cxcr6 gene |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-58 | cxcr6 39315 R | GCAGCTGCCTGGGATGAGAA | Ebox site in cxcr6 gene |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-59 | cxcr6 42418 F | CCTTCATGTCCATGTCCCCT | Ebox site in cxcr6 gene |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-60 | cxcr6 42418 R | CCAGGCTGGAGGTAATGGCC | Ebox site in cxcr6 gene |  | Louise | 2009-09-04 00:00:00 | Pulldown with E2A/HEB, qPCR at 55C |
+| Ch1-61 | EcadChIP1 F | CATGCTGGGCTACATAGCAA |  |  | Adam |  |  |
+| Ch1-62 | EcadChIP1 R | TGGGCCTGGAATTGTCTTAG |  |  | Adam |  |  |
+| Ch1-63 | Id2-2243 F | TTTGGGGCAGCTTATAATGG |  |  |  |  |  |
+| Ch1-64 | Id2-2243 R | CTTACTGCAGCTGGGCACG |  |  |  |  |  |
+| Ch1-65 | Id2 P4 F | aacagaggcgagtcgtcaat |  |  |  |  |  |
+| Ch1-66 | Id2 P4 R | aatgcagaatccaggcaaag |  |  |  |  |  |
+| Ch1-67 | Id2 pro2 F | ggcagagtccttctgcagtc |  |  |  |  |  |
+| Ch1-68 | Id2 pro2 R | tctctgacctccacGTGACA |  |  |  |  |  |
+| Ch1-69 | Id2 Exon 1 F | ctccaagctcaaggaactgg |  |  |  |  |  |
+| Ch1-70 | Id2 Exon 1 R | aggctgacgatagtgggatg |  |  |  |  |  |
+| Ch1-71 | Id2 Intron F | tctcccgagcTGTCACtctt |  |  |  |  |  |
+| Ch1-72 | Id2 Intron R | ctacagcgcagatccagatg |  |  |  |  |  |
+| Ch1-73 | Id2 pro F | tgtgcaaaccccactaatga |  |  |  |  |  |
+| Ch1-74 | Id2 pro R | gccttctcggaaactcaGTG |  |  |  |  |  |
+| Ch1-75 | IL2 2kb ChIP F | CATGCAGAGAGTTTTTTGTTGTTGTTTTCTAG |  |  | Adam |  |  |
+| Ch1-76 | IL2 2kb ChIP R | GCCTAAAGTCTCTCACAAAGAACAGA |  |  | Adam |  |  |
+| Ch1-77 | IL2 prox ChIP F | CACAGGTAGACTCTTTGAAAATATGTGTAA |  |  | Adam |  |  |
+| Ch1-78 | IL2 prox ChIP R | CATGGGAGGCAATTTATACTGTTAATG |  |  | Adam |  |  |
+| Ch1-79 | IL7i F1 | tgcttagatgcttcctattgaa |  |  |  |  |  |
+| Ch1-80 | IL7i R1 | ttgcacagaggtttcatttac |  |  |  |  |  |
+| Ch1-81 | IL7i F2 |  |  |  |  |  |  |
+| Ch2-1 | IL7i R2 |  |  |  |  |  |  |
+| Ch2-2 | IL7p F1 | tcccgcactctatttagatttc |  |  |  |  |  |
+| Ch2-3 | IL7p R1 | tcatttaagtggaccatcattt |  |  |  |  |  |
+| Ch2-4 | IL7p F2 |  |  |  |  |  |  |
+| Ch2-5 | IL7p R2 |  |  |  |  |  |  |
+| Ch2-6 | IFNg prom ChIP F1 | CGTAATCCCGAGGAGCCTTC |  |  |  |  |  |
+| Ch2-7 | IFNg prom ChIP R1 | CTTCAATGACTGTGCCGTGG |  |  |  |  |  |
+| Ch2-8 | IgHie F | tcagaaccagaacacctgcagca |  |  | Jamie |  |  |
+| Ch2-9 | IgHie R | ggtggggctggacagagtgtttc |  |  | Jamie |  |  |
+| Ch2-10 | rorc (1) F | TCATACCCAATGCACCTCTG |  |  | Louise |  |  |
+| Ch2-11 | rorc (1) R | CAGTGGAGGTGGGGTGAA |  |  | Louise |  |  |
+| Ch2-12 | rorc (2) F | ACCTGTGTGGAGCAGAGCTT |  |  | Louise |  |  |
+| Ch2-13 | rorc (2) R | TGCCCCCATTCACTTACTTC |  |  | Louise |  |  |
+| Ch2-14 | rorc 628 F | ACCTGGGAGAGAAGATGCAG |  |  | Louise |  |  |
+| Ch2-15 | rorc 628 R | TTCCCCAGTTCCTTTCTGTG |  |  | Louise |  |  |
+| Ch2-16 | rorc 3895 F | TGGTTTCTGCGGTTTTAAGG |  |  | Louise |  |  |
+| Ch2-17 | rorc 3895 R | CACGTGCCCAGTCCTCTTAT |  |  | Louise |  |  |
+| Ch2-18 | ChIP Stat 1 F | CAGGATGGAGGTTCTCAACCTG |  |  |  |  |  |
+| Ch2-19 | ChIP Stat 1 R | GTGAACGGATATCTGCAGCTCC |  |  |  |  |  |
+| Ch2-20 | ChIP Tbx1 F | ACCAAATCAGACCACGAGGA |  |  |  |  |  |
+| Ch2-21 | ChIP Tbx1 R | ACTCTGTCTTGGCTGAACTGC |  |  |  |  |  |
+| Ch2-22 | ChIP Tbx2 F | TGACCTGGATGTGAAGGAAA |  |  |  |  |  |
+| Ch2-23 | ChIP Tbx2 R | ACTGAAGCTGGTGCAAAGGT |  |  |  |  |  |
+| Ch2-24 | ChIP Tbx3 F | TTGAAGCACCCGTGTCAGTA |  |  |  |  |  |
+| Ch2-25 | ChIP Tbx3 R | TGAcctaaaattaaatgaatgcaaaa |  |  |  |  |  |
+| Ch2-26 | ChIP Tbx4 F | GGTGGTTTTAAAAGCCTTATGC |  |  |  |  |  |
+| Ch2-27 | ChIP Tbx4 R | GGAACTGCTGCCTAGTCGTC |  |  |  |  |  |
+| Ch2-28 | Bim Ebox1 F | CTCTGCCCATTGGTTACGAT | Ebox site at chr2:127,953,259-127,953,272 |  |  |  |  |
+| Ch2-29 | Bim Ebox1 R | GATCATCCTCCGCCTCCT | Ebox site at chr2:127,953,259-127,953,272 |  |  |  |  |
+| Ch2-30 | Bim Ebox2 F | TGACGCACTTACTACGACTG | Ebox site at chr2:127,953,928-127,953,941 |  |  |  |  |
+| Ch2-31 | Bim Ebox2 R | ACGTCTACATTTCGTGCTTT | Ebox site at chr2:127,953,928-127,953,941 |  |  |  |  |
+| Ch2-32 | Bim Ebox3 F | TGCTGAAGATAATCGTTTTGT | Ebox site at chr2:127,954,360-127,954,379 |  |  |  |  |
+| Ch2-33 | Bim Ebox3 R | CAATTGTCCACCTTCTCTGT | Ebox site at chr2:127,954,360-127,954,379 |  |  |  |  |
+| Ch2-34 | Bim Ebox4 F | GTGACAAGTCAACACAAACC | Ebox site at chr2: 127,954,773-127,954,786 |  |  |  |  |
+| Ch2-35 | Bim Ebox4 R | AAACCGATATTCAAACAAGC | Ebox site at chr2: 127,954,773-127,954,786 |  |  |  |  |
+| Ch2-36 | Bim Ebox5 F | TTCTATCCGTAAGCTCTGGA | Ebox site at chr2:127,956,558-127,956,577 |  |  |  |  |
+| Ch2-37 | Bim Ebox5 R | CAGTGGTGGACAAAAACTCT | Ebox site at chr2:127,956,558-127,956,577 |  |  |  |  |
+| Ch2-38 | Bim Ebox6 F | CGATAGCAGCCTCCATATAC | Ebox Site at chr2:127,957,262-127,957,275 |  |  |  |  |
+| Ch2-39 | Bim Ebox6 R | CAAAGCTGAAGACATTCACA | Ebox Site at chr2:127,957,262-127,957,275 |  |  |  |  |
+| Ch2-40 | Bim Ebox7 F | TAAACAAGCAAAAAGGGAAA | 3 Ebox sites at chr2:127,960,798-127,960,815/127,960,863-127,960,893 |  |  |  |  |
+| Ch2-41 | Bim Ebox7 R | TCTCGAGACTGTTCTTTTCAA | 3 Ebox sites at chr2:127,960,798-127,960,815/127,960,863-127,960,893 |  |  |  |  |
+| Ch2-42 | Bim Ebox8 F | ACCATTAACTGTCCAAGCAC | Ebox site at chr2:127,963,733-127,963,747 |  |  |  |  |
+| Ch2-43 | Bim Ebox8 R | GGACAGACAACGAAAACTTC | Ebox site at chr2:127,963,733-127,963,747 |  |  |  |  |
+| Ch2-44 | Bim Ebox9 F | ATGCACCTGTATATGCAAAA | Ebox site at chr2:127,963,733-127,963,747 |  |  |  |  |
+| Ch2-45 | Bim Ebox9 R | CAGACTACCTGGTTTCTTGG | Ebox site at chr2:127,963,733-127,963,747 |  |  |  |  |
+| Ch2-46 | Bim Ebox10 F | ATTAGCTCAGGGCTACATGA | 2 Ebox sites at chr2:127,965,771-127,965,791/127,965,801-127,965,814 |  |  |  |  |
+| Ch2-47 | Bim Ebox10 R | AGGTTTCCCTCAGTCTGTTT | 2 Ebox sites at chr2:127,965,771-127,965,791/127,965,801-127,965,814 |  |  |  |  |
+| Ch2-48 | Bim Ebox 11 F | TCTGAGTTTGAGTCCAGCTT | Ebox site at chr2:127,969,567-127,969,580 |  |  |  |  |
+| Ch2-49 | Bim Ebox 11 R | TTAGCCCAAACTGTAATTGG | Ebox site at chr2:127,969,567-127,969,580 |  |  |  |  |
+| Ch2-50 | Bim Ebox 12 F | ACTCTAGTGTCGGATGCTGA | Ebox site at chr2:127,978,471-127,978,478 |  |  |  |  |
+| Ch2-51 | Bim Ebox 12 R | CAGTGCTTCAGTCTCCTCTC | Ebox site at chr2:127,978,471-127,978,478 |  |  |  |  |
+| Ch2-52 | Bim Ebox 13 F  | TGATCTACACCACACACCAC | 2 Ebox sites at chr2:127,978,677-127,978,700/127,978,745-127,978,764 |  |  |  |  |
+| Ch2-53 | Bim Ebox 13 R | TCTTTGCATCTTCATTTCCT | 2 Ebox sites at chr2:127,978,677-127,978,700/127,978,745-127,978,764 |  |  |  |  |
+| Ch2-54 | Bim Ebox 14 F | ATTGCCGAATCTGATGTAAG | 3 Ebox sites at chr2:127,982,064-127,982,083/127,982,127-127,982,146/127,982,207-127,982,220 |  |  |  |  |
+| Ch2-55 | Bim Ebox 14 R | GTGAGAGTTGGGGGAAGT | 3 Ebox sites at chr2:127,982,064-127,982,083/127,982,127-127,982,146/127,982,207-127,982,220 |  |  |  |  |
+| Ch2-56 | Bim Ebox 15 F | GTCAACCTCAAATGGTTAGC | Ebox site at chr2:127,982,466-127,982,975 |  |  |  |  |
+| Ch2-57 | Bim Ebox 15 R | ACAGTCAACACACCCAGAAT | Ebox site at chr2:127,982,466-127,982,975 |  |  |  |  |
+| Ch2-58 | Bim Ebox 16 F | TGACATAAGGCTGATTTCCT | Ebox site at chr2:127,982,962-127,982,975 |  |  |  |  |
+| Ch2-59 | Bim Ebox 16 R | GGACTGTCTGTTCCTTCTCA | Ebox site at chr2:127,982,962-127,982,975 |  |  |  |  |
+| Ch2-60 | Bim Ebox 17 F | GCCTCTTTGAGTTTCCTTTT | Ebox site at chr2:127,984,772-127,984,785 |  |  |  |  |
+| Ch2-61 | Bim Ebox 17 R | GGAAAAGTGTGAATTTCTGC | Ebox site at chr2:127,984,772-127,984,785 |  |  |  |  |
+| Ch2-62 | Id2-STAT-CHIP-R | CGC TTT TGG GAA GTC ACA TT |  |  |  |  |  |
+| Ch2-63 | Id2-STAT-CHIP-F | TGT GCA AAC CCC ACT AAT GA |  |  |  |  |  |
+| Ch2-64 | Il2Ra R | CTGGAGGTTACATCTCTCTGAC | Chip-seq confirmed ebox in Il-2RA |  |  |  |  |
+| Ch2-65 | Il2Ra F | TGGGTGCTCTAACTTCACAG | Chip-seq confirmed ebox in Il-2RA |  |  |  |  |
+| Ch2-66 | Cxcr3Ebox3 R2 | CTGTGACTAACAAACTCTTAGGA | Ebox 4.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-67 | Cxcr3Ebox3 R1 | ATTGACCTGGAATTCTGTGAC | Ebox 4.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-68 | Cxcr3Ebox3 F2 | GAATAATTGAGCTTTTCTGAAAGT | Ebox 4.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-69 | Cxcr3Ebox3 F1 | CCTGTCCTTAAAGTAAGAATAGA | Ebox 4.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-70 | Cxcr3Ebox2 R3 | CACACCTTGACCACTGATGAGG | Ebox 3kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-71 | Cxcr3Ebox2 R2 | GCAGCTTCACTCTGACTAACT | Ebox 3kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-72 | Cxcr3Ebox2 R1 | CTAACTTCCTCCTCAGCCCTCT | Ebox 3kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-73 | Cxcr3Ebox2 F3 | TGGGAGAGAGAAGGAAATGACC | Ebox 3kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-74 | Cxcr3Ebox2 F2 | AAATGACCCCTGTTCCTGATGA | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-75 | Cxcr3Ebox2 F1 | GCACAAAGGTGTCTATCTCCC | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-76 | Cxcr3Ebox3 R3 | CAGGAGCATGCCATCTCAAT | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-77 | Cxcr3Ebox3 R2 | TGCCATCTCAATAAAGTTGGAC | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-78 | Cxcr3Ebox3 R1 | ATCTCAATAAAGTTGGACTGAATT | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-79 | Cxcr3Ebox3 F3 | GTGCCAAGTCATCTACATCCTG | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-80 | Cxcr3Ebox3 F2 | CATCTACATCCTGACTGGCGG | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch2-81 | Cxcr3Ebox3 F1 | GGCCCTCAGGAATCCTTAGT | Ebox 1.5kb upstream of Cxcr3 |  |  |  |  |
+| Ch3-1 | -4.4kb Bcl-6 R | GTACACCTGACCATGCAGAAGC | chip of Ebox 4.4 kb upstream of Bcl-6 |  |  |  |  |
+| Ch3-2 | -4.4kb Bcl-6 F | TGCACCAAAGTGTCTGTCTTC | chip of Ebox 4.4 kb upstream of Bcl-6 |  |  |  |  |
+| Ch3-3 | E2A@Id3 promoter 2 F | gcggcgatgaaattgttatt | CAGCTG site in Id3 promoter | 55 |  |  |  |
+| Ch3-4 | E2A@Id3 promoter 2 R | gcttgctgcataaacccttt | CAGCTG site in Id3 promoter | 55 |  |  |  |
+| Ch3-5 | E2A@zbtb16 5'UTR F2 | GGGTTCTCTGGTTGCTGCT | CAGCTG site in zbtb16 5'UTR product size: 215bp run at 60C 30 sec annealing |  |  |  |  |
+| Ch3-6 | E2A@zbtb16 5'UTR R2 | agcccttgcctgtacaaaga | CAGCTG site in zbtb16 5'UTR product size: 215bp run at 60C 30 sec annealing |  |  |  |  |
+| Ch3-7 | E2A@zbtb16 ist intron F2 | caccggaatgcacaggag | CAGCTG site in zbtb16 1st intron product size: 225bp run at 60C 30 sec annealing |  |  |  |  |
+| Ch3-8 | E2A@zbtb16 ist intron R2 | gggagaaaaggatgcacaaa | CAGCTG site in zbtb16 1st intron product size: 225bp run at 60C 30 sec annealing |  |  |  |  |
+| Ch3-9 | E2A@tbx21 5'UTR F2 | gggacccaaggagcttcata | CAGCTG site in tbx21 5'UTR product size: 197bp run at 60C 30 sec annealing |  |  |  |  |
+| Ch3-10 | E2A@tbx21 5'UTR R2 | CGAGGGTCCTTAGGGCTG | CAGCTG site in tbx21 5'UTR product size: 197bp run at 60C 30 sec annealing |  |  |  |  |
+| Ch3-11 |  |  |  |  |  |  |  |
+| Ch3-12 |  |  |  |  |  |  |  |
+| Ch3-13 |  |  |  |  |  |  |  |
+| Ch3-14 |  |  |  |  |  |  |  |
+| Ch3-15 |  |  |  |  |  |  |  |
+| Ch3-16 |  |  |  |  |  |  |  |
+| Ch3-17 | CHIP-Nsg2p-Ebx-F | TTGTCCTATGCAGGGGTTGT | E box site in the promoter of Nsg2 |  |  |  |  |
+| Ch3-18 | CHIP-Nsg2p-Ebx-R | CGGAGCTTCTGAGAACGAG |  |  |  |  |  |
+| Ch3-19 | CHIP-Nsg2UTR-Ebx-F | TGGCTGAGAGGAATCTAGGC | Nsg2 3'UTR (~50kb downstream) |  |  |  |  |
+| Ch3-20 | CHIP-Nsg2UTR-Ebx-R | TGGGGAGTGGGTGAATTTTA |  |  |  |  |  |
+| Ch3-21 | CHIP-Id2-Ebox-F | AAGAGTGACAGCTCGGGAGA | Ebox: CANNTGCANNT |  |  |  |  |
+| Ch3-22 | CHIP-Id2-Ebox-R | CTGGACTCGCATCCCACTAT |  |  |  |  |  |
+| Ch3-23 | CHIP-Id3-Ebox-F | TTAGCCAGGTGGAAATCCTG | Ebox: CACCTG cluster |  |  |  |  |
+| Ch3-24 | CHIP-Id3-Ebox-R | CACCTGGATCGGGAGATG |  |  |  |  |  |
+| Ch3-25 | CHIP-Blimp1-Ebox-F | CGAAGAGAAATGCAAATGAGC | Ebox: CANNTGCANNT |  |  |  |  |
+| Ch3-26 | CHIP-Blimp1-Ebox-R | CTGGAGGTGGTTAGATGTGGA |  |  |  |  |  |
+| Ch3-27 | CHIP-Tcf7-Ebx1-F | ATCTCTGATGGCGCATTCTT | ~40kb upstream of Tcf7 |  |  |  |  |
+| Ch3-28 | CHIP-Tcf7-Ebx1-R | AGTGGCTGTGAAGCCTGACT |  |  |  |  |  |
+| Ch3-29 | CHIP-Tcf7-Ebx2-F | CCATTGTTGCCCTATCTCGT | ~35kb upstream of Tcf7 |  |  |  |  |
+| Ch3-30 | CHIP-Tcf7-Ebx2-R | AAAACGGTGGATGGAAACTG |  |  |  |  |  |
+| Ch3-31 | CHIP-Tcf7i1-Ebx-F | AGCGTATCTACGGCAGAGGA | the first intron of Tcf7 |  |  |  |  |
+| Ch3-32 | CHIP-Tcf7i1-Ebx-R | TGTGTTGGAGGAAACAGGTG |  |  |  |  |  |
+| Ch3-33 | CHIP-Tcf7i4-Ebx-F | GGCAGGGAAGTGCTGTCTAT | the fourth intron of Tcf7 |  |  |  |  |
+| Ch3-34 | CHIP-Tcf7i4-Ebx-R | TGCAGCACTATGTCCGAGTC |  |  |  |  |  |
+| Ch3-35 | CHIP-Cxcr5-Ebx1-F | GCCCCTCTGATCCATGATT | ~15 kb upstream of cxcr5 |  |  |  |  |
+| Ch3-36 | CHIP-Cxcr5-Ebx1-R | CCCTTTGCCAGTTCTGAGAG |  |  |  |  |  |
+| Ch3-37 | CHIP-Cxcr5-Ebx2-F | GAGGGACAAAGTGACCTGGA | ~10 kb upstream of cxcr5 |  |  |  |  |
+| Ch3-38 | CHIP-Cxcr5-Ebx2-R | ACCTCTCTCTCATGCGGTGT |  |  |  |  |  |
+| Ch3-39 | CHIP-Cxcr5i-Ebx-F | GACAGGGTGCCTGTTTTCAT | the first intron of cxcr5 |  |  |  |  |
+| Ch3-40 | CHIP-Cxcr5i-Ebx-R | TGGGGCCCATCACTTATATC |  |  |  |  |  |
+| Ch3-41 | Cxcr3Ebox1 F1 | GGCCCTCAGGAATCCTTAGT |  |  |  |  |  |
+| Ch3-42 | Cxcr3Ebox1 R1 | AATTCAGTCCAACTTTATTGAGAT |  |  |  |  |  |
+| Ch3-43 | Cxcr3Ebox2 F2 | AAATGACCCCTGTTCCTGATGA |  |  |  |  |  |
+| Ch3-44 | Cxcr3Ebox2 R2 | AGTTAGTCAGAGTGAAGCTGC |  |  |  |  |  |
+| Ch3-45 | Cxcr3Ebox3 F2 | GAATAATTGAGCTTTTCTGAAAGT |  |  |  |  |  |
+| Ch3-46 | Cxcr3Ebox3 R2 | TCCTAAGAGTTTGTTAGTCACAG |  |  |  |  |  |
+| Ch3-47 | ChIP-CD73-Ebx-F | GTCCCCCATTGATGAGAAGA |  |  |  |  |  |
+| Ch3-48 | ChIP-CD73-Ebx-R | AGCACTGGGCTTGATTAACG |  |  |  |  |  |
+| Ch3-49 | ChIP-Tbetp-Ebx-F | GGAGGTTAGCATCAGGGTCA |  |  |  |  |  |
+| Ch3-50 | ChIP-Tbetp-Ebx-F | GGTAGCAGGTGTTCCGAGAG |  |  |  |  |  |
+| Ch3-51 | ChIP-Tbeti-Ebx-F | GGCTGTGGAGAATGGAGAAA |  |  |  |  |  |
+| Ch3-52 | ChIP-Tbeti-Ebx-R | CCTTCATCCGCAAAGACTTC |  |  |  |  |  |
+| Ch3-53 | ChIP-TbetUTR-Ebx-F | TGCTCTGAGCTCTGTCTGGA |  |  |  |  |  |
+| Ch3-54 | ChIP-TbetUTR-Ebx-R | CATTTGCATGGACAAGATGC |  |  |  |  |  |
+| Ch3-55 |  |  |  |  |  |  |  |
+| Ch3-56 |  |  |  |  |  |  |  |
+| Ch3-57 | ChIP-Zeb2p-F | GGCGCTTTGTGTTGTTACTG | Tbx in the promoter of Zeb2 |  |  |  |  |
+| Ch3-58 | ChIP-Zeb2p-R | CGGCTGAGGACTTTTCTGAG |  |  |  |  |  |
+| Ch3-59 | ChIP-Zeb2-exon2-F | GGTGCAAATGGATGTGTCTG | Tbx in the second exon of Zeb2 |  |  |  |  |
+| Ch3-60 | ChIP-Zeb2-exon2-R | TTTCCCCCACAGAAGAAATG |  |  |  |  |  |
+| Ch3-61 | ChIP-Zeb2-3UTR-F | TTCGACCTGCCTTTAACCAG | Tbx in the 3'UTR region of Zeb2 |  |  |  |  |
+| Ch3-62 | ChIP-Zeb2-3UTR-R | GACCACAGCAACCTGGATCT |  |  |  |  |  |
+| Ch3-63 |  |  |  |  |  |  |  |
+| Ch3-64 |  |  |  |  |  |  |  |
+| Ch3-65 |  |  |  |  |  |  |  |
+| Ch3-66 |  |  |  |  |  |  |  |
+| Ch3-67 |  |  |  |  |  |  |  |
+| Ch3-68 |  |  |  |  |  |  |  |
+| Ch3-69 |  |  |  |  |  |  |  |
+| Ch3-70 |  |  |  |  |  |  |  |
+| Ch3-71 |  |  |  |  |  |  |  |
+| Ch3-72 |  |  |  |  |  |  |  |
+| Ch3-73 |  |  |  |  |  |  |  |
+| Ch3-74 |  |  |  |  |  |  |  |
+| Ch3-75 |  |  |  |  |  |  |  |
+| Ch3-76 |  |  |  |  |  |  |  |
+| Ch3-77 |  |  |  |  |  |  |  |
+| Ch3-78 |  |  |  |  |  |  |  |
+| Ch3-79 |  |  |  |  |  |  |  |
+| Ch3-80 |  |  |  |  |  |  |  |
+| Ch3-81 |  |  |  |  |  |  |  |
+
+## Cloning
+
+| Location | Name | Sequence | Use | Tm | User | Last Ordered | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| C1-1 | gag F |  |  |  | Louise |  |  |
+| C1-2 | Va14Ja18 F |  |  |  | Louise |  |  |
+| C1-3 | Va14Ja18 R |  |  |  | Louise |  |  |
+| C1-4 | Va14Ja18 BamHI F |  |  |  | Louise |  |  |
+| C1-5 | Va14Ja18 BamHI R |  |  |  | Louise |  |  |
+| C1-6 | T3 | ATTAACCCTCACTAAAGGGA | Common T3 Oligo |  | Jamie |  |  |
+| C1-7 | 3' T3 F | acggctgcagctatgaaaat | Screen ID2-YFP knockin ES cells for absence of vector sequence |  | Jamie |  | align at 16085 on pBS ID2 use with T3 to check for vec seq |
+| C1-8 | T7 | TAATACGACTCACTATAGGG | Common T7 oligo |  | Jamie |  |  |
+| C1-9 | 5' T7 R | agggagcccttatcctgaaa | Screen ID2-YFP knockin ES cells for absence of vector sequence |  | Jamie |  | gn at 984 on pBSID2, use with T7 to confirm absence of vector seq |
+| C1-10 | 3' probe 3 F | ctccatgtctgtgcctctca |  |  | Jamie |  |  |
+| C1-11 | 3' probe 3 R | caggtggtgcatacctttga |  |  | Jamie |  |  |
+| C1-12 | 3' probe 4 F | ccctcaatccccagcttc |  |  | Jamie |  |  |
+| C1-13 | 3' probe 4 R | gaggaggaaggggaagaaga |  |  | Jamie |  |  |
+| C1-14 | 3' probe 5 F | gagatatcctgcccctgtcc |  |  | Jamie |  |  |
+| C1-15 | 3' probe 7 F |  |  |  | Jamie |  |  |
+| C1-16 | 3' probe 7 R |  |  |  | Jamie |  |  |
+| C1-17 | 3' probe 8 F |  |  |  | Jamie |  |  |
+| C1-18 | 3' probe 8 R |  |  |  | Jamie |  |  |
+| C1-19 | 3' probe 9 F |  |  |  | Jamie |  |  |
+| C1-20 | 3' probe 9 R |  |  |  | Jamie |  |  |
+| C1-21 | oIMR1084 |  |  |  | Jamie |  |  |
+| C1-22 | oIMR1085 |  |  |  | Jamie |  |  |
+| C1-23 | IL15H1-DsRedE F | CCATAGCCAGCTCATCTTCAACATTGAAGCTCTTACCTGGGCATTAAGTA atggcctcctccgaggacgt | Forward primer to merge Il15 5’UTR to dsRed CDS |  | Jamie |  | Utilized to amplify H1-Il15-dsRed with dsRed-EcoRI-R=786 bp 50 bp directly 5' of Il15 ATG with first 20 bp of ExYFP. PAGE purified |
+| C1-24 | IL15H1-ExYFP F | CCATAGCCAGCTCATCTTCAACATTGAAGCTCTTACCTGGGCATTAAGTA atggtgagcaagggcgagga | Forward primer to merge Il15 5’UTR to ExYFP CDS |  | Jamie |  | Utilized to amplify H1-Il15-ExYFP with ExYFP-EcoRI-R=792 bp 50 bp directly 5' of Il15 ATG with first 20 bp of ExYFP. PAGE purified |
+| C1-25 | IL15H1E F |  |  |  | Jamie |  |  |
+| C1-26 | IL15 rec3' R | gccagtcaacacctcaaaca | Reverse oligo in Il15 BAC 3’ of H2 |  | Jamie |  | Used in screening for successful recombination into Il15BAC. Aligns in Il15 BAC outside of H2. Can be used with dsRed5’F= 927bp amplicon on IL15BACR, or Neo3’F= 451bp on IL15BACRN. Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 57314/59893/58096 |
+| C1-27 | IL15 H2F | ATCGggatccAAAATTTTGgtaaggaaaaaagcag | Forward oligo for the amplification of IL15 H2 |  | Jamie |  | Oligo used to amplify the 3’ Homology arm, H2, for IL15-dsRed recombineering. Has BH1 linker on the 5’ end and aligns to the 22bp immediately adjacent to the IL15 ATG. Use with Il15H2R=498 bp Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 56937/59534/57737 |
+| C1-28 | IL15 H2R | atgcGCGGCCGCgctcctacatgaaaacttaatttgg | Reverse oligo for the amplification of IL15 H2 |  | Jamie |  | Oligo used to amplify the 3’ Homology arm, H2, for IL15-dsRed recombineering. Has NotI linker on the 5’ end. Use with Il15H2F=498 bp Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 57435/60015/582017 |
+| C1-29 | IL15 BAC F | catgttcccctgttttggtt | Forward oligo for checking 5’ sequence of IL15 BAC |  | Jamie |  | Aligns 5’ of integration site on IL15 BAC. Used to verify the BAC was correct and check for BAC integratiry after recombination. Use with Il15BACR=430bp Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 56356 |
+| C1-30 | IL15 BAC R | AGGCAGCTGACTCCTCTCAC | Reverse oligo for checking 5’ sequence of Il7 BAC  |  | Jamie |  | Aligns 5’ of integration site on IL7 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with Il7BACF=406 bp Align at Il7DB seq 44kb/Il7BACE: 1116/1116 |
+| C1-31 | IL15 H2screen F | aacatctctggctgcgaca | Forward oligo for pRIl15-2 screen |  | Jamie |  | Used to screen for pR-IL15-2 successful ligation of H2 into pR-IL15-1. Aligns internally to Il15 H2. Use with T3=447 Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 57044/59623/57826 |
+| C1-32 | IL15-H2-5' R | cttgtacagctcgtccatgc | Reverse oligo in 5’end of Il15 H2 |  | Jamie |  | Used in screening for neo deletion, Aligns to 5’ end of H2. Can be used with DsRed5’F=1037bp on Il15BACR, or Neo3’F=561 on the Il15BACRN construct. Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 57425/60003/58206 |
+| C1-33 | IL15 BAC 3' F | tcaccagggtagtcctgagc | Forward oligo for checking 3’ sequence of Il15 BAC  |  | Jamie |  | Aligns 3’ of integration site on IL15 BAC. Used to verify the BAC was correct and check for BAC integratiry after recombination. Use with Il15BAC3’R=427bp Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 57510/60089/58292 |
+| C1-34 | IL15 BAC 3' R | tttcagtggctcttctgttttg | Reverse oligo for checking 3’ sequence of Il15 BAC  |  | Jamie |  | Aligns 3’ of integration site on IL15 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with Il15BAC3’F=427bp Align at Il15DB seq 70kb/Il15BACRN/IL15BACR: 57937/60516/58719 |
+| C1-35 | IL15 H1 extension | atcgGTCGACggttctgttgcaggaagagttctggatggatggcagctggaagcccatcgCCATAGCCAGCTCATCTTCA | Overlapping Forward primer used with Il15H1-dsRedE-F |  | Jamie |  | Overlaps 20 bp of amplicon from IL15dsRed/dsRed-EcoRI-R and adds an additional 50 bp of the Il15 5’UTR. Product size=846 bp |
+| C1-36 | IL7 H2 screen-F | ATGgtaagcgctgctctctg | Forward oligo for pEIl7-2 screen |  | Jamie |  | Used to screen for pEIl7-2 successful ligation of H2 into pEIl7-1. Aligns internally to Il7 H2. Use with T3=549 Align at Il7DB seq 44kb/Il7 locus with ExYFP-loxP site: 1255/2097 |
+| C1-37 | IL7 H1-ExYFP-F | GCTCCTGCTGCAGTCCCAGTCATCATGACTACACCCACCTCCCGCAGACCatggtgagcaagggcgagga | Forward primer to merge Il7 5’UTR to ExYFP CDS |  | Jamie |  | Utilized to amplify H1-Il7-ExYFP with ExYFP-EcoRI-R=792 bp 50 bp directly 5' of Il7 ATG with first 20 bp of ExYFP. PAGE purified |
+| C1-38 | IL7 H1e2-F |  |  |  | Jamie |  |  |
+| C1-39 | IL7 H1 Extension | ACCCGGTGGATGACCGGGGTCCTGGGAGTGATTATGGGTGGTGAGAGCCGgctcctgctgcagtcccagt | Overlapping Forward primer used with Il7H1-ExYFP-F |  | Jamie |  | Overlaps 20 bp of amplicon from Il7H1-ExYFP/ExYFP-EcoRI-R and adds an additional 50 bp of the Il7 5’UTR. Product size=842 bp |
+| C1-40 | IL7 H1 extension 2 SalI | atcgGTCGACtgagaggagtcagctgcctgaactgccctgcccagcaccggtttgcggccACCCGGTGGATGACCGGGGT | Overlapping Forward primer used with Il7H1-extension |  | Jamie |  | Overlaps 20 bp of amplicon from Il7H1 extension/Il7H1-ExYFP/ExYFP-EcoRI-R and adds an additional 50 bp of the Il7 5’UTR and a SalI site. Product size=892 bp |
+| C1-41 | IL7 BAC R | AGGCAGCTGACTCCTCTCAC | Reverse oligo for checking 5’ sequence of Il7 BAC |  | Jamie |  | Aligns 5’ of integration site on IL7 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with Il7BACF=406 bp Align at Il7DB seq 44kb/Il7BACE: 1116/1116 |
+| C1-42 | IL7-rec-3' R | ttacagcctggatcggaaac | Reverse oligo in Il7 BAC 3’ of H2 |  | Jamie |  | Used in screening for successful recombination into Il7BAC. Aligns in Il7 BAC outside of H2. Can be used with ExYFP5’R2=789 bp amplicon. Align at Il7DB seq 44kb/Il7BACE: 1829/2652 |
+| C1-43 | IL7 H1-DsRedE-F | GCTCCTGCTGCAGTCCCAGTCATCATGACTACACCCACCTCCCGCAGACCatggcctcctccgaggacgt | Forward primer to merge Il7 5’UTR to DsRedE CDS |  | Jamie |  | Designed to amplify H1-Il7-dsRed with dsRed-R-EcoRI=754bp 50 bp directly 5' of Il7 ATG with first 20 bp of dsRedE. PAGE purified |
+| C1-44 | IL7 H2F | atcgggatccTTCCATGgtaagcgctgctctc | Forward oligo for the amplification of IL7 H2 |  | Jamie |  | Oligo used to amplify the 3’ Homology arm, H2, for Il7-YFP recombineering. Has BH1 linker on the 5’ end and aligns to the 22bp immediately adjacent to the Il7 ATG. Use with Il7H2R=503 bp Align at Il7DB seq 44kb/Il7BACE: 1251/2074 |
+| C1-45 | IL7 H2R | atcggcggccgctgggagcgactctttcattc | Reverse oligo for the amplification of IL7 H2 |  | Jamie |  | Oligo used to amplify the 3’ Homology arm, H2, for Il7-YFP recombineering. Has NotI linker on the 5’ end. Use with Il7H2F=503 bp Align at Il7DB seq 44kb/Il7BACE: 1739/2562 |
+| C1-46 | 3' p2-internal F |  |  |  | Jamie |  |  |
+| C1-47 | 3' p2-internal R |  |  |  | Jamie |  |  |
+| C1-48 | Id2-RecF | gcagtttgattccggacaag | align >5KB 5’ of ID2 cds |  | Jamie |  | align at 5123 on ID2 10kb5’/3’ sequence outside of the 5’ homology arm of pBS-ID2. Designed for PCR screening of ES cell recombinants that never worked.  |
+| C1-49 | Id2-RecR | aatttccacagggtcagtgc | align >8KB 3’ of ID2 cds |  | Jamie |  | align at 18925 on ID2 10kb5’/3’ sequence outside of the 3’ homology arm of pBS-ID2. Designed for PCR screening of ES cell recombinants that never worked. Use with FcNeo- 9300 bp product, ID2BACF- 9212v11827 |
+| C1-50 | Id2-RecF2 | agatcagcttcagggtcagc | align >5KB 5’ of ID2 cds |  | Jamie |  | align at 5083 on ID2 10kb5’/3’ sequence outside of the 5’ homology arm of pBS-ID2. Designed for PCR screenign of ES cell recombinants that never worked. Use with - ExYFP5’R 5100 bp product, genoR2- 8000v5400 |
+| C1-51 | Id2-RecR2 | gccaaagaatcagctgtggt | align >8KB 3’ of ID2 cds |  | Jamie |  | align at 18990 on ID2 10kb5’/3’ sequence outside of the 3’ homology arm of pBS-ID2. Designed for PCR screening of ES cell recombinants that never worked. Use with FcNeo- 9300 bp product, ID2BACF- 9212v11827 |
+| C1-52 | Id2 SP6 F | ggctggagtagcaagctgag | Oligo used for detecting the 3’ end of the ID2 BAC RP23-300A18 |  | Jamie |  | This oligo along with ID2SP6F amplifies a 404 bp amplicon for detecing the 3’ end of the ID2 BAC used to make the ID2-YFP BAC transgenic mice. Aligns to DB SP6 read of RP23300A18. The SP6 sequence is 3’ relative to the ID2 gene but is actually the 5’ end of the BAC. |
+| C1-53 | Id2 SP6 R | ggctttgaaaggctcaacc | Oligo used for detecting the 3’ end of the ID2 BAC RP23-300A18 |  | Jamie |  | This oligo along with ID2SP6F amplifies a 404 bp amplicon for detecing the 3’ end of the ID2 BAC used to make the ID2-YFP BAC transgenic mice. Aligns to DB SP6 read of RP23300A18. The SP6 sequence is 3’ relative to the ID2 gene but is actually the 5’ end of the BAC. |
+| C1-54 | 3' p1-internal F | tcttcttccccttcctcctc |  |  | Jamie |  |  |
+| C1-55 | 3' p1-internal R | gaggaggaaggggaagaaga |  |  | Jamie |  |  |
+| C1-56 | 5's F2 |  |  |  | Jamie |  |  |
+| C1-57 | 5' int 2-R |  | Reverse oligo for the amplification of ID2 5’ homology arm 2nd intron |  | Jamie |  | Oligo used to amplify the 5’ Homology arm in the 2nd intron of ID2 for ID2 conditional Knock out recombineering. Has EcoRI linker on the 5’ end and aligns. Align on pBSID2/ploxP3/ploxP4/ploxP5: 6186/6299/6299/0 |
+| C1-58 | Id2 3'F | CAAGTGTGTTTATTGAATGTTGATTG | Forward oligo for checking 3’ sequence of ID2 BAC  |  | Jamie |  | Aligns 3’ of integration site on ID2 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with ID2BACR2=502bp Align at ID2 1kb5’-3’/ID2BACEN 1kb5’-3’/ID2BACE 1kb 5’-3’: 3140/5758/3961 |
+| C1-59 | H2R |  |  |  | Jamie |  |  |
+| C1-60 | 5' SR1 |  |  |  | Jamie |  |  |
+| C1-61 | 5' pro R | atcgGAATTCCCATGGggtctgaatcccccacatcc | Reverse oligo for the amplification of ID2 5’ homology arm in the promoter |  | Jamie |  | Oligo used to amplify the 5’ Homology arm in the promoter region of ID2 for for ID2 conditional Knock out recombineering. Has EcoRI linker on the 5’ end and aligns Align on pBSID2/ploxP3/ploxP4/ploxP5: 3872/3872/3872/3872 |
+| C1-62 | 5' p2-internal F | ttgttagggacttccaagcc |  |  | Jamie |  |  |
+| C1-63 | 5' p2-internal R | ggcttggaagtccctaacaa |  |  | Jamie |  |  |
+| C1-64 | 3' int2-F2 | tgctctgGGATCCagatttc | Forward oligo for the amplification of ID2 3’ homology arm in the 2nd intron |  | Jamie |  | Oligo used to amplify the 3’ Homology arm in the 2nd intron of ID2  for ID2 conditional Knock out recombineering. Has internal BHI site Align on pBSID2/ploxP3/ploxP4/ploxP5: 6178/8184/6390/3947 |
+| C1-65 | 3' int2-F | cgccacaaattccatagtga | Forward oligo aligns in ID2  2nd intron |  | Jamie |  | Oligo aligns in the 2nd intron of ID2  for ID2 conditional Knock out recombineering. Align on pBSID2/ploxP3/ploxP4/ploxP5: 6083/6186/6186/0 |
+| C1-66 | 3' Pro F | atcgGGATCCaaaaaccctttcttgggcttaac | Forward oligo for the amplification of ID2 3’ homology arm in the promoter |  | Jamie |  | Oligo used to amplify the 3’ Homology arm int he promoter region of ID2 for for ID2 conditonal Knock out recombineering. Has BH1 linker on the 5’ end and aligns Align on pBSID2/ploxP3/ploxP4/ploxP5: 3858/3957/3957/0 |
+| C1-67 | Id2 16.3 kb R2 |  |  |  | Jamie |  |  |
+| C1-68 | FC Neo | CTC gTg CTT TAC ggT ATC gCC | Aligns internally in Neo, Forward oligo |  | Jamie |  | Aligns in all pL452 dervied Neo transgenic mice, pL452 dervied Neo: 1449, ID2 YFPNeo: 3255, Il7 YFPNeo: 3423, Il15 dsRed: 59069, pLoxP3: 8076 |
+| C1-69 | Id2H2 Stop-ExYFP |  |  |  | Jamie |  |  |
+| C1-70 | SP6 | CGATTTAGGTGACACTATAG | common SP6 oligo |  | Jamie |  |  |
+| C1-71 | H1 Extension | ccccgcccggctcgcgcttcattctgaaccgagcctggtgccGCGCAGTC AGCTCAGCCCCCTGTGGCGG | Overlapping Forward primer used with ID2H1-ExYFP-F |  | Jamie |  | Overlaps 20 bp of amplicon from ID2H1-ExYFP/ExYFP-EcoRI-R and adds an additional 50 bp of the ID2 5’UTR. Product size=842 bp |
+| C1-72 | TetO : Id2F-2 |  |  |  | Jamie |  |  |
+| C1-73 | TetO : Id2R-1 |  |  |  | Jamie |  |  |
+| C1-74 | ExYFP 3' F | aggagcgcaccatcttctt | Aligns at 3’ end of ExYFP, Forward oligo |  | Jamie |  | Aligns in all YFP trangenic mice, Venus/ExYFP: 283, ID2YFP: 1363, Il7 YFP: 1532 |
+| C1-75 | Id2 H1 ExYFP | agctcagccccctgtggcggctccctcccggtcttcctcctacgagcagcATGGTGAGCAAGGGCGAGGAGC | Forward primer to merge ID2 5’UTR to ExYFP CDS |  | Jamie |  | Utilized to amplify H1-ID2-ExYFP with ExYFP-EcoRI-R=792 bp, 50 bp directly 5' of ID2 ATG with the first 20 bp of ExYFP. PAGE purified |
+| C1-76 | Id2 10 KB F-SalI |  |  |  | Jamie |  |  |
+| C1-77 | Id2 10 KB R-SalI |  |  |  | Jamie |  |  |
+| C1-78 | Id2 10 KB F2-SalI |  |  |  | Jamie |  |  |
+| C1-79 | Id2 10 KB R2-SalI |  |  |  | Jamie |  |  |
+| C1-80 | M13 F | GTAAAACGACGGCCAG | Common M13 oligo |  | Jamie |  |  |
+| C1-81 | M13 R | CAGGAAACAGCTATGAC | Common M13 oligo |  | Jamie |  |  |
+| C2-1 | ExYFP insert F | ATGGTGAGCAAGGGCGAGGAGC | Amplify ExYFP CDS |  | Jamie |  | Aligns at start of ExYFP coding sequence, use to amplify the CDS with out any linkers |
+| C2-2 | Id2 16.3 kb R2 |  |  |  | Jamie |  |  |
+| C2-3 | H1e-SalI | ATCGgtcgacCCCCGCCCGGCTCGCGCTTC | Overlapping Forward primer used with ID2H1-extension |  | Jamie |  | Overlaps 20 bp of amplicon from ID2H1 extension/ID2H1-ExYFP/ExYFP-EcoRI-R and adds an additional 50 bp of the ID2 5’UTR and a SalI site. Product size=892 bp |
+| C2-4 | Id2 16.3 kb f |  |  |  | Jamie |  |  |
+| C2-5 | Id2 16.3 kb R |  |  |  | Jamie |  |  |
+| C2-6 | SP6-RP 23 | tcgacatttaggtgacactat | SP6 oligo specific for sequencing RP23 BACs |  | Jamie |  | The SP6 sequence on RP23 BACs differs from the standard SP6 sequence and requires a specific oligo. This oligo is used extensively for sequencing BAC ends.  |
+| C2-7 | Id2 H2F-BHI | ATCGggatccAAAGCCTTCAGTCCGGTGAGGTC | Forward oligo for the amplification of ID2 H2 |  | Jamie |  | Oligo used to amplify the 3’ Homology arm, H2, for ID2-YFP recombineering. Has BH1 linker on the 5’ end and aligns to the 22bp immediately adjacent to the ID2 ATG. Use with ID2H2R=331 bp, Align at ID2 1kb5’-3’/ID2BACEN 1kb5’-3’/ID2BACE 1kb 5’-3’: 1084/3696/1897 |
+| C2-8 | Id2 T7 R | ccagcagcccagaaactaag | Oligo used for detecting the 5’ end of the ID2 BAC RP23-300A18 |  | Jamie |  | This oligo along with ID2T7F amplifies a 512 bp amplicon for detecing the 5’ end of the ID2 BAC used to make the ID2-YFP BAC transgenic mice. Aligns to DB T7 read of RP23-300A18. The T7 sequence is 5’ relative to the ID2 gene but is actually the 3’ end of the BAC. |
+| C2-9 | ExYFP R-EcoRI | CGATgaattcTTATTATTACTTGTACAGCTCGTCCATGCC | ExYFP Recombineering reverse oligo |  | Jamie |  | This oligo is used for all ExYFP recombineering projects. It adds 2 additional stop codons after the native ExYFP stop codon, as well as an EcoRI site for cloning. It was used to generate the ID2-YFP, Il7-YFP and TRAIL-YFP targeting cassettes for recombineering. |
+| C2-10 | ExYFP-EcoRI-R | CGATgaattcTTATTATTACTTGTACAGCTCGTCCATGCC | ExYFP Recombineering reverse oligo |  | Jamie |  | This oligo is used for all ExYFP recombineering projects. It adds 2 additional stop codons after the native ExYFP stop codon, as well as an EcoRI site for cloning. It was used to generate the ID2-YFP, Il7-YFP and TRAIL-YFP targeting cassettes for recombineering. |
+| C2-11 | DsRedE-R-EcoRI | CGATgaattcTTATTActacaggaacaggtggtggc | dsRed Recombineering reverse oligo |  | Jamie |  | This oligo is used for all dsRed recombineering projects. It adds 2 additional stop codons after the native dsRed stop codon, as well as an EcoRI site for cloning. It was used to generate the IL15-dsRed targeting cassette for recombineering. |
+| C2-12 | Id2 BAC-F | gctctgggaattggaataagg | Forward oligo for checking 5’ sequence of ID2 BAC |  | Jamie |  | Aligns 5’ of integration site on ID2 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with Id2BACR=511bp, Align at ID2 1kb5’-3’/ID2BACEN 1kb5’-3’/ID2BACE 1kb 5’-3’: 718 |
+| C2-13 | Id2 BAC-R | CCAGTTCCTTGAGCTTGGAG | Reverse oligo for checking 5’ sequence of ID2 BAC |  | Jamie |  | Aligns 3’ of integration site on ID2 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with Id2BACF=511bp, Align at ID2 1kb5’-3’/ID2BACEN 1kb5’-3’/ID2BACE 1kb 5’-3’: 1228/3846/2049 |
+| C2-14 | Id2-BAC-R | CCAGTTCCTTGAGCTTGGAG | Reverse oligo for checking 5’ sequence of ID2 BAC |  | Jamie |  | Aligns 3’ of integration site on ID2 BAC. Used to verify the BAC was correct and check for BAC integrity after recombination. Use with Id2BACF=511bp, Align at ID2 1kb5’-3’/ID2BACEN 1kb5’-3’/ID2BACE 1kb 5’-3’: 1228/3846/2049 |
+| C2-15 | Id2 T7 F | gaaaggcaaagatcccaaca | Oligo used for detecting the 5’ end of the ID2 BAC RP23-300A18 |  | Jamie |  | This oligo along with ID2T7R amplifies a 512 bp amplicon for detecing the 5’ end of the ID2 BAC used to make the ID2-YFP BAC transgenic mice. Aligns to DB T7 read of RP23300A18, The T7 sequence is 5’ relative to the ID2 gene but is actually the 3’ end of the BAC. |
+| C2-16 | Id2 H2R-NotI |  | Reverse oligo for the amplification of ID2 H2 |  | Jamie |  | Oligo used to amplify the 3’ Homology arm, H2, for IL15-dsRed recombineering. Has NotI linker on the 5’ end. Use with Il15H2F=331 bp, Align at ID2 1kb5’-3’/ID2BACEN 1kb5’-3’/ID2BACE 1kb 5’-3’: 1415/4033/2236 |
+| C2-17 | IL7 BAC 3'-F | atcattggaaaaccccctct | Forward oligo for checking 3’ sequence of Il7 BAC |  | Jamie |  | ALigns 3’ of integration sit eon IL7 BAC. Used to verify the BAC was correct and check for BAC integratiry after recombination. Use with Il7BAC3’R=402 bp, Align at Il7DB seq 44kb/Il7BACE: 1767/2591 |
+| C2-18 | IL7 BAC 3'-R | gctagatcctgcacctccat | Reverse oligo for checking 3’ sequence of Il7 BAC  |  | Jamie |  | Aligns 3’ of integration site on IL7 BAC. Used to verify the BAC was correct and check for BAC integratiry after recombination. Use with Il7BAC3’F=402bp, Align at Il7DB seq 44kb/Il7BACE: 2169/2992 |
+| C2-19 | DsRed 5' F | catccccgactacaagaagc | Aligns at 5’ end of dsRed, forward oligo |  | Jamie |  | Aligns in all dsRed trangenic mice, Il15 dsRed: 57169 |
+| C2-20 | DsRed 5' R | gcttcttgtagtcggggatg | Aligns at 5’ end of dsRed, reverse oligo |  | Jamie |  | Aligns in all dsRed trangenic mice, Il15 dsRed: 57189 |
+| C2-21 | Id2 16.3 kb F |  |  |  | Jamie |  |  |
+| C2-22 | Id2 16.3 kb R |  |  |  | Jamie |  |  |
+| C2-23 | 3' SF1 | tgcctctcagcatgcttatct |  |  | Jamie |  |  |
+| C2-24 | 3' SR1 | ggttggagtcgaggtaggaa |  |  | Jamie |  |  |
+| C2-25 | 3' SF2 | agaccaccctgtgggagagt |  |  | Jamie |  |  |
+| C2-26 | 3' SR2 | agtttgaggcacgctaagga |  |  | Jamie |  |  |
+| C2-27 | M13 F | GTAAAACGACGGCCAG | Common M13 oligo |  | Adam |  |  |
+| C2-28 | M13 R | CAGGAAACAGCTATGAC | Common M13 oligo |  | Adam |  |  |
+| C2-29 | Zeb2 Prom F | TGCACCTCAAACCTAGTCACC |  |  | Adam |  |  |
+| C2-30 | Zeb2 Prom R | GTCTCCGCAAACGCTTTAGT |  |  | Adam |  |  |
+| C2-31 | Zeb2 Prom2 F |  |  |  | Adam |  |  |
+| C2-32 | Zeb2 Prom2 R |  |  |  | Adam |  |  |
+| C2-33 | Zeb2 Tbox1 F | actcactttccaggttttccgc |  |  | Adam |  |  |
+| C2-34 | Zeb2 Tbox1 R | cctctctggacattgttcctcc |  |  | Adam |  |  |
+| C2-35 | Zeb2 Promfull F | AACGGTGCTTGAGGTATCCA |  |  | Adam |  |  |
+| C2-36 | Zeb2 Promfull R | TGCGTCCACTACGTTGTCAT |  |  | Adam |  |  |
+| C2-37 | IRES 5' F |  |  |  | Adam |  |  |
+| C2-38 | IRES 5' F |  |  |  | Adam |  |  |
+| C2-39 | Zeb2 ATG F | AATGAAGCAGCCGATCATGGCG |  |  | Adam |  |  |
+| C2-40 | Zeb2 R | GCATGAACAGCTTAACACAGCA |  |  | Adam |  |  |
+| C2-41 | T-bet2 F |  |  |  | Adam |  |  |
+| C2-42 | T-bet2 R |  |  |  | Adam |  |  |
+| C2-43 | T-bet F | GTTTCATTGGTCTTCGGACG |  |  | Adam |  |  |
+| C2-44 | T-bet R | CTATACAGGGAAGGGATGGG |  |  | Adam |  |  |
+| C2-45 | Zeb2 Promfull 2 F | ATTTCCCTCCCCTAGCTCTG |  |  | Adam |  |  |
+| C2-46 | Zeb2 Promfull 2 R | TGCGTCCACTACGTTGTCAT |  |  | Adam |  |  |
+| C2-47 | Zeb2 3' F | TTTCCAGTAGTATTGTTACCTGCTTG |  |  | Adam |  |  |
+| C2-48 | Zeb2 3' R | TTCGAGCATGGTCATTTTCA |  |  | Adam |  |  |
+| C2-49 | Zeb2 3' Tbox2 1F | TTAATGTGCCCGCACTACAG |  |  | Adam |  |  |
+| C2-50 | Zeb2 3' Tbox2 1R | GGAACTGCTGCCTAGTCGTC |  |  | Adam |  |  |
+| C2-51 | Zeb2 Tbox2 F | ggaggaacaatgtccagagagg |  |  | Adam |  |  |
+| C2-52 | Zeb2 Tbox2 R | CGCCATGATCGGCTGCTTCATT |  |  | Adam |  |  |
+| C2-53 | Zeb2 2F | ATGAAGCAGCCGATCATGG |  |  | Adam |  |  |
+| C2-54 | Zeb2 2R | TTATTCCATGCCATCTTCCA |  |  | Adam |  |  |
+| C2-55 | Zeb2 3' Tbox1 1F | GAAACGATACGGGATGAGGA |  |  | Adam |  |  |
+| C2-56 | Zeb2 3' Tbox1 1R | GCGAAAGGAAAGTGTTGAGG |  |  | Adam |  |  |
+| C2-57 | Zeb2 F4 | CCGCTCTTATCAATGAAGCA |  |  | Adam |  |  |
+| C2-58 | Zeb2 R4 | TTATTCCATGCCATCTTCCA |  |  | Adam |  |  |
+| C2-59 | Zeb2 F5 | ATCAATGAAGCAGCCGATCA |  |  | Adam |  |  |
+| C2-60 | Zeb2 R5 | GCACGTGCATGAACAGCTTA |  |  | Adam |  |  |
+| C2-61 | Zeb2 F3 | GCCATCTGATCCGCTCTTAT |  |  | Adam |  |  |
+| C2-62 | Zeb2 R3 | GCACGTGCATGAACAGCTTA |  |  | Adam |  |  |
+| C2-63 | Zeb2 3' Tbox1 2F | CAGAGGATGGGAAAATGGAA |  |  | Adam |  |  |
+| C2-64 | Zeb2 3' Tbox1 3F | TACGGATCCCGAAACGATAC |  |  | Adam |  |  |
+| C2-65 | Zeb2 3' Tbox2 2R | TACTGACACGGGTGCTTCAA |  |  | Adam |  |  |
+| C2-66 | NotI-Zeb2 F |  |  |  | Adam |  |  |
+| C2-67 | SalI-Zeb2 R |  |  |  | Adam |  |  |
+| C2-68 | 5' SF3 | gaggcagggatgggaataat |  |  |  |  |  |
+| C2-69 | 5' SR3 | ggggcagctagagatgctt |  |  |  |  |  |
+| C2-70 | 3' probe 5R | gaggaaaacaaacaccaagaaga |  |  |  |  |  |
+| C2-71 | 3' probe 6F | cactgccttcctagggtgag |  |  |  |  |  |
+| C2-72 | 3' probe 6R | gagctctgacaggacgaacc |  |  |  |  |  |
+| C2-73 | Id2 Intron 1 5' to 3' | TGAGACTAGCTTGCAAGTACGCC | Creating Id2 intron |  | Mike P | 2010-06-10 00:00:00 |  |
+| C2-74 | Id2 Intron 1 3' to 5' | CCTGGGGAGAAAGAGGATAAAAGGC | Creating Id2 intron 1 |  | Mike P | 2010-06-10 00:00:00 |  |
+| C2-75 | Id2 Intron 2 5' to 3' | TGAGTGTTGCGGGTGCCTCC | Creating Id2 intron 2 |  | Mike P | 2010-06-10 00:00:00 |  |
+| C2-76 | Id2 Intron 2 3' to 5' | GCCTGCAAAAGATTGGGAGAGAAAGG | Creating Id2 intron 2 |  | Mike P | 2010-06-10 00:00:00 |  |
+| C2-77 | Id3 Exon 2 5' to 3' | CAGCTGAGCTCACTCCGGA | Creating Id3 Exon 2 |  | Mike P | 2010-06-10 00:00:00 |  |
+| C2-78 | Id3 Exon 2 3' to 5' | GAGGTGCCAGGACGACCG | Creating Id3 Exon 2 |  | Mike P | 2010-06-10 00:00:00 |  |
+| C2-79 | Id3 cDNA 5' | AACGTAGCCTGGCCATTGC | Resolving Id3 cDNA issues |  | Mike P | 2010-07-07 00:00:00 |  |
+| C2-80 | Id3 cDNA 3' | TCAGTGGCAAAAGCTCCTCTTG | Resolving Id3 cDNA issues |  | Mike P | 2010-07-07 00:00:00 |  |
+| C2-81 | 2240 new 3'-5' | acaaactggtaggcgggagatag | 3' arm id2 |  |  |  |  |
+| C3-1 | New 2240 3'-5' | TATGTGTGCCGCATCTGGAC | 3' arm id2 |  |  |  |  |
+| C3-2 | 2240 new 3'-5' | acaaactggtaggcgggagatag | 3' arm id2 | Cloning |  |  |  |
+| C3-3 | New 2420 5-3' | AATTGTGCCATCGGAACTGC | 3' arm id2 |  |  |  |  |
+| C3-4 | 2420 New 3-5' | agtgccaggtaggtctaatgccag | 3' arm id2 |  |  |  |  |
+| C3-5 | SLIC 5' homo 3' end to cDNA | ACCGGGCTCAGCGCCTTCATGTCTTCCTCCTACGAGCAGC | SLICing 3' end of 5' homo into cDNA |  |  |  |  |
+| C3-6 | 5' Homology arm SLIC | TTAGGGCGAATTCTGCAGATTCCTTCAGTCCAAGCCTTCCTC | SLIC 5' into plasmid at ECORV |  |  |  |  |
+| C3-7 | 3' homology arm SLIC | CGGCCGCCAGTGTGATGGATAGGATTATCACCCAGGCAGTCAC | SLIC 3' into plasmid at ECORV |  |  |  |  |
+| C3-8 | SBlot 5' homo end id2 | TGTGCCCGCCTTATTCCAATTC | Sblotting/cloning id2 |  |  |  |  |
+| C3-9 | SBlot 3' homo end id2 | TTCATTCCGATAAAGCAGCGGTCC | Sblotting/cloning id2 |  |  |  |  |
+| C3-10 | 5' or part 2 5' homology arm | GAGCTTTGCCTGGATTCTGCATTC | Generating id2 5' homology arm |  |  |  |  |
+| C3-11 | 3' part 1 5' homo arm | TTGGGAAGCTCTTTGTCAGGTAGG | Generating id2 5' homology arm | Cloning |  |  |  |
+| C3-12 | 3' homology arm part 1 | CCTTTCTCTCCCAATCTTTTGCAGGC | Generating id2 3' homology arm |  |  |  |  |
+| C3-13 | 5' of 3' homo arm id3 cdna | GGAGCAAAACCCCGGTGG | Generating id2 3' homology arm |  |  |  |  |
+| C3-14 | 3' of 5' homo arm id3 cdna | GGGAGATGCCCAAGCTGT | Generating id2 5' homology arm | Cloning |  |  |  |
+| C3-15 | 3' primer of id2 5' homology arm | GTCTTCCTCCTACGAGCAGC | Generating id2 5' homology arm | Cloning |  |  |  |
+| C3-16 | 5' primer of id2 5' homology arm | AGGGAATCCTAGAAGGAGCT | Generating id2 5' homology arm | Cloning |  |  |  |
+| C3-17 | LoxP 5' | ATAACTTCGTATAATGTATGCTATACGAAGTTAT | Cloning out Neo for SLIC | Cloning |  |  |  |
+| C3-18 | 3'pmigZeb2 hpaI | GAAGATGGCATGGAATAAGGGCCCGTTAAC | Adds Hpa I site to the 3' end of Zeb2 from pMig-Zeb2 | Cloning |  |  |  |
+| C3-19 | 5'pmigZeb2	 | GCCGGAATTAGATCTCTCGAG | Primer at the Bgl II site 5' of Zeb2 in pMig-Zeb2 | Cloning |  |  |  |
+| C3-20 |  |  |  | Cloning |  |  |  |
+| C3-21 |  |  |  | Cloning |  |  |  |
+| C3-22 |  |  |  | Cloning |  |  |  |
+| C3-23 |  |  |  | Cloning |  |  |  |
+| C3-24 |  |  |  | Cloning |  |  |  |
+| C3-25 |  |  |  | Cloning |  |  |  |
+| C3-26 |  |  |  |  |  |  |  |
+| C3-27 |  |  |  |  |  |  |  |
+| C3-28 |  |  |  |  |  |  |  |
+| C3-29 |  |  |  |  |  |  |  |
+| C3-30 |  |  |  |  |  |  |  |
+| C3-31 |  |  |  |  |  |  |  |
+| C3-32 |  |  |  |  |  |  |  |
+| C3-33 |  |  |  |  |  |  |  |
+| C3-34 |  |  |  |  |  |  |  |
+| C3-35 |  |  |  |  |  |  |  |
+| C3-36 |  |  |  |  |  |  |  |
+| C3-37 |  |  |  |  |  |  |  |
+| C3-38 |  |  |  |  |  |  |  |
+| C3-39 |  |  |  |  |  |  |  |
+| C3-40 |  |  |  |  |  |  |  |
+| C3-41 |  |  |  |  |  |  |  |
+| C3-42 |  |  |  |  |  |  |  |
+| C3-43 |  |  |  |  |  |  |  |
+| C3-44 |  |  |  |  |  |  |  |
+| C3-45 |  |  |  |  |  |  |  |
+| C3-46 |  |  |  |  |  |  |  |
+| C3-47 |  |  |  |  |  |  |  |
+| C3-48 |  |  |  |  |  |  |  |
+| C3-49 |  |  |  |  |  |  |  |
+| C3-50 |  |  |  |  |  |  |  |
+| C3-51 |  |  |  |  |  |  |  |
+| C3-52 |  |  |  |  |  |  |  |
+| C3-53 |  |  |  |  |  |  |  |
+| C3-54 |  |  |  |  |  |  |  |
+| C3-55 |  |  |  |  |  |  |  |
+| C3-56 |  |  |  |  |  |  |  |
+| C3-57 |  |  |  |  |  |  |  |
+| C3-58 |  |  |  |  |  |  |  |
+| C3-59 |  |  |  |  |  |  |  |
+| C3-60 |  |  |  |  |  |  |  |
+| C3-61 |  |  |  |  |  |  |  |
+| C3-62 |  |  |  |  |  |  |  |
+| C3-63 |  |  |  |  |  |  |  |
+| C3-64 |  |  |  |  |  |  |  |
+| C3-65 |  |  |  |  |  |  |  |
+| C3-66 |  |  |  |  |  |  |  |
+| C3-67 |  |  |  |  |  |  |  |
+| C3-68 |  |  |  |  |  |  |  |
+| C3-69 |  |  |  |  |  |  |  |
+| C3-70 |  |  |  |  |  |  |  |
+| C3-71 |  |  |  |  |  |  |  |
+| C3-72 |  |  |  |  |  |  |  |
+| C3-73 |  |  |  |  |  |  |  |
+| C3-74 |  |  |  |  |  |  |  |
+| C3-75 |  |  |  |  |  |  |  |
+| C3-76 |  |  |  |  |  |  |  |
+| C3-77 |  |  |  |  |  |  |  |
+| C3-78 |  |  |  |  |  |  |  |
+| C3-79 |  |  |  |  |  |  |  |
+| C3-80 |  |  |  |  |  |  |  |
+| C3-81 |  |  |  |  |  |  |  |
+
+## qPCR
+
+| Location | Name | Sequence | Use | Tm | User | Last Ordered | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| q1-1 | Bcl-6-F | CCTGTGAAATCTGTGGCACTCG | from Crotty lab (qPCR Bcl-6 w/ Bcl6R product is 130nt) | 56.9 | Jamie |  | Optimal annealing temp= 55.2 |
+| q1-2 | Bcl-6-R | CGCAGTTGGCTTTTGTGACG  | from Crotty lab | 56.6 | Jamie |  | Optimal annealing temp= 55.2 |
+| q1-3 | Blimp-1 F | ACATAGTGAACGACCACCCCTG | from Crotty lab |  |  |  |  |
+| q1-4 | Blimp-1 R | CTTACCACGCCAATAACCTCTTTG | from Crotty lab |  |  |  |  |
+| q1-5 | Hmgb3 F1 | GAACAATACAGGATGGCTAAAGG |  |  |  |  |  |
+| q1-6 | Hmgb3 R1 | GGTCCATAATCTTTCATCTCCC |  |  |  |  |  |
+| q1-7 | Orai2 F1 | GAACTCGTCACGTCTAACCA |  |  |  |  |  |
+| q1-8 | Orai2 R1 | CTGATGGAGTTGAGGTTGTG |  |  |  |  |  |
+| q1-9 | Orai2 R2 | GATGGAGTTGAGGTTGTGGA |  |  |  |  |  |
+| q1-10 | Klrb1c F1 | GACACAGCAAGTATCTACCT |  |  |  |  |  |
+| q1-11 | Klrb1c R1 | TACTAAGACTCGCACTAAGAC |  |  |  |  |  |
+| q1-12 | Tnfrsf17 F1 | TCACAATCTCATTCTTGCTG |  |  |  |  |  |
+| q1-13 | Tnfrsf17 R1 | GAAGAAATGGTCAGAATCCC |  |  |  |  |  |
+| q1-14 | Hist1 h2ab F1 | AAACAGACACATCTTGAACTCC |  |  |  |  |  |
+| q1-15 | Hist1 h2ab R1 | ACCACCAAATGCTTTAACATCC |  |  |  |  |  |
+| q1-16 | Hist1h2ab/ao F1 | AAACAGACACATCTTGAACTCC |  |  |  |  |  |
+| q1-17 | Hist1h2ab/ao R1 | ACCACCAAATGCTTTAACATCC |  |  |  |  |  |
+| q1-18 | Hist1h2bb F1 | AGAGCCTTCTAAGTCTGCAC |  |  |  |  |  |
+| q1-19 | Hist1h2bb R1 | TACACGTACACCGAATAGCTC |  |  |  |  |  |
+| q1-20 | Hist1h1b F1 | CAAAGAAAGCGAAGAAGCCT |  |  |  |  |  |
+| q1-21 | Hist1h1b R1 | TTTGGATGCCTTAGACTTCAC |  |  |  |  |  |
+| q1-22 | IL-7R F |  |  |  |  |  |  |
+| q1-23 | IL-7R R |  |  |  |  |  |  |
+| q1-24 | Klre1 F |  |  |  |  |  |  |
+| q1-25 | Klre1 R |  |  |  |  |  |  |
+| q1-26 | zfhx1a F | AACTGGGAAAATGCATCTGG |  |  |  |  |  |
+| q1-27 | zfhx1a R | TGGCAAGACAACGTGAAAGA |  |  |  |  |  |
+| q1-28 | zeb2 F | CATGAACCCATTTAGTGCCA |  |  |  |  |  |
+| q1-29 | zeb2 R | AGCAAGTCTCCCTGAAATCC |  |  |  |  |  |
+| q1-30 | runx1 F | CGACTCTCAACGGCTCCGGACCT |  |  |  |  |  |
+| q1-31 | runx1 R | GTGACGGGCGGCGAGTAGGTGAA |  |  |  |  |  |
+| q1-32 | c-krox F |  |  |  |  |  |  |
+| q1-33 | c-krox R |  |  |  |  |  |  |
+| q1-34 | Va14 F | GTCCTCAGTCCCTGGTTGTC |  |  |  |  |  |
+| q1-35 | Ja18 R | TCCCTGGAGTAGAAAGAAACCTACTCAC |  |  |  |  |  |
+| q1-36 | rorc F (me) |  |  |  |  |  |  |
+| q1-37 | rorc R (me) |  |  |  |  |  |  |
+| q1-38 | ets2 (1) F | GCAATACATTAGGCTTCAGCA |  |  |  |  |  |
+| q1-39 | ets2 (1) R | GAACAGTAATTGACATTGACGG |  |  |  |  |  |
+| q1-40 | bcl-XL F | TTCGGGATGGAGTAAACTGG |  |  |  |  |  |
+| q1-41 | bcl-XL R | TGCAATCCGACTCACCAATA |  |  |  |  |  |
+| q1-42 | tox F | TGCAGTAGTGGGGGCATGCAGAG |  |  |  |  |  |
+| q1-43 | tox R | TGAGTGCGCAAAGCAATCCATG |  |  |  |  |  |
+| q1-44 | IL-4 F |  |  |  |  |  |  |
+| q1-45 | IL-4 R |  |  |  |  |  |  |
+| q1-46 | RORg F |  |  |  |  |  |  |
+| q1-47 | RORg R |  |  |  |  |  |  |
+| q1-48 | SAP F1 | CTGGATGGAAGCTATCTGCT |  |  |  |  |  |
+| q1-49 | SAP R1 | GAATCTCTTCTCCCTGTGGG |  |  |  |  |  |
+| q1-50 | rorc (kees) F | TGTCCTGGGCTACCCTACTG | if checking rorc expression use this primer set and not the one called 'me' |  |  |  |  |
+| q1-51 | rorc (kees) R | GTGCAGGAGTAGGCCACATT | if checking rorc expression use this primer set and not the one called 'me' |  |  |  |  |
+| q1-52 | BMF F (1) | CTCCCACCGCAGCCTGGAGTTT |  |  |  |  |  |
+| q1-53 | BMF R (1) | CTGGGTGACTCCAGGACAGCGT |  |  |  |  |  |
+| q1-54 | xbp1 (1) F | GAAGAAGAGAACCACAAACTCC |  |  |  |  |  |
+| q1-55 | xbp1 (1) R | CAGACTCAGAATCTGAAGAGG |  |  |  |  |  |
+| q1-56 | IL12 Rb2 F | GCTCTGCGAAATTCAGTACC |  |  |  |  |  |
+| q1-57 | IL12 Rb2 R | GGATCTGGAATGGTTCTGCT |  |  |  |  |  |
+| q1-58 | rag2 F | CCCTCTGGCCTTCAGATAAA |  |  |  |  |  |
+| q1-59 | rag2 R | CCAGTAGGACAGGATCTCTT |  |  |  |  |  |
+| q1-60 | dclre1c F | TGGCTACGAGTATTTATTCACC |  |  |  |  |  |
+| q1-61 | dclre1c R | CTCTCCAGTCCTAACGATCAC |  |  |  |  |  |
+| q1-62 | IL17 Re F | TAGACCTGCCTTATGAATTCCT |  |  |  |  |  |
+| q1-63 | IL17 Re R | GATATACCATCCTTCTGACTCC |  |  |  |  |  |
+| q1-64 | ccr4 F | CTTTCAGAAGAGCAAGGCAG |  |  |  |  |  |
+| q1-65 | ccr4 R | CTTGTATTTGAACAGGACCAGA |  |  |  |  |  |
+| q1-66 | slamf1 F | GCTTTATGAACAGGTCTCCC | 280bp |  |  |  |  |
+| q1-67 | slamf1 R | CTTGCGATGATAGGTTGAAGG | 280bp |  |  |  |  |
+| q1-68 | myc F | CTCAGTGGTCTTTCCCTACC |  |  |  |  |  |
+| q1-69 | myc R | CTTCTTGCTCTTCTTCAGAGTC |  |  |  |  |  |
+| q1-70 | IL17 Rb F | TGCTGGAGAATAAACTGATGAG |  |  |  |  |  |
+| q1-71 | IL17 Rb R | CCAAGTTAGGTAGATCCCAG |  |  |  |  |  |
+| q1-72 | IL7R F | AGTCCTCCTATGTGAGTCCT |  |  |  |  |  |
+| q1-73 | IL7R R | ACCCATCTTCTTTGTGTTTCTG |  |  |  |  |  |
+| q1-74 | slamf6 F | TATAACTCCTGAAGGAAGAGCAC | 146bp |  |  |  |  |
+| q1-75 | slamf6 R | CCATACCACCTAGAAAGCGT | 146bp |  |  |  |  |
+| q1-76 | Lmo4 F | GCTGAGACTTGACACTTCTT |  |  |  |  |  |
+| q1-77 | Lmo4 R | GATTCACCATGGTCTGCTTC |  |  |  |  |  |
+| q1-78 | cd226 F | AAGAGCATCAAGTCCAACCT |  |  |  |  |  |
+| q1-79 | cd226 R | GTCATAGTCTCAGAAAGCCGA |  |  |  |  |  |
+| q1-80 | myb F | CATTACCAACACAGAACCAC | 280bp |  |  |  |  |
+| q1-81 | myb R | ATCACACCACGAAGAATCAG | 280bp |  |  |  |  |
+| q2-1 | plzf F  | GTTCACACAGGTGAGAAGCC |  |  |  |  |  |
+| q2-2 | plzf R  | GTGCAGATGGTACACTGGTATG |  |  |  |  |  |
+| q2-3 | pdk1 F | GAACTAAATGCGAAATCACCAG | 194bp |  |  |  |  |
+| q2-4 | pdk1 R | GTCACTCATCTTCACAGTCAG | 194bp |  |  |  |  |
+| q2-5 | bcl11b F |  |  |  |  |  |  |
+| q2-6 | bcl11b R |  |  |  |  |  |  |
+| q2-7 | IFNg F | GAGCCAGATTATCTCTTTCTACC | 168bp |  |  |  |  |
+| q2-8 | IFNg R | GTTGTTGACCTCAAACTTGG | 168bp |  |  |  |  |
+| q2-9 | gata3 F | CTACTCAGGTGATCGGAAGAG | 215bp |  |  |  |  |
+| q2-10 | gata3 R | ATCTTTGCGGGATAGTTTAGC | 215bp |  |  |  |  |
+| q2-11 | car2 F | CAATGCAGTGCTGAAAGGAG | 108bp |  |  |  |  |
+| q2-12 | car2 R | TTTGTTCACAGTGTGCTCAG | 108bp |  |  |  |  |
+| q2-13 | IL-7 new 4 F |  |  |  |  |  |  |
+| q2-14 | IL-7 new 4 R |  |  |  |  |  |  |
+| q2-15 | IL-15 Q F |  |  |  |  |  |  |
+| q2-16 | IL-15 Q R |  |  |  |  |  |  |
+| q2-17 | IL-7 F Link |  |  |  |  |  |  |
+| q2-18 | IL-7 R Link |  |  |  |  |  |  |
+| q2-19 | smoc1 F | CGATGGAGATGAAATCACAG | 110bp |  |  |  |  |
+| q2-20 | smoc1 R | TCACAGGAATGGACTTTCTC | 110bp |  |  |  |  |
+| q2-21 | Fyn (1) F | CTTTATGACTATGAAGCACGG |  |  |  |  |  |
+| q2-22 | Fyn (1) R | TTTCCAAAGTACCACTCTTCTG |  |  |  |  |  |
+| q2-23 | YFP4 F |  |  |  |  |  |  |
+| q2-24 | YFP4 R |  |  |  |  |  |  |
+| q2-25 | Ca F | CCTCTGCCTGTTCACCGACTT |  |  |  |  |  |
+| q2-26 | Ca R | CAGTCAACGTGGCATCACA |  |  |  |  |  |
+| q2-27 | mef2a F | CCTACAACACTGATTACTCACTG | 166bp |  |  |  |  |
+| q2-28 | mef2a R | TGAACCCTGAGATAACTGCC | 166bp |  |  |  |  |
+| q2-29 | pou6f1 F | CTTTCAAGCCACCTTTAGCTG | 168bp |  |  |  |  |
+| q2-30 | pou6f1 R | CTCCAATAACCTGTCCCTGAG | 168bp |  |  |  |  |
+| q2-31 | FasL A |  |  |  |  |  |  |
+| q2-32 | FasL B |  |  |  |  |  |  |
+| q2-33 | FasL C |  |  |  |  |  |  |
+| q2-34 | FasL D |  |  |  |  |  |  |
+| q2-35 | FasL E |  |  |  |  |  |  |
+| q2-36 | FasL F |  |  |  |  |  |  |
+| q2-37 | Gmb F1 |  |  |  |  |  |  |
+| q2-38 | Gmb R1 |  |  |  |  |  |  |
+| q2-39 | Per F3 |  |  |  |  |  |  |
+| q2-40 | Per R3 |  |  |  |  |  |  |
+| q2-41 | Dntt F |  |  |  |  |  |  |
+| q2-42 | Dntt R |  |  |  |  |  |  |
+| q2-43 | Ttk-F3 | TGACAAAGAGCAGAATACCGT |  |  |  |  |  |
+| q2-44 | Ttk-R3 | GTAAGGTGTTGATGATGGACAG |  |  |  |  |  |
+| q2-45 | Cx3cr1-F1 | TCTTCATTGGCTTCTTTGGG |  |  |  |  |  |
+| q2-46 | Cx3cr1-R1 | TCGTTGTCCTTTCTCTTTGTG |  |  |  |  |  |
+| q2-47 | Cx3cr1-F2 | CACAAAGAGAAAGGACAACGA |  |  |  |  |  |
+| q2-48 | Cx3cr1-R2 | GAAGAGGAAGAAGGCAAAGAC |  |  |  |  |  |
+| q2-49 | Cx3cr1-F3 | CTTTGCCTTCTTCCTCTTCTG |  |  |  |  |  |
+| q2-50 | Cx3cr1-R3 | ACTTCCTATACAGGTGTCCC |  |  |  |  |  |
+| q2-51 | GAPDH-F | CCA GTA TGA CTC CAC TCA CG |  |  |  |  |  |
+| q2-52 | GAPDH-R | GAC TCC ACG ACA TAC TCA GC |  |  |  |  |  |
+| q2-53 | Dusp4-F2 | AAATCCTCCCTTTCCTCTACC |  |  |  |  |  |
+| q2-54 | Dusp4-R2 | CTTTACTGCGTCGATGTACTC |  |  |  |  |  |
+| q2-55 | Ttk-F2 | GTTCCAGTAAGGTGTTTCAG |  |  |  |  |  |
+| q2-56 | Ttk-R2 | GTTTCCACATTCCATTACCA |  |  |  |  |  |
+| q2-57 | Edg8-F2 | ACCTTGAAGTCCTGATCCTC |  |  |  |  |  |
+| q2-58 | Edg8-R2 | GGACAATAACCTCACTCACC |  |  |  |  |  |
+| q2-59 | Id2 F-qPCR | ACCAGAGACCTGGACAGAAC |  |  |  |  |  |
+| q2-60 | Id2 R-qPCR | AAGCTCAGAAGGGAATTCAG |  |  |  |  |  |
+| q2-61 | Dusp4-F1 | GCTTAAAGGTGGCTATGAGAG |  |  |  |  |  |
+| q2-62 | Dusp4-R1 | CTGGTAATGACCCTCAAAGTG |  |  |  |  |  |
+| q2-63 | Ttk-F1 | ATCATCAACACCTTACAGCC |  |  |  |  |  |
+| q2-64 | Ttk-R1 | CAATACCTGAAACACCTTACTG |  |  |  |  |  |
+| q2-65 | Edg8-F1 | GATTTCCAATAGCCGCTCTC |  |  |  |  |  |
+| q2-66 | Edg8-R1 | CGGTGTAGTTGTAGTGAAGG |  |  |  |  |  |
+| q2-67 | Dusp4-F3 | AATGTCTCTTCAGACTGTCC |  |  |  |  |  |
+| q2-68 | Dusp4-R3 | TTTACTGCGTCGATGTACTC |  |  |  |  |  |
+| q2-69 | Dixdc1-F1 | TTCTTTCTTCTCCATTCGCC |  |  |  |  |  |
+| q2-70 | Dixdc1-R1 | CCTTCCACAATATCTTTCGCT |  |  |  |  |  |
+| q2-71 | Dixdc1-F2 | AGCGAAAGATATTGTGGAAGG |  |  |  |  |  |
+| q2-72 | Dixdc1-R2 | ACACTCCAGTATGGGTTCTC |  |  |  |  |  |
+| q2-73 | Dixdc1-F3 | GAGGGCAAATATGGATAAGGA |  |  |  |  |  |
+| q2-74 | Dixdc1-R3 | GTAATTTGTCACCTCATCTGTC |  |  |  |  |  |
+| q2-75 | Trat 1 F1 | AATTCTTAGCCTACGGATCTC |  |  |  |  |  |
+| q2-76 | Trat 1 R1 | TATTCATCAACTCTCGTCTCTG |  |  |  |  |  |
+| q2-77 | Trat 1 F2 | ATATAATCCCAGAACCACTGGA |  |  |  |  |  |
+| q2-78 | Trat 1 R2 | TGAATGCTTTCCTCTACTACC |  |  |  |  |  |
+| q2-79 | Trat 1 F3 | TAGCATGTCAGGAAGCTCTG |  |  |  |  |  |
+| q2-80 | Trat 1 R3 | CGACCTTTCATTTGTTCATAGC |  |  |  |  |  |
+| q2-81 | BCL2 F |  |  |  |  |  |  |
+| q3-1 | BCL2 R |  |  |  |  |  |  |
+| q3-2 | Spi6 1F | TATGTCAAAGCAACCCTTCC |  |  |  |  |  |
+| q3-3 | Spi6 1R | TCCTTAAAGGTTTGGAGGAC |  |  |  |  |  |
+| q3-4 | Spi6 2F | CAGATATCTCAGGCACTTGG |  |  |  |  |  |
+| q3-5 | Spi6 2R | CATGTGTTTATGTGTTGCCTG |  |  |  |  |  |
+| q3-6 | Tef7 F1 |  |  |  |  |  |  |
+| q3-7 | Tef7 R1 |  |  |  |  |  |  |
+| q3-8 | Tef7 F2 |  |  |  |  |  |  |
+| q3-9 | Tef7 R2 |  |  |  |  |  |  |
+| q3-10 | Tef7 F3 |  |  |  |  |  |  |
+| q3-11 | Tef7 R3 |  |  |  |  |  |  |
+| q3-12 | Spi6-PAR-F | GCCATCCATCTTTTGAAGATGC |  |  |  |  |  |
+| q3-13 | Spi6-PAR-R | TGCACCCAAGAGAACCATAGC |  |  |  |  |  |
+| q3-14 | HPRT-F-Sybr |  |  |  |  |  |  |
+| q3-15 | HPRT-R-Sybr |  |  |  |  |  |  |
+| q3-16 | Id3 F-qPCR | GACTCTGGGACCCTCTCTC |  |  |  |  |  |
+| q3-17 | Id3 R-qPCR | ACCCAAGTTCAGTCCTTCTC |  |  |  |  |  |
+| q3-18 | zfhx1b-F1 | CATGAACCCATTTAGTGCCA |  |  |  |  |  |
+| q3-19 | zfhx1b-R1 | AGCAAGTCTCCCTGAAATCC |  |  |  |  |  |
+| q3-20 | zfhx1b-F2 | GCCATTATTTACCCAGAAGCC |  |  |  |  |  |
+| q3-21 | zfhx1b-R2 | GCATTTGGTGCTGATCTGTC |  |  |  |  |  |
+| q3-22 | zfhx1b-F3 | TGAACTATGACAACGTAGTGGA |  |  |  |  |  |
+| q3-23 | zfhx1b-R3 | CCTTCATTTCTTCTGGACCG |  |  |  |  |  |
+| q3-24 | TEC-F1 | TTGTAGCGATGTATGACTTCC |  |  |  |  |  |
+| q3-25 | TEC-R1 | ACCTTCTTTATCTTCCGTTCTG |  |  |  |  |  |
+| q3-26 | TEC-F2 | GTAGTATAAGAAAGACCCTGCC |  |  |  |  |  |
+| q3-27 | TEC-R2 | TCCTTCACTCCCATACTTATCTC |  |  |  |  |  |
+| q3-28 | TEC-F3 | CTCAGAACGGAAGATAAAGAAGG |  |  |  |  |  |
+| q3-29 | TEC-R3 | TTCAATGATCTCAGGAATGGAC |  |  |  |  |  |
+| q3-30 | CD200r1-F1 | TATTGAGGAGGATGAAATGCAG |  |  |  |  |  |
+| q3-31 | CD200r1-R1 | AGAGCTAATTTCCAAGTAGTCC |  |  |  |  |  |
+| q3-32 | CD200r1-F2 | CCCTGAAGTAACCTACTTTCC |  |  |  |  |  |
+| q3-33 | CD200r1-R2 | GATTGGTTACCACCTCTACTC |  |  |  |  |  |
+| q3-34 | CD200r1-F3 | CCTAGCAGTGCTCTTAATATGG |  |  |  |  |  |
+| q3-35 | CD200r1-R3 | ACTGTAGTGTTCACTTGTGTC |  |  |  |  |  |
+| q3-36 | Stgal6 F1 | GAACTCTCAGTTAGTCACCAC |  |  |  |  |  |
+| q3-37 | Stgal6 R1 | AGAGATTTCCTGAATGATGTCC |  |  |  |  |  |
+| q3-38 | Stgal6 F2 | AGGATCTCTGAAGAACTCCC |  |  |  |  |  |
+| q3-39 | Stgal6 R2 | TCTGTGGTGACTAACTGAGAG |  |  |  |  |  |
+| q3-40 | Stgal6 F3 | GAGTCAAGTTCAGCGTAGAG |  |  |  |  |  |
+| q3-41 | Stgal6 R3 | CCGCATCATGATTATCAATCTC |  |  |  |  |  |
+| q3-42 | BAK F |  |  |  |  |  |  |
+| q3-43 | BAK R |  |  |  |  |  |  |
+| q3-44 | BAD F |  |  |  |  |  |  |
+| q3-45 | BAD R |  |  |  |  |  |  |
+| q3-46 | BAX F |  |  |  |  |  |  |
+| q3-47 | BAX R |  |  |  |  |  |  |
+| q3-48 | BIM F |  |  |  |  |  |  |
+| q3-49 | BIM R |  |  |  |  |  |  |
+| q3-50 | BTLA 1F |  |  |  |  |  |  |
+| q3-51 | BTLA 1R |  |  |  |  |  |  |
+| q3-52 | BTLA 2F |  |  |  |  |  |  |
+| q3-53 | BTLA 2R |  |  |  |  |  |  |
+| q3-54 | BTLA 3F |  |  |  |  |  |  |
+| q3-55 | BTLA 3R |  |  |  |  |  |  |
+| q3-56 | Blk F |  |  |  |  |  |  |
+| q3-57 | Blk R |  |  |  |  |  |  |
+| q3-58 | Bmf F |  |  |  |  |  |  |
+| q3-59 | Bmf R |  |  |  |  |  |  |
+| q3-60 | CD244 1F |  |  |  |  |  |  |
+| q3-61 | CD244 1R |  |  |  |  |  |  |
+| q3-62 | CD244 2F |  |  |  |  |  |  |
+| q3-63 | CD244 2R |  |  |  |  |  |  |
+| q3-64 | CD244 3F |  |  |  |  |  |  |
+| q3-65 | CD244 3R |  |  |  |  |  |  |
+| q3-66 | BIMEL F |  |  |  |  |  |  |
+| q3-67 | BIMEL R |  |  |  |  |  |  |
+| q3-68 | CTLA4 1F |  |  |  |  |  |  |
+| q3-69 | CTLA4 1R |  |  |  |  |  |  |
+| q3-70 | CTLA4 2F |  |  |  |  |  |  |
+| q3-71 | CTLA4 2R |  |  |  |  |  |  |
+| q3-72 | CTLA4 3F |  |  |  |  |  |  |
+| q3-73 | CTLA4 3R |  |  |  |  |  |  |
+| q3-74 | cxcR6 1F | CTTCTCTTCTGATGCCATGGA |  |  |  |  |  |
+| q3-75 | cxcR6 1R | GAAACACATCTGTCAGAGTCC |  |  |  |  |  |
+| q3-76 | cxcR6 2F | CCTGCCTTAACCCTGTGCTCTAT |  |  |  |  |  |
+| q3-77 | cxcR6 2R | ATGTCATCCCCCTTGGTTTCA |  |  |  |  |  |
+| q3-78 | cxcR6 3F | CCCTTTTGGGCCTATGCAG |  |  |  |  |  |
+| q3-79 | cxcR6 3R | ATGCCTCGAAGAGTTTTGCAC |  |  |  |  |  |
+| q3-80 | cxcR6 4F | ATGCCATGACCAGCTTTCACT |  |  |  |  |  |
+| q3-81 | cxcR6 4R | TTAAGGCAGGCCCTCAGGTA |  |  |  |  |  |
+| q4-1 | Bcl-6 F | CCTGTGAAATCTGTGGCACTCG |  |  |  |  |  |
+| q4-2 | Bcl-6 R | CGCAGTTGGCTTTTGTGACG |  |  |  |  |  |
+| q4-3 | cxcl10 R | CAGGGATGATTTCAAGCTTCCC | qPCR |  |  |  |  |
+| q4-4 | cxcl10 F | GACTCAAGGGATCCCTCTCG | qPCR |  |  |  |  |
+| q4-5 | cxcr3 R | CAAGAAGAGGAGGCTGTAGAG | qPCR |  |  |  |  |
+| q4-6 | cxcr3 F | TGTACCTTGAGGTTAGTGAACG | qPCR |  |  |  |  |
+| q4-7 | IL-2 R | GAGGTCCAAGTTCATCTTCTAGG | qPCR |  |  |  |  |
+| q4-8 | IL-2 F | AGCAGGATGGAGAATTACAGGA | qPCR |  |  |  |  |
+| q4-9 | rora R | GAAGGTCTGCCACGTTATCTG | qPCR |  |  |  |  |
+| q4-10 | rora F | TCCAAATCCCACCTGGAAAC | qPCR |  |  |  |  |
+| q4-11 | YZ198 | GATCCTCGTCTTCATTGGTACTG | qPCR |  |  |  |  |
+| q4-12 | E2Aflox for | CTGCACTCCGAATTGTGCCTG | qPCR |  |  |  |  |
+| q4-13 | CD14 rev(genomic) | AGTCAGTTCGTGGAGGCCGGAAATC | qPCR |  |  |  |  |
+| q4-14 | CD14 for(genomic) | GCTCAAACTTTCAGAATCTACCGAC | qPCR |  |  |  |  |
+| q4-15 | Ca R | TGGCGTTGGTCTCTTTGAAG | qPCR |  |  |  |  |
+| q4-16 | Ca F | CCTCTGCCTGTTCACCGACTT  | qPCR |  |  |  |  |
+| q4-17 | Ja18 | CAGGTATGACAATCAGCTGAGTCC | qPCR |  |  |  |  |
+| q4-18 | Va14 | TGGGAGATACTCAGCAACTCTGG | qPCR |  |  |  |  |
+| q4-19 | rorc R (me) | TCTCCCACATTGACTTCCTC | qPCR |  |  |  |  |
+| q4-20 | rorc F (me) | AGCATCTATAGCACTGACGG | qPCR |  |  |  |  |
+| q4-21 | Bhlhe40 r | GAACATTTCTTGCCCTGCCT | qPCR |  |  |  |  |
+| q4-22 | Bhlhe40 f | CTCAAACTTACTACTTTGGGTCAC | qPCR |  |  |  |  |
+| q4-23 | Tcf7 r | CCTGTGAACTCCTTGCTTTCG | qPCR |  |  |  |  |
+| q4-24 | Tcf7 f | CTGTCTACTCTGCCTTCAATCTG | qPCR |  |  |  |  |
+| q4-25 | Egln3 - F2 | GAAATGGGACAGGTTATGTTCG | qPCR of egln3 in VHL null mice |  |  |  |  |
+| q4-26 | Egln3 - R | AGTCATAGCGTACCTGGTGG | qPCR of egln3 in VHL null mice |  |  |  |  |
+| q4-27 | Egln3 - F1 | GGGCAAATACTATGTCAAGGAGC | qPCR of egln3 in VHL null mice |  |  |  |  |
+| q4-28 | Egln3PB - R | GCGTCCCAATTCTTATTCAGGT | qPCR of VHL null mice |  |  |  |  |
+| q4-29 | Egln3PB - F | AGGCAATGGTGGCTTGCTATC | qPCR of VHL null mice |  |  |  |  |
+| q4-30 | PDK1 R | GCCTTAATGTAGATAACCGCA | qPCR |  |  |  |  |
+| q4-31 | PDK1 F | TGACTGTGAAGATGAGTGAC | qPCR |  |  |  |  |
+| q4-32 | CD71 R | CACAGGTATATTAGGCAACCC | qPCR |  |  |  |  |
+| q4-33 | CD71 F | TCTTTGGACATGCTCATCTAGG | qPCR |  |  |  |  |
+| q4-34 | Adrenomedullin R | CACTTATTCCACTTCTTTCGG | qPCR |  |  |  |  |
+| q4-35 | Adrenomedullin F | CTTTATCAGGGTATCAGAGCA | qPCR |  |  |  |  |
+| q4-36 | bNIP3 R | ATCTTCCTCAGACAGAGTGC | qPCR |  |  |  |  |
+| q4-37 | bNIP3 F | CATGAATCTGGACGAAGTAGC | qPCR |  |  |  |  |
+| q4-38 | p21 R | CTTTAAGTTTGGAGACTGGGA | qPCR |  |  |  |  |
+| q4-39 | p21 F | AGCCTGACAGATTTCTATCAC | qPCR |  |  |  |  |
+| q4-40 | Glut3 R | ACCAGGAACAGAGAAACTACAG | qPCR |  |  |  |  |
+| q4-41 | Glut3 F | CCAGGAGATGAAGGATGAGAG | qPCR |  |  |  |  |
+| q4-42 | Glut1 R | CTACAACAAACAGCGACACC | qPCR |  |  |  |  |
+| q4-43 | Glut1 F | GCAGGAGATGAAAGAAGAGG | qPCR |  |  |  |  |
+| q4-44 | PGK1 R | GTTGACTTAGGAGCACAGGA | qPCR |  |  |  |  |
+| q4-45 | PGK1 F | ACTATCATAGGTGGTGGAGAC | qPCR |  |  |  |  |
+| q4-46 | CD62L F1 | CATTCCTGTAGCCGTCATGG | qPCR |  |  |  |  |
+| q4-47 | CD62L R1 | AGGAGGAGCTGTTGGTCATG | qPCR |  |  |  |  |
+| q4-48 | CD62L F2 | GTGGAGCATCTGGAAACTGG | qPCR |  |  |  |  |
+| q4-49 | CD62L R2 | CGGCTACAGGAATGAAGAGG | qPCR |  |  |  |  |
+| q4-50 | KLRG1 F | ACCTCCAGCCATCAATGTTC | qPCR |  |  |  |  |
+| q4-51 | KLRG1 R | CCTCTGGACGAGGAATGGTA | qPCR |  |  |  |  |
+| q4-52 | mir205 F2 | CTTCATTCCACCGGAGTCTG | miRNA qPCR |  |  |  |  |
+| q4-53 | mir200a F3 | CGTAACACTGTCTGGTAACGATGT | miRNA qPCR |  |  |  |  |
+| q4-54 | mir200a F2 | catcttaccggacagtgctgga | miRNA qPCR |  |  |  |  |
+| q4-55 | mir205 F | tccttcattccaccggagtctg | qPCR detection of mircoRNA 200a |  |  |  |  |
+| q4-56 | mir200a F | taacactgtctggtaacgatgt | qPCR detection of mircoRNA 200a |  |  |  |  |
+| q4-57 | huGAPDH R | GTTGCTGTAGCCAAATTCGTTGT | Human GAPDH qPCR primers |  |  |  |  |
+| q4-58 | huGAPDH F | GGTGGTCTCCTCTGACTTCAACA | Human GAPDH qPCR primers |  |  |  |  |
+| q4-59 | huZeb2 R | CTTGAACTTGCGGTTACCTGC | qPCR expression of human Zeb2 |  |  |  |  |
+| q4-60 | huZeb2 F | AGGCATATGGTGACGCACAA | qPCR expression of human Zeb2 |  |  |  |  |
+| q4-61 | CCR7F | ACAGCGGCCTCCAGAAGAACAGCGG |  |  | Jamie |  |  |
+| q4-62 | CCR7R | TGACGTCATAGGCAATGTTGAGCTG |  |  | Jamie |  |  |
+| q4-63 | Ccl3F | TGTACCATGACACTCTGCAAC |  |  | Jamie |  |  |
+| q4-64 | Ccl3R | CAACGATGAATTGGCGTGGAA |  |  | Jamie |  |  |
+| q4-65 | CCR6F | TGGGCCATGCTCCCTAGAA |  |  | Jamie |  |  |
+| q4-66 | CCR6R | GGTGAGGACAAAGAGTATGTCTG |  |  | Jamie |  |  |
+| q4-67 | CXCL14F | TACCCACACTGCGAGGAGAA |  |  | Jamie |  |  |
+| q4-68 | CXCL14R | CGTTCCAGGCATTGTACCACT |  |  | Jamie |  |  |
+| q4-69 | CXCR5F | TGGCCTTCTACAGTAACAGCA |  |  | Jamie |  |  |
+| q4-70 | CXCR5R | GCATGAATACCGCCTTAAAGGAC |  |  | Jamie |  |  |
+| q4-71 | FasF | ATGACGGATCTCGTAGCTGTT |  |  | Jamie |  |  |
+| q4-72 | FasR | CGTTTCTTTGCCCACCAACTT |  |  | Jamie |  |  |
+| q4-73 | GzmkF | TGGCTGGCGTTTATATGTCTTC |  |  | Jamie |  |  |
+| q4-74 | GzmkR | TCTGGGAAACCAAGAGTAGCA |  |  | Jamie |  |  |
+| q4-75 | CD62L F1 | CATTCCTGTAGCCGTCATGG |  |  | Jamie |  |  |
+| q4-76 | CD62L R1 | AGGAGGAGCTGTTGGTCATG |  |  | Jamie |  |  |
+| q4-77 | CD62L F2 | GTGGAGCATCTGGAAACTGG |  |  | Jamie |  |  |
+| q4-78 | CD62L R2 | CGGCTACAGGAATGAAGAGG |  |  | Jamie |  |  |
+| q4-79 | KLRG1 F | ACCTCCAGCCATCAATGTTC |  |  | Jamie |  |  |
+| q4-80 | KLRG1 R | CCTCTGGACGAGGAATGGTA |  |  | Jamie |  |  |
+| q4-81 | IcosF | GATGTCTGAAGCTGAGATCCAC |  |  | Jamie |  |  |
+| q5-1 | IcosR | CCGGCTTTAGTCCAGTCCT |  |  | Jamie |  |  |
+| q5-2 | Ifnar1F | AGACGAGGCGAAGTGGTTAAA |  |  | Jamie |  |  |
+| q5-3 | Ifnar1R | GCTCTGACACGAAACTGTGTTTT |  |  | Jamie |  |  |
+| q5-4 | Il2raF | CTCCCATGACAAATCGAGAAAGC |  |  | Jamie |  |  |
+| q5-5 | Il2raR | TCTCTTGGTGCATAGACTGTGT |  |  | Jamie |  |  |
+| q5-6 | Il2rbF | GTCCATGCCAAGTCGAACCT |  |  | Jamie |  |  |
+| q5-7 | il2rbR | CAGCACACCACATTTATGTCAAG |  |  | Jamie |  |  |
+| q5-8 | Il2rgF | GCAACAGAGATCGAAGCTGGA |  |  | Jamie |  |  |
+| q5-9 | Il2rgR | AGATTGGGTTATAGCGGCTCC |  |  | Jamie |  |  |
+| q5-10 | Il4raF | ACACTACAGGCTGATGTTCTTCG |  |  | Jamie |  |  |
+| q5-11 | Il4raR | TGGACCGGCCTATTCATTTCC |  |  | Jamie |  |  |
+| q5-12 | Il6raF | AGCGACACTGGGGACTATTTA |  |  | Jamie |  |  |
+| q5-13 | Il6raR | ACAGCCTTCGTGGTTGGAG |  |  | Jamie |  |  |
+| q5-14 | Il21rF | CAGTCTGGCAACAACTCCCAA |  |  | Jamie |  |  |
+| q5-15 | Il21rR | GTTCGTCATAAGCTGAGTCCC |  |  | Jamie |  |  |
+| q5-16 | Il27raF | GTATCGGGGACCGTCTGTGA |  |  | Jamie |  |  |
+| q5-17 | Il27raR | CAGCACGGGACCTCTTCTT |  |  | Jamie |  |  |
+| q5-18 | MybF | CATTTACAGCCCACTGGTACTC |  |  | Jamie |  |  |
+| q5-19 | MybR | CCGTGACATTATCGCTTGTGTTC |  |  | Jamie |  |  |
+| q5-20 | Stat6F | TGGAGAGCATCTATCAGAGGGA |  |  | Jamie |  |  |
+| q5-21 | Stat6R | GCGGAACTCTTCTATAACAGCTT |  |  | Jamie |  |  |
+| q5-22 | Tcf7F | CCACTCTACGAACATTTCAGCA |  |  | Jamie |  |  |
+| q5-23 | Tcf7R | ACTGGGCCAGCTCACAGTA |  |  | Jamie |  |  |
+| q5-24 | Tgfbr1F | AAAACAGGGGCAGTTACTACAAC |  |  | Jamie |  |  |
+| q5-25 | Tgfbr1R | TGGCAGATATAGACCATCAGCA |  |  | Jamie |  |  |
+| q5-26 | TbetF | AGCAAGGACGGCGAATGTT |  |  | Jamie |  |  |
+| q5-27 | TbetR | GTGGACATATAAGCGGTTCCC |  |  | Jamie |  |  |
+| q5-28 | HEB-F-QPCR | GTACTGTTGCTGCCTCAAAC |  |  |  |  |  |
+| q5-29 | HEB-R-QPCR | GGAGGTTCATGAAGGTTTTC |  |  |  |  |  |
+| q5-30 | E2-2-F-QPCR | CATGACTAGCAGGGATCTTG |  |  |  |  |  |
+| q5-31 | E2-2-R-QPCR | AACCCTGAACGTTTTCTCTC |  |  |  |  |  |
+| q5-32 | IL13 intronsp FW | GCTGAGCAACATCACACAAG | qPCR in iNKT |  | Martin |  |  |
+| q5-33 | IL13 intronsp REV | AGGCCATGCAATATCCTCTG | qPCR in iNKT |  | Martin |  |  |
+| q5-34 | ID2 intronspanning FW | TCCCTTCTGAGCTTATGTCG | qPCR in iNKT |  | Martin |  |  |
+| q5-35 | ID2 intronspanning REV | GTCCATTCAACGTGTTCTCC | qPCR in iNKT |  | Martin |  |  |
+| q5-36 | ID3 intronspanning FW | TGATCTCCAAGGACAAGAGG | qPCR in iNKT |  | Martin |  |  |
+| q5-37 | ID3 intronspanning REV | GAAGAGGGCTGGGTTAAGAT | qPCR in iNKT |  | Martin |  |  |
+| q5-38 | B2M intronspanning FW | CTTTCTGGTGCTTGTCTCAC | qPCR in iNKT |  | Martin |  |  |
+| q5-39 | B2M intronspanning REV | TATGTTCGGCTTCCCATTCT | qPCR in iNKT |  | Martin |  |  |
+| q5-40 | HPRT1 intronsp FW | GGCCAGACTTTGTTGGATTT | qPCR in iNKT |  | Martin |  |  |
+| q5-41 | HPRT1 intronsp REV | CAACTTGCGCTCATCTTAGG | qPCR in iNKT |  | Martin |  |  |
+| q5-42 | GAPDH intronsp FW | GAGACGGCCGCATCTTC | qPCR in iNKT |  | Martin |  |  |
+| q5-43 | GAPDH intronsp REV | CAACAATCTCCACTTTGCCA | qPCR in iNKT |  | Martin |  |  |
+| q5-44 | LCMV-GP F | CATTCACCTGGACTTTGTCAGACTC | levels of LCMV GP mRNA |  | Louise |  |  |
+| q5-45 | LCMV-GP R | GCAACTGCTGTGTTCCCGAAA | levels of LCMV GP mRNA |  | Louise |  |  |
+| q5-46 | LCMV NP F | GCATTGTCTGGCTGTAGCTTA | levels of LCMV NP mRNA |  | Louise |  |  |
+| q5-47 | LCMV NP R | CAATGACGTTGTACAAGCGC | levels of LCMV NP mRNA |  | Louise |  |  |
+| q5-48 | E2A F | CATCCATGTCCTGCGAAGCCA | qPCR |  | Kyla |  |  |
+| q5-49 | E2A R | TTCTTGTCCTCTTCGGCGT | qPCR |  | Kyla |  |  |
+| q5-50 | Egr2 F | GAGGAGCAAATGATGACCGC | qPCR in iNKT (intron spanning) |  | Louise |  |  |
+| q5-51 | Egr2 R | GTTGATCATGCCATCTCCCG | qPCR in iNKT (intron spanning) |  | Louise |  |  |
+| q5-52 | Zbtb16 F | TTACTGGCTCATTCAGCGGG | qPCR in iNKT (intron spanning) |  | Louise |  |  |
+| q5-53 | Zbtb16 R | GAAGGTGCGGTTGCACTCA | qPCR in iNKT (intron spanning) |  | Louise |  |  |
+| q5-54 |  |  |  |  | Louise |  |  |
+| q5-55 |  |  |  |  |  |  |  |
+| q5-56 |  |  |  |  |  |  |  |
+| q5-57 |  |  |  |  |  |  |  |
+| q5-58 |  |  |  |  |  |  |  |
+| q5-59 |  |  |  |  |  |  |  |
+| q5-60 |  |  |  |  |  |  |  |
+| q5-61 |  |  |  |  |  |  |  |
+| q5-62 |  |  |  |  |  |  |  |
+| q5-63 |  |  |  |  |  |  |  |
+| q5-64 |  |  |  |  |  |  |  |
+| q5-65 |  |  |  |  |  |  |  |
+| q5-66 |  |  |  |  |  |  |  |
+| q5-67 |  |  |  |  |  |  |  |
+| q5-68 |  |  |  |  |  |  |  |
+| q5-69 |  |  |  |  |  |  |  |
+| q5-70 |  |  |  |  |  |  |  |
+| q5-71 |  |  |  |  |  |  |  |
+| q5-72 |  |  |  |  |  |  |  |
+| q5-73 |  |  |  |  |  |  |  |
+| q5-74 |  |  |  |  |  |  |  |
+| q5-75 |  |  |  |  |  |  |  |
+| q5-76 |  |  |  |  |  |  |  |
+| q5-77 |  |  |  |  |  |  |  |
+| q5-78 |  |  |  |  |  |  |  |
+| q5-79 |  |  |  |  |  |  |  |
+| q5-80 |  |  |  |  |  |  |  |
+| q5-81 |  |  |  |  |  |  |  |
+
+## Misc
+
+| Location | Name | Sequence | Use | Tm | User | Last Ordered | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| M1-1 | 5' Probe #3 R | CTTGCCTTTTGCAAACTCTG |  |  |  |  |  |
+| M1-2 | 5' Probe #3 F | GGCAGGGATGGGAATAATTT |  |  |  |  |  |
+| M1-3 |  |  |  |  |  |  |  |
+| M1-4 |  |  |  |  |  |  |  |
+| M1-5 |  |  |  |  |  |  |  |
+| M1-6 |  |  |  |  |  |  |  |
+
+## BAD Primers
+
+| Primer Name | Sequence | Order Date | Type |
+| --- | --- | --- | --- |
+| Lox P 5' | ATA ACT TCG TAT AAT GTA TGC T | 2010-08-06 00:00:00 | cloning |
+| Lox P 3' | ATA ACT TCG TAT AGC ATA CAT T | 2010-08-06 00:00:00 | cloning |
+| SLIC Neo with 3' homolog | TGT ATG CTA TAC GAA GTT ATT G | 2010-08-16 00:00:00 | cloning |

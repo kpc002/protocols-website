@@ -3,6 +3,8 @@ order: 30
 title: Introduction to DESeq2
 description: Basic workflow for differentially expressed genes analysis, GSEA and GSVA.
 cache: true
+execute:
+  enabled: false
 author: Maximilian Heeg
 date: last-modified
 image: fig-distance-1.png

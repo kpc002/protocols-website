@@ -1,0 +1,30 @@
+LOCUS       03_Index_PCR_01          236 bp ds-DNA     linear       08-DEC-2025
+DEFINITION  .
+KEYWORDS    "creator:SnapGene License"
+FEATURES             Location/Qualifiers
+     promoter        71..102
+                     /label="U6 promoter"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="label: U6 promoter note: RNA polymerase III promoter for human U6 snRNA"
+     source          71..170
+                     /label="source"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="mol_type: other DNA: organism: synthetic DNA construct"
+     misc_feature    111..130
+                     /label="Thy1 sgRNA"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: Thy1 sgRNA"
+     misc_RNA        136..170
+                     /label="gRNA scaffold"
+                     /ApEinfo_revcolor="#00ccff"
+                     /ApEinfo_fwdcolor="#00ccff"
+                     /note="label: gRNA scaffold note: guide RNA scaffold for the Streptococcus pyogenes CRISPR/Cas9 system"
+ORIGIN
+        1 AATGATACGG CGACCACCGA GATCTACACT AGATCGCTCG TCGGCAGCGT CAGATGTGTA
+       61 TAAGAGACAG TTTCTTGGCT TTATATATCT tgtggaaagg acgaaacacc cgtgtgctcg
+      121 ggtatcccaa gttttagagc tagaaatagc AAGTTAAAAT AAGGCTAGTC CTGTCTCTTA
+      181 TACACATCTC CGAGCCCACG AGACTAAGGC GAATCTCGTA TGCCGTCTTC TGCTTG
+//

@@ -1,5 +1,7 @@
 project:
   type: website
+  pre-render:
+    - python3 scripts/check_quarto_collisions.py
 
 website:
   title: "protocols.heeg.io"
@@ -33,8 +35,6 @@ format:
       dark: [darkly, styles.scss]
     toc: true
     code-line-numbers: false
-    include-in-header:
-      - umami.js
     link-external-icon: true
     link-external-newwindow: true
 

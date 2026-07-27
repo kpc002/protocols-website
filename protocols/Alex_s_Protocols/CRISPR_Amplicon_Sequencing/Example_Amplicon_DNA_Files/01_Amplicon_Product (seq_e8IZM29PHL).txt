@@ -1,0 +1,2 @@
+01_Amplicon_Product
+creator: SnapGene License
