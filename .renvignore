@@ -1,5 +1,6 @@
-_site/
+_site
 _freeze/
 .quarto/
   protocols/bioinformatics/introduction-to-deseq2/index.qmd
   protocols/bioinformatics/nextflow_rna_seq/index.qmd
+
