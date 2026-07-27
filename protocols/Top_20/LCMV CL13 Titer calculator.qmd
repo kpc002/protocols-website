@@ -1,0 +1,88 @@
+---
+title: "LCMV CL13 Titer Calculator"
+description: "Interactive calculator for diluting AB and NM LCMV Clone 13 stocks to 2 × 10^6 PFU per 200 µL dose."
+order: 10
+author: "Kitty Cheung"
+date: last-modified
+---
+
+# LCMV CL13 Titer Calculator
+
+This calculator is adapted from `LCMV CL13 Titer calculator.xlsx`. Enter the total volume of diluted virus needed; the required stock-virus and PBS volumes update immediately.
+
+The target concentration is **1 × 10^7 PFU/mL**, which delivers **2 × 10^6 PFU in 200 µL**. One milliliter provides five 200 µL doses.
+
+```{=html}
+<section class="lcmv-calculator" aria-labelledby="lcmv-calculator-heading">
+  <h2 id="lcmv-calculator-heading">Dilution calculator</h2>
+  <div class="lcmv-grid">
+    <article class="lcmv-card">
+      <h3>AB stock (2015)</h3>
+      <p class="stock-titer">Stock titer: <strong>5.15 × 10<sup>7</sup> PFU/mL</strong></p>
+      <label for="ab-total">Total diluted virus needed <span><input id="ab-total" type="number" min="0" step="0.2" value="1"> mL</span></label>
+      <div class="lcmv-results" aria-live="polite">
+        <div><span>AB virus stock</span><output id="ab-virus">0.194 mL</output></div>
+        <div><span>PBS</span><output id="ab-pbs">0.806 mL</output></div>
+      </div>
+    </article>
+
+    <article class="lcmv-card">
+      <h3>NM stock (2020)</h3>
+      <p class="stock-titer">Stock titer: <strong>8.495 × 10<sup>7</sup> PFU/mL</strong></p>
+      <label for="nm-total">Total diluted virus needed <span><input id="nm-total" type="number" min="0" step="0.2" value="1"> mL</span></label>
+      <div class="lcmv-results" aria-live="polite">
+        <div><span>NM virus stock</span><output id="nm-virus">0.118 mL</output></div>
+        <div><span>PBS</span><output id="nm-pbs">0.882 mL</output></div>
+      </div>
+    </article>
+  </div>
+  <p class="lcmv-note">Formula: virus stock volume = total volume × target concentration ÷ stock titer. PBS volume = total volume − virus stock volume.</p>
+</section>
+
+<style>
+.lcmv-calculator { --lcmv-accent: #2c7a7b; --lcmv-soft: color-mix(in srgb, var(--lcmv-accent) 12%, transparent); margin-top: 1.25rem; }
+.lcmv-calculator > h2 { margin-bottom: 1rem; }
+.lcmv-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.lcmv-card { border: 1px solid color-mix(in srgb, currentColor 18%, transparent); border-radius: .75rem; padding: 1.25rem; box-shadow: 0 2px 8px rgb(0 0 0 / 6%); }
+.lcmv-card h3 { margin-top: 0; margin-bottom: .3rem; }
+.stock-titer { margin-top: 0; font-size: .92rem; opacity: .85; }
+.lcmv-card label { display: flex; flex-direction: column; gap: .35rem; margin-top: 1rem; font-weight: 600; }
+.lcmv-card label span { display: flex; align-items: center; gap: .4rem; font-weight: 400; }
+.lcmv-card input { width: 8rem; max-width: 100%; padding: .45rem .55rem; border: 1px solid color-mix(in srgb, currentColor 30%, transparent); border-radius: .3rem; color: inherit; background: var(--bs-body-bg, white); }
+.lcmv-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1rem; }
+.lcmv-results div { background: var(--lcmv-soft); border-radius: .5rem; padding: .8rem 1rem; }
+.lcmv-results span { display: block; font-size: .86rem; }
+.lcmv-results output { display: block; margin-top: .15rem; color: var(--lcmv-accent); font-size: 1.2rem; font-weight: 700; }
+.lcmv-note { margin: .9rem 0 0; font-size: .88rem; opacity: .8; }
+@media (max-width: 420px) { .lcmv-results { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const targetTiter = 1e7;
+  const stocks = {
+    ab: 5.15e7,
+    nm: 8.495e7
+  };
+
+  const formatVolume = value => Number.isFinite(value)
+    ? `${value.toLocaleString(undefined, { minimumFractionDigits: 3, maximumFractionDigits: 3 })} mL`
+    : "—";
+
+  function calculate(stockName) {
+    const totalInput = document.getElementById(`${stockName}-total`);
+    const total = Number.parseFloat(totalInput.value);
+    const isValid = Number.isFinite(total) && total >= 0;
+    const virus = isValid ? total * targetTiter / stocks[stockName] : NaN;
+    const pbs = isValid ? total - virus : NaN;
+    document.getElementById(`${stockName}-virus`).value = formatVolume(virus);
+    document.getElementById(`${stockName}-pbs`).value = formatVolume(pbs);
+  }
+
+  Object.keys(stocks).forEach(stockName => {
+    document.getElementById(`${stockName}-total`).addEventListener("input", () => calculate(stockName));
+    calculate(stockName);
+  });
+});
+</script>
+```

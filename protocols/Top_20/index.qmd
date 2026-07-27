@@ -1,0 +1,20 @@
+---
+title: "Top 20 Protocols"
+description: "A selection of frequently used laboratory protocols."
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+listing:
+  type: table
+  contents:
+    - "*.md"
+    - "*.qmd"
+  sort: "title"
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse the selected Top 20 protocols.
+
+[B5.Cell line media test](B5.Cell%20line%20media_test.html){.btn .btn-outline-primary}

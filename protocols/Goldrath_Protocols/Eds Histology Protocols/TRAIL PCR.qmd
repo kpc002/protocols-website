@@ -1,0 +1,89 @@
+---
+title: "TRAIL PCR"
+description: 'Converted spreadsheet contents.'
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+---
+
+# TRAIL PCR
+
+## Sheet1
+
+| 15 |  |  |  |  |  |  | =DATE(2003,9,16) |  |  | FCgRIIko |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Component | c(stock) | c(end) | ml/reaction | ml/ reactions | 29 |  |  |  |  | Component | c(stock) | c(end) | ml/reaction | ml/ reactions | 10 |
+| H2O |  |  | 13.25 | =D3*F$2 | 1.5 mM | LTH1  | RO55 X RO56 |  |  | H2O |  |  | 10.75 | =N3*P$2 |  |
+| PCR buffer | 5x | 1x | 5 | =D4*F$2 | 1.5mM | IL7RTG  | AG6 X XG106 |  |  | PCR buffer | 5x | 1x | 5 | =N4*P$2 |  |
+| MgCl2 | 15/30/45 mM | 1.5/3/4.5 mM | 2.5 | =D5*F$2 | 1.5mM | srta | RO83xRO84 |  |  | MgCl2 | 20 mM | 2 mM | 2.5 | =N5*P$2 |  |
+| dNTPs | 10 mM | 0.2 mM | 0.5 | =D6*F$2 |  | E2A |  |  |  | dNTPs | 10 mM | 0.2 mM | 0.5 | =N6*P$2 |  |
+| Taq | 5 U/ml | 0.5 U/r | 0.25 | =D7*F$2 |  |  |  |  |  | Taq | 5 U/ml | 0.5 U/r | 0.25 | =N7*P$2 |  |
+| Oligo 1 | 10 mM | 0.5 mM | 1.25 | =D8*F$2 |  |  |  |  |  | Oligo 618 | 10 mM | 1 mM | 2.5 | =N8*P$2 |  |
+|  |  |  |  |  |  |  |  |  |  | oligo 619 | 10 mM | 0.5 | 1.25 | =N9*P$2 |  |
+| Oligo 2 | 10 mM | 0.5 mM | 1.25 | =D10*F$2 |  |  |  |  |  | Oligo 620 | 10 mM | 1 mM | 2.5 | =N10*P$2 |  |
+| total |  |  | =D3+D4+D5+D6+D7+D8+D10 | =D11*F$2 |  |  |  |  |  | total |  |  | =N3+N4+N5+N6+N7+N8+N10 | =N11*P$2 |  |
+| DNA |  |  |  | 1 |  |  |  |  |  | DNA |  |  |  | 1 |  |
+| B |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Component | c(stock) | c(end) | ml/reaction | ml/ reactions | 14 |  |  |  |  |  |  |  |  |  |  |
+| H2O |  |  | 10.75 | =D16*F$15 | OTI | VB5FXVB5R | 55C | 1.5mM |  |  |  |  |  |  |  |
+| PCR buffer | 5x | 1x | 5 | =D17*F$15 |  |  |  |  |  | IL18ko | 61C x35 |  |  |  | 8 |
+| MgCl2 | 15/30/45 mM | 1.5/3/4.5 mM | 2.5 | =D18*F$15 |  |  |  |  |  | Component | c(stock) | c(end) | ml/reaction | ml/ reactions |  |
+| dNTPs | 10 mM | 0.2 mM | 0.5 | =D19*F$15 |  |  |  |  |  | H2O |  |  | 12.85 | =N19*P$17 |  |
+| betain | 5 M | .5 M | 2.5 | =D20*F$15 |  |  |  |  |  | PCR buffer | 5x | 1x | 5 | =N20*P$17 |  |
+| Taq | 5 U/ml | 0.5 U/r | 0.25 | =D21*F$15 |  |  |  |  |  | MgCl2 | 20 mM | 2 mM | 2.5 | =N21*P$17 |  |
+| Oligo 1 | 10 mM | 0.5 mM | 1.25 | =D22*F$15 |  |  |  |  |  | dNTPs | 10 mM | 0.2 mM | 0.5 | =N22*P$17 |  |
+| Oligo 2 | 10 mM | 0.5 mM | 1.25 | =D23*F$15 |  |  |  |  |  | Taq | 5 U/ml | 0.5 U/r | 0.25 | =N23*P$17 |  |
+| total |  |  | =D16+D17+D18+D19+D20+D21+D22+D23 | =D24*F$15 | =E24/D24 |  |  |  |  | Oligo 01946 | 10 mM | 0.66 mM | 1.65 | =N24*P$17 |  |
+| DNA |  |  |  | 1 |  |  |  |  |  | oligo 01947 | 10 mM | 0.66 mM | 1.65 | =N25*P$17 |  |
+|  |  |  |  |  |  |  |  |  |  | Oligo 013 | 10 mM | 0.5 mM | 1.25 | =N26*P$17 |  |
+|  |  |  |  |  |  |  |  |  |  | oligo 014 | 10 mM | 0.5 mM | 1.25 | =N27*P$17 |  |
+| C |  |  |  |  |  |  |  |  |  | total |  |  | =N19+N20+N21+N22+N23+N24+N26 | =N28*P$17 | =O28/N28 |
+| Component | c(stock) | c(end) | ml/reaction | ml/ 3 reactions |  |  |  |  |  | DNA |  |  |  | 1 |  |
+| H2O |  |  | 10.75 | =D30*3 |  |  |  |  |  |  |  |  |  |  |  |
+| PCR buffer | 5x | 1x | 5 | =D31*3 |  |  |  |  |  |  |  |  |  |  |  |
+| MgCl2 | 15/30/45 mM | 1.5/3/4.5 mM | 2.5 | =D32*3 |  |  |  |  |  |  |  |  |  |  |  |
+| dNTPs | 10 mM | 0.2 mM | 0.5 | =D33*3 |  |  |  |  |  |  |  |  |  |  |  |
+| DMSO | 1 | 0.1 | 2.5 | =D34*3 |  |  |  |  |  | IL18Rko | 58C x25 |  |  |  | 16 |
+| Taq | 5 U/ml | 0.5 U/r | 0.25 | =D35*3 |  |  |  |  |  | Component | c(stock) | c(end) | ml/reaction | ml/ reactions |  |
+| Oligo 1 | 10 mM | 0.5 mM | 1.25 | =D36*3 |  |  |  |  |  | H2O |  |  | 12.6 | =N36*P$34 |  |
+| Oligo 2 | 10 mM | 0.5 mM | 1.25 | =D37*3 |  |  |  |  |  | PCR buffer | 5x | 1x | 5 | =N37*P$34 |  |
+| total |  |  | =D30+D31+D32+D33+D34+D35+D36+D37 | =E30+E31+E32+E33+E34+E35+E36+E37 |  |  |  |  |  | MgCl2 | 20 mM | 2 mM | 2.5 | =N38*P$34 |  |
+| DNA |  |  |  | 1 |  |  |  |  |  | dNTPs | 10 mM | 0.2 mM | 0.5 | =N39*P$34 |  |
+|  |  |  |  |  |  |  |  |  |  | Taq | 5 U/ml | 0.5 U/r | 0.25 | =N40*P$34 |  |
+| D |  |  |  |  |  |  |  |  |  | Oligo 01755 | 10 mM | 0.75 mM | 1.9 | =N41*P$34 |  |
+| Component | c(stock) | c(end) | ml/reaction | ml/ 3 reactions |  |  |  |  |  | oligo 01756 | 10 mM | 0.75 mM | 1.9 | =N42*P$34 |  |
+| H2O |  |  | 10.75 | =D43*3 |  |  |  |  |  | Oligo 013 | 10 mM | 0.5 mM | 1.25 | =N43*P$34 |  |
+| PCR buffer | 5x | 1x | 5 | =D44*3 |  |  |  |  |  | oligo 014 | 10 mM | 0.5 mM | 1.25 | =N44*P$34 |  |
+| MgCl2 | 15/30/45 mM | 1.5/3/4.5 mM | 2.5 | =D45*3 |  |  |  |  |  | total |  |  | =N36+N37+N38+N39+N40+N41+N43 | =N45*P$34 | =O45/N45 |
+| dNTPs | 10 mM | 0.2 mM | 0.5 | =D46*3 |  |  |  |  |  | DNA |  |  |  | 1 |  |
+| BSA | 1mg/ml | 100 mg/ml | 2.5 | =D47*3 |  |  |  |  |  |  |  |  |  |  |  |
+| Taq | 5 U/ml | 0.5 U/r | 0.25 | =D48*3 |  |  |  |  |  |  |  |  |  |  |  |
+| Oligo 1 | 10 mM | 0.5 mM | 1.25 | =D49*3 |  |  |  |  |  |  |  |  |  |  |  |
+| Oligo 2 | 10 mM | 0.5 mM | 1.25 | =D50*3 |  |  |  |  |  |  |  |  |  |  |  |
+| total |  |  | =D43+D44+D45+D46+D47+D48+D49+D50 | =E43+E44+E45+E46+E47+E48+E49+E50 |  |  |  |  |  |  |  |  |  |  |  |
+| DNA |  |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  |
+| HEB KO | (w/ B-ine 3 oligos) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Component | c(stock) | c(end) | ml/reaction | ml/ reactions | 8 |  |  |  |  |  |  |  |  |  |  |
+| H2O |  |  | 10.5 | =D56*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| PCR buffer | 5x | 1x | 5 | =D57*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| MgCl2 | 15 mM | 1.5 mM | 2.5 | =D58*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| dNTPs | 10 mM | 0.2 mM | 0.5 | =D59*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| betain | 5 M | .5 M | 2.5 | =D60*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| HEB com | 10 mM | 0.5 | 1.25 | =D61*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| HEB KO | 10 mM | 0.5 | 1.25 | =D62*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| HEB wt | 10 mM | 0.5 | 1.25 | =D63*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| Taq | 5 U/ml | 0.5 U/r | 0.25 | =D64*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| total |  |  | =D56+D57+D58+D59+D64+D60+D61+D62+D63 | =D65*F55 |  |  |  |  |  |  |  |  |  |  |  |
+| DNA |  |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  |
+| To try: more taq and dNTP |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| E2A |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| Component | c(stock) | c(end) | ml/reaction | ml/ reactions | 8 |  |  |  |  |  |  |  |  |  |  |
+| H2O |  |  | 13.875 | =D71*F70 | 1.5 mM |  |  |  |  |  |  |  |  |  |  |
+| PCR buffer | 5x | 1x | 5 | =D72*F70 | 1.5mM |  |  |  |  |  |  |  |  |  |  |
+| MgCl2 | 15/30/45 mM | 1.5/3/4.5 mM | 2.5 | =D73*F70 | 1.5mM |  |  |  |  |  |  |  |  |  |  |
+| dNTPs | 10 mM | 0.2 mM | 0.625 | =D74*F70 |  |  |  |  |  |  |  |  |  |  |  |
+| Taq | 5 U/ml | 0.5 U/r | 0.5 | =D75*F70 |  |  |  |  |  |  |  |  |  |  |  |
+| Oligo 1 | 10 mM | 0.5 mM | 1.25 | =D76*F70 |  |  |  |  |  |  |  |  |  |  |  |
+| Oligo 2 | 10 mM | 0.5 mM | 1.25 | =D77*F70 |  |  |  |  |  |  |  |  |  |  |  |
+| total |  |  | =D71+D72+D73+D74+D75+D76+D77 | =D78*F70 |  |  |  |  |  |  |  |  |  |  |  |
+| DNA |  |  |  | 1 |  |  |  |  |  |  |  |  |  |  |  |

@@ -1,0 +1,156 @@
+---
+title: "mix_calculation"
+description: "Interactive calculator for preparing a control and knockout cell mix, staining it for flow cytometry, adjusting the ratio, and preparing cells for injection."
+order: 10
+author: "Nicole Sharping"
+date: last-modified
+toc: true
+---
+
+This calculator is adapted from `mix_calculation.xlsx`. Change any value in a white field; calculated values update immediately.
+
+  <section class="calc-card">
+    <h2>1. Prepare an equal-cell mix</h2>
+    <div class="calc-grid">
+      <label>Control concentration <span><input id="control-conc" type="number" min="1" step="1000" value="460000"> cells/mL</span></label>
+      <label>KO concentration <span><input id="ko-conc" type="number" min="1" step="1000" value="430000"> cells/mL</span></label>
+      <label>Number of mice <span><input id="mouse-count" type="number" min="1" step="1" value="14"></span></label>
+      <label>Target cells per mouse <span><input id="target-cells" type="number" min="1" step="10000" value="200000"> cells</span></label>
+    </div>
+    <p class="calc-note">The source workbook notes that the mouse count includes two mice of excess.</p>
+    <div class="results-grid">
+      <div><span>Total cells needed</span><output id="total-cells"></output></div>
+      <div><span>Control volume</span><output id="control-volume"></output></div>
+      <div><span>KO volume</span><output id="ko-volume"></output></div>
+    </div>
+  </section>
+
+  <section class="calc-card">
+    <h2>2. Prepare the flow-staining mix</h2>
+    <p>Stain for 5 minutes in a 96-well plate. The workbook specifies 100 µL per sample.</p>
+    <label class="standalone-label">Number of samples <input id="sample-count" type="number" min="1" step="1" value="10"></label>
+    <div class="table-responsive">
+      <table class="stain-table">
+        <thead><tr><th>Marker</th><th>Label</th><th>Dilution (1:x)</th><th>Amount</th></tr></thead>
+        <tbody>
+          <tr><td>CD8</td><td>PE-Cy7</td><td><input class="dilution" type="number" min="1" value="200"></td><td><output class="antibody-amount"></output></td></tr>
+          <tr><td>CD45.1</td><td>APC</td><td><input class="dilution" type="number" min="1" value="200"></td><td><output class="antibody-amount"></output></td></tr>
+          <tr><td>CD45.2</td><td>eF450 (BV421)</td><td><input class="dilution" type="number" min="1" value="200"></td><td><output class="antibody-amount"></output></td></tr>
+          <tr><td>CD90.2</td><td>FITC</td><td><input class="dilution" type="number" min="1" value="1000"></td><td><output class="antibody-amount"></output></td></tr>
+          <tr><td>tracrRNA</td><td>PE</td><td>n/a</td><td>n/a</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><th colspan="3">FACS buffer</th><td><output id="facs-buffer"></output></td></tr>
+          <tr><th colspan="3">Total mix volume</th><td><output id="stain-volume"></output></td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="calc-note">Keep PE open for tracrRNA. The total includes the source workbook’s excess for adjustment and restaining.</p>
+  </section>
+
+  <section class="calc-card">
+    <h2>3. Adjust the control:KO ratio</h2>
+    <p>Acquire the CD45.1/CD45.2 frequencies, then enter the measured percentages.</p>
+    <div class="calc-grid">
+      <label>Control frequency <span><input id="control-percent" type="number" min="0.01" max="100" step="0.1" value="53.3">%</span></label>
+      <label>KO frequency <span><input id="ko-percent" type="number" min="0.01" max="100" step="0.1" value="45.6">%</span></label>
+    </div>
+    <div class="highlight-result">
+      <span id="adjustment-label">Volume to add</span>
+      <output id="adjustment-volume"></output>
+    </div>
+    <p class="calc-note">Calculation: (higher % ÷ lower % − 1) × the starting volume of the lower-frequency population. Stain again and confirm the ratio by flow cytometry.</p>
+  </section>
+
+  <section class="calc-card">
+    <h2>4. Prepare the confirmed mix for injection</h2>
+    <div class="calc-grid">
+      <label>Counted total cells <span><input id="counted-cells" type="number" min="1" step="100000" value="14000000"> cells</span></label>
+      <label>Injection volume per mouse <span><input id="injection-volume" type="number" min="0.001" step="0.01" value="0.2"> mL</span></label>
+      <label>Desired cells per mouse <span><input id="injection-cells" type="number" min="1" step="10000" value="500000"> cells</span></label>
+    </div>
+    <div class="results-grid">
+      <div><span>Resuspend in PBS</span><output id="resuspend-volume"></output></div>
+      <div><span>Injectable mice</span><output id="injectable-mice"></output></div>
+      <div><span>Verified cells per mouse</span><output id="verified-cells"></output></div>
+    </div>
+  </section>
+<style>
+.calc-card { --calc-accent: #2c7a7b; --calc-soft: color-mix(in srgb, var(--calc-accent) 12%, transparent); border: 1px solid color-mix(in srgb, currentColor 18%, transparent); border-radius: .75rem; padding: 1.25rem; margin-bottom: 1.25rem; box-shadow: 0 2px 8px rgb(0 0 0 / 6%); }
+.calc-card h2 { margin-top: 0; font-size: 1.3rem; }
+.calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .8rem 1.25rem; }
+.calc-grid label { display: flex; flex-direction: column; gap: .3rem; font-weight: 600; }
+.calc-grid label span { display: flex; align-items: center; gap: .4rem; font-weight: 400; }
+.calc-card input { width: 9rem; max-width: 100%; padding: .4rem .5rem; border: 1px solid color-mix(in srgb, currentColor 30%, transparent); border-radius: .3rem; color: inherit; background: var(--bs-body-bg, white); }
+.standalone-label { display: flex; align-items: center; gap: .6rem; font-weight: 600; margin: .8rem 0; }
+.results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .75rem; margin-top: 1rem; }
+.results-grid div, .highlight-result { background: var(--calc-soft); border-radius: .5rem; padding: .8rem 1rem; }
+.results-grid span, .highlight-result span { display: block; font-size: .86rem; }
+.results-grid output, .highlight-result output { display: block; font-size: 1.25rem; font-weight: 700; color: var(--calc-accent); }
+.highlight-result { margin-top: 1rem; }
+.calc-note { font-size: .88rem; opacity: .8; margin-bottom: 0; }
+.table-responsive { overflow-x: auto; }
+.stain-table { width: 100%; }
+.stain-table input { width: 7rem; }
+.stain-table output { white-space: nowrap; font-weight: 600; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document;
+  const el = id => document.getElementById(id);
+  const number = id => Number.parseFloat(el(id).value) || 0;
+  const format = (value, digits = 2) => Number.isFinite(value)
+    ? value.toLocaleString(undefined, { maximumFractionDigits: digits })
+    : "—";
+  const set = (id, value, unit, digits = 2) => { el(id).value = `${format(value, digits)} ${unit}`; };
+
+  function calculate() {
+    const controlConc = number("control-conc");
+    const koConc = number("ko-conc");
+    const totalCells = number("mouse-count") * number("target-cells");
+    const controlVolume = controlConc ? totalCells / 2 / controlConc : NaN;
+    const koVolume = koConc ? totalCells / 2 / koConc : NaN;
+    set("total-cells", totalCells, "cells", 0);
+    set("control-volume", controlVolume, "mL", 3);
+    set("ko-volume", koVolume, "mL", 3);
+
+    const totalStain = number("sample-count") * 100;
+    let antibodyTotal = 0;
+    root.querySelectorAll(".dilution").forEach((input, index) => {
+      const amount = Number(input.value) > 0 ? totalStain / Number(input.value) : NaN;
+      antibodyTotal += Number.isFinite(amount) ? amount : 0;
+      root.querySelectorAll(".antibody-amount")[index].value = `${format(amount, 2)} µL`;
+    });
+    set("facs-buffer", totalStain - antibodyTotal, "µL", 2);
+    set("stain-volume", totalStain, "µL", 0);
+
+    const controlPct = number("control-percent");
+    const koPct = number("ko-percent");
+    let adjustment = 0;
+    let population = "Neither population";
+    if (controlPct > koPct && koPct > 0) {
+      adjustment = (controlPct / koPct - 1) * koVolume * 1000;
+      population = "KO volume to add";
+    } else if (koPct > controlPct && controlPct > 0) {
+      adjustment = (koPct / controlPct - 1) * controlVolume * 1000;
+      population = "Control volume to add";
+    }
+    el("adjustment-label").textContent = population;
+    set("adjustment-volume", adjustment, "µL", 1);
+
+    const counted = number("counted-cells");
+    const perMouseVolume = number("injection-volume");
+    const cellsPerMouse = number("injection-cells");
+    const resuspend = cellsPerMouse ? counted * perMouseVolume / cellsPerMouse : NaN;
+    const injectable = perMouseVolume ? resuspend / perMouseVolume : NaN;
+    const verified = injectable ? counted / injectable : NaN;
+    set("resuspend-volume", resuspend, "mL", 3);
+    set("injectable-mice", injectable, "mice", 2);
+    set("verified-cells", verified, "cells", 0);
+  }
+
+  root.addEventListener("input", calculate);
+  calculate();
+});
+</script>

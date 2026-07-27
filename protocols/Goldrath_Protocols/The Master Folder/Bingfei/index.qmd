@@ -1,0 +1,16 @@
+---
+title: "Bingfei"
+description: "Protocols and laboratory resources from the Goldrath Lab."
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: "title"
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse protocols in this folder.

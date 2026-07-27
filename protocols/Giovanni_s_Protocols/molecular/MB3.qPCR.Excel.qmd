@@ -1,0 +1,106 @@
+---
+title: MB3.qPCR.Excel
+description: Regular-input and low-input qPCR plate layouts, master-mix recipes, and
+  dilution calculations.
+order: 10
+author: Giovanni Galleti
+date: last-modified
+image: oligo.svg
+keywords:
+- qPCR
+- SYBR Green
+- master mix
+- primer dilution
+- cDNA
+- low input
+---
+
+Source workbook: [`MB3.qPCR.Excel.xlsx`](MB3.qPCR.Excel.xlsx)
+
+## Regular input
+
+### Plate layout
+
+| Primer mix | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Gna13 Mix | SP C | SP C | SP C | SP K | SP K | SP K | | | | | | |
+| Gna13 Mix | SI C | SI C | SI C | SI K | SI K | SI K | | | | | | |
+| Gna13 Mix | LIV C | LIV C | LIV C | LIV K | LIV K | LIV K | | | | | | |
+| Actin Mix | SP C | SP C | SP C | SP K | SP K | SP K | | | | | | |
+| Actin Mix | SI C | SI C | SI C | SI K | SI K | SI K | | | | | | |
+| Actin Mix | LIV C | LIV C | LIV C | LIV K | LIV K | LIV K | | | | | | |
+
+### Master-mix recipe
+
+| Component | 1× volume | Actin MM (28 wells) | Gna13 MM (15 wells) |
+|---|---:|---:|---:|
+| SYBR Green | 12.5 µL | 350 µL | 187.5 µL |
+| Forward primer (20 µM) | 1.25 µL | 35 µL | 18.75 µL |
+| Reverse primer (20 µM) | 1.25 µL | 35 µL | 18.75 µL |
+| ddH₂O | 12 µL | 336 µL | 180 µL |
+| cDNA | 3 µL | — | — |
+
+Dilute DNA 1:5. Plate **3 µL cDNA + 27 µL primer master mix** per well.
+
+### Sample dilution
+
+- Control DNA: prepare 40 µL working cDNA from 8 µL cDNA + 32 µL H₂O.
+- Experimental groups: prepare 40 µL working cDNA from 8 µL cDNA + 32 µL H₂O.
+
+| Sample | Wells | Wells + extra | Total cDNA | Take cDNA | Add water |
+|---|---:|---:|---:|---:|---:|
+| gna15_K | 10 | 15 | 45 µL | 9 µL | 36 µL |
+| gna15_C | 6 | 11 | 33 µL | 6.6 µL | 26.4 µL |
+| Bhlh_t1_K | 9 | 14 | 42 µL | 8.4 µL | 33.6 µL |
+| Bhlh_t1_C | 13 | 18 | 54 µL | 10.8 µL | 43.2 µL |
+| Bhlh_t2_K | 9 | 14 | 42 µL | 8.4 µL | 33.6 µL |
+| Bhlh_t2_C | 9 | 14 | 42 µL | 8.4 µL | 33.6 µL |
+
+### Primer dilution from 100 µM stock
+
+Dilute primers 1:5 for a 20 µM working mix. Prepare forward and reverse primers separately.
+
+| Primer | Volume needed | Take primer | Add water |
+|---|---:|---:|---:|
+| actin | 35 µL | 7 µL | 28 µL |
+| gna15 | 18.75 µL | 3.75 µL | 15 µL |
+| bhlhe40 | `#REF!` | `#REF!` | `#REF!` |
+| gna13 | `#REF!` | `#REF!` | `#REF!` |
+
+> **Workbook warning:** The source formulas for the bhlhe40 and gna13 primer-dilution rows contain `#REF!` errors. Verify and repair those references in the workbook before using the values.
+
+## Low input
+
+Optimized for at least 5,000 ex vivo cells sorted from tissues.
+
+### Plate layout
+
+| Primer mix | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Gna13 Mix | SP C | SP C | SP C | SP K | SP K | SP K | | | | | | |
+| Gna13 Mix | SI C | SI C | SI C | SI K | SI K | SI K | | | | | | |
+| Gna13 Mix | LIV C | LIV C | LIV C | LIV K | LIV K | LIV K | | | | | | |
+| Actin Mix | SP C | SP C | SP C | SP K | SP K | SP K | | | | | | |
+| Actin Mix | SI C | SI C | SI C | SI K | SI K | SI K | | | | | | |
+| Actin Mix | LIV C | LIV C | LIV C | LIV K | LIV K | LIV K | | | | | | |
+
+### Master-mix recipe
+
+| Component | 1× volume | Actin MM (22 wells) | Gna13 MM (22 wells) |
+|---|---:|---:|---:|
+| SYBR Green | 10 µL | 220 µL | 220 µL |
+| Forward primer (20 µM) | 0.4 µL | 8.8 µL | 8.8 µL |
+| Reverse primer (20 µM) | 0.4 µL | 8.8 µL | 8.8 µL |
+| ddH₂O | 7.2 µL | 158.4 µL | 158.4 µL |
+| cDNA | 2 µL | — | — |
+
+Use undiluted cDNA. Plate **2 µL cDNA + 18 µL primer master mix** per well.
+
+### Primer dilution from 100 µM stock
+
+Dilute primers 1:5 for a 20 µM working mix. Prepare forward and reverse primers separately.
+
+| Primer | Volume needed | Take primer | Add water |
+|---|---:|---:|---:|
+| actin | 13.8 µL | 2.76 µL | 11.04 µL |
+| gna13 | 13.8 µL | 2.76 µL | 11.04 µL |

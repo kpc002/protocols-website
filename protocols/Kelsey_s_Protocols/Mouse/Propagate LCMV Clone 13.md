@@ -1,0 +1,70 @@
+---
+title: "Propagate LCMV Clone 13"
+description: "Propagate LCMV Clone 13"
+order: 10
+author: Kelsey Bennion
+date: last-modified
+image: blood_sample.svg
+---
+
+**Propagate LCMV Clone 13 virus**
+
+BHK media (500 mL):
+
+  - > 500 mL DMEM (high glucose, liquid)
+
+  - > 50 mL FBS (10%)
+
+  - > 5 mL L-glutamine (100x)
+
+  - > 5 mL Pen-strep (100x)
+
+  - > 25 mL Tryptose phosphate broth (Gibco)
+
+**Day -1:**
+
+1.  > Plate BHK to be \~40-50% confluent the following day. Seed about 5x10 6 BHK cells in a T175 flask the day before infection. The cells will grow to a confluency of 40-50%, corresponding to \~1x10<sup>7</sup>.
+
+**Note**
+
+BHK cells grow at different rates in different labs and seem to be pretty sensitive. Consider setting up flasks at target multiple confluencies to try to hit the right one on the infection day.
+
+**Day 0:**
+
+1.  > Take photos of the T175 flasks on the light microscope if possible - try to record what a good confluency looks like.
+
+2.  > Pipet off media and infect with virus in a limited volume (6 mL for a T175, 3 mL for a T75). The MOI used in the field seems to vary; many people use 0.001-0.01, but Teijaro lab uses an MOI of 0.1.
+    
+      - > The lore is that it is important to use a high titer virus to inoculate, but unclear where this line is drawn.
+    
+      - > Teijaro adds 5 uL of 2x10 8 PFU/mL stock to 6 mL BHK media to hit a target of MOI 0.1 for 10<sup>7</sup> cells in a T175.
+    
+      - > Allen lab has a stock at 2.58e8/ml (Floor 2 lab -80, rack 00156, box 01649). I added 4 ul per 6 mls of media per flask or 24 ul per 36 mls for 6 T175 flasks
+
+3.  > Incubate at 37 Celsius for 90 minutes. Gently tilt and rock the flask every 10-15 minutes.
+
+4.  > After 90 minutes, add 19 mL warm BHK media (total 25 mL final).
+
+5.  > Incubate for 72 hours.
+
+**Day 3**
+
+Keep the virus cold for all following steps\!
+
+1.  > Pipet supernatant into 15 mL conical tubes. The supernatant contains the virus. Be careful, this is a LOT of LCMV. Have bleach handy in case of a spill.
+
+2.  > Separate any remaining BHK cells that were aspirated from virus.
+    
+      - > Spin at 2000 rpm in a benchtop centrifuge (\~800-850 g depending on centrifuge in IMPL-K) for 15 minutes.
+    
+      - > Collect the supernatant, transfer to a fresh tube.
+    
+      - > Repeat for a total of two centrifugation steps.
+
+3.  > Keeping the virus cold, aliquot and snap freeze in liquid nitrogen. Pre-chill cryo-tubes in cold room.
+
+4.  > Protocol yields \~20-25 mL virus containing supernatant at a target of \~2x10<sup>8</sup> pfu/mL.
+    
+      - > Infecting at 2x10 6 pfu/mouse (100 uL of 2x10 7 pfu/mL), this corresponds to enough virus to infect 2000 mice per T175 of LCMV Clone 13.
+
+5.  > Titrate the virus. Make sure to titrate an aliquot that has been frozen and thawed to get a representative value for what the titer will be when you inject from a thawed aliquot (rather than titrating the supernatant directly).

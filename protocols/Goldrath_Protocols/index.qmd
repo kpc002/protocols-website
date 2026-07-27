@@ -1,0 +1,28 @@
+---
+title: "Goldrath Protocols"
+description: 'Protocols and laboratory resources from the Goldrath Lab.'
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+listing:
+  type: table
+  contents: ["**/*.md", "**/*.qmd"]
+  sort: "title"
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse or search protocols and laboratory resources from the Goldrath Lab.
+
+## Folders
+
+- [Curated protocols](Curated%20protocols/index.qmd)
+- [Eds Histology Protocols](Eds%20Histology%20Protocols/index.qmd)
+- [NewProtocols 032020](NewProtocols_032020/index.qmd)
+- [The Master Folder](The%20Master%20Folder/index.qmd)
+- [VSV-ova related material](VSV-ova%20related%20material/index.qmd)
+- [Vivarium cage card](Vivarium%20cage%20card/index.qmd)
+- [memstempaper](memstempaper/index.qmd)
+- [retrovirus protocols](retrovirus%20protocols/index.qmd)
+- [vaccinia protocols](vaccinia%20protocols/index.qmd)
