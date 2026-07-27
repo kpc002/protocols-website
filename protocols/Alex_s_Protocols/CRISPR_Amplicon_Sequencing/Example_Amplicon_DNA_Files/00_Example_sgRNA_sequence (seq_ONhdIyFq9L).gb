@@ -1,0 +1,42 @@
+LOCUS       00_Example_sgRNA_sequenc 618 bp ds-DNA     linear       08-DEC-2025
+DEFINITION  .
+KEYWORDS    "creator:SnapGene License"
+FEATURES             Location/Qualifiers
+     source          1..618
+                     /label="source"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="mol_type: other DNA: organism: synthetic DNA construct"
+     promoter        1..241
+                     /label="U6 promoter"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="label: U6 promoter note: RNA polymerase III promoter for human U6 snRNA"
+     misc_feature    250..269
+                     /label="Thy1 sgRNA"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="label: Thy1 sgRNA"
+     misc_RNA        275..345
+                     /label="gRNA scaffold"
+                     /ApEinfo_revcolor="#00ccff"
+                     /ApEinfo_fwdcolor="#00ccff"
+                     /note="label: gRNA scaffold note: guide RNA scaffold for the Streptococcus pyogenes CRISPR/Cas9 system"
+     promoter        407..618
+                     /label="EF-1-alpha core promoter"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="label: EF-1-alpha core promoter note: core promoter for human elongation factorEF-1-alpha"
+ORIGIN
+        1 gagggcctat ttcccatgat tccttcatat ttgcatatac gatacaaggc tgttagagag
+       61 ataattagaa ttaatttgac tgtaaacaca aagatattag tacaaaatac gtgacgtaga
+      121 aagtaataat ttcttgggta gtttgcagtt ttaaaattat gttttaaaat ggactatcat
+      181 atgcttaccg taacttgaaa gtatttcgat ttcttggctt tatatatctt gtggaaagga
+      241 cgaaacaccc gtgtgctcgg gtatcccaag ttttagagct agaaatagca agttaaaata
+      301 aggctagtcc gttatcaact tgaaaaagtg gcaccgagtc ggtgcttttt tgaattcgct
+      361 agctaggtct tgaaaggagt gggaattggc tccggtgccc gtcagtgggc agagcgcaca
+      421 tcgcccacag tccccgagaa gttgggggga ggggtcggca attgatccgg tgcctagaga
+      481 aggtggcgcg gggtaaactg ggaaagtgat gtcgtgtact ggctccgcct ttttcccgag
+      541 ggtgggggag aaccgtatat aagtgcagta gtcgccgtga acgttctttt tcgcaacggg
+      601 tttgccgcca gaacacag
+//

@@ -2,11 +2,607 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://protocols.heeg.io/index.html</loc>
-    <lastmod>2022-11-29T00:48:44.000Z</lastmod>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/CRISPR_Amplicon_Sequencing/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/CRISPR_Amplicon_Sequencing/Example_Amplicon_DNA_Files/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Takedown/B16 Takedown 2026-03-25_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Mousework/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Mousework/Bleeding Mice for transduction check_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Histology/Using the cryostat.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Histology/IF on frozen tissue_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Transfections_and_Transductions/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Transfections_and_Transductions/Transfection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Transfections_and_Transductions/Plating PlatE from frozen 2025-04-17_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Cloning/Making LB Buffer_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Cloning/Process G blocks_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Xenium/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/human/Human _PBMC_Ex_vivo_Dynabead_multiday stim_PMArestim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/human/Human PBMC Ex vivo Dynabead multiday stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/human/Human TIL Ex vivo Dynabead multiday stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/ICS_GP33 peptide restim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/ICS_OVA peptide restim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Jurkat electroporation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/TCR signaling phospho-flow.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/In vitro N4 altered peptide ligand OT-I stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Genotyping OT-I mice by flow cytometry.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/LCMV-Cl13 blood phenotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/CD8 isolation and activation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Propagate LCMV Clone 13.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Treg isolation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Genotyping P14 mice by flow cytometry.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/P14 isolation from blood for adoptive transfer.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Western blot.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Antibody titration.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Tissue and serum collection for viral titer.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Supplementing humanized mice with cytokines.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/PFA - 16 percent.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/-80 Freezer Maintenance.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/ChIP protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Precipitation of RNA.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/AD060409 pSTAT5 Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/memstempaper/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/zd_Phenotyping_modified.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Histology Troubleshooting.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/HP Mem Cell Transfer-2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Histology Protocol-Bobby&#39;s version (from doc).html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/recipes.MSE.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Western_protocol7-7-06.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Score Grid.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/staining tips.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Histology Ultimate Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Listeria production-KPC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/WB.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Histology Protocol-Bobby&#39;s version.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Cell prep for western.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/spleen&amp;lymph node cell prep.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Setting up PCR.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RNP Electroporation_Protocol_Jinyong for Tianda.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/lentiviral-packaging.printerview.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Neon_Electroporation_466243.full.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Histology/TMA_Frozen_histology.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Histology/HISTOLOGY of the GUT_OCT.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/TIF_ajpheart.00327.2002.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Mixed ACT Calculations.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/neon_device_man.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/TissuePreps/Gut Prep Reagents-MRC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/MC38_Growth.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/guide design and sequence.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/neon_device_qrc.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/FilipinIII_stain.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/CRC_Caecum_orthotopic_Materials.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Cholesterol_Amplex.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/LentiProduction/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Retroviral transduction of CD4+map and insertion_Katia.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Cholesterol_extraction_Sigma.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RetroProduction_Tcells/ScienceDirect_files_26Nov2019_21-45-47.888/1-s2.0-S1074761314002726-mmc2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RetroProduction_Tcells/ScienceDirect_files_26Nov2019_21-45-47.888/1-s2.0-S1074761314002726-mmc1.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RetroProduction_Tcells/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/STAINING PROTOCOL FOR FLOW.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/CD8 activation protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Neon_Cas9_RNP.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/PANELS/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/IF_Frozen_BioProtocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Antibody purification.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/Imprint for Vivarium Cage Cards.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/NSB blue card 8.5 x 11.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/Pac canary card 3x5.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/Pac blue 8.5x11.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/receipt 060921.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Preparing mouse joints for histology.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Phenotyping of OVA specific  memory  CD8  T cells.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/retrovirus protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/retrovirus protocols/ca-p transfection of Phoenix.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/RNA extraction with Trizol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/FACS protocol sheet.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Stim with ovap.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/TH1TH2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/VSV-ova related material/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/IFNgamma in vitro - Mindy.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Listeria production.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/animal protocol2009.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/How to make up dNTP stocks.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/PCR master mix recipes.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Laura/ID2-3Primers.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Ilkka/BTSSR viable  Lymphocyte collection protocol 10222014.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/Determining Bacterial Burden.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/Bodipy Mitotracker Staining Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/General Seahorse Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Infection with LMGP33.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Bingfei/Goldrath_ChIP protocol with dynabeads.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/aGC reconstitution.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Kyla/DNA Prep for Genotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Toan/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/PCR master mix recipes (newest version).html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Justin/Transfection Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Justin/CD8 activation protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Fc block culture.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Diallo et al vsv propagation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/VSV Stock Production.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/PCR master mix recipes.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Western Blot Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Masopust Gut Prep Protocol/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Masopust Gut Prep Protocol/IEL Isolation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Masopust Gut Prep Protocol/Goldrath IEL and LPL Isolation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/zd_RNA_DNase_cDNA.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Stimulation of Peripheral T cells with anti.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Labeling T cells with CFSE.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/CD8 activation protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/AD081409 Andrews CD3 CD28 protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/RNP_Electroporation_Protocol_GoldrathLab.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Generation of V… CV-1 Cells.html</loc>
+    <lastmod>2026-07-27T23:19:42.473Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Extraction of D…cinia V[1].html</loc>
+    <lastmod>2026-07-27T23:19:42.473Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Vaccinia Titration Plaq[1].html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Vaccinia Titration Plaques.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/phenotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Labeling T cells with CFSE.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Tail prep.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/index.html</loc>
     <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/infection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/growing_a_stock.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Transduction Polybrene.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Spleen and Lymph Node Prep.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Infection with LCMV CL13.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/stock.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Ex vivo peptide stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/072226 in vitro tumor growth and injection protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Labeling T cells with CFSE.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/mol_bio/RNA_isolation_tissue.html</loc>
@@ -38,7 +634,7 @@
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/infections/lcmv/infection_lcmv_arm.html</loc>
-    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/infections/listeria/infection.html</loc>
@@ -46,43 +642,107 @@
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/infections/retrovirus/index.html</loc>
-    <lastmod>2022-11-28T02:03:49.000Z</lastmod>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/infections/VSV-Ova/VSV-Ova Infection.html</loc>
+    <loc>https://protocols.heeg.io/protocols/infections/VSV-Ova/index.html</loc>
     <lastmod>2023-02-21T23:47:40.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/cell_culture_media.html</loc>
-    <lastmod>2024-08-22T17:42:24.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/macs_buffer.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/ot1.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/mixed_transfer_ametrine.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/orga/mouse_transfer/nsb_to_pac_hall.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/orga/Aria_training_checklist.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/orga/mouse_order_allen.html</loc>
-    <lastmod>2024-08-15T20:27:34.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/mice/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/recipes/index.html</loc>
     <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/takedown_media.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/index.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/mixed_transfer_gfp.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Dhruv_s_Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Dhruv_s_Protocols/Lentivirus_Production_and _Transduction.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/orga/index.html</loc>
+    <lastmod>2022-11-29T00:28:48.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/orga/flow_and_sorting.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/orga/google_docs.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/B16 tumor processing protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Agilent Brilliant II SYBR® Green QPCR Master Mix.html</loc>
+    <lastmod>2026-07-27T23:19:42.479Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Qiagen RNeasy® Mini Kit.html</loc>
+    <lastmod>2026-07-27T23:19:42.487Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/CB1.Tissue processing for viral titers.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/NucleoBond Xtra Plasmid DNA Purification User Manual.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/mix_calculation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/030221 Cell culture media recipies.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Fisher High Capacity cDNA Reverse Transcription Kit.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/080221 in vitro TRM - Zaph lab, NES optimized.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Blood phenotyping P14 and OT1 mice.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/072226 in vitro tumor growth and injection protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Gut Prep Reagents-MRC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/mice/ffpe_embedding.html</loc>
+    <lastmod>2024-09-03T19:15:18.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/mice/lymphnode.html</loc>
+    <lastmod>2022-11-28T18:27:48.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/mice/tissue_prep.html</loc>
@@ -93,99 +753,171 @@
     <lastmod>2022-11-28T18:27:48.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/mice/genotyping/etv3_floxed_pcr/index.html</loc>
-    <lastmod>2023-04-18T18:29:16.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/mice/phenotyping/Genotyping OT-I mice by flow cytometry/Genotyping OT-I mice by flow cytometry.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/mice/genotyping/hic1_floxed_pcr/index.html</loc>
-    <lastmod>2023-03-24T22:54:53.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/index.html</loc>
-    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/mice/genotyping/index.html</loc>
+    <lastmod>2023-01-15T23:52:13.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/ucell/index.html</loc>
-    <lastmod>2023-04-25T23:04:50.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/mice/genotyping/tails.html</loc>
+    <lastmod>2023-01-15T23:52:13.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/seurat_coexpression/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB4.Cloning with HIFI DNA Assembly_KL.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.Excel.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB46.Freeze PBMCs.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB2.PBMCs isolation from buffy coat.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/Human PBMC Ex vivo Dynabead multiday stim_PMArestim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/Human PBMC Ex vivo Dynabead multiday stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB18.Red blood cell lysis with ACK buffer.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/Human TIL Ex vivo Dynabead multiday stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/mouse/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC2.surface_staining.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC4.TF_buffer_set.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC7.X20_layout.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources &amp; Tools - Day 3.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2023.02.23-US&amp;APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Exercise 4B.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB7.ADP_ADT assay.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB4.Mitochondria dyes.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB5.Cell line media.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB8.Ex vivo restim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/LCMV CL13 Titer calculator.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/Infection with LCMV CL13.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/IF Staining Protocol basic.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/pca_genes.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/introduction-to-deseq2/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/examples/index.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/nextflow_rna_seq/index.html</loc>
+    <lastmod>2023-04-27T18:12:21.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/create reference with YFP.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html</loc>
+    <lastmod>2023-02-08T02:26:27.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/index.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/01_setup_conda_env.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/bash_snippets.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/transduction.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/guava.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/trm_in_vitro_differentiation.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/ex_vivo_stimulation.html</loc>
-    <lastmod>2023-02-07T23:12:44.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/ctv.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/cd8_selection.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/index.html</loc>
-    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/ficoll_dead_cells.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/t_cells/Cas9_RNP_electroporation.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/convert_gene_symbol_to_ensembl.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/04_downstream_analysis/index.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/02_prepare_input/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
@@ -193,32 +925,236 @@
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/02_prepare_input/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html</loc>
-    <lastmod>2023-02-08T02:26:27.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/04_downstream_analysis/index.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/nextflow_rna_seq/index.html</loc>
-    <lastmod>2023-04-27T18:12:21.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/convert_gene_symbol_to_ensembl.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/introduction-to-deseq2/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/t_cells/Cas9_RNP_electroporation.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/ficoll_dead_cells.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/index.html</loc>
+    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/cd8_selection.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/ctv.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/ex_vivo_stimulation.html</loc>
+    <lastmod>2023-02-07T23:12:44.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/trm_in_vitro_differentiation.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/guava.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/t_cells/transduction.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/bash_snippets.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/01_setup_conda_env.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/scenic/index.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/create reference with YFP.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/examples/index.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/seurat_coexpression/index.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/ucell/index.html</loc>
+    <lastmod>2023-04-25T23:04:50.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/bioinformatics/index.html</loc>
+    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/Fc block culture.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/FFPE working protocol 20260624.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/Fresh Frozen Fixation and embedding 20260714.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kitty_s_Protocols/Hematoxylin and Eosin Staining .html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB3.Seahorse assay.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB2.Calcium flux assay.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB6.CRISPRCas9 KO.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/cellular/CB1.Tissue processing for viral titers.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Exercise 4B copy.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC3.intracellular_staining.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/FACS/FC1.antibody_titration.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/mouse/M1.tail_prep_genotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/Human PBMC Ex vivo Dynabead multiday stim_prolif&amp;apoptosis.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/Human tumor sample collection, processing, and flow analysis.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB22. Percoll gradient lung tumor samples.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB11.Disaggregation of human lung tumors.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB24. Disaggregation of human breast tumors.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB3.PBMCs isolation from whole blood.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/human/CB1.Thawing Frozen Cells.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_planning_guide.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB2.Mycoplasma_PCR.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/NucleoBond Xtra Plasmid DNA Purification User Manual.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Giovanni_s_Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/mice/genotyping/hic1_floxed_pcr/index.html</loc>
+    <lastmod>2023-03-24T22:54:53.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/mice/genotyping/etv3_floxed_pcr/index.html</loc>
     <lastmod>2023-04-18T18:29:16.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/bioinformatics/pca_genes.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/mice/genotyping/tails.html</loc>
-    <lastmod>2023-01-15T23:52:13.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/mice/genotyping/index.html</loc>
-    <lastmod>2023-01-15T23:52:13.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/mice/phenotyping/Genotyping P14 mice by flow cytometry/Genotyping P14 mice by flow cytometry.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/mice/tamoxifen.html</loc>
@@ -229,44 +1165,108 @@
     <lastmod>2022-11-28T18:27:48.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/mice/lymphnode.html</loc>
-    <lastmod>2022-11-28T18:27:48.000Z</lastmod>
+    <loc>https://protocols.heeg.io/protocols/mice/Gut prep protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/mice/ffpe_embedding.html</loc>
-    <lastmod>2024-09-03T19:15:18.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/orga/google_docs.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/orga/flow_and_sorting.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/orga/index.html</loc>
-    <lastmod>2022-11-29T00:28:48.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/mixed_transfer_gfp.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/index.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/takedown_media.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://protocols.heeg.io/protocols/recipes/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/mice/index.html</loc>
     <lastmod>2022-11-27T21:22:27.000Z</lastmod>
   </url>
   <url>
-    <loc>https://protocols.heeg.io/protocols/infections/VSV-Ova/index.html</loc>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/041223 CRISPRCas9 KO in primary T cells for in vivo transfer with Lonza NES - pooled guides.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/nebuilder-hifi-dna-assembly-reaction-protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Qiagen QIAamp® Blood Mini Kit.html</loc>
+    <lastmod>2026-07-27T23:19:42.486Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Blood prep for genotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/CD8 isolation and activation protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/04.20.21 Tumor injection protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/NES 042924 CD8 T cell transduction and double transduction.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/protocol-for-q5-high-fidelity-2x-master-mix-m0492.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/012725 NES - Flow cytometry staining.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Gut prep protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/091923 Western blot protocol NES.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/Cloning with HIFI DNA Assembly_KL.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Nicole_s_protocols/062923 CRISPRCas9 KO in primary T cells for in vivo transfer with Lonza - single guides.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/orga/mouse_order_allen.html</loc>
+    <lastmod>2024-08-15T20:27:34.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/orga/Aria_training_checklist.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/orga/mouse_transfer/nsb_to_pac_hall.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Dhruv_s_Protocols/Listeria_InIAmutant_for_oral_infection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Dhruv_s_Protocols/Molecular_Cloning_Workflow.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/mixed_transfer_ametrine.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/facs_panels/ot1.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/macs_buffer.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/recipes/cell_culture_media.html</loc>
+    <lastmod>2024-08-22T17:42:24.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/infections/VSV-Ova/VSV-Ova Infection.html</loc>
     <lastmod>2023-02-21T23:47:40.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/infections/retrovirus/Mirus.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/protocols/infections/listeria/growing_a_stock.html</loc>
@@ -307,6 +1307,602 @@
   <url>
     <loc>https://protocols.heeg.io/protocols/mol_bio/index.html</loc>
     <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Transduction Retronectin 3.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/infection_lcmv_arm.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/CB5.Cell line media.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Antibody Titration.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Transfect and Transduce 1.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Propagate LCMV Clone 13.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/LCMV CL13 Titer calculator.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Mouse CD8 isolation and CD3 activation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Cas9 Electroporation with Lonza 2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Top_20/Cell Trace Violet.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Hot first strand for probing arrays from cRNA.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Isolate spleenocytes.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Western2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Prep of IL15complexes.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Extraction of D…cinia Virus.html</loc>
+    <lastmod>2026-07-27T23:19:42.473Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Vaccinia Stock Production.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/vaccinia protocols/Generation of V… CV-1 C[1].html</loc>
+    <lastmod>2026-07-27T23:19:42.473Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/growing sphingomonas and pneumococcus.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Biotinylation of Ab.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Guava Instructions.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/IFNgamma in vitro.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Listeria production-KPC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Liver Preparation Protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Masopust Gut Prep Protocol/Goldrath Gut Reagents.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Masopust Gut Prep Protocol/GUT Prep Reagents.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Fetal Liver Chimeras.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Phenol Chloroform DNA extaction from tails.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Curated protocols/Th differentiation in vitro.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Mouse Saliva Test Protocol (Sjogren&#39;s Syndrome Project).html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Justin/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Justin/Transduction using retro.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Toan/RNA extraction using Trizol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Toan/Guava instruction - Lu lab.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Kyla/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Bingfei/CHIP-seq library Preparation from Bingfei.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Bingfei/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping PCR info.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/Cell Trace Violet labeling.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping Guide - JL.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Ilkka/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Laura/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/The Master Folder/Goldrath Lab Oligos Database updated at 121213.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/RNA Isolation.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Southern Protocol JK.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Blood prep for genotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Cell culture.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/VSV-ova related material/VSV-ova titer 092707  (main 2007 VSV-ova lot).html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/zd_In vitro IFN_OVAp_PMA.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Duties of the Radiation S.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/How to use the hypoxia chamber.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/zd_Purification.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/retrovirus protocols/Polybrene_Spinfection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/retrovirus protocols/Subcloning into LZRSpBMN.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Spin Transfection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/GFP:YFP Filters.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Proliferation assay.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/NSB canary card.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/Cage Card Stickers.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/NSB canary 8.5x11.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/Pac canary card 8.5 x 11.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Vivarium cage card/NSB blue card 3x5.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Staining Blood.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Mouse Anesthesia.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/PANELS/PeptideStimulation/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/PANELS/Goldrath Lab Fortessa flow.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Mouse_Haplotype_Table.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/MYCO_PCR.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Mission_shRNA_lentiviral.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RetroProduction_Tcells/Virus production in 10 cm - PlatE.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RetroProduction_Tcells/RetroProduction_Immunity.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RetroProduction_Tcells/ScienceDirect_files_26Nov2019_21-45-47.888/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/MAN0017851_CRISPR_Cas9_T_cell_gene_editing_using_Neon_UB.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Lymphocyte prep_tissues.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/LentiProduction/Sigma_SHP001.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/sgRNA_Viral_transduction_Wei_2019.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/FACS protocol sheet.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/LLB_GutPrep2017.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Protocol_Caecum_Orthotopic_MRC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Tumor_Interstitial_Fluid.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/spleen&amp;lymph node cell prep.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/TissuePreps/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Gut prep protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Caecum_orthotopic_protocol_MRC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Histology/NES 070515 Immunofluorescence staining protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Histology/fixation_permeabilization.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/Histology/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/RNA Isolation from Sorted Cells.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/insitu_tetramer_CD8_Tcells.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/NewProtocols_032020/MRC/TIL_prep_MC38_sc_MRC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/LibraryPreparationforCutandRun.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Hemacytometer.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Fugene 6 mediated transfection of Phoenix cell.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Fc block culture 2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Western_blot_diagram.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/cryosectioning.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/fluorescent protein imaging.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/TRAIL PCR.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/ImmunohistochemistryProtocol_2.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/WB-beginner.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Collogenase D Protocol - Roche.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/PFA - 16 percent.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/ImmGen Cell prep and sorting SOP.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Lymphocyte_Separation_Media.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Eds Histology Protocols/Histology Ultimate Protocol-REVISED.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/memstempaper/Draft2 with bi[1].html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Streptavidin microbeads protocol.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/DNA extaction from tails.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Blood prep for phenotyping.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/AD091009 WT listeria.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/ChIP protocol (from doc).html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Goldrath_Protocols/Transduction using retro.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Lymphocyte isolation from mouse tissues.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/LCMV-Cl13 infection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/DNA extraction from CD8.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/R10 Recipe.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/In vitro OT-I stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Electroporation of activated CD8.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Genotyping PMEL mice by flow cytometry.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/RNA extraction &amp; cDNA synthesis &amp; RT-qPCR from CD8.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Peptide dose response curve.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Secretome sort and ex vivo stim.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Caspase 3_7&amp;7AAD ex vivo staining.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/AntiPD1_CTLA4 in vivo blockade in B16-challenged mice.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Making bone marrow chimeras.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/Reporter-gene transduction of P14 into LCMV Armstrong infected mice for tissue embedding.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/B16 Cancer cell culture and injection.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/Mouse/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/human/Human tumor sample collection, processing, and flow analysis.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/human/Human PBMC Ex vivo Dynabead_multiday_stim_prolif&amp;apoptosis.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Kelsey_s_Protocols/human/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Xenium/Liver embedding_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Cloning/Running Gel_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Cloning/Glycerol Prep_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Cloning/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Transfections_and_Transductions/Cas9 Nucleofection_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Transfections_and_Transductions/Transduction - High Quality.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Histology/FFPE Antibody Staining_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Histology/Taking down SI and Liver and embedding in OCT.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Histology/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Mousework/Moving mice from NSB to Pac Hall_ATM.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/Takedown/index.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://protocols.heeg.io/protocols/Alex_s_Protocols/CRISPR_Amplicon_Sequencing/Protocol for CRISPR amplicon sequencing 2025-11-06 (etr_PxVJqvYTzT) Custom_low_plex_LsgA_cloning_MRC.html</loc>
+    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://protocols.heeg.io/contribute.html</loc>

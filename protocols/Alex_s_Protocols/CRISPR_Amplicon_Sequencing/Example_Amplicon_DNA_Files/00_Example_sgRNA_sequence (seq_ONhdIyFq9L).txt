@@ -1,0 +1,2 @@
+00_Example_sgRNA_sequence
+creator: SnapGene License
