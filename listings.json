@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/protocols/t_cells/index.html",
-    "items": [
-      "/protocols/t_cells/cd8_selection.html",
-      "/protocols/t_cells/transduction.html",
-      "/protocols/t_cells/Cas9_RNP_electroporation.html",
-      "/protocols/t_cells/trm_in_vitro_differentiation.html",
-      "/protocols/t_cells/ex_vivo_stimulation.html",
-      "/protocols/t_cells/ficoll_dead_cells.html",
-      "/protocols/t_cells/ctv.html",
-      "/protocols/t_cells/guava.html"
-    ]
-  },
-  {
     "listing": "/protocols/index.html",
     "items": [
       "/protocols/t_cells/index.html",
@@ -22,6 +9,22 @@
       "/protocols/bioinformatics/index.html",
       "/protocols/recipes/index.html",
       "/protocols/orga/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mol_bio/western_blot/index.html",
+    "items": [
+      "/protocols/mol_bio/western_blot/protein_lysis.html",
+      "/protocols/mol_bio/western_blot/BCA_assay.html",
+      "/protocols/mol_bio/western_blot/run_gel.html",
+      "/protocols/mol_bio/western_blot/buffers.html"
+    ]
+  },
+  {
+    "listing": "/protocols/infections/lcmv/index.html",
+    "items": [
+      "/protocols/infections/lcmv/infection_lcmv_arm.html",
+      "/protocols/infections/lcmv/stock.html"
     ]
   },
   {
@@ -37,24 +40,6 @@
       "/protocols/mice/tissue_prep.html",
       "/protocols/mice/ffpe_embedding.html",
       "/protocols/mice/genotyping/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/mice/genotyping/index.html",
-    "items": [
-      "/protocols/mice/genotyping/tails.html",
-      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
-      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/orga/index.html",
-    "items": [
-      "/protocols/orga/flow_and_sorting.html",
-      "/protocols/orga/Aria_training_checklist.html",
-      "/protocols/orga/mouse_order_allen.html",
-      "/protocols/orga/google_docs.html",
-      "/protocols/orga/mouse_transfer/nsb_to_pac_hall.html"
     ]
   },
   {
@@ -81,12 +66,57 @@
     ]
   },
   {
+    "listing": "/protocols/bioinformatics/examples/index.html",
+    "items": [
+      "/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html"
+    ]
+  },
+  {
     "listing": "/protocols/bioinformatics/scenic/index.html",
     "items": [
       "/protocols/bioinformatics/scenic/01_setup_conda_env.html",
       "/protocols/bioinformatics/scenic/02_prepare_input/index.html",
       "/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html",
       "/protocols/bioinformatics/scenic/04_downstream_analysis/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/t_cells/index.html",
+    "items": [
+      "/protocols/t_cells/cd8_selection.html",
+      "/protocols/t_cells/transduction.html",
+      "/protocols/t_cells/Cas9_RNP_electroporation.html",
+      "/protocols/t_cells/trm_in_vitro_differentiation.html",
+      "/protocols/t_cells/ex_vivo_stimulation.html",
+      "/protocols/t_cells/ficoll_dead_cells.html",
+      "/protocols/t_cells/ctv.html",
+      "/protocols/t_cells/guava.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mice/genotyping/index.html",
+    "items": [
+      "/protocols/mice/genotyping/tails.html",
+      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
+      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/orga/index.html",
+    "items": [
+      "/protocols/orga/flow_and_sorting.html",
+      "/protocols/orga/Aria_training_checklist.html",
+      "/protocols/orga/mouse_order_allen.html",
+      "/protocols/orga/google_docs.html",
+      "/protocols/orga/mouse_transfer/nsb_to_pac_hall.html"
+    ]
+  },
+  {
+    "listing": "/protocols/recipes/facs_panels/index.html",
+    "items": [
+      "/protocols/recipes/facs_panels/ot1.html",
+      "/protocols/recipes/facs_panels/mixed_transfer_ametrine.html",
+      "/protocols/recipes/facs_panels/mixed_transfer_gfp.html"
     ]
   },
   {
@@ -102,26 +132,25 @@
     ]
   },
   {
-    "listing": "/protocols/recipes/facs_panels/index.html",
+    "listing": "/protocols/infections/VSV-Ova/index.html",
     "items": [
-      "/protocols/recipes/facs_panels/ot1.html",
-      "/protocols/recipes/facs_panels/mixed_transfer_ametrine.html",
-      "/protocols/recipes/facs_panels/mixed_transfer_gfp.html"
+      "/protocols/infections/VSV-Ova/VSV-Ova Infection.html"
     ]
   },
   {
-    "listing": "/protocols/bioinformatics/examples/index.html",
+    "listing": "/protocols/infections/listeria/index.html",
     "items": [
-      "/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html"
+      "/protocols/infections/listeria/infection.html",
+      "/protocols/infections/listeria/growing_a_stock.html"
     ]
   },
   {
-    "listing": "/protocols/mol_bio/western_blot/index.html",
+    "listing": "/protocols/infections/index.html",
     "items": [
-      "/protocols/mol_bio/western_blot/protein_lysis.html",
-      "/protocols/mol_bio/western_blot/BCA_assay.html",
-      "/protocols/mol_bio/western_blot/run_gel.html",
-      "/protocols/mol_bio/western_blot/buffers.html"
+      "/protocols/infections/lcmv/index.html",
+      "/protocols/infections/listeria/index.html",
+      "/protocols/infections/VSV-Ova/index.html",
+      "/protocols/infections/retrovirus/index.html"
     ]
   },
   {
@@ -138,35 +167,6 @@
       "/protocols/mol_bio/western_blot/BCA_assay.html",
       "/protocols/mol_bio/western_blot/run_gel.html",
       "/protocols/mol_bio/western_blot/buffers.html"
-    ]
-  },
-  {
-    "listing": "/protocols/infections/listeria/index.html",
-    "items": [
-      "/protocols/infections/listeria/infection.html",
-      "/protocols/infections/listeria/growing_a_stock.html"
-    ]
-  },
-  {
-    "listing": "/protocols/infections/lcmv/index.html",
-    "items": [
-      "/protocols/infections/lcmv/infection_lcmv_arm.html",
-      "/protocols/infections/lcmv/stock.html"
-    ]
-  },
-  {
-    "listing": "/protocols/infections/VSV-Ova/index.html",
-    "items": [
-      "/protocols/infections/VSV-Ova/VSV-Ova Infection.html"
-    ]
-  },
-  {
-    "listing": "/protocols/infections/index.html",
-    "items": [
-      "/protocols/infections/lcmv/index.html",
-      "/protocols/infections/listeria/index.html",
-      "/protocols/infections/VSV-Ova/index.html",
-      "/protocols/infections/retrovirus/index.html"
     ]
   }
 ]
