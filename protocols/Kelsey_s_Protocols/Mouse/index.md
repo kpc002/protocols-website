@@ -1,6 +1,6 @@
 ---
 title: "Mouse protocols"
-image: blood_sample.svg
+image: Apodemus0001.svg
 listing:
   type: grid
   contents: "*.md"

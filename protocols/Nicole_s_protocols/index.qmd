@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 56
 title: "Nicole_s protocols"
 description: "Protocols, kit manuals, and interactive laboratory calculators contributed by Nicole."
 author: "Nicole Sharping"

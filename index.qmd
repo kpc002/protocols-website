@@ -43,21 +43,21 @@ Potions tutorial and cell media recipes.
 
 How do I book flow time? How do I sort? Where can I find a database of all antibodies.
 
-### [Alex's Protocols](/protocols/Alex_s_Protocols/)
+### [{{< fa apple-whole >}} Alex's Protocols](/protocols/Alex_s_Protocols/)
 
-### [Dhruv's Protocols](/protocols/Dhruv_s_Protocols/)
+### [{{< fa egg >}} Dhruv's Protocols](/protocols/Dhruv_s_Protocols/)
 
-### [Giovanni's Protocols](/protocols/Giovanni_s_Protocols/)
+### [{{< fa robot >}} Giovanni's Protocols](/protocols/Giovanni_s_Protocols/)
 
-### [Old Goldrath Protocols](/protocols/Goldrath_Protocols/)
+### [{{< fa floppy-disk >}} Old Goldrath Protocols](/protocols/Goldrath_Protocols/)
 
-### [Kelsey's Protocols](/protocols/Kelsey_s_Protocols/)
+### [{{< fa ice-cream >}} Kelsey's Protocols](/protocols/Kelsey_s_Protocols/)
 
-### [Kitty's Protocols](/protocols/Kitty_s_Protocols/)
+### [{{< fa cat >}} Kitty's Protocols](/protocols/Kitty_s_Protocols/)
 
-### [Nicole's Protocols](/protocols/Nicole_s_protocols/)
+### [{{< fa award >}} Nicole's Protocols](/protocols/Nicole_s_protocols/)
 
-### [Top 20 Work in progress](/protocols/Top_20/)
+### [{{< fa dice-d20 >}} Top 20 Work in progress](/protocols/Top_20/)
 
 ### [{{< fa donate >}} Contribute](contribute.md)
 

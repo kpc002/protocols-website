@@ -1,7 +1,7 @@
 ---
 title: "Top 20 Protocols"
 description: "A selection of frequently used laboratory protocols."
-order: 10
+order: 57
 author: "Goldrath Lab"
 date: last-modified
 listing:

@@ -1,6 +1,6 @@
 ---
 title: "Human protocols"
-image: blood_sample.svg
+image: HumanMaleOutline-grey.svg
 listing:
   type: grid
   contents: "*.md"

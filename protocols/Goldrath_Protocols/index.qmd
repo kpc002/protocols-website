@@ -1,7 +1,7 @@
 ---
 title: "Goldrath Protocols"
 description: 'Protocols and laboratory resources from the Goldrath Lab.'
-order: 10
+order: 53
 author: "Goldrath Lab"
 date: last-modified
 listing:

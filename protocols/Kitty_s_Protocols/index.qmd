@@ -1,7 +1,7 @@
 ---
 title: "Kitty's Protocols"
 description: "Histology, tissue fixation, embedding, staining, and laboratory culture protocols contributed by Kitty Cheung."
-order: 10
+order: 55
 author: "Kitty Cheung"
 date: last-modified
 listing:
