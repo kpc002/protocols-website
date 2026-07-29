@@ -1,5 +1,5 @@
 ---
-title: "Isolate spleenocytes"
+title: "Isolate splenocytes"
 description: 'Isolate spleenocytes'
 order: 10
 author: "Goldrath Lab"

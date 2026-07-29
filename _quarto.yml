@@ -5,13 +5,13 @@ project:
 
 website:
   title: "protocols.heeg.io"
-  site-url: https://protocols.heeg.io
+  site-url: https://kpc002.github.io/protocols-website
   twitter-card: true
   page-navigation: true
-  repo-url: https://github.com/maximilian-heeg/protocols.heeg.io
+  repo-url: https://github.com/kpc002/protocols-website
   repo-actions: [edit, issue]
   search:
-    location: sidebar
+    location: navbar
   navbar:
     left:
       - href: index.qmd

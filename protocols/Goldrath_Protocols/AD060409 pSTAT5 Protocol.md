@@ -1,5 +1,5 @@
 ---
-title: "AD060409 pSTAT5 Protocol"
+title: "pSTAT5 Protocol"
 order: 10
 author: "Goldrath Lab"
 date: last-modified

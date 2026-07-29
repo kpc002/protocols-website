@@ -1,6 +1,6 @@
 ---
 title: "Determining Bacterial Burden"
-description: 'Four days after infection, quantitative bacterial burdens in spleens were determined. Mean bacterial burden of recipient mice (left to right, n = 3, 4, 4, 4) is expressed as a perc'
+description: "Determining Bacterial Burden"
 order: 10
 author: "Goldrath Lab"
 date: last-modified

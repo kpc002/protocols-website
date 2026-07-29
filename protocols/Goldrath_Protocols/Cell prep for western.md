@@ -1,6 +1,6 @@
 ---
 title: "Cell prep for western"
-description: '1. Harvest tissue into RPMI'
+description: "Cell prep for western"
 order: 10
 author: "Goldrath Lab"
 date: last-modified

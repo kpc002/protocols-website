@@ -6,7 +6,7 @@ author: "Goldrath Lab"
 date: last-modified
 listing:
   type: table
-  contents: ["**/*.md", "**/*.qmd"]
+  contents: ["*.md", "*.qmd"]
   sort: "title"
   fields: [title, description]
   filter-ui: true
@@ -14,3 +14,11 @@ listing:
 ---
 
 Browse curated Goldrath Lab protocols.
+
+## Folders
+
+| Folder |
+|---|
+| [Masopust Gut Prep Protocol](Masopust%20Gut%20Prep%20Protocol/index.qmd) |
+
+## Files

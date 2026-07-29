@@ -1,5 +1,5 @@
 ---
-title: "TH1TH2"
+title: "TH1 TH2 TH17"
 description: 'Cell culture: TH1/ TH2 / TH17'
 order: 10
 author: "Goldrath Lab"

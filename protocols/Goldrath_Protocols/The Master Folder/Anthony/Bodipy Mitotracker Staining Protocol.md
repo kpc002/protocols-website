@@ -1,6 +1,6 @@
 ---
 title: "Bodipy Mitotracker Staining Protocol"
-description: '1. Fc Block'
+description: "Bodipy Mitotracker Staining Protocol"
 order: 10
 author: "Goldrath Lab"
 date: last-modified

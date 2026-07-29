@@ -1,5 +1,5 @@
 ---
-title: "Cell culture"
+title: "Cell Culture Basics"
 description: '> First you need to find out what media your cells need to grow in and whether your cells are adherent or not.'
 order: 10
 author: "Goldrath Lab"

@@ -1,0 +1,59 @@
+---
+title: "MRC"
+description: "Protocols and laboratory resources from the Goldrath Lab."
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+listing:
+  type: table
+  contents:
+    - "CRC_Caecum_orthotopic_Materials.md"
+    - "Caecum_orthotopic_protocol_MRC.md"
+    - "Cholesterol_Amplex.md"
+    - "Cholesterol_extraction_Sigma.md"
+    - "FilipinIII_stain.md"
+    - "Gut prep protocol.md"
+    - "IF_Frozen_BioProtocol.md"
+    - "LLB_GutPrep2017.md"
+    - "Lymphocyte prep_tissues.md"
+    - "MAN0017851_CRISPR_Cas9_T_cell_gene_editing_using_Neon_UB.md"
+    - "MC38_Growth.md"
+    - "MYCO_PCR.md"
+    - "Mission_shRNA_lentiviral.md"
+    - "Mixed ACT Calculations.md"
+    - "Mouse_Haplotype_Table.md"
+    - "Neon_Cas9_RNP.md"
+    - "Neon_Electroporation_466243.full.md"
+    - "Protocol_Caecum_Orthotopic_MRC.md"
+    - "RNA Isolation from Sorted Cells.md"
+    - "RNP Electroporation_Protocol_Jinyong for Tianda.md"
+    - "Retroviral transduction of CD4+map and insertion_Katia.md"
+    - "STAINING PROTOCOL FOR FLOW.md"
+    - "TIF_ajpheart.00327.2002.md"
+    - "TIL_prep_MC38_sc_MRC.md"
+    - "Tumor_Interstitial_Fluid.md"
+    - "guide design and sequence.md"
+    - "insitu_tetramer_CD8_Tcells.md"
+    - "lentiviral-packaging.printerview.md"
+    - "neon_device_man.md"
+    - "neon_device_qrc.md"
+    - "sgRNA_Viral_transduction_Wei_2019.md"
+  sort: "title"
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse protocols in this folder.
+
+## Folders
+
+| Folder |
+|---|
+| [Histology](Histology/index.qmd) |
+| [LentiProduction](LentiProduction/index.qmd) |
+| [PANELS](PANELS/index.qmd) |
+| [RetroProduction_Tcells](RetroProduction_Tcells/index.qmd) |
+| [TissuePreps](TissuePreps/index.qmd) |
+
+## Files
