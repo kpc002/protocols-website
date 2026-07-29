@@ -1,1 +1,1 @@
-Sitemap: https://protocols.heeg.io/sitemap.xml
+Sitemap: https://kpc002.github.io/protocols-website/sitemap.xml
