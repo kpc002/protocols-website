@@ -11,7 +11,7 @@ image: oligo.svg
 [Download the original PDF](Addgene_%20Protocol%20-%20How%20to%20Inoculate%20a%20Bacterial%20Culture.pdf){.btn .btn-primary download="Addgene_ Protocol - How to Inoculate a Bacterial Culture.pdf"}
 
 
-Source PDF: [Addgene_ Protocol - How to Inoculate a Bacterial Culture.pdf](Addgene_%20Protocol%20-%20How%20to%20Inoculate%20a%20Bacterial%20Culture.pdf)
+Source PDF: [Addgene_ Protocol - How to Inoculate a Bacterial Culture.pdf](Addgene_%20Protocol%20-%20How%20to%20Inoculate%20a%20Bacterial%20Culture.pdf){.btn .btn-primary download="Addgene_ Protocol - How to Inoculate a Bacterial Culture.pdf"}
 
 This website uses cookies to ensure you get the best experience. By continuing to use this site, you agree to the use of cookies.
 

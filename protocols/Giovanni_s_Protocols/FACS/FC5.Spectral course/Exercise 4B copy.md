@@ -11,7 +11,7 @@ image: oligo.svg
 [Download the original PDF](Exercise%204B%20copy.pdf){.btn .btn-primary download="Exercise 4B copy.pdf"}
 
 
-Source PDF: [Exercise 4B copy.pdf](Exercise%204B%20copy.pdf)
+Source PDF: [Exercise 4B copy.pdf](Exercise%204B%20copy.pdf){.btn .btn-primary download="Exercise 4B copy.pdf"}
 
 ![Image](protocols/Giovanni_s protocols/FACS/FC5.Spectral course/Exercise 4B copy_artifacts/image_000000_19bba7af4a55a1bce1c026127889529224bd2cfa491b9db0002a92452a336c07.png)
 

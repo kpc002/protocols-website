@@ -11,7 +11,7 @@ image: oligo.svg
 [Download the original PDF](MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf){.btn .btn-primary download="MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf"}
 
 
-Source PDF: [MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf](MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf)
+Source PDF: [MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf](MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf){.btn .btn-primary download="MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.pdf"}
 
 USER GUIDE
 

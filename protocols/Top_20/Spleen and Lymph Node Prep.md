@@ -12,7 +12,7 @@ This combined reference preserves the approaches from the two original protocols
 
 ## Original protocols
 
-- [Cell Prep from Lymph nodes and/or Spleen](../Goldrath_Protocols/spleen&lymph%20node%20cell%20prep.md)
+- [Cell Prep from Lymph nodes and/or Spleen](../Goldrath_Protocols/Old_Protocols/spleen&lymph%20node%20cell%20prep.md)
 - [Spleen processing](../mice/spleen.md)
 
 ## Combined procedure

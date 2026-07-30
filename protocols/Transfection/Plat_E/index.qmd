@@ -1,0 +1,14 @@
+---
+title: "Plat-E Transfection"
+description: "Protocols for Plat-E-based transfection, retroviral production, and transduction."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse Plat-E transfection and transduction protocols.

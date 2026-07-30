@@ -29,14 +29,14 @@ Thank you for joining us this week for the Introduction to Spectral Cytometry tr
 ### Panel Optimization
 
 - Publication about [Panel Optimization Best Practices](https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/cpz1.222)
-- Cytek White Paper about [Evaluating Panel Performance](https://welcome.cytekbio.com/hubfs/Website%20Downloadable%20Content/White%20Papers/N9_20004_Rev_A_1L_Blue_Evaluate_Panel_Performance.pdf)
+- Cytek White Paper about [Evaluating Panel Performance](https://welcome.cytekbio.com/hubfs/Website%20Downloadable%20Content/White%20Papers/N9_20004_Rev_A_1L_Blue_Evaluate_Panel_Performance.pdf){.btn .btn-primary download="N9_20004_Rev_A_1L_Blue_Evaluate_Panel_Performance.pdf"}
 - Blog article by Laura Johnston about the *vital* importance of [properly titrating viability dyes](https://voices.uchicago.edu/ucflow/2019/11/15/the-importance-of-titrating-viability-dyes-on-the-aurora-spectral-cytometer/)
 - Webinar on [Debunking Antibody Titration Myths](https://www.youtube.com/watch?v=CXsnAzV4dCw&t=1s)
-- [Antibody Titration Protocol](https://welcome.cytekbio.com/hubfs/DOC-00504-Rev.-A_Antibody-Titration-Protocol.pdf)
+- [Antibody Titration Protocol](https://welcome.cytekbio.com/hubfs/DOC-00504-Rev.-A_Antibody-Titration-Protocol.pdf){.btn .btn-primary download="DOC-00504-Rev.-A_Antibody-Titration-Protocol.pdf"}
 
 ### Instrument Setup
 
-- Check out the [collection of video tutorials about SpectroFlo](https://f.hubspotusercontent00.net/hubfs/6765000/Website%20Downloadable%20Content/Guides%20and%20Manuals/N9_20037_Rev._A_SpectroFlo_Video_Tutorials_Guide.pdf) if you want more in-depth detail about specific features.
+- Check out the [collection of video tutorials about SpectroFlo](https://f.hubspotusercontent00.net/hubfs/6765000/Website%20Downloadable%20Content/Guides%20and%20Manuals/N9_20037_Rev._A_SpectroFlo_Video_Tutorials_Guide.pdf){.btn .btn-primary download="N9_20037_Rev._A_SpectroFlo_Video_Tutorials_Guide.pdf"} if you want more in-depth detail about specific features.
 - [Gating reference controls](https://voices.uchicago.edu/ucflow/2020/06/24/the-right-and-wrong-way-to-set-up-automated-compensation-tools-how-to-achieve-accurate-compensation/) — another great blog article by Laura Johnston about setting up gates in the unmixing wizard.
 - Webinar on [instrument standardization](https://www.youtube.com/watch?v=JclPgCD9YXo&t=1s)
 

@@ -31,4 +31,4 @@ Recommended concentration for CellTrace™ staining is 1--10 μM. A dye concentr
 
 ![Cell proliferation with CTV](CTV.jpg)
 
-Full protocol on [thermofischer.com](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0002595_CellTrace_Cell_Proliferation_Kits_UG.pdf)
+Full protocol on [thermofischer.com](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0002595_CellTrace_Cell_Proliferation_Kits_UG.pdf){.btn .btn-primary download="MAN0002595_CellTrace_Cell_Proliferation_Kits_UG.pdf"}

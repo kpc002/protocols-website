@@ -11,7 +11,7 @@ image: oligo.svg
 [Download the original PDF](Introduction%20to%20Spectral%20Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf){.btn .btn-primary download="Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf"}
 
 
-Source PDF: [Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf](Introduction%20to%20Spectral%20Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf)
+Source PDF: [Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf](Introduction%20to%20Spectral%20Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf){.btn .btn-primary download="Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.pdf"}
 
 ![Image](protocols/Giovanni_s protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024_artifacts/image_000000_2b8001e3e6c33effab83d34bf78569fd2972c08b9d89cfa91afbe4efec371981.png)
 

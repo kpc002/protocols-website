@@ -10,7 +10,7 @@ image: oligo.svg
 [Download the original PDF](Addgene_%20Protocol%20-%20How%20to%20Streak%20a%20Plate.pdf){.btn .btn-primary download="Addgene_ Protocol - How to Streak a Plate.pdf"}
 
 
-Source PDF: [Addgene_ Protocol - How to Streak a Plate.pdf](Addgene_%20Protocol%20-%20How%20to%20Streak%20a%20Plate.pdf)
+Source PDF: [Addgene_ Protocol - How to Streak a Plate.pdf](Addgene_%20Protocol%20-%20How%20to%20Streak%20a%20Plate.pdf){.btn .btn-primary download="Addgene_ Protocol - How to Streak a Plate.pdf"}
 
 This website uses cookies to ensure you get the best experience. By continuing to use this site, you agree to the use of cookies.
 

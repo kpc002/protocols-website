@@ -41,7 +41,7 @@ library(printr)
 
 The next thing we need to do, is to load the raw count data and the sample annotation into R. We can import excel files with `read_excel` from the package `readxl` and the CSV file with `read_csv` from `readr`. First, we load the libraries in R, then we can access their function to load the data.
 
-You can download the file here: [GeneMatrix](GeneMatrix_all_Ms.xlsx) [Annotation](annotation.csv)
+You can download the file here: [GeneMatrix](GeneMatrix_all_Ms.xlsx){.btn .btn-primary download="GeneMatrix_all_Ms.xlsx"} [Annotation](annotation.csv){.btn .btn-primary download="annotation.csv"}
 
 ```{r}
 #| label: tbl-counts_annotation

@@ -10,7 +10,7 @@ image: oligo.svg
 [Download the original PDF](10X_protocol.pdf){.btn .btn-primary download="10X_protocol.pdf"}
 
 
-Source PDF: [10X_protocol.pdf](10X_protocol.pdf)
+Source PDF: [10X_protocol.pdf](10X_protocol.pdf){.btn .btn-primary download="10X_protocol.pdf"}
 
 ## USER GUIDE
 

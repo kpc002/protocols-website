@@ -15,7 +15,7 @@ keywords:
 - low input
 ---
 
-Source workbook: [`MB3.qPCR.Excel.xlsx`](MB3.qPCR.Excel.xlsx)
+Source workbook: [`MB3.qPCR.Excel.xlsx`](MB3.qPCR.Excel.xlsx){.btn .btn-primary download="MB3.qPCR.Excel.xlsx"}
 
 ## Regular input
 

@@ -1,0 +1,14 @@
+---
+title: "Histology Protocols"
+description: "Histology-related protocols and laboratory resources."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse the histology protocols and related laboratory resources.

@@ -11,7 +11,7 @@ image: oligo.svg
 [Download the original PDF](FC4.TF_buffer_set.pdf){.btn .btn-primary download="FC4.TF_buffer_set.pdf"}
 
 
-Source PDF: [FC4.TF_buffer_set.pdf](FC4.TF_buffer_set.pdf)
+Source PDF: [FC4.TF_buffer_set.pdf](FC4.TF_buffer_set.pdf){.btn .btn-primary download="FC4.TF_buffer_set.pdf"}
 
 ## Technical Data Sheet
 

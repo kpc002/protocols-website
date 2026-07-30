@@ -11,7 +11,7 @@ image: oligo.svg
 [Download the original PDF](N9-20017%20Rev%20B_5L%20UVVBYGR%20Fluorochrome%20Guideline.pdf){.btn .btn-primary download="N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.pdf"}
 
 
-Source PDF: [N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.pdf](N9-20017%20Rev%20B_5L%20UVVBYGR%20Fluorochrome%20Guideline.pdf)
+Source PDF: [N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.pdf](N9-20017%20Rev%20B_5L%20UVVBYGR%20Fluorochrome%20Guideline.pdf){.btn .btn-primary download="N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.pdf"}
 
 ![Image](protocols/Giovanni_s protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline_artifacts/image_000000_4084d404b90cb1b28f432c024b4161b57d33603a82ae0a5d3c688f964c97afd0.png)
 

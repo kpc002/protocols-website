@@ -1,0 +1,14 @@
+---
+title: "Old Protocols"
+description: "Legacy protocols from the Goldrath Lab."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse the legacy Goldrath Lab protocols.

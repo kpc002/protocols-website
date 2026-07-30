@@ -1,0 +1,14 @@
+---
+title: "Plat-E Polybrene Transduction"
+description: "Protocols for Plat-E retroviral production, polybrene-mediated transduction, and related workflows."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse Plat-E polybrene transduction protocols.

@@ -6,57 +6,7 @@ author: "Goldrath Lab"
 date: last-modified
 listing:
   type: table
-  contents:
-    - "-80 Freezer Maintenance.md"
-    - "AD060409 pSTAT5 Protocol.md"
-    - "Antibody purification.md"
-    - "Biotinylation of Ab.md"
-    - "Blood prep for phenotyping.md"
-    - "CD8 activation protocol.md"
-    - "Cell culture.md"
-    - "Cell prep for western.md"
-    - "ChIP protocol.md"
-    - "DNA extaction from tails.md"
-    - "Duties of the Radiation S.md"
-    - "FACS protocol sheet.md"
-    - "Fc block culture 2.md"
-    - "Fugene 6 mediated transfection of Phoenix cell.md"
-    - "GFP:YFP Filters.md"
-    - "Guava Instructions.md"
-    - "Hemacytometer.md"
-    - "Hot first strand for probing arrays from cRNA.md"
-    - "How to make up dNTP stocks.md"
-    - "How to use the hypoxia chamber.md"
-    - "IFNgamma in vitro - Mindy.md"
-    - "Isolate spleenocytes.md"
-    - "LibraryPreparationforCutandRun.md"
-    - "Listeria production.md"
-    - "Mouse Anesthesia.md"
-    - "Mouse Saliva Test Protocol (Sjogren's Syndrome Project).md"
-    - "Phenotyping of OVA specific  memory  CD8  T cells.md"
-    - "Precipitation of RNA.md"
-    - "Prep of IL15complexes.md"
-    - "Preparing mouse joints for histology.md"
-    - "Proliferation assay.md"
-    - "RNA extraction with Trizol.md"
-    - "RNP_Electroporation_Protocol_GoldrathLab.md"
-    - "Setting up PCR.md"
-    - "Southern Protocol JK.md"
-    - "Spin Transfection.md"
-    - "Staining Blood.md"
-    - "Stim with ovap.md"
-    - "Streptavidin microbeads protocol.md"
-    - "Supplementing humanized mice with cytokines.md"
-    - "TH1TH2.md"
-    - "Tail prep.md"
-    - "Western2.md"
-    - "animal protocol2009.md"
-    - "growing sphingomonas and pneumococcus.md"
-    - "phenotyping.md"
-    - "spleen&lymph node cell prep.md"
-    - "zd_In vitro IFN_OVAp_PMA.md"
-    - "zd_Phenotyping_modified.md"
-    - "zd_Purification.md"
+  contents: "Old_Protocols/*.md"
   sort: "title"
   fields: [title, description]
   filter-ui: true
@@ -70,6 +20,7 @@ Browse or search protocols and laboratory resources from the Goldrath Lab.
 | Folder |
 |---|
 | [Curated protocols](Curated%20protocols/index.qmd) |
+| [Old Protocols](Old_Protocols/) |
 | [The Master Folder](The%20Master%20Folder/index.qmd) |
 | [VSV-ova related material](VSV-ova%20related%20material/index.qmd) |
 | [Vivarium cage card](Vivarium%20cage%20card/index.qmd) |

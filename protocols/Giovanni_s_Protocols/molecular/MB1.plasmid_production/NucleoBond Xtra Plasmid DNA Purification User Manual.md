@@ -10,7 +10,7 @@ image: oligo.svg
 [Download the original PDF](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual.pdf){.btn .btn-primary download="NucleoBond Xtra Plasmid DNA Purification User Manual.pdf"}
 
 
-Source PDF: [NucleoBond Xtra Plasmid DNA Purification User Manual.pdf](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual.pdf)
+Source PDF: [NucleoBond Xtra Plasmid DNA Purification User Manual.pdf](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual.pdf){.btn .btn-primary download="NucleoBond Xtra Plasmid DNA Purification User Manual.pdf"}
 
 ## MACHEREY-NAGEL
 

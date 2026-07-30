@@ -48,7 +48,7 @@ Use Medium without PenStrep. This improves the transfection.
   - Add 125 µl of mix to each eppi 
   
 ## Other
- For other amounts, see the [searchable TransIT-LT1 starting-conditions table](Mirus.qmd) or check the [manufacturer's manual](https://www.mirusbio.com/assets/protocols/ml001_transit_lt1_transfection_reagent.pdf).
+ For other amounts, see the [searchable TransIT-LT1 starting-conditions table](Mirus.qmd) or check the [manufacturer's manual](https://www.mirusbio.com/assets/protocols/ml001_transit_lt1_transfection_reagent.pdf){.btn .btn-primary download="ml001_transit_lt1_transfection_reagent.pdf"}.
 :::
 -   Incubate at RT for 20 min
 -   Add dropwise to cells
