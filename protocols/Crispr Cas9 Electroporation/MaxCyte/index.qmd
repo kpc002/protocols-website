@@ -1,0 +1,14 @@
+---
+title: "MaxCyte Electroporation"
+description: "CRISPR-Cas9 RNP electroporation protocols for MaxCyte workflows."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse MaxCyte electroporation protocols.

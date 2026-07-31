@@ -4,21 +4,10 @@ description: "Protocols and laboratory resources from the Goldrath Lab."
 order: 10
 author: "Goldrath Lab"
 date: last-modified
-listing:
-  type: table
-  contents: ["*.md", "*.qmd"]
-  sort: "title"
-  fields: [title, description]
-  filter-ui: true
-  sort-ui: true
 ---
 
-Browse protocols in this folder.
+This folder no longer contains renderable protocol pages. Related retroproduction and transduction protocols have been reorganized into [Plat-E Transfection](/protocols/Transfection%20and%20Transduction/Plat_E/) and [Retronectin Transduction](/protocols/Transfection%20and%20Transduction/Retronectin/).
 
-## Folders
+Remaining non-rendered file:
 
-| Folder |
-|---|
-| [ScienceDirect files 26Nov2019 21-45-47.888](ScienceDirect_files_26Nov2019_21-45-47.888/index.qmd) |
-
-## Files
+- `pLMPd-Ametrine-(V020).dna`

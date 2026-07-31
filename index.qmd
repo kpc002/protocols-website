@@ -31,6 +31,22 @@ Everything you need to know  about lymphocyte isolation from mouse tissues.
 
 Classic protocols for RNA Isolation, cDNA Synthesis, PCRs and Western
 
+### [{{< fa microscope >}} Histology](/protocols/histology/)
+
+Histology, FFPE, OCT, and tissue-processing protocols.
+
+### [{{< fa dna >}} CRISPR-Cas9 Electroporation](/protocols/Crispr%20Cas9%20Electroporation/)
+
+Lonza, Neon, and MaxCyte electroporation protocols.
+
+### [{{< fa flask >}} Transfection](/protocols/Transfection%20and%20Transduction/)
+
+Plat-E, HEK293T, lentivirus production, polybrene, and Retronectin protocols.
+
+### [{{< fa barcode >}} Perturb-seq](/protocols/Pertub_Seq/)
+
+Perturb-seq planning guides and sgRNA viral transduction resources.
+
 ### [{{< fa laptop-code >}} Bioinformatics](/protocols/bioinformatics)
 
 What's there to say? The name is self-explanatory. This sections is also known as dry lab.

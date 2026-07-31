@@ -8,7 +8,7 @@ date: last-modified
 
 ## Source
 
-**Maximilian Heeg** — [Retroviral transduction](../t_cells/transduction.md)
+**Maximilian Heeg** — [Retroviral transduction](../Transfection%20and%20Transduction/Polybrene/transduction.md)
 
 This page is a focused composite of the Polybrene-related steps from Maximilian Heeg’s source protocol. Among the four supplied source files, it is the only file containing a Polybrene workflow.
 
@@ -49,5 +49,4 @@ Activate T cells using [CD8 Selection and Activation](/protocols/t_cells/cd8_sel
 
 ## Source differences
 
-Among the four specified input files, only **Maximilian Heeg’s** source provides a Polybrene-containing workflow; therefore there are no conflicting Polybrene parameters to compare within this source set. [Source: Maximilian Heeg](../t_cells/transduction.md)
-
+Among the four specified input files, only **Maximilian Heeg’s** source provides a Polybrene-containing workflow; therefore there are no conflicting Polybrene parameters to compare within this source set. [Source: Maximilian Heeg](../Transfection%20and%20Transduction/Polybrene/transduction.md)

@@ -1,0 +1,14 @@
+---
+title: "Perturb-seq"
+description: "Perturb-seq planning guides and sgRNA viral transduction resources."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse Perturb-seq protocols and resources.

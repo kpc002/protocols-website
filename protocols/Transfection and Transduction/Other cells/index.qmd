@@ -1,0 +1,14 @@
+---
+title: "Other cells"
+description: "Transfection and spin-transfection protocols for Phoenix and other cell workflows."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse transfection protocols for other cell workflows.

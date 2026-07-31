@@ -14,9 +14,9 @@ This composite brings together Plat-E transfection, retrovirus collection, and p
 
 ## Source files
 
-- **Alex Monell** — [Transfection](../Alex_s_Protocols/Transfections_and_Transductions/Transfection.md)
-- **Goldrath Lab** — [Transfection Protocol](../Goldrath_Protocols/The%20Master%20Folder/Justin/Transfection%20Protocol.md)
-- **Nicole Sharping** — [NES 042924 CD8 T cell transduction and double transduction](../Nicole_s_protocols/NES%20042924%20CD8%20T%20cell%20transduction%20and%20double%20transduction.md)
+- **Alex Monell** — [Transfection](../Transfection%20and%20Transduction/Plat_E/Transfection.md)
+- **Goldrath Lab** — [Transfection Protocol](../Transfection%20and%20Transduction/Plat_E/Transfection%20Protocol.md)
+- **Nicole Sharping** — [NES 042924 CD8 T cell transduction and double transduction](../Transfection%20and%20Transduction/Plat_E/NES%20042924%20CD8%20T%20cell%20transduction%20and%20double%20transduction.md)
 - **Maximilian Heeg** — [Make Retrovirus](../infections/retrovirus/index.md)
 
 ## 1. Prepare Plat-E cells
