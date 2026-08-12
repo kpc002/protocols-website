@@ -31,6 +31,10 @@ Everything you need to know  about lymphocyte isolation from mouse tissues.
 
 Classic protocols for RNA Isolation, cDNA Synthesis, PCRs and Western
 
+### [{{< fa dna >}} Cloning](/protocols/Cloning/)
+
+Collected cloning protocols and related source documents moved into the new top-level folder.
+
 ### [{{< fa microscope >}} Histology](/protocols/histology/)
 
 Histology, FFPE, OCT, and tissue-processing protocols.

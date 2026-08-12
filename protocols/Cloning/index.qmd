@@ -1,0 +1,14 @@
+---
+title: "Cloning Protocols"
+description: "Cloning protocols and related source documents collected in one place."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse the cloning protocols collected in this folder.

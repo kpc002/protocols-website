@@ -16,7 +16,7 @@ A good way to document our R code is to use a R Markdown document (Rmd), which a
 
 The first thing we need to do, is install all the required packages in R. You can do this by running the following commands in R.
 
-```{r}
+```r
 #| message: false
 # BiocManager is an excellent source for R packages used in bioinformatics
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -43,7 +43,7 @@ The next thing we need to do, is to load the raw count data and the sample annot
 
 You can download the file here: [GeneMatrix](GeneMatrix_all_Ms.xlsx){.btn .btn-primary download="GeneMatrix_all_Ms.xlsx"} [Annotation](annotation.csv){.btn .btn-primary download="annotation.csv"}
 
-```{r}
+```r
 #| label: tbl-counts_annotation
 #| tbl-cap:
 #|   - "Raw counts"
@@ -63,7 +63,7 @@ head(annotation)
 
 As you can see, in this case the counts table has 11 columns. The first two have the gene names, the last 9 contain the actual counts that we are interested in. `DESeq` requires a table, that only contains the counts. The row names contain the information about the gene. So let's do that.
 
-```{r}
+```r
 #| label: tbl-counts
 #| tbl-cap: "Prepare the counts table for DESeq"
 # to set to rownames, we first have to convert the table to a data.frame
@@ -83,7 +83,7 @@ Now we have a table with the samples as columns and the gene as rows (See @tbl-c
 
 Next, let's have a look at the annotation file. For each column in counts, we need one row in the annotation file. In this case, the row name needs to be the sample name. Then we will do some checks. We want to make sure that we have an annotation for all samples in counts and that the order of the column in counts equals the order of the rows in annotation.
 
-```{r}
+```r
 # set rownames
 annotation <- as.data.frame(annotation)
 rownames(annotation) <- annotation$sample
@@ -108,7 +108,7 @@ Here, we will use `DESeq2` to analyze differential gene expression. `DESeq2` has
 
 With the count matrix, counts, and the sample information, annotation, we can construct a `DESeqDataSet`. The design formula depends on the experimental design of your experiment. In this case, `tissue` (Spleen, Fat, Gut) and `cell.type` (Trm, Tem). Let's assume that there is no interaction between `tissue` and `cell.type` to make the analysis a little easier. Again, the `DESeq2` vignette provides a very nice section on how to deal with [interaction in `DESeq2`](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#interactions)
 
-```{r}
+```r
 #| message: false
 #| warning: false
 suppressPackageStartupMessages(library(DESeq2))
@@ -122,7 +122,7 @@ dds
 
 If you have additional feature data (gene data, eg. names), it can be added to the `DESeqDataSet` by adding to the metadata columns of a newly constructed object using the `mcol` function. Let us add the Gene_ID_ENSMUSG and Gene_ID.
 
-```{r}
+```r
 #| label: tbl-gene_information
 #| tbl-cap: "Gene information: Ensembl ID and gene name."
 # read the excel file, but keep only the first to columns  [,1:2]
@@ -136,7 +136,7 @@ mcols(dds) <- DataFrame(mcols(dds), gene_information)
 
 While it is not necessary to pre-filter low count genes before running the `DESeq2` functions, there are two reasons which make pre-filtering useful: by removing rows in which there are very few reads, we reduce the memory size of the dds data object, and we increase the speed of the transformation and testing functions within `DESeq2`. Here we perform a minimal pre-filtering to keep only rows that have at least 10 reads total.
 
-```{r}
+```r
 keep <- rowSums(counts(dds)) >= 10
 dds <- dds[keep,]
 ```
@@ -151,7 +151,7 @@ The be honest, I do not understand the mathematical background of either of thes
 
 Let us just do all normalizations and compare the results.
 
-```{r}
+```r
 #| label: fig-pca
 #| layout-ncol: 2
 #| fig-cap: PCA
@@ -174,7 +174,7 @@ In all three cases (@fig-pca), we get the biggest difference in the PCA between 
 
 An alternative way is to visualize the sample to sample distance (@fig-distance).
 
-```{r}
+```r
 #| label: fig-distance
 #| fig-cap: Sample to sample distance
 library(pheatmap)
@@ -196,7 +196,7 @@ For the DE analysis, you first have to know which groups you want to compare. Fo
 
 Therefore we need to slightly adapt the experimental design. So far we have `~ tissue + cell.type`. If we were to compare Tem vs Trm in this design, the Tem population would consist of Spl and mAT and the Trm population of mAT and LP. We could either add an interaction term or create a new grouping variable by pasting tissue and cell.type together.
 
-```{r}
+```r
 #| message: false
 # create new grouping variable and convert it to a factor
 dds$tissue_cell.type <- factor(paste(dds$tissue, dds$cell.type, sep="-"))
@@ -208,7 +208,7 @@ design(dds)
 
 The actual analysis only consists of two commands: `DESeq` and `results`.
 
-```{r}
+```r
 #| message: false
 dds <- DESeq(dds)
 # we want to compare mAT-Trm against mAT-Tem
@@ -219,7 +219,7 @@ res <- results(dds, contrast = c("tissue_cell.type", "mAT-Trm", "mAT-Tem"))
 
 Let's inspect the results with a MA Plot (@fig-ma_plot). Points will be colored if the adjusted p value is less than 0.1. Points which fall out of the window are plotted as open triangles pointing either up or down.
 
-```{r}
+```r
 #| label: fig-ma_plot
 #| fig-cap: "MA Plot: Mean expression vs fold change"
 plotMA(res, ylim=c(-2,2))
@@ -229,7 +229,7 @@ plotMA(res, ylim=c(-2,2))
 
 Shrinkage of effect size (LFC estimates) is useful for visualization and ranking of genes. You can do this by running
 
-```{r}
+```r
 #| message: false
 resLFC <- lfcShrink(dds, contrast = c("tissue_cell.type", "mAT-Trm", "mAT-Tem"), type="normal")
 resLFC
@@ -237,7 +237,7 @@ resLFC
 
 It is more useful visualize the MA-plot for the shrunken log2 fold changes (@fig-ma_plot_lfc), which remove the noise associated with log2 fold changes from low count genes without requiring arbitrary filtering thresholds.
 
-```{r}
+```r
 #| label: fig-ma_plot_lfc
 #| fig-cap: "MA Plot: Mean expression vs shrunken fold change"
 plotMA(resLFC, ylim=c(-2,2))
@@ -245,7 +245,7 @@ plotMA(resLFC, ylim=c(-2,2))
 
 As you can see, `lfcShrink` removes the noise associated with log2 fold changes from low count genes without requiring arbitrary filtering thresholds. P values are not affected by this.
 
-```{r}
+```r
 plot(res$pvalue, resLFC$pvalue)
 ```
 
@@ -253,7 +253,7 @@ plot(res$pvalue, resLFC$pvalue)
 
 With this, it is really easy to create a volcano plot.
 
-```{r}
+```r
 #| label: fig-volcano
 #| fig-cap: Volcano plot
 #| message: false
@@ -271,7 +271,7 @@ You can see, that e.g. 4-1BB (Tnfrsf9) is upregulated in Trm.
 
 #### Summary of the results
 
-```{r}
+```r
 summary(resLFC)
 ```
 
@@ -279,7 +279,7 @@ summary(resLFC)
 
 It can also be useful to plot the counts of a gene across the different groups. Let's plot the gene with the lowest p-value.
 
-```{r}
+```r
 #| label: fig-basic_counts
 #| fig-cap: Plot of normalized counts of the gene with the lowest p-value
 plotCounts(dds, gene=which.min(resLFC$padj), intgroup="tissue_cell.type")
@@ -287,7 +287,7 @@ plotCounts(dds, gene=which.min(resLFC$padj), intgroup="tissue_cell.type")
 
 I don't really know many (or any) of the ENSMUSG by heart. So let us add the gene symbols stored in mcols.
 
-```{r}
+```r
 ## important: add additonal columns before you change the order of the results!
 resLFC$Gene_ID <- mcols(dds)$Gene_ID
 head(resLFC)
@@ -295,14 +295,14 @@ head(resLFC)
 
 Much better... Now sort the list by adjusted p-value.
 
-```{r}
+```r
 resOrdered <- resLFC[order(resLFC$padj),]
 head(resOrdered)
 ```
 
 We can export the list to csv (or excel) to make manual inspection a little easier.
 
-```{r}
+```r
 write_csv(as.data.frame(resOrdered), "de_mAT-Trm_vs_mAT-Tem.csv")
 ```
 
@@ -310,7 +310,7 @@ write_csv(as.data.frame(resOrdered), "de_mAT-Trm_vs_mAT-Tem.csv")
 
 Using the normalized counts, we can easily create a Heatmap displaying the differentially regulated genes.
 
-```{r}
+```r
 #| label: fig-heatmap_de_genes
 #| fig-cap: Heatmap of DE genes
 # we are using which here, as some pvalues are NA.
@@ -340,7 +340,7 @@ Heatmap(t(scale(t(m))),     # we want to normalize the counts per row.
 
 In order to do a GSEA analysis in R, we need to create a ranked gene list. Many tools use the signed -log10(pvalue) for ranking of the genes. As the pvalue is between 0 and 1, the -log10(pvalue) will be between 0 and Inf. We use the sign from the log2FC to seperate between up and down regulated genes.
 
-```{r}
+```r
 # function for signal to noise
 # see: https://www.gsea-msigdb.org/gsea/doc/GSEAUserGuideTEXT.htm#_Metrics_for_Ranking
 signal2noise <- function(var1, var2, col_names, log_counts)
@@ -364,7 +364,7 @@ signal2noise <- function(var1, var2, col_names, log_counts)
 }
 ```
 
-```{r}
+```r
 #rank <- -log10(res$padj) * sign(res$log2FoldChange)
 rank <- res$stat
 #rank <- signal2noise("mAT-Trm" ,"mAT-Tem", dds$tissue_cell.type, ntd)
@@ -376,14 +376,14 @@ barplot(sort(rank, decreasing = T))
 
 As you can see, a few genes do not have a p-value, which is mostly because these genes have to few counts. We can remove these.
 
-```{r}
+```r
 rank <- rank[!is.na(rank)]
 head(rank)
 ```
 
 Most of the gene lists available (eg. KEGG) use the ENTREZ ID as gene identifiers. Therefore we must match the ENSEMBL IDs to the ENTREZ IDs. The package [`org.Mm.eg.db`](http://bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html) has all these information stored in it. We load the package and use `AnnotationDbi` to match the ENSEMBL IDs (`keytype`) to the ENTREZ IDs (`column`). For some ENSEMBL IDs there might be multiple or none ENTREZ IDs. If there are multiple matches, we will take the first (`multiVals="first"`) .
 
-```{r}
+```r
 #| message: false
 library(org.Mm.eg.db)
 entrez_ids <- AnnotationDbi::mapIds(org.Mm.eg.db,
@@ -413,7 +413,7 @@ The function `gage::kegg.gsets` returns a list with five entires.
 
 We can use `sigmet.idx` to subset the `kg.sets` to only retain pathways that are important for signaling and metabolism.
 
-```{r}
+```r
 pathways_kegg <- gage::kegg.gsets(species = "mouse")
 pathways_kegg <- pathways_kegg$kg.sets[pathways_kegg$sigmet.idx]
 head(pathways_kegg, 2)
@@ -427,7 +427,7 @@ Now we can finally run the GSEA. Using`maxSize=500` we limit the maximal size (=
 
 Note, if you are using a "older" version on `fgsea` you might have to add `nperm=5000` to set the number of permutations to do. In the most recent version of `fgsea` this is no longer needed.
 
-```{r}
+```r
 #| warning: false
 #| label: tbl-gsea_results
 #| tbl-cap: Results of the GSEA analysis.
@@ -445,7 +445,7 @@ In this example we do not get any significant results from the GSEA analysis. If
 
 If you wanted to further inspect a gene set, you can create the "typical" GSEA plot (@gsea_enrichment) using:
 
-```{r}
+```r
 #| label: fig-gsea_enrichment
 #| fig-cap: GSEA enrichment plot for T cell receptor signaling pathway
 plotEnrichment(pathways_kegg[["mmu04660 T cell receptor signaling pathway"]],
@@ -457,7 +457,7 @@ I admit, this is not really exciting in this case.
 
 ### Heatmap
 
-```{r}
+```r
 #| label: fig-heatmap_gsea
 #| fig-cap: Heatmap for differential gene sets
 #| message: false
@@ -495,7 +495,7 @@ What if I want to study my samples for the enrichment of a pathway without relyi
 
 First we need to get the values to run the GSVA with. You can either use the counts, that follow a Poission distribution or the normalized values (here rlog). These values have a Gaussian distribution. Again, we map the ENSEMBL gene name to the Entrez IDs.
 
-```{r}
+```r
 #| message: false
 m <- assay(rlog(dds, blind = F))
 entrez_ids <- AnnotationDbi::mapIds(org.Mm.eg.db,
@@ -508,7 +508,7 @@ rownames(m) <- entrez_ids
 
 Now we can run the GSVA using e.g. the KEGG pathways (as in section GSEA)
 
-```{r}
+```r
 #| label: tbl-gsva
 #| tbl-cap: "Results of the GSVA analysis"
 library(GSVA)
@@ -529,7 +529,7 @@ We get a table with one value for every gene set for every sample. You can imagi
 
 To test which pathways show differences between the samples, we can use the `limma` package to fit models one the results obtained form the GSVA.
 
-```{r}
+```r
 #| label: tbl-top_gsva_pathways
 #| tbl-cap: Top differentially regulated pathways
 #| message: false
@@ -559,12 +559,12 @@ topTable(fit)
 
 ```
 
-```{r}
+```r
 # Multiple Testing Across Genes and Contrasts 
 summary(res_limma <- decideTests(fit))
 ```
 
-```{r}
+```r
 #| label: fig_gsva_upset
 #| fig-cap: Upset plot for GSVA results
 # make upsetplot
@@ -573,7 +573,7 @@ UpSet(make_comb_mat(abs(as.data.frame(res_limma))))
 
 Only few pathways show significant differences between all the samples (F statistics). Let's plot these in a Heatmap.
 
-```{r}
+```r
 #| label: fig-gsva_heatmap
 #| fig-cap: Heatmap for GSVA results
 #| message: false
@@ -585,6 +585,6 @@ Heatmap(res_gsva[significant_pathways,],
 
 ## Session info
 
-```{r}
+```r
 sessionInfo()
 ```

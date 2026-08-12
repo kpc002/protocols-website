@@ -51,7 +51,6 @@ Browse protocols in this folder.
 | Folder |
 |---|
 | [Histology](Histology/index.qmd) |
-| [LentiProduction](LentiProduction/index.qmd) |
 | [PANELS](PANELS/index.qmd) |
 | [RetroProduction_Tcells](RetroProduction_Tcells/index.qmd) |
 | [TissuePreps](TissuePreps/index.qmd) |

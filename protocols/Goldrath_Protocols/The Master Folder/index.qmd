@@ -24,7 +24,6 @@ Browse protocols in this folder.
 | [Bingfei](Bingfei/index.qmd) |
 | [Eds Histology Protocols](Eds%20Histology%20Protocols/index.qmd) |
 | [Ilkka](Ilkka/index.qmd) |
-| [Justin](Justin/index.qmd) |
 | [Kyla](Kyla/index.qmd) |
 | [Laura](Laura/index.qmd) |
 | [MRC](MRC/index.qmd) |
