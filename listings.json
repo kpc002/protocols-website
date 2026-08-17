@@ -4,6 +4,7 @@
     "items": [
       "/protocols/orga/flow_and_sorting.html",
       "/protocols/orga/Aria_training_checklist.html",
+      "/protocols/orga/mouse_transfer/Moving mice from NSB to Pac Hall_ATM.html",
       "/protocols/orga/mouse_order_allen.html",
       "/protocols/orga/google_docs.html",
       "/protocols/orga/mouse_transfer/nsb_to_pac_hall.html"
@@ -17,43 +18,51 @@
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/mouse/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/mouse/M1.tail_prep_genotyping.html"
+      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_protocol.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html"
+      "/protocols/Giovanni_s_Protocols/cellular/index.html",
+      "/protocols/Giovanni_s_Protocols/FACS/index.html",
+      "/protocols/Giovanni_s_Protocols/molecular/index.html",
+      "/protocols/Giovanni_s_Protocols/mouse/index.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/molecular/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB2.Mycoplasma_PCR.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.Excel.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html"
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2023.02.23-US&APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Exercise 4B.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Exercise 4B copy.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources & Tools - Day 3.html"
     ]
   },
   {
-    "listing": "/protocols/Alex_s_Protocols/Cloning/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/FACS/index.html",
     "items": [
-      "/protocols/Alex_s_Protocols/Cloning/Glycerol Prep_ATM.html",
-      "/protocols/Alex_s_Protocols/Cloning/Making LB Buffer_ATM.html",
-      "/protocols/Alex_s_Protocols/Cloning/Process G blocks_ATM.html",
-      "/protocols/Alex_s_Protocols/Cloning/Running Gel_ATM.html"
+      "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/index.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/index.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC1.antibody_titration.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC2.surface_staining.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC3.intracellular_staining.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC4.TF_buffer_set.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC7.X20_layout.html"
     ]
   },
   {
-    "listing": "/protocols/Alex_s_Protocols/Mousework/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/index.html",
     "items": [
-      "/protocols/Alex_s_Protocols/Mousework/Bleeding Mice for transduction check_ATM.html",
-      "/protocols/Alex_s_Protocols/Mousework/Moving mice from NSB to Pac Hall_ATM.html"
+      "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html",
+      "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html"
     ]
   },
   {
@@ -63,26 +72,6 @@
       "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
       "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
       "/protocols/mice/genotyping/etv3_floxed_pcr/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/mice/index.html",
-    "items": [
-      "/protocols/mice/spleen.html",
-      "/protocols/mice/lymphnode.html",
-      "/protocols/mice/genotyping/tails.html",
-      "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
-      "/protocols/mice/B16 Takedown 2026-03-25_ATM.html",
-      "/protocols/mice/blood.html",
-      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
-      "/protocols/mice/Lymphocyte isolation from mouse tissues.html",
-      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html",
-      "/protocols/mice/tamoxifen.html",
-      "/protocols/mice/tissue_prep.html",
-      "/protocols/mice/Gut prep protocol.html",
-      "/protocols/mice/genotyping/index.html",
-      "/protocols/mice/phenotyping/Genotyping OT-I mice by flow cytometry/Genotyping OT-I mice by flow cytometry.html",
-      "/protocols/mice/phenotyping/Genotyping P14 mice by flow cytometry/Genotyping P14 mice by flow cytometry.html"
     ]
   },
   {
@@ -226,13 +215,8 @@
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/STAINING PROTOCOL FOR FLOW.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIF_ajpheart.00327.2002.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIL_prep_MC38_sc_MRC.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/guide design and sequence.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/insitu_tetramer_CD8_Tcells.html"
     ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/TissuePreps/index.html",
-    "items": []
   },
   {
     "listing": "/protocols/Goldrath_Protocols/The Master Folder/index.html",
@@ -292,7 +276,6 @@
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIF_ajpheart.00327.2002.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIL_prep_MC38_sc_MRC.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/TRAIL PCR.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TissuePreps/index.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Toan/index.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/WB.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/WB-beginner.html",
@@ -300,7 +283,6 @@
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Western_protocol7-7-06.html",
       "/protocols/Goldrath_Protocols/The Master Folder/aGC reconstitution.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/fixation_permeabilization.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/guide design and sequence.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/insitu_tetramer_CD8_Tcells.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/staining tips.html"
     ]
@@ -325,68 +307,94 @@
     ]
   },
   {
-    "listing": "/protocols/Cloning/index.html",
+    "listing": "/protocols/Kelsey_s_Protocols/human/index.html",
     "items": [
-      "/protocols/Cloning/Cloning with HIFI DNA Assembly_KL.html",
-      "/protocols/Cloning/MB4.Cloning with HIFI DNA Assembly_KL.html",
-      "/protocols/Cloning/Molecular_Cloning_Workflow.html",
-      "/protocols/Cloning/NucleoBond Xtra Plasmid DNA Purification User Manual.html",
-      "/protocols/Cloning/Protocol for CRISPR amplicon sequencing 2025-11-06 (etr_PxVJqvYTzT) Custom_low_plex_LsgA_cloning_MRC.html",
-      "/protocols/Cloning/Subcloning into LZRSpBMN.html",
-      "/protocols/Cloning/cDNA.html",
-      "/protocols/Cloning/nebuilder-hifi-dna-assembly-reaction-protocol.html",
-      "/protocols/Cloning/protocol-for-q5-high-fidelity-2x-master-mix-m0492.html"
+      "/protocols/Kelsey_s_Protocols/human/Human PBMC Ex vivo Dynabead multiday stim.html",
+      "/protocols/Kelsey_s_Protocols/human/Human _PBMC_Ex_vivo_Dynabead_multiday stim_PMArestim.html",
+      "/protocols/Kelsey_s_Protocols/human/Human PBMC Ex vivo Dynabead_multiday_stim_prolif&apoptosis.html",
+      "/protocols/Kelsey_s_Protocols/human/Human TIL Ex vivo Dynabead multiday stim.html",
+      "/protocols/Kelsey_s_Protocols/human/Human tumor sample collection, processing, and flow analysis.html"
     ]
   },
   {
-    "listing": "/protocols/Kelsey_s_Protocols/index.html",
+    "listing": "/protocols/Kelsey_s_Protocols/Mouse/index.html",
     "items": [
-      "/protocols/Kelsey_s_Protocols/human/index.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/index.html"
+      "/protocols/Kelsey_s_Protocols/Mouse/AntiPD1_CTLA4 in vivo blockade in B16-challenged mice.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Antibody titration.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/B16 Cancer cell culture and injection.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/CD8 isolation and activation.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Caspase 3_7&7AAD ex vivo staining.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/DNA extraction from CD8.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Genotyping PMEL mice by flow cytometry.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/ICS_GP33 peptide restim.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/ICS_OVA peptide restim.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/In vitro N4 altered peptide ligand OT-I stim.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/In vitro OT-I stim.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/LCMV-Cl13 blood phenotyping.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/LCMV-Cl13 infection.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Making bone marrow chimeras.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/P14 isolation from blood for adoptive transfer.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Peptide dose response curve.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Propagate LCMV Clone 13.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/R10 Recipe.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/RNA extraction & cDNA synthesis & RT-qPCR from CD8.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Secretome sort and ex vivo stim.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/TCR signaling phospho-flow.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Tissue and serum collection for viral titer.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Treg isolation.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/Western blot.html"
     ]
   },
   {
-    "listing": "/protocols/mol_bio/index.html",
+    "listing": "/protocols/mol_bio/western_blot/index.html",
     "items": [
-      "/protocols/mol_bio/RNA_isolation.html",
-      "/protocols/mol_bio/crispr_validation/index.html",
-      "/protocols/mol_bio/western_blot/index.html",
-      "/protocols/mol_bio/LsgA_cloning/index.html",
-      "/protocols/mol_bio/RNA_isolation_tissue.html",
       "/protocols/mol_bio/western_blot/protein_lysis.html",
-      "/protocols/mol_bio/Primerdesign.html",
       "/protocols/mol_bio/western_blot/BCA_assay.html",
       "/protocols/mol_bio/western_blot/run_gel.html",
       "/protocols/mol_bio/western_blot/buffers.html"
     ]
   },
   {
-    "listing": "/protocols/histology/index.html",
+    "listing": "/protocols/Top_20/index.html",
     "items": [
-      "/protocols/histology/FFPE Antibody Staining_ATM.html",
-      "/protocols/histology/FFPE working protocol 20260624.html",
-      "/protocols/histology/Histology Troubleshooting.html",
-      "/protocols/histology/Histology Ultimate Protocol-REVISED.html",
-      "/protocols/histology/HISTOLOGY of the GUT_OCT.html",
-      "/protocols/histology/IF on frozen tissue_ATM.html",
-      "/protocols/histology/Liver embedding_ATM.html",
-      "/protocols/histology/IF after Xenium on FFPE 2024-03-17 (etr_0IfeqOW1) MRC_postRun_IF_and_HE.html",
-      "/protocols/histology/Preparing mouse joints for histology.html",
-      "/protocols/histology/TMA_Frozen_histology.html",
-      "/protocols/histology/Taking down SI and Liver and embedding in OCT.html",
-      "/protocols/histology/ffpe_embedding.html",
-      "/protocols/histology/Tumor_Interstitial_Fluid.html",
-      "/protocols/histology/Using the cryostat.html",
-      "/protocols/histology/cryosectioning.html",
-      "/protocols/histology/fluorescent protein imaging.html"
+      "/protocols/Top_20/072226 in vitro tumor growth and injection protocol.html",
+      "/protocols/Top_20/Antibody Titration.html",
+      "/protocols/Top_20/CB5.Cell line media.html",
+      "/protocols/Top_20/Cas9 Electroporation with Lonza 2.html",
+      "/protocols/Top_20/Cell Trace Violet.html",
+      "/protocols/Top_20/Ex vivo peptide stim.html",
+      "/protocols/Top_20/growing_a_stock.html",
+      "/protocols/Top_20/infection_lcmv_arm.html",
+      "/protocols/Top_20/Infection with LCMV CL13.html",
+      "/protocols/Top_20/infection.html",
+      "/protocols/Top_20/LCMV CL13 Titer calculator.html",
+      "/protocols/Top_20/Labeling T cells with CFSE.html",
+      "/protocols/Top_20/stock.html",
+      "/protocols/Top_20/Mouse CD8 isolation and CD3 activation.html",
+      "/protocols/Top_20/Propagate LCMV Clone 13.html",
+      "/protocols/Top_20/Spleen and Lymph Node Prep.html",
+      "/protocols/Top_20/Transduction Polybrene.html",
+      "/protocols/Top_20/Transduction Retronectin 3.html",
+      "/protocols/Top_20/Transfect and Transduce 1.html"
     ]
   },
   {
-    "listing": "/protocols/Transfection and Transduction/Other cells/index.html",
+    "listing": "/protocols/Transfection and Transduction/Plat_E/index.html",
     "items": [
-      "/protocols/Transfection and Transduction/Other cells/Fugene 6 mediated transfection of Phoenix cell.html",
-      "/protocols/Transfection and Transduction/Other cells/Spin Transfection.html",
-      "/protocols/Transfection and Transduction/Other cells/ca-p transfection of Phoenix.html"
+      "/protocols/Transfection and Transduction/Plat_E/NES 042924 CD8 T cell transduction and double transduction.html",
+      "/protocols/Transfection and Transduction/Plat_E/Plating PlatE from frozen 2025-04-17_ATM.html",
+      "/protocols/Transfection and Transduction/Plat_E/RetroProduction_Immunity.html",
+      "/protocols/Transfection and Transduction/Plat_E/Mirus.html",
+      "/protocols/Transfection and Transduction/Plat_E/Transfection.html",
+      "/protocols/Transfection and Transduction/Plat_E/Transfection Protocol.html",
+      "/protocols/Transfection and Transduction/Plat_E/Virus production in 10 cm - PlatE.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Transfection and Transduction/Retronectin/index.html",
+    "items": [
+      "/protocols/Transfection and Transduction/Retronectin/NES 042924 CD8 T cell transduction and double transduction.html",
+      "/protocols/Transfection and Transduction/Retronectin/Transduction - High Quality.html"
     ]
   },
   {
@@ -395,34 +403,37 @@
       "/protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and _Transduction.html",
       "/protocols/Transfection and Transduction/HEK293T and Lentivirus/Mission_shRNA_lentiviral.html",
       "/protocols/Transfection and Transduction/HEK293T and Lentivirus/lentiviral-packaging.printerview.html",
-      "/protocols/Transfection and Transduction/HEK293T and Lentivirus/Sigma_SHP001.html"
+      "/protocols/Transfection and Transduction/HEK293T and Lentivirus/Sigma_SHP001.html",
+      "/protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and_Transduction.html"
     ]
   },
   {
-    "listing": "/protocols/Kitty_s_Protocols/index.html",
+    "listing": "/protocols/Nicole_s_protocols/index.html",
     "items": [
-      "/protocols/Kitty_s_Protocols/Fc block culture.html",
-      "/protocols/Kitty_s_Protocols/Fresh Frozen Fixation and embedding 20260714.html",
-      "/protocols/Kitty_s_Protocols/Hematoxylin and Eosin Staining .html",
-      "/protocols/Kitty_s_Protocols/IF Staining Protocol basic.html",
-      "/protocols/Kitty_s_Protocols/Infection with LCMV CL13.html",
-      "/protocols/Kitty_s_Protocols/LCMV CL13 Titer calculator.html"
+      "/protocols/Nicole_s_protocols/012725 NES - Flow cytometry staining.html",
+      "/protocols/Nicole_s_protocols/030221 Cell culture media recipies.html",
+      "/protocols/Nicole_s_protocols/04.20.21 Tumor injection protocol.html",
+      "/protocols/Nicole_s_protocols/072226 in vitro tumor growth and injection protocol.html",
+      "/protocols/Nicole_s_protocols/080221 in vitro TRM - Zaph lab, NES optimized.html",
+      "/protocols/Nicole_s_protocols/091923 Western blot protocol NES.html",
+      "/protocols/Nicole_s_protocols/Agilent Brilliant II SYBR® Green QPCR Master Mix.html",
+      "/protocols/Nicole_s_protocols/B16 tumor processing protocol.html",
+      "/protocols/Nicole_s_protocols/Blood phenotyping P14 and OT1 mice.html",
+      "/protocols/Nicole_s_protocols/Blood prep for genotyping.html",
+      "/protocols/Nicole_s_protocols/CB1.Tissue processing for viral titers.html",
+      "/protocols/Nicole_s_protocols/CD8 isolation and activation protocol.html",
+      "/protocols/Nicole_s_protocols/Fisher High Capacity cDNA Reverse Transcription Kit.html",
+      "/protocols/Nicole_s_protocols/Gut Prep Reagents-MRC.html",
+      "/protocols/Nicole_s_protocols/Gut prep protocol.html",
+      "/protocols/Nicole_s_protocols/Qiagen QIAamp® Blood Mini Kit.html",
+      "/protocols/Nicole_s_protocols/Qiagen RNeasy® Mini Kit.html",
+      "/protocols/Nicole_s_protocols/mix_calculation.html"
     ]
   },
   {
-    "listing": "/protocols/infections/lcmv/index.html",
+    "listing": "/protocols/infections/VSV-Ova/index.html",
     "items": [
-      "/protocols/infections/lcmv/infection_lcmv_arm.html",
-      "/protocols/infections/lcmv/stock.html"
-    ]
-  },
-  {
-    "listing": "/protocols/infections/index.html",
-    "items": [
-      "/protocols/infections/lcmv/index.html",
-      "/protocols/infections/listeria/index.html",
-      "/protocols/infections/VSV-Ova/index.html",
-      "/protocols/infections/retrovirus/index.html"
+      "/protocols/infections/VSV-Ova/VSV-Ova Infection.html"
     ]
   },
   {
@@ -465,15 +476,6 @@
     ]
   },
   {
-    "listing": "/protocols/Angelica_s protocols/index.html",
-    "items": [
-      "/protocols/Angelica_s protocols/Liberase Skin Protocol_MHY 07082025.html",
-      "/protocols/Angelica_s protocols/mouse genotyping protocol.html",
-      "/protocols/Angelica_s protocols/Sanger Sequencing Preparation.html",
-      "/protocols/Angelica_s protocols/Updated Pancreas scDissoc Flow 020425.html"
-    ]
-  },
-  {
     "listing": "/protocols/Crispr Cas9 Electroporation/Neon/index.html",
     "items": [
       "/protocols/Crispr Cas9 Electroporation/Neon/Cas9_RNP_electroporation.html",
@@ -495,36 +497,52 @@
     "listing": "/protocols/infections/listeria/index.html",
     "items": [
       "/protocols/infections/listeria/infection.html",
-      "/protocols/infections/listeria/growing_a_stock.html"
+      "/protocols/infections/listeria/growing_a_stock.html",
+      "/protocols/infections/listeria/Listeria_InIAmutant_for_oral_infection.html"
     ]
   },
   {
-    "listing": "/protocols/infections/VSV-Ova/index.html",
+    "listing": "/protocols/infections/index.html",
     "items": [
-      "/protocols/infections/VSV-Ova/VSV-Ova Infection.html"
+      "/protocols/infections/lcmv/index.html",
+      "/protocols/infections/listeria/index.html",
+      "/protocols/infections/VSV-Ova/index.html",
+      "/protocols/infections/retrovirus/index.html"
     ]
   },
   {
-    "listing": "/protocols/Nicole_s_protocols/index.html",
+    "listing": "/protocols/infections/lcmv/index.html",
     "items": [
-      "/protocols/Nicole_s_protocols/012725 NES - Flow cytometry staining.html",
-      "/protocols/Nicole_s_protocols/030221 Cell culture media recipies.html",
-      "/protocols/Nicole_s_protocols/04.20.21 Tumor injection protocol.html",
-      "/protocols/Nicole_s_protocols/072226 in vitro tumor growth and injection protocol.html",
-      "/protocols/Nicole_s_protocols/080221 in vitro TRM - Zaph lab, NES optimized.html",
-      "/protocols/Nicole_s_protocols/091923 Western blot protocol NES.html",
-      "/protocols/Nicole_s_protocols/Agilent Brilliant II SYBR® Green QPCR Master Mix.html",
-      "/protocols/Nicole_s_protocols/B16 tumor processing protocol.html",
-      "/protocols/Nicole_s_protocols/Blood phenotyping P14 and OT1 mice.html",
-      "/protocols/Nicole_s_protocols/Blood prep for genotyping.html",
-      "/protocols/Nicole_s_protocols/CB1.Tissue processing for viral titers.html",
-      "/protocols/Nicole_s_protocols/CD8 isolation and activation protocol.html",
-      "/protocols/Nicole_s_protocols/Fisher High Capacity cDNA Reverse Transcription Kit.html",
-      "/protocols/Nicole_s_protocols/Gut Prep Reagents-MRC.html",
-      "/protocols/Nicole_s_protocols/Gut prep protocol.html",
-      "/protocols/Nicole_s_protocols/Qiagen QIAamp® Blood Mini Kit.html",
-      "/protocols/Nicole_s_protocols/Qiagen RNeasy® Mini Kit.html",
-      "/protocols/Nicole_s_protocols/mix_calculation.html"
+      "/protocols/infections/lcmv/infection_lcmv_arm.html",
+      "/protocols/infections/lcmv/stock.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Kitty_s_Protocols/index.html",
+    "items": [
+      "/protocols/Kitty_s_Protocols/Fc block culture.html",
+      "/protocols/Kitty_s_Protocols/Fresh Frozen Fixation and embedding 20260714.html",
+      "/protocols/Kitty_s_Protocols/Hematoxylin and Eosin Staining .html",
+      "/protocols/Kitty_s_Protocols/IF Staining Protocol basic.html",
+      "/protocols/Kitty_s_Protocols/Infection with LCMV CL13.html",
+      "/protocols/Kitty_s_Protocols/LCMV CL13 Titer calculator.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Crispr_Design_and_Cloning/index.html",
+    "items": [
+      "/protocols/Crispr_Design_and_Cloning/Cloning with HIFI DNA Assembly_KL.html",
+      "/protocols/Crispr_Design_and_Cloning/MB4.Cloning with HIFI DNA Assembly_KL.html",
+      "/protocols/Crispr_Design_and_Cloning/Example_Amplicon_DNA_Files/index.html",
+      "/protocols/Crispr_Design_and_Cloning/LsgA Cloning.html",
+      "/protocols/Crispr_Design_and_Cloning/Molecular_Cloning_Workflow.html",
+      "/protocols/Crispr_Design_and_Cloning/protocol-for-q5-high-fidelity-2x-master-mix-m0492.html",
+      "/protocols/Crispr_Design_and_Cloning/Process G blocks_ATM.html",
+      "/protocols/Crispr_Design_and_Cloning/Protocol for CRISPR amplicon sequencing 2025-11-06 (etr_PxVJqvYTzT) Custom_low_plex_LsgA_cloning_MRC.html",
+      "/protocols/Crispr_Design_and_Cloning/Sanger Sequencing Preparation.html",
+      "/protocols/Crispr_Design_and_Cloning/NucleoBond Xtra Plasmid DNA Purification User Manual.html",
+      "/protocols/Crispr_Design_and_Cloning/guide design and sequence.html",
+      "/protocols/Crispr_Design_and_Cloning/nebuilder-hifi-dna-assembly-reaction-protocol.html"
     ]
   },
   {
@@ -538,94 +556,63 @@
     ]
   },
   {
-    "listing": "/protocols/Transfection and Transduction/Retronectin/index.html",
+    "listing": "/protocols/Transfection and Transduction/Other cells/index.html",
     "items": [
-      "/protocols/Transfection and Transduction/Retronectin/NES 042924 CD8 T cell transduction and double transduction.html",
-      "/protocols/Transfection and Transduction/Retronectin/Transduction - High Quality.html"
+      "/protocols/Transfection and Transduction/Other cells/Fugene 6 mediated transfection of Phoenix cell.html",
+      "/protocols/Transfection and Transduction/Other cells/Spin Transfection.html",
+      "/protocols/Transfection and Transduction/Other cells/ca-p transfection of Phoenix.html"
     ]
   },
   {
-    "listing": "/protocols/Transfection and Transduction/Plat_E/index.html",
+    "listing": "/protocols/histology/index.html",
     "items": [
-      "/protocols/Transfection and Transduction/Plat_E/NES 042924 CD8 T cell transduction and double transduction.html",
-      "/protocols/Transfection and Transduction/Plat_E/Plating PlatE from frozen 2025-04-17_ATM.html",
-      "/protocols/Transfection and Transduction/Plat_E/RetroProduction_Immunity.html",
-      "/protocols/Transfection and Transduction/Plat_E/Mirus.html",
-      "/protocols/Transfection and Transduction/Plat_E/Transfection.html",
-      "/protocols/Transfection and Transduction/Plat_E/Transfection Protocol.html",
-      "/protocols/Transfection and Transduction/Plat_E/Virus production in 10 cm - PlatE.html"
+      "/protocols/histology/FFPE Antibody Staining_ATM.html",
+      "/protocols/histology/FFPE working protocol 20260624.html",
+      "/protocols/histology/Histology Troubleshooting.html",
+      "/protocols/histology/Histology Ultimate Protocol-REVISED.html",
+      "/protocols/histology/HISTOLOGY of the GUT_OCT.html",
+      "/protocols/histology/IF on frozen tissue_ATM.html",
+      "/protocols/histology/Liver embedding_ATM.html",
+      "/protocols/histology/IF after Xenium on FFPE 2024-03-17 (etr_0IfeqOW1) MRC_postRun_IF_and_HE.html",
+      "/protocols/histology/Preparing mouse joints for histology.html",
+      "/protocols/histology/TMA_Frozen_histology.html",
+      "/protocols/histology/Taking down SI and Liver and embedding in OCT.html",
+      "/protocols/histology/ffpe_embedding.html",
+      "/protocols/histology/Tumor_Interstitial_Fluid.html",
+      "/protocols/histology/Using the cryostat.html",
+      "/protocols/histology/cryosectioning.html",
+      "/protocols/histology/fluorescent protein imaging.html"
     ]
   },
   {
-    "listing": "/protocols/Top_20/index.html",
+    "listing": "/protocols/mol_bio/index.html",
     "items": [
-      "/protocols/Top_20/072226 in vitro tumor growth and injection protocol.html",
-      "/protocols/Top_20/Antibody Titration.html",
-      "/protocols/Top_20/CB5.Cell line media.html",
-      "/protocols/Top_20/Cas9 Electroporation with Lonza 2.html",
-      "/protocols/Top_20/Cell Trace Violet.html",
-      "/protocols/Top_20/Ex vivo peptide stim.html",
-      "/protocols/Top_20/growing_a_stock.html",
-      "/protocols/Top_20/infection_lcmv_arm.html",
-      "/protocols/Top_20/Infection with LCMV CL13.html",
-      "/protocols/Top_20/infection.html",
-      "/protocols/Top_20/LCMV CL13 Titer calculator.html",
-      "/protocols/Top_20/Labeling T cells with CFSE.html",
-      "/protocols/Top_20/stock.html",
-      "/protocols/Top_20/Mouse CD8 isolation and CD3 activation.html",
-      "/protocols/Top_20/Propagate LCMV Clone 13.html",
-      "/protocols/Top_20/Spleen and Lymph Node Prep.html",
-      "/protocols/Top_20/Transduction Polybrene.html",
-      "/protocols/Top_20/Transduction Retronectin 3.html",
-      "/protocols/Top_20/Transfect and Transduce 1.html"
-    ]
-  },
-  {
-    "listing": "/protocols/mol_bio/western_blot/index.html",
-    "items": [
+      "/protocols/mol_bio/RNA_isolation.html",
+      "/protocols/mol_bio/cDNA.html",
+      "/protocols/mol_bio/crispr_validation/index.html",
+      "/protocols/mol_bio/western_blot/index.html",
+      "/protocols/mol_bio/RNA_isolation_tissue.html",
       "/protocols/mol_bio/western_blot/protein_lysis.html",
+      "/protocols/mol_bio/Primerdesign.html",
       "/protocols/mol_bio/western_blot/BCA_assay.html",
       "/protocols/mol_bio/western_blot/run_gel.html",
       "/protocols/mol_bio/western_blot/buffers.html"
     ]
   },
   {
-    "listing": "/protocols/Kelsey_s_Protocols/Mouse/index.html",
+    "listing": "/protocols/Kelsey_s_Protocols/index.html",
     "items": [
-      "/protocols/Kelsey_s_Protocols/Mouse/AntiPD1_CTLA4 in vivo blockade in B16-challenged mice.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Antibody titration.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/B16 Cancer cell culture and injection.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/CD8 isolation and activation.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Caspase 3_7&7AAD ex vivo staining.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/DNA extraction from CD8.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Genotyping PMEL mice by flow cytometry.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/ICS_GP33 peptide restim.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/ICS_OVA peptide restim.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/In vitro N4 altered peptide ligand OT-I stim.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/In vitro OT-I stim.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/LCMV-Cl13 blood phenotyping.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/LCMV-Cl13 infection.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Making bone marrow chimeras.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/P14 isolation from blood for adoptive transfer.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Peptide dose response curve.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Propagate LCMV Clone 13.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/R10 Recipe.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/RNA extraction & cDNA synthesis & RT-qPCR from CD8.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Secretome sort and ex vivo stim.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/TCR signaling phospho-flow.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Tissue and serum collection for viral titer.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Treg isolation.html",
-      "/protocols/Kelsey_s_Protocols/Mouse/Western blot.html"
+      "/protocols/Kelsey_s_Protocols/human/index.html",
+      "/protocols/Kelsey_s_Protocols/Mouse/index.html"
     ]
   },
   {
-    "listing": "/protocols/Kelsey_s_Protocols/human/index.html",
+    "listing": "/protocols/Mitochondria/index.html",
     "items": [
-      "/protocols/Kelsey_s_Protocols/human/Human PBMC Ex vivo Dynabead multiday stim.html",
-      "/protocols/Kelsey_s_Protocols/human/Human _PBMC_Ex_vivo_Dynabead_multiday stim_PMArestim.html",
-      "/protocols/Kelsey_s_Protocols/human/Human PBMC Ex vivo Dynabead_multiday_stim_prolif&apoptosis.html",
-      "/protocols/Kelsey_s_Protocols/human/Human TIL Ex vivo Dynabead multiday stim.html",
-      "/protocols/Kelsey_s_Protocols/human/Human tumor sample collection, processing, and flow analysis.html"
+      "/protocols/Mitochondria/CB2.Calcium flux assay.html",
+      "/protocols/Mitochondria/CB3.Seahorse assay.html",
+      "/protocols/Mitochondria/CB4.Mitochondria dyes.html",
+      "/protocols/Mitochondria/CB7.ADP_ADT assay.html"
     ]
   },
   {
@@ -636,20 +623,19 @@
       "/protocols/mice/index.html",
       "/protocols/mol_bio/index.html",
       "/protocols/bioinformatics/index.html",
+      "/protocols/human/index.html",
       "/protocols/recipes/index.html",
       "/protocols/orga/index.html",
-      "/protocols/Alex_s_Protocols/index.html",
-      "/protocols/Dhruv_s_Protocols/index.html",
       "/protocols/Giovanni_s_Protocols/index.html",
       "/protocols/Goldrath_Protocols/index.html",
       "/protocols/Kelsey_s_Protocols/index.html",
       "/protocols/Kitty_s_Protocols/index.html",
       "/protocols/Nicole_s_protocols/index.html",
       "/protocols/Top_20/index.html",
-      "/protocols/Angelica_s protocols/index.html",
       "/protocols/Crispr Cas9 Electroporation/index.html",
-      "/protocols/Cloning/index.html",
+      "/protocols/Crispr_Design_and_Cloning/index.html",
       "/protocols/histology/index.html",
+      "/protocols/Mitochondria/index.html",
       "/protocols/Pertub_Seq/index.html",
       "/protocols/Transfection and Transduction/index.html"
     ]
@@ -761,90 +747,58 @@
     ]
   },
   {
-    "listing": "/protocols/Alex_s_Protocols/index.html",
+    "listing": "/protocols/mice/index.html",
     "items": [
-      "/protocols/Alex_s_Protocols/CRISPR_Amplicon_Sequencing/index.html",
-      "/protocols/Alex_s_Protocols/Cloning/index.html",
-      "/protocols/Alex_s_Protocols/Mousework/index.html"
+      "/protocols/mice/spleen.html",
+      "/protocols/mice/lymphnode.html",
+      "/protocols/mice/genotyping/tails.html",
+      "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
+      "/protocols/mice/B16 Takedown 2026-03-25_ATM.html",
+      "/protocols/mice/Bleeding Mice for transduction check_ATM.html",
+      "/protocols/mice/blood.html",
+      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
+      "/protocols/mice/Lymphocyte isolation from mouse tissues.html",
+      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html",
+      "/protocols/mice/tamoxifen.html",
+      "/protocols/mice/tissue_prep.html",
+      "/protocols/mice/Gut prep protocol.html",
+      "/protocols/mice/genotyping/index.html",
+      "/protocols/mice/phenotyping/Genotyping OT-I mice by flow cytometry/Genotyping OT-I mice by flow cytometry.html",
+      "/protocols/mice/phenotyping/Genotyping P14 mice by flow cytometry/Genotyping P14 mice by flow cytometry.html",
+      "/protocols/mice/Liberase Skin Protocol_MHY 07082025.html",
+      "/protocols/mice/mouse genotyping protocol.html",
+      "/protocols/mice/Updated Pancreas scDissoc Flow 020425.html"
     ]
   },
   {
-    "listing": "/protocols/Alex_s_Protocols/CRISPR_Amplicon_Sequencing/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/molecular/index.html",
     "items": [
-      "/protocols/Alex_s_Protocols/CRISPR_Amplicon_Sequencing/Example_Amplicon_DNA_Files/index.html"
+      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB2.Mycoplasma_PCR.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.Excel.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Giovanni_s_Protocols/FACS/index.html",
-    "items": [
-      "/protocols/Giovanni_s_Protocols/FACS/FC6.FACS basic principles/index.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/index.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC1.antibody_titration.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC2.surface_staining.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC3.intracellular_staining.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC4.TF_buffer_set.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC7.X20_layout.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/index.html",
-    "items": [
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/2023.02.23-US&APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Exercise 4B.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Exercise 4B copy.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html",
-      "/protocols/Giovanni_s_Protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources & Tools - Day 3.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Giovanni_s_Protocols/index.html",
-    "items": [
-      "/protocols/Giovanni_s_Protocols/cellular/index.html",
-      "/protocols/Giovanni_s_Protocols/FACS/index.html",
-      "/protocols/Giovanni_s_Protocols/human/index.html",
-      "/protocols/Giovanni_s_Protocols/molecular/index.html",
-      "/protocols/Giovanni_s_Protocols/mouse/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
-    "items": [
-      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_protocol.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html"
+      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html"
     ]
   },
   {
     "listing": "/protocols/Giovanni_s_Protocols/cellular/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/cellular/CB2.Calcium flux assay.html",
-      "/protocols/Giovanni_s_Protocols/cellular/CB3.Seahorse assay.html",
-      "/protocols/Giovanni_s_Protocols/cellular/CB4.Mitochondria dyes.html",
-      "/protocols/Giovanni_s_Protocols/cellular/CB7.ADP_ADT assay.html",
       "/protocols/Giovanni_s_Protocols/cellular/CB8.Ex vivo restim.html",
       "/protocols/Giovanni_s_Protocols/cellular/CB5.Cell line media.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/human/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/mouse/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/human/CB1.Thawing Frozen Cells.html",
-      "/protocols/Giovanni_s_Protocols/human/CB11.Disaggregation of human lung tumors.html",
-      "/protocols/Giovanni_s_Protocols/human/CB18.Red blood cell lysis with ACK buffer.html",
-      "/protocols/Giovanni_s_Protocols/human/CB2.PBMCs isolation from buffy coat.html",
-      "/protocols/Giovanni_s_Protocols/human/CB22. Percoll gradient lung tumor samples.html",
-      "/protocols/Giovanni_s_Protocols/human/CB24. Disaggregation of human breast tumors.html",
-      "/protocols/Giovanni_s_Protocols/human/CB3.PBMCs isolation from whole blood.html",
-      "/protocols/Giovanni_s_Protocols/human/CB46.Freeze PBMCs.html"
+      "/protocols/Giovanni_s_Protocols/mouse/M1.tail_prep_genotyping.html"
     ]
   },
   {
@@ -897,9 +851,16 @@
     ]
   },
   {
-    "listing": "/protocols/Dhruv_s_Protocols/index.html",
+    "listing": "/protocols/human/index.html",
     "items": [
-      "/protocols/Dhruv_s_Protocols/Listeria_InIAmutant_for_oral_infection.html"
+      "/protocols/human/CB1.Thawing Frozen Cells.html",
+      "/protocols/human/CB11.Disaggregation of human lung tumors.html",
+      "/protocols/human/CB18.Red blood cell lysis with ACK buffer.html",
+      "/protocols/human/CB2.PBMCs isolation from buffy coat.html",
+      "/protocols/human/CB22. Percoll gradient lung tumor samples.html",
+      "/protocols/human/CB24. Disaggregation of human breast tumors.html",
+      "/protocols/human/CB3.PBMCs isolation from whole blood.html",
+      "/protocols/human/CB46.Freeze PBMCs.html"
     ]
   }
 ]
