@@ -1,8 +1,9 @@
 ---
-title: "NucleoBond Xtra Plasmid DNA Purification User Manual"
-description: "Extracted user manual for purification of high-quality plasmid DNA using NucleoBond Xtra columns."
+title: "User Manual- NucleoBond Xtra Plasmid DNA Purification"
+description: "User manual for purification of high-quality plasmid DNA using NucleoBond Xtra columns."
 order: 10
-author: "Nicole Sharping"
+image: MN_Raute.png
+author: "Macherey-Nagel"
 date: last-modified
 ---
 

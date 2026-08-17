@@ -1,5 +1,5 @@
 ---
-title: MB4.Cloning with HIFI DNA Assembly_KL
+title: Cloning with HIFI DNA Assembly_KL
 description: Protocol for DNA cloning with high-fidelity assembly, including reaction
   setup and transformation.
 order: 10

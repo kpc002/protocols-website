@@ -1,11 +1,11 @@
 ---
 title: CB7.ADP_ADT assay
-description: Protocol for an ADP/ADT cellular assay, including sample preparation
+description: Product Manual-Protocol for an ADP/ADT cellular assay, including sample preparation
   and measurement steps.
 order: 10
+image: logo-min-1.jpg
 author: Giovanni Galleti
 date: last-modified
-image: oligo.svg
 ---
 
 [Download the original PDF](CB7.ADP_ADT%20assay.pdf){.btn .btn-primary download="CB7.ADP_ADT assay.pdf"}

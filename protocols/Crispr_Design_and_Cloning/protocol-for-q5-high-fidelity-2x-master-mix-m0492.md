@@ -1,8 +1,9 @@
 ---
-title: "protocol-for-q5-high-fidelity-2x-master-mix-m0492"
-description: "Extracted PCR protocol for amplification with Q5 High-Fidelity 2X Master Mix M0492."
+title: "PCR protocol for amplification with Q5 High-Fidelity 2X Master Mix M0492"
+description: "User Manual- PCR protocol for amplification with Q5 High-Fidelity 2X Master Mix M0492."
 order: 10
-author: "Nicole Sharping"
+image: 2024_NEB_Logo_lg.png
+author: "New England Biolabs"
 date: last-modified
 ---
 

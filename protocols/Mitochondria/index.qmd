@@ -1,0 +1,14 @@
+---
+title: "Mitochondria"
+description: "Protocols for calcium flux, Seahorse analysis, mitochondria dyes, and related metabolic assays."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [image, title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse the mitochondria-related protocols and metabolic assay workflows collected in this folder.

@@ -31,9 +31,13 @@ Everything you need to know  about lymphocyte isolation from mouse tissues.
 
 Classic protocols for RNA Isolation, cDNA Synthesis, PCRs and Western
 
-### [{{< fa dna >}} Cloning](/protocols/Cloning/)
+### [{{< fa dna >}} Cloning](/protocols/Crispr_Design_and_Cloning/)
 
 Collected cloning protocols and related source documents moved into the new top-level folder.
+
+### [{{< fa screwdriver-wrench >}} General Cloning](/protocols/General%20Cloning/)
+
+General cloning workflows and supporting protocols that are organized separately from the CRISPR design and cloning collection.
 
 ### [{{< fa microscope >}} Histology](/protocols/histology/)
 
@@ -63,13 +67,7 @@ Potions tutorial and cell media recipes.
 
 How do I book flow time? How do I sort? Where can I find a database of all antibodies.
 
-### [{{< fa apple-whole >}} Alex's Protocols](/protocols/Alex_s_Protocols/)
-
-### [{{< fa egg >}} Dhruv's Protocols](/protocols/Dhruv_s_Protocols/)
-
 ### [{{< fa robot >}} Giovanni's Protocols](/protocols/Giovanni_s_Protocols/)
-
-### [{{< fa microscope >}} Angelica's Protocols](/protocols/Angelica_s%20protocols/)
 
 ### [{{< fa floppy-disk >}} Old Goldrath Protocols](/protocols/Goldrath_Protocols/)
 

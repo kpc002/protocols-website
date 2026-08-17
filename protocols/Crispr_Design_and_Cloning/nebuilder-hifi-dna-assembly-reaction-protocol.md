@@ -1,8 +1,9 @@
 ---
 title: "nebuilder-hifi-dna-assembly-reaction-protocol"
-description: "Extracted NEBuilder HiFi DNA Assembly protocol for joining overlapping DNA fragments."
+description: "User Manual-NEBuilder HiFi DNA Assembly protocol for joining overlapping DNA fragments."
 order: 10
-author: "Nicole Sharping"
+image: 2024_NEB_Logo_lg.png
+author: "New England Biolabs"
 date: last-modified
 ---
 

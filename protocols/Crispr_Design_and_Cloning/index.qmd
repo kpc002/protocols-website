@@ -1,0 +1,23 @@
+---
+title: "Cloning Protocols"
+description: "Cloning protocols and related source documents collected in one place."
+author: "Goldrath Lab"
+listing:
+  id: main-protocols
+  type: table
+  contents: "*.md"
+  exclude:
+    - filename: "nebuilder-hifi-dna-assembly-reaction-protocol.md"
+    - filename: "NucleoBond Xtra Plasmid DNA Purification User Manual.md"
+    - filename: "protocol-for-q5-high-fidelity-2x-master-mix-m0492.md"
+  sort: title
+  fields: [image, title, author, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Browse the cloning protocols collected in this folder.
+
+## Protocols
+
+<div id="main-protocols"></div>
