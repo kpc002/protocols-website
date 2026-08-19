@@ -2,7 +2,7 @@
 title: "Cell Trace Violet labeling"
 description: 'Cell Trace Violet labeling'
 order: 10
-author: "Goldrath Lab"
+author: "Anthony Phan"
 date: last-modified
 ---
 

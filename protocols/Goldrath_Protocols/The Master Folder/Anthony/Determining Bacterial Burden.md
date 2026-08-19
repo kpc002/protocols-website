@@ -2,7 +2,7 @@
 title: "Determining Bacterial Burden"
 description: "Determining Bacterial Burden"
 order: 10
-author: "Goldrath Lab"
+author: "Anthony Phan"
 date: last-modified
 ---
 

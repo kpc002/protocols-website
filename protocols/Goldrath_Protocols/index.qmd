@@ -22,8 +22,6 @@ Browse or search protocols and laboratory resources from the Goldrath Lab.
 | [Curated protocols](Curated%20protocols/index.qmd) |
 | [Old Protocols](Old_Protocols/) |
 | [The Master Folder](The%20Master%20Folder/index.qmd) |
-| [VSV-ova related material](VSV-ova%20related%20material/index.qmd) |
 | [Vivarium cage card](Vivarium%20cage%20card/index.qmd) |
-| [vaccinia protocols](vaccinia%20protocols/index.qmd) |
 
 ## Files

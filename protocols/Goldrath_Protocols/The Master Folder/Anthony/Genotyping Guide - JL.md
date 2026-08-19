@@ -2,7 +2,7 @@
 title: "Genotyping Guide - JL"
 description: 'HIF1a Flox'
 order: 10
-author: "Goldrath Lab"
+author: "Anthony Phan"
 date: last-modified
 ---
 

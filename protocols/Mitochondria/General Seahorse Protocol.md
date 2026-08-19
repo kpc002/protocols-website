@@ -2,7 +2,7 @@
 title: "General Seahorse Protocol"
 description: 'Goldrath Lab – XF96 – Seahorse protocol'
 order: 10
-author: "Goldrath Lab"
+author: "Anthony Phan"
 date: last-modified
 ---
 

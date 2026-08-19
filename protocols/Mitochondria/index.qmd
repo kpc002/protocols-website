@@ -5,8 +5,9 @@ author: "Goldrath Lab"
 listing:
   type: table
   contents: "*.md"
-  sort: title
-  fields: [image, title, author, description]
+  sort: filename
+  fields: [author, title, description]
+  field-links: [title]
   filter-ui: true
   sort-ui: true
 ---

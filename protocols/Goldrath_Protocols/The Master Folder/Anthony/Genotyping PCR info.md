@@ -2,7 +2,7 @@
 title: "Genotyping PCR info"
 description: 'Genotyping PCR info'
 order: 10
-author: "Goldrath Lab"
+author: "Anthony Phan"
 date: last-modified
 ---
 

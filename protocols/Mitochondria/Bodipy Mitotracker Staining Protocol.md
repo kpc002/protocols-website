@@ -2,7 +2,7 @@
 title: "Bodipy Mitotracker Staining Protocol"
 description: "Bodipy Mitotracker Staining Protocol"
 order: 10
-author: "Goldrath Lab"
+author: "Anthony Phan"
 date: last-modified
 ---
 
