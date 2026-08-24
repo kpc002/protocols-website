@@ -740,29 +740,6 @@
     ]
   },
   {
-    "listing": "/protocols/t_cells/index.html",
-    "items": [
-      "/protocols/t_cells/cd8_selection.html",
-      "/protocols/t_cells/CD8 activation protocol.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/CD8 isolation and activation.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/ICS_GP33 peptide restim.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/ICS_OVA peptide restim.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/In vitro N4 altered peptide ligand OT-I stim.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/In vitro OT-I stim.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/Peptide dose response curve.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/Secretome sort and ex vivo stim.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/Stim with ovap.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/Stimulation of Peripheral T cells with anti.html",
-      "/protocols/t_cells/CD4/TH1TH2.html",
-      "/protocols/t_cells/CD4/Th differentiation in vitro.html",
-      "/protocols/t_cells/CD4/Treg isolation.html",
-      "/protocols/t_cells/CD8/trm_in_vitro_differentiation.html",
-      "/protocols/t_cells/Ex_vivo_Stimulation/ex_vivo_stimulation.html",
-      "/protocols/t_cells/ficoll_dead_cells.html",
-      "/protocols/t_cells/ctv.html"
-    ]
-  },
-  {
     "listing": "/protocols/human/index.html",
     "items": [
       "/protocols/human/CB1.Thawing Frozen Cells.html",

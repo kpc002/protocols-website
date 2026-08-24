@@ -7085,7 +7085,7 @@
   {
     "objectID": "protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and_Transduction.html",
     "href": "protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and_Transduction.html",
-    "title": "protocols.heeg.io",
+    "title": "Goldrath Protocols",
     "section": "",
     "text": "Reina Lab\nUpdated 3/25/2026 H.M.\nLentivirus Production in a 10 cm Dish\nMaterials and Reagents\n\nHEK293T cells\nOpti-MEM\n10 cm tissue-culture-treated plates\nComplete DMEM (See Nicoles Media Recipes)\nTrypsin\n1X PBS\nPackaging plasmids:\n\n\n\npCMV-VSV-G (Addgene #8454). Alternatively pMDG.2\npsPAX2 (Addgene #12260)\n\n\n\nLentiviral transfer plasmid\nTransIT-LT1 Transfection Reagent\n14 mL tube\n50 mL conical tubes\n5 mL microcentrifuge tubes or other suitable aliquot tubes\n0.45 µm filter, optional\nDry ice-cooled ethanol bath (optional)\nFollow volumes: Useful Numbers for Cell Culture\n\nProtocol\nDay 0: Plate HEK293T Cells\n\nPlate 3.5 × 10⁶ HEK293T cells in one 10 cm dish (MRC)\n\nDhruv plates 750K-1M 293Ts per well of a 6 well plate.\n\nUse 10 mL complete DMEM per dish or 2ml per well of 6 well\nReturn the plate to the incubator.\n\nDay 1: Transfection\n\nApproximately 24 hours after plating, transfect the cells using TransIT-LT1.\nIf the medium appears exhausted or the cells need additional attachment time, replace the medium 3-4 hours before transfection.\nFor the medium change, add 10 mL fresh complete DMEM (2ml per well of a 6 well) and return the cells to the incubator.\nBring Opti-MEM and TransIT-LT1 to room temperature before use.\nPrepare the transfection mixture in a 14 mL tube in the following order:\n\n\n\nAdd plasmid DNA at an approximately 4:3:1 mass ratio:\n15 µg lentiviral transfer plasmid\n11 µg psPAX2\n4 µg pCMV-VSV-G\n30 µg total DNA\nAdd Opti-MEM to a total volume of 1.5 mL.\nMix by pipetting, then gently swirl the tube.\nAdd TransIT-LT1 directly into the liquid, dropwise.\nUse 3 µL TransIT-LT1 per µg DNA as an optimization range; 90 µL for 30 µg total DNA.\nGently swirl the tube. Do not pipette or vortex after adding TransIT-LT1.\nIncubate the mixture at room temperature for 30 minutes.\n\n\n\nAdd the DNA/Opti-MEM/TransIT-LT1 mixture to the cells dropwise in a circular motion.\nReturn the plate to the incubator at 5% CO₂.\n\nDay 2: Medium Change\n\nApproximately 16 hours after transfection, gently remove the medium.\nReplace it with 10 mL fresh complete medium for virus collection (R10 for T cells)\n\nDays 3 and 4: Viral Supernatant Collection\n\nCollect the cellular supernatant at approximately 24 and 48 hours after the medium change\nPipette the HEK293T supernatant into a 50 mL conical tube.\nPool supernatant from multiple 10 cm dishes if needed.\nCentrifuge at 1600 rpm for 5 minutes.\nOptional: Filter the supernatant through a 0.45 µm filter.\nTransfer the viral supernatant into 5 mL tubes or another suitable aliquot format.\nFreeze in -80C\nPrepare single-use aliquots and avoid repeated freeze-thaw cycles.\nT cell activation: Follow Lab Protocol from Giovanni\nTransduction Option 1: MRC\nCoated retronectin plates O/N at 4C or for 2-3 hours at RT\n\n90ul of RN in 5910 of PBS. Coat each well using 900-1000ul of solution.\n\n\nBlock plates with 4ml of R10 for 30 min prior to transduction\n\nAfter 24 hours of activation, prepare Lib5 and Lib7 lentiviral library supernatants supplemented with: LentiBOOST (Sirion Biotech) at 1:200 dilution. Add both Solution A and Solution B\nAdd the activated cells to the supplemented lentiviral supernatants. Dhruv has used 3ml of virus with cells, in each well of retronectin coasted plate\nSpin-infect the cells at: 800 × g for 3 hours\nFollowing centrifugation, incubate the cells for an additional 4 hours at: 37°C, 5% CO₂\nWash the cells to remove residual viral supernatant and transduction reagents.\nCulture the washed cells for 4 days in medium supplemented with: Human IL-2: 20 IU/mL.\nDepending on the goal, add mouse IL-7 (2.5ng/mL), and Mouse IL-15: 25 ng/mL\nTransduction Option 2: Arlene Sharpe (Naïve T cells)\nCoat non-tissue culture–treated 6-well plates with RetroNectin (Takara Bio, Cat. #T100B) at approximately 15 µg/cm² overnight at 4°C.\nThe next morning, remove RetroNectin and block each well with 2 mL of 2% BSA in PBS−/− for 30 minutes at room temperature.\nRemove the blocking solution, add 2 mL lentiviral supernatant per well, and centrifuge at 2,000 × g for 2 hours at 32°C.\nIsolate naive CD8⁺ T cells using the Miltenyi Naive CD8a⁺ T Cell Isolation Kit (Cat. #130-096-543).\nPlate the cells onto the virus-coated wells in complete RPMI containing 1 mg/mL LentiBOOST and 1 ng/mL recombinant murine IL-7.\nComplete RPMI consisted of RPMI 1640 with L-glutamine, 10% FBS, 1% penicillin/streptomycin, 10 mM HEPES, 55 µM 2-mercaptoethanol, 1% sodium pyruvate, and 1% non-essential amino acids.\nCulture the cells for 7 days with 1 ng/mL IL-7. Change the medium on days 2 and 5, and add fresh cytokine on day 4.",
     "crumbs": [
@@ -25057,7 +25057,51 @@
     "href": "protocols/t_cells/index.html",
     "title": "T cells",
     "section": "",
-    "text": "All protocols that are related to T cells\n\n\n\n\n\n\n\n\n\n\n\n\nCD8+ Selection & Activation\n\n\nLearn how to perform a CD8+ selection and how to activate T cells. This could also be adapted to CD4+ T cells\n\n\n\nMaximilian Heeg\n\n\nNov 29, 2022\n\n\n\n\n\n\n\n\n\n\n\nCD8 activation protocol\n\n\nPrepared by Hannah Tsunemoto\n\n\n\nGoldrath Lab\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nCD8 isolation and activation\n\n\nCD8 isolation and activation\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nICS_GP33 peptide restim\n\n\nICS_GP33 peptide restim\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nICS_OVA peptide restim\n\n\nICS_OVA peptide restim\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn vitro N4 altered peptide ligand OT-I stim\n\n\nIn vitro N4 altered peptide ligand OT-I stim\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nIn vitro OT-I stim\n\n\nIn vitro OT-I stim\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPeptide dose response curve\n\n\nPeptide dose response curve\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecretome sort and ex vivo stim\n\n\nSecretome sort and ex vivo stim\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\nStim with ovap\n\n\n\nCells should be in 1 ml of media per well on a 12 well plate\n\n\n\n\nGoldrath Lab\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\nStimulation of Peripheral T cells with anti\n\n\nStimulation of Peripheral T cells with anti-CD3 and CD28\n\n\n\nGoldrath Lab\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\nTH1 TH2 TH17\n\n\nCell culture: TH1/ TH2 / TH17\n\n\n\nGoldrath Lab\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\nTh differentiation in vitro\n\n\nTh cell differentiation in vitro protocol\n\n\n\nGoldrath Lab\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nTreg isolation\n\n\nTreg isolation\n\n\n\nKelsey Bennion\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\nTRM in vitro differentiation\n\n\nCreate T cell that look like TRM in vitro\n\n\n\nMaximilian Heeg\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\nEx vivo stimulation\n\n\nEx vivo stimulation of LCMV specific T cells.\n\n\n\nMaximilian Heeg\n\n\nAug 24, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nFicoll protocol for removing dead cells\n\n\nRemove dead cells by doing a Ficoll\n\n\n\nMaximilian Heeg\n\n\nNov 27, 2022\n\n\n\n\n\n\n\n\n\n\n\nCellTrace Violet\n\n\nMeasure cell proliferation with CTV\n\n\n\nMaximilian Heeg\n\n\nJul 30, 2026\n\n\n\n\n\n\nNo matching items",
+    "text": "All protocols that are related to T cells",
+    "crumbs": [
+      "Home",
+      "T cells"
+    ]
+  },
+  {
+    "objectID": "protocols/t_cells/index.html#cd4",
+    "href": "protocols/t_cells/index.html#cd4",
+    "title": "T cells",
+    "section": "CD4",
+    "text": "CD4\n\nTH1 TH2 TH17\nTh differentiation in vitro\nTreg isolation",
+    "crumbs": [
+      "Home",
+      "T cells"
+    ]
+  },
+  {
+    "objectID": "protocols/t_cells/index.html#cd8",
+    "href": "protocols/t_cells/index.html#cd8",
+    "title": "T cells",
+    "section": "CD8",
+    "text": "CD8\n\nTRM in vitro differentiation",
+    "crumbs": [
+      "Home",
+      "T cells"
+    ]
+  },
+  {
+    "objectID": "protocols/t_cells/index.html#ex-vivo-stimulation",
+    "href": "protocols/t_cells/index.html#ex-vivo-stimulation",
+    "title": "T cells",
+    "section": "Ex vivo stimulation",
+    "text": "Ex vivo stimulation\n\nCD8 isolation and activation\nICS_GP33 peptide restim\nICS_OVA peptide restim\nIn vitro N4 altered peptide ligand OT-I stim\nIn vitro OT-I stim\nPeptide dose response curve\nSecretome sort and ex vivo stim\nStim with ovap\nStimulation of Peripheral T cells with anti\nEx vivo stimulation",
+    "crumbs": [
+      "Home",
+      "T cells"
+    ]
+  },
+  {
+    "objectID": "protocols/t_cells/index.html#individual-protocols",
+    "href": "protocols/t_cells/index.html#individual-protocols",
+    "title": "T cells",
+    "section": "Individual protocols",
+    "text": "Individual protocols\n\nCD8 activation protocol\nCD8+ Selection & Activation\nCellTrace Violet\nFicoll protocol for removing dead cells",
     "crumbs": [
       "Home",
       "T cells"
