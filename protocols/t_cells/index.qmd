@@ -2,8 +2,36 @@
 order: 1
 title: "T cells"
 image: 'lymphoid-stem-cell.svg'
-listing: 
-  type: grid
 ---
 
 All protocols that are related to T cells
+
+## CD4
+
+- [TH1 TH2 TH17](CD4/TH1TH2.md)
+- [Th differentiation in vitro](CD4/Th%20differentiation%20in%20vitro.md)
+- [Treg isolation](CD4/Treg%20isolation.md)
+
+## CD8
+
+- [T~RM~ *in vitro* differentiation](CD8/trm_in_vitro_differentiation.md)
+
+## Ex vivo stimulation
+
+- [CD8 isolation and activation](Ex_vivo_Stimulation/CD8%20isolation%20and%20activation.md)
+- [ICS_GP33 peptide restim](Ex_vivo_Stimulation/ICS_GP33%20peptide%20restim.md)
+- [ICS_OVA peptide restim](Ex_vivo_Stimulation/ICS_OVA%20peptide%20restim.md)
+- [In vitro N4 altered peptide ligand OT-I stim](Ex_vivo_Stimulation/In%20vitro%20N4%20altered%20peptide%20ligand%20OT-I%20stim.md)
+- [In vitro OT-I stim](Ex_vivo_Stimulation/In%20vitro%20OT-I%20stim.md)
+- [Peptide dose response curve](Ex_vivo_Stimulation/Peptide%20dose%20response%20curve.md)
+- [Secretome sort and ex vivo stim](Ex_vivo_Stimulation/Secretome%20sort%20and%20ex%20vivo%20stim.md)
+- [Stim with ovap](Ex_vivo_Stimulation/Stim%20with%20ovap.md)
+- [Stimulation of Peripheral T cells with anti](Ex_vivo_Stimulation/Stimulation%20of%20Peripheral%20T%20cells%20with%20anti.md)
+- [*Ex vivo* stimulation](Ex_vivo_Stimulation/ex_vivo_stimulation.md)
+
+## Individual protocols
+
+- [CD8 activation protocol](CD8%20activation%20protocol.md)
+- [CD8^+^ Selection & Activation](cd8_selection.md)
+- [CellTrace Violet](ctv.md)
+- [Ficoll protocol for removing dead cells](ficoll_dead_cells.md)

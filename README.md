@@ -90,7 +90,7 @@ Non-blocking Quarto warnings still present in legacy bioinformatics content:
 - Unresolved DESeq2 cross-references such as `@fig-pca` and `@tbl-counts`; fix the labels or remove the references.
 - `quarto-ext/lightbox` is built into current Quarto; remove the legacy extension with `quarto remove extension quarto-ext/lightbox` when ready.
 
-## Fix GitHub Actions before the next publish
+## GitHub Actions RCurl failure and fix
 
 GitHub Actions run `32753258355` failed during `renv::restore()`. The root error was RCurl:
 
@@ -100,7 +100,9 @@ Cannot find curl-config
 ERROR: configuration failed for package 'RCurl'
 ```
 
-All listed Bioconductor failures were downstream of RCurl. Add this step after `Set up R` and before `Restore R packages` in `.github/workflows/publish.yml`:
+All listed Bioconductor failures were downstream of RCurl: `GenomeInfoDb` requires RCurl, and the rest of the failed Bioconductor packages depend on that chain.
+
+The fix is implemented in `.github/workflows/publish.yml`: after `Set up R` and before `Restore R packages`, the runner installs the required Ubuntu packages:
 
 ```yaml
       - name: Install R system dependencies
@@ -109,12 +111,13 @@ All listed Bioconductor failures were downstream of RCurl. Add this step after `
           sudo apt-get install --yes cmake libcurl4-openssl-dev libpng-dev pandoc
 ```
 
-The workflow log also identified these required system packages: `cmake`, `libcurl4-openssl-dev`, `libpng-dev`, and `pandoc`.
+`libcurl4-openssl-dev` provides the missing `curl-config` executable required to compile RCurl. `cmake`, `libpng-dev`, and `pandoc` satisfy other system requirements reported by `renv::restore()`.
+
+After pushing this workflow change, verify that the `Restore R packages` step installs RCurl successfully before Quarto begins rendering.
 
 ## Publish successfully
 
-1. Apply the GitHub Actions system-dependency fix above.
-2. Review the complete change set. This repository has intentional large file moves and deletions, so do not stage blindly.
+1. Review the complete change set. This repository has intentional large file moves and deletions, so do not stage blindly.
 
 ```bash
 git status --short
@@ -124,11 +127,11 @@ git diff --cached --name-status
 git diff --cached --stat
 ```
 
-3. Commit and push `main`:
+2. Commit and push `main`:
 
 ```bash
 git commit -m "Install R dependencies for publishing"
 git push origin main
 ```
 
-4. Open the GitHub Actions page and wait for `Quarto Publish` to complete. On success, the workflow writes `_site` to `cf-pages`, which Cloudflare Pages serves.
+3. Open the GitHub Actions page and wait for `Quarto Publish` to complete. On success, the workflow writes `_site` to `cf-pages`, which Cloudflare Pages serves.

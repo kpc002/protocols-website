@@ -4,7 +4,7 @@ project:
     - python3 scripts/check_quarto_collisions.py
 
 website:
-  title: "protocols.heeg.io"
+  title: "Goldrath Protocols"
   site-url: https://kpc002.github.io/protocols-website
   twitter-card: true
   page-navigation: true
@@ -31,7 +31,7 @@ website:
 format:
   html:
     theme:
-      light: [flatly, styles.scss]
+      light: [minty, styles.scss]
       dark: [darkly, styles.scss]
     toc: true
     code-line-numbers: false
