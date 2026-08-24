@@ -24,6 +24,11 @@ jobs:
         with:
           r-version: "4.1.2"
 
+      - name: Install R system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes cmake libcurl4-openssl-dev libpng-dev pandoc
+
       - name: Restore R packages
         uses: r-lib/actions/setup-renv@v2   
 

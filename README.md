@@ -1,104 +1,134 @@
 # Protocols Website Session Handoff
 
-This file summarizes the current state of the protocols website so a future Codex session can resume without reconstructing the recent work.
+This file records the current state of the Quarto protocols website and how to continue publishing it.
 
-## Working directory
-
-```text
-/home/goldrath/Desktop/Kitty/protocols-website
-```
-
-From `/home/goldrath/Desktop/Kitty`, enter the project with:
+## Working directory and Git state
 
 ```bash
-cd protocols-website
+cd /home/goldrath/Desktop/Kitty/protocols-website
 ```
 
-## Git state
+- Branch: `main`
+- Current pushed commit at the time of this handoff: `a2b6f98` (`Reorganize protocols and restore media assets`)
+- Pushing to `main` runs `.github/workflows/publish.yml`, renders the site, and deploys `_site` to the `cf-pages` branch. Do not push directly to `cf-pages`.
 
-- Current branch: `main`
-- Current commit: `f4db32f` (`Describe the reorganization`)
-- At the time this handoff was created, `main`, `origin/main`, and `origin/kitty-version2` pointed to the same commit.
-- The worktree contains substantial intentional file moves/deletions, metadata edits, and some generated Quarto output. Review `git status --short` before staging anything.
+## Organization and homepage
 
-The publish workflow runs on pushes to `main` only. It renders the project and deploys `_site` to the `cf-pages` branch:
+- The old source folders `Kelsey_s_Protocols` and `Kitty_s_Protocols` were removed after their content was reorganized.
+- `index.qmd` was updated to remove deleted-folder links and add FACS, Human Samples, and Mitochondria.
+- The current top-level protocol sections include `FACS`, `human`, `Mitochondria`, `mice`, `infections`, `mol_bio`, `t_cells`, CRISPR/cloning sections, and others.
+- `protocols/index_files/` exists as a compatibility directory required by a Quarto listing.
 
-```text
-.github/workflows/publish.yml
-```
+## Media recovery completed
 
-## Completed organization work
+Missing images were recovered from their matching `.docx` files into adjacent `media/` or artifact folders. The static link audit now passes.
 
-- Renamed `protocols/Crispr Design and Cloning` to `protocols/Crispr_Design_and_Cloning` and updated homepage references.
-- Added/organized top-level sections including `General Cloning`, `Mitochondria`, `human`, `infections/listeria`, `mice`, `orga/mouse_transfer`, and `Transfection and Transduction/HEK293T and Lentivirus`.
-- Moved mitochondria-related protocols into `protocols/Mitochondria`, including calcium flux, Seahorse, mitochondria dye, ADP/ADT, Bodipy/mitotracker, and general Seahorse files.
-- Converted `Lentivirus_Production_and_Transduction.docx` to Markdown before moving it with its source document.
-- Deleted the now-empty source folders `Alex_s_Protocols`, `Dhruv_s_Protocols`, and `Angelica_s protocols` after their relevant files were moved.
-- Updated non-index Anthony protocol front matter authors to `Anthony Phan`.
-- Removed homepage links for deleted source folders and added direct links for current top-level sections.
+- Fixed moved CB7 ADP/ADT image paths to `CB7.ADP_ADT assay_artifacts/`.
+- Recovered CRISPR amplicon, guide-design, Mycoplasma PCR, calcium-flux, ACK-buffer, VSV, Listeria, caecum orthotopic, and hemacytometer media.
+- Converted the caecum orthotopic and hemacytometer JPEGs to PNG and updated their links.
+- EMF/WMF assets were retained in their original formats because ImageMagick and LibreOffice could not convert them in this environment.
 
-## Current landing pages
+## Local verification
 
-- Root homepage: `index.qmd`
-- CRISPR landing page: `protocols/Crispr_Design_and_Cloning/index.qmd`
-- Mitochondria landing page: `protocols/Mitochondria/index.qmd`
-
-The Mitochondria page uses a Quarto table listing with `filename`, `author`, and `description` fields and links each filename to its protocol.
-
-## Known render issue
-
-The latest targeted render of `protocols/Mitochondria` reached a Quarto-generated listing error because this directory is missing:
-
-```text
-protocols/index_files
-```
-
-Create the compatibility directory, then retry the targeted render:
+Run these checks before committing:
 
 ```bash
-mkdir -p protocols/index_files
-XDG_CACHE_HOME=/tmp/protocols-quarto-cache quarto render protocols/Mitochondria
-```
-
-After that succeeds, run a full project render:
-
-```bash
-XDG_CACHE_HOME=/tmp/protocols-quarto-cache quarto render .
-```
-
-Record any remaining warnings or errors. Previous full renders also reported unresolved cross-references in `protocols/bioinformatics/introduction-to-deseq2/index.qmd` and missing `lightbox` shortcode warnings in the SCENIC content; verify whether those remain.
-
-## Generated files to review
-
-The worktree currently includes generated or possibly generated files such as:
-
-- `site_libs/`
-- `protocols/index-listing.json`
-- `protocols/Mitochondria/index-listing.json`
-- `protocols/infections/index-listing.json`
-- `protocols/infections/index.html`
-
-Do not stage or delete these automatically. First check whether the repository intentionally tracks generated output and whether the latest render created them.
-
-## Useful checks
-
-```bash
-git status --short --branch
-git diff --stat
-git diff -- index.qmd protocols/Mitochondria/index.qmd
-rg -n "Crispr Design and Cloning|Alex_s_Protocols|Dhruv_s_Protocols|Angelica_s protocols|TissuePreps" --glob '*.qmd' --glob '*.md' .
-```
-
-Before pushing:
-
-```bash
+python3 scripts/check_quarto_collisions.py --check-links all
 git diff --check
+XDG_CACHE_HOME=/tmp/protocols-quarto-cache quarto render index.qmd
+```
+
+For a targeted protocol render, use an isolated Quarto cache to avoid the local Sass cache database error:
+
+```bash
+XDG_CACHE_HOME=/tmp/protocols-quarto-cache quarto render path/to/protocol.md
+```
+
+## Rendering issues and fixes
+
+### Resolved source issues
+
+- Missing `protocols/index_files`: created the compatibility directory.
+- Stale links to deleted/moved folders: updated homepage, Top 20, Etv3, Tamoxifen, and related protocol links.
+- Missing local media: recovered the assets from the source Word documents.
+- Tamoxifen bibliography path: changed to `../references.bib`.
+- Source-side HTML collision: remove any untracked generated HTML file with the same basename as a `.md` or `.qmd` source. A previous example was `protocols/Top_20/Spleen and Lymph Node Prep.html`.
+- Quarto Sass cache error (`unable to open database file`): set `XDG_CACHE_HOME=/tmp/protocols-quarto-cache` for the render command.
+- To skip executable code, use `quarto render --no-execute`; `--execute false` is parsed as a file named `false` and fails with `pandoc: false: withBinaryFile: does not exist`.
+- `quarto preview protocols` can still block on the bioinformatics R pages. When the R environment is unavailable, preview the already-rendered site instead: `python3 -m http.server 4200 --bind 127.0.0.1 --directory _site`, then open `http://127.0.0.1:4200/protocols/`.
+
+### Full R render remains environment-dependent
+
+The bioinformatics tutorials use R and Bioconductor. The lockfile requires R 4.1.2 and Bioconductor 3.14. Full rendering can fail locally when the R library is incomplete or network access is unavailable.
+
+Typical errors:
+
+- `Bioconductor version cannot be validated; no internet connection`
+- `there is no package called 'ggplot2'`
+- `The project is out-of-sync`
+
+`renv::restore()` only installs packages already recorded in `renv.lock`. When source code uses packages not recorded in the lockfile, install them deliberately and then snapshot. Do not run `snapshot()` merely to silence an unknown discrepancy.
+
+```bash
+RENV_CONFIG_SANDBOX_ENABLED=FALSE Rscript -e 'renv::status()'
+RENV_CONFIG_SANDBOX_ENABLED=FALSE Rscript -e 'renv::restore(prompt = FALSE)'
+RENV_CONFIG_SANDBOX_ENABLED=FALSE Rscript -e 'renv::snapshot(prompt = FALSE)'
+```
+
+`.renvignore` excludes generated Quarto output while retaining the bioinformatics source files for dependency discovery:
+
+```text
+_site/
+_freeze/
+.quarto/
+site_libs/
+protocols/**/index_files/
+```
+
+Non-blocking Quarto warnings still present in legacy bioinformatics content:
+
+- Unresolved DESeq2 cross-references such as `@fig-pca` and `@tbl-counts`; fix the labels or remove the references.
+- `quarto-ext/lightbox` is built into current Quarto; remove the legacy extension with `quarto remove extension quarto-ext/lightbox` when ready.
+
+## Fix GitHub Actions before the next publish
+
+GitHub Actions run `32753258355` failed during `renv::restore()`. The root error was RCurl:
+
+```text
+checking for curl-config... no
+Cannot find curl-config
+ERROR: configuration failed for package 'RCurl'
+```
+
+All listed Bioconductor failures were downstream of RCurl. Add this step after `Set up R` and before `Restore R packages` in `.github/workflows/publish.yml`:
+
+```yaml
+      - name: Install R system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes cmake libcurl4-openssl-dev libpng-dev pandoc
+```
+
+The workflow log also identified these required system packages: `cmake`, `libcurl4-openssl-dev`, `libpng-dev`, and `pandoc`.
+
+## Publish successfully
+
+1. Apply the GitHub Actions system-dependency fix above.
+2. Review the complete change set. This repository has intentional large file moves and deletions, so do not stage blindly.
+
+```bash
 git status --short
-quarto render .
+git diff --check
 git add -A
+git diff --cached --name-status
 git diff --cached --stat
-git commit -m "Update protocol organization and listings"
+```
+
+3. Commit and push `main`:
+
+```bash
+git commit -m "Install R dependencies for publishing"
 git push origin main
 ```
 
-The GitHub Actions workflow should then appear under the repository's Actions tab for the `main` branch.
+4. Open the GitHub Actions page and wait for `Quarto Publish` to complete. On success, the workflow writes `_site` to `cf-pages`, which Cloudflare Pages serves.
