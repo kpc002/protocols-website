@@ -23,7 +23,7 @@ lightbox: auto
         -   Cre - control: cKO and H2O
 
 ::: callout-note
-There are two pairs for the Etv3 floxed mouse strain. This is because it contains two [loxP sites that flank](../../tamoxifen.qmd) exon 2-4 of the gene. Pair 140+141 spans the region containing the loxP site in intro 1, pair 142+143 spans the loxP in intron 4.
+There are two pairs for the Etv3 floxed mouse strain. This is because it contains two [loxP sites that flank](/protocols/mice/Treatments/tamoxifen.qmd) exon 2-4 of the gene. Pair 140+141 spans the region containing the loxP site in intro 1, pair 142+143 spans the loxP in intron 4.
 
 It is okay to only use one of the primer pairs to genotype the mice
 :::

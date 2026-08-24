@@ -15,10 +15,6 @@ listing:
 
 Browse curated Goldrath Lab protocols.
 
-## Folders
 
-| Folder |
-|---|
-| [Masopust Gut Prep Protocol](Masopust%20Gut%20Prep%20Protocol/index.qmd) |
 
 ## Files

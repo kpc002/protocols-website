@@ -20,4 +20,4 @@ Hemacytometer
 
   - Count
 
-![http://bitesizebio.s3.amazonaws.com/cellculture/files/2013/04/Equation-1.jpg](media/image1.jpeg)
+![http://bitesizebio.s3.amazonaws.com/cellculture/files/2013/04/Equation-1.jpg](media/image1.png)

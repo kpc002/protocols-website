@@ -216,5 +216,5 @@ Document the following for reproducibility:
 | Protocol subfolder | Source protocol |
 |---|---|
 | `Nicole_s protocols` | [CD8 isolation and activation protocol](<../Nicole_s_protocols/CD8 isolation and activation protocol.md>) |
-| `Kelsey_s Protocols/Mouse` | [CD8 isolation and activation](<../Kelsey_s_Protocols/Mouse/CD8 isolation and activation.md>) |
+| `Kelsey_s Protocols/Mouse` | [CD8 isolation and activation](../t_cells/CD8%20activation%20protocol.md) |
 | `t_cells` | [CD8 selection and activation](../t_cells/cd8_selection.md) |

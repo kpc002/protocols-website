@@ -72,7 +72,7 @@ Assays can be carried out in a white microplate for luminescent assays. For  con
 
 1. Sample  Preparation .  For  suspension  cells,  transfer  10  µL  of  the cultured cells (10 3 -10 4 ) into a white opaque 96 well plate.
 
-![Image](protocols/Giovanni_s protocols/cellular/CB7.ADP_ADT assay_artifacts/image_000000_a241aea28b13f6a38a54cae12ee7a1083d7671439c7f7ca60e950a800c9667d2.png)
+![Image](CB7.ADP_ADT assay_artifacts/image_000000_a241aea28b13f6a38a54cae12ee7a1083d7671439c7f7ca60e950a800c9667d2.png)
 
 ## EnzyLight TM  ADP/ATP Ratio Assay Kit (ELDT-100)
 
@@ -113,4 +113,4 @@ The  interpretation  of  different  ratios  obtained  may  vary  significantly a
 2.  Villa-Bellosta,  R.,  Hamczyk,  M.  R.,  &amp;  Andres,  V.  (2017).  Novel phosphate-activated  macrophages  prevent  ectopic  calcification  by increasing  extracellular  ATP  and  pyrophosphate.  PloS  one,  12(3), e0174998
 3.  Taneike, M., Nishida, K., Omiya, S., Zarrinpashneh, E., Misaka, T., Kitazume-Taneike, R. &amp; Shah, A. M. (2016). mTOR hyperactivation by  ablation  of  tuberous  sclerosis  complex  2  in  the  mouse  heart induces  cardiac  dysfunction  with  the  increased  number  of  small mitochondria  mediated  through  the  down-regulation  of  autophagy. PLoS One, 11(3), e0152628.
 
-![Image](protocols/Giovanni_s protocols/cellular/CB7.ADP_ADT assay_artifacts/image_000001_7b27f2855a28fd8288af8c88c72716640b98aec0496a7b593889509a84cad204.png)
+![Image](CB7.ADP_ADT assay_artifacts/image_000001_7b27f2855a28fd8288af8c88c72716640b98aec0496a7b593889509a84cad204.png)

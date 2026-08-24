@@ -201,5 +201,5 @@ For spectral cytometry, include an unstained-cell control to model cellular auto
 
 | Protocol subfolder | Source protocol |
 |---|---|
-| `Giovanni_s Protocols/FACS` | [FC1.antibody_titration](<../Giovanni_s_Protocols/FACS/FC1.antibody_titration.md>) |
-| `Kelsey_s Protocols/Mouse` | [Antibody titration](<../Kelsey_s_Protocols/Mouse/Antibody titration.md>) |
+| `Giovanni_s Protocols/FACS` | [FC1.antibody_titration](../FACS/FC1.antibody_titration.md) |
+| `Kelsey_s Protocols/Mouse` | [Antibody titration](../FACS/Antibody%20titration.md) |

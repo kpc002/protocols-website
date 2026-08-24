@@ -181,5 +181,5 @@ Use a fixation/permeabilization system validated for cytoplasmic cytokines.
 |---|---|
 | `Giovanni_s Protocols/cellular` | [CB8.Ex vivo restim](<../Giovanni_s_Protocols/cellular/CB8.Ex vivo restim.md>) |
 | `Nicole_s protocols` | [012725 NES - Flow cytometry staining](<../Nicole_s_protocols/012725 NES - Flow cytometry staining.md>) |
-| `t_cells` | [Ex vivo stimulation](../t_cells/ex_vivo_stimulation.md) |
-| `Kelsey_s Protocols/Mouse` | [ICS_GP33 peptide restim](<../Kelsey_s_Protocols/Mouse/ICS_GP33 peptide restim.md>) |
+| `t_cells` | [Ex vivo stimulation](../t_cells/Ex_vivo_Stimulation/ex_vivo_stimulation.md) |
+| `Kelsey_s Protocols/Mouse` | [ICS_GP33 peptide restim](../t_cells/Ex_vivo_Stimulation/ICS_GP33%20peptide%20restim.md) |
