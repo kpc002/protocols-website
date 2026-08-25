@@ -12,7 +12,7 @@ All protocols without warranty.
 
 ## Sections
 
-I have tried to organize the protocols in different sections. Sometimes an assignment is not clearly possible. If looking for a protocol, the search function in the top left corner is very useful.
+I have tried to organize the protocols in different sections. Sometimes an assignment is not clearly possible. If looking for a protocol, the search function in the top right corner is very useful.
 
 ### [{{< fa disease >}} T cells](/protocols/t_cells)
 

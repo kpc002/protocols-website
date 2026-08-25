@@ -9,6 +9,8 @@ toc: true
 
 This calculator is adapted from `mix_calculation.xlsx`. Change any value in a white field; calculated values update immediately.
 
+[Open the source workbook](mix_calculation.xlsx){.btn .btn-primary download="mix_calculation.xlsx"}
+
   <section class="calc-card">
     <h2>1. Prepare an equal-cell mix</h2>
     <div class="calc-grid">

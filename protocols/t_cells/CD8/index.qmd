@@ -1,0 +1,12 @@
+---
+title: "CD8 T cells"
+description: "Protocols for CD8 T-cell differentiation and tissue-resident memory studies."
+order: 2
+listing:
+  type: table
+  contents: "*.md"
+  sort: title
+  fields: [title, description]
+---
+
+## Protocols
