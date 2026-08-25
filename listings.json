@@ -28,176 +28,294 @@
     ]
   },
   {
-    "listing": "/protocols/Pertub_Seq/index.html",
+    "listing": "/protocols/t_cells/CD8/index.html",
     "items": [
-      "/protocols/Pertub_Seq/10X_planning_guide.html",
-      "/protocols/Pertub_Seq/sgRNA_Viral_transduction_Wei_2019.html"
+      "/protocols/t_cells/CD8/trm_in_vitro_differentiation.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
+    "listing": "/protocols/t_cells/CD4/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html"
+      "/protocols/t_cells/CD4/TH1TH2.html",
+      "/protocols/t_cells/CD4/Th differentiation in vitro.html",
+      "/protocols/t_cells/CD4/Treg isolation.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/molecular/index.html",
+    "listing": "/protocols/bioinformatics/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB2.Mycoplasma_PCR.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.Excel.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html"
+      "/protocols/bioinformatics/scenic/01_setup_conda_env.html",
+      "/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html",
+      "/protocols/bioinformatics/ucell/index.html",
+      "/protocols/bioinformatics/scenic/02_prepare_input/index.html",
+      "/protocols/bioinformatics/convert_gene_symbol_to_ensembl.html",
+      "/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html",
+      "/protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html",
+      "/protocols/bioinformatics/scenic/04_downstream_analysis/index.html",
+      "/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html",
+      "/protocols/bioinformatics/pca_genes.html",
+      "/protocols/bioinformatics/seurat_coexpression/index.html",
+      "/protocols/bioinformatics/plot_TF_binding_sites/index.html",
+      "/protocols/bioinformatics/bash_snippets.html",
+      "/protocols/bioinformatics/create reference with YFP.html",
+      "/protocols/bioinformatics/introduction-to-deseq2/index.html",
+      "/protocols/bioinformatics/nextflow_rna_seq/index.html",
+      "/protocols/bioinformatics/scenic/index.html",
+      "/protocols/bioinformatics/examples/index.html"
     ]
   },
   {
-    "listing": "/protocols/mice/Masopust Gut Prep Protocol/index.html",
+    "listing": "/protocols/bioinformatics/examples/index.html",
     "items": [
+      "/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/bioinformatics/scenic/index.html",
+    "items": [
+      "/protocols/bioinformatics/scenic/01_setup_conda_env.html",
+      "/protocols/bioinformatics/scenic/02_prepare_input/index.html",
+      "/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html",
+      "/protocols/bioinformatics/scenic/04_downstream_analysis/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Giovanni_s_Protocols/cellular/index.html",
+    "items": [
+      "/protocols/Giovanni_s_Protocols/cellular/CB8.Ex vivo restim.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
+    "items": [
+      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_protocol.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Giovanni_s_Protocols/index.html",
+    "items": [
+      "/protocols/Giovanni_s_Protocols/cellular/index.html",
+      "/protocols/Giovanni_s_Protocols/molecular/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mice/genotyping/index.html",
+    "items": [
+      "/protocols/mice/genotyping/tails.html",
+      "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
+      "/protocols/mice/genotyping/DNA extaction from tails.html",
+      "/protocols/mice/genotyping/Genotyping PMEL mice by flow cytometry.html",
+      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
+      "/protocols/mice/genotyping/M1.tail_prep_genotyping.html",
+      "/protocols/mice/genotyping/Phenol Chloroform DNA extaction from tails.html",
+      "/protocols/mice/genotyping/Tail prep.html",
+      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mice/index.html",
+    "items": [
+      "/protocols/mice/spleen.html",
+      "/protocols/mice/lymphnode.html",
+      "/protocols/mice/genotyping/tails.html",
+      "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
+      "/protocols/mice/Tumor/04.20.21 Tumor injection protocol.html",
+      "/protocols/mice/Tumor/072226 in vitro tumor growth and injection protocol.html",
+      "/protocols/mice/Treatments/AntiPD1_CTLA4 in vivo blockade in B16-challenged mice.html",
+      "/protocols/mice/Tumor/B16 Cancer cell culture and injection.html",
+      "/protocols/mice/B16 Takedown 2026-03-25_ATM.html",
+      "/protocols/mice/B16 tumor processing protocol.html",
+      "/protocols/mice/Bleeding Mice for transduction check_ATM.html",
+      "/protocols/mice/blood.html",
+      "/protocols/mice/Tumor/CRC_Caecum_orthotopic_Materials.html",
+      "/protocols/mice/Tumor/Caecum_orthotopic_protocol_MRC.html",
+      "/protocols/mice/genotyping/DNA extaction from tails.html",
+      "/protocols/mice/Fetal Liver Chimeras.html",
       "/protocols/mice/Masopust Gut Prep Protocol/GUT Prep Reagents.html",
+      "/protocols/mice/genotyping/Genotyping PMEL mice by flow cytometry.html",
       "/protocols/mice/Masopust Gut Prep Protocol/Goldrath IEL and LPL Isolation.html",
-      "/protocols/mice/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html"
+      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
+      "/protocols/mice/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html",
+      "/protocols/mice/Liver Preparation Protocol.html",
+      "/protocols/mice/Lymphocyte isolation from mouse tissues.html",
+      "/protocols/mice/genotyping/M1.tail_prep_genotyping.html",
+      "/protocols/mice/Making bone marrow chimeras.html",
+      "/protocols/mice/Masopust Gut Prep Protocol/index.html",
+      "/protocols/mice/Surgery/Mouse Anesthesia.html",
+      "/protocols/mice/Mouse Saliva Test Protocol (Sjogren's Syndrome Project).html",
+      "/protocols/mice/P14 isolation from blood for adoptive transfer.html",
+      "/protocols/mice/genotyping/Phenol Chloroform DNA extaction from tails.html",
+      "/protocols/mice/Treatments/Prep of IL15complexes.html",
+      "/protocols/mice/Tumor/Protocol_Caecum_Orthotopic_MRC.html",
+      "/protocols/mice/Treatments/Supplementing humanized mice with cytokines.html",
+      "/protocols/mice/genotyping/Tail prep.html",
+      "/protocols/mice/mix_calculation.html",
+      "/protocols/mice/spleen&lymph node cell prep.html",
+      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html",
+      "/protocols/mice/Treatments/tamoxifen.html",
+      "/protocols/mice/tissue_prep.html",
+      "/protocols/mice/Gut prep protocol.html",
+      "/protocols/mice/genotyping/index.html",
+      "/protocols/mice/phenotyping/Genotyping OT-I mice by flow cytometry/Genotyping OT-I mice by flow cytometry.html",
+      "/protocols/mice/phenotyping/Genotyping P14 mice by flow cytometry/Genotyping P14 mice by flow cytometry.html",
+      "/protocols/mice/Liberase Skin Protocol_MHY 07082025.html",
+      "/protocols/mice/mouse genotyping protocol.html",
+      "/protocols/mice/Updated Pancreas scDissoc Flow 020425.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/Curated protocols/index.html",
+    "listing": "/protocols/Goldrath_Protocols/Old_Protocols/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/Curated protocols/zd_RNA_DNase_cDNA.html"
+      "/protocols/Goldrath_Protocols/Old_Protocols/Cell culture.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/IFNgamma in vitro - Mindy.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Isolate spleenocytes.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Precipitation of RNA.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/RNA extraction with Trizol.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Setting up PCR.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Southern Protocol JK.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Staining Blood.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Streptavidin microbeads protocol.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/zd_In vitro IFN_OVAp_PMA.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/zd_Purification.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Toan/index.html",
+    "listing": "/protocols/Goldrath_Protocols/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/Toan/Guava instruction - Lu lab.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Toan/RNA extraction using Trizol.html"
+      "/protocols/Goldrath_Protocols/Old_Protocols/Cell culture.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/IFNgamma in vitro - Mindy.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Isolate spleenocytes.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Precipitation of RNA.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/RNA extraction with Trizol.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Setting up PCR.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Southern Protocol JK.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Staining Blood.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/Streptavidin microbeads protocol.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/zd_In vitro IFN_OVAp_PMA.html",
+      "/protocols/Goldrath_Protocols/Old_Protocols/zd_Purification.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/Goldrath Lab Fortessa flow.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/index.html",
-    "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/index.html",
-    "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD081409 Andrews CD3 CD28 protocol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD091009 WT listeria.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/BTSSR viable  Lymphocyte collection protocol 10222014.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/CHIP-seq library Preparation from Bingfei.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Cell Trace Violet labeling.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Cholesterol_Amplex.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Cholesterol_extraction_Sigma.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Kyla/DNA Prep for Genotyping.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Determining Bacterial Burden.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/FilipinIII_stain.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping Guide - JL.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping PCR info.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/Goldrath Lab Fortessa flow.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Goldrath Lab Oligos Database updated at 121213.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/Goldrath_ChIP protocol with dynabeads.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Toan/Guava instruction - Lu lab.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Laura/ID2-3Primers.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/IF_Frozen_BioProtocol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/index.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/ImmGen Cell prep and sorting SOP.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/ImmunohistochemistryProtocol_2.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Infection with LMGP33.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Kyla/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/LLB_GutPrep2017.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/recipes.MSE.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Laura/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Lymphocyte prep_tissues.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Lymphocyte_Separation_Media.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/MC38_Growth.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mixed ACT Calculations.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mouse_Haplotype_Table.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/NES 070515 Immunofluorescence staining protocol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/PCR master mix recipe headings.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/PFA - 16 percent.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/RNA Isolation from Sorted Cells.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Toan/RNA extraction using Trizol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/RetroProduction_Tcells/index.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/STAINING PROTOCOL FOR FLOW.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIF_ajpheart.00327.2002.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIL_prep_MC38_sc_MRC.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/TRAIL PCR.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Toan/index.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/WB.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/WB-beginner.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Western_blot_diagram.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Western_protocol7-7-06.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/aGC reconstitution.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/fixation_permeabilization.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/staining tips.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Kyla/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/CHIP-seq library Preparation from Bingfei.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/Goldrath_ChIP protocol with dynabeads.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/Kyla/DNA Prep for Genotyping.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Laura/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/Laura/ID2-3Primers.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Cholesterol_Amplex.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Cholesterol_extraction_Sigma.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/FilipinIII_stain.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/IF_Frozen_BioProtocol.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/LLB_GutPrep2017.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Lymphocyte prep_tissues.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/MC38_Growth.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mixed ACT Calculations.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mouse_Haplotype_Table.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/RNA Isolation from Sorted Cells.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/STAINING PROTOCOL FOR FLOW.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIF_ajpheart.00327.2002.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIL_prep_MC38_sc_MRC.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/BTSSR viable  Lymphocyte collection protocol 10222014.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/NES 070515 Immunofluorescence staining protocol.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/fixation_permeabilization.html"
     ]
   },
   {
-    "listing": "/protocols/mol_bio/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Anthony/index.html",
     "items": [
-      "/protocols/mol_bio/RNA_isolation.html",
-      "/protocols/mol_bio/cDNA.html",
-      "/protocols/mol_bio/crispr_validation/index.html",
-      "/protocols/mol_bio/western_blot/index.html",
-      "/protocols/mol_bio/RNA_isolation_tissue.html",
-      "/protocols/mol_bio/Antibody purification.html",
-      "/protocols/mol_bio/Biotinylation of Ab.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Cell Trace Violet labeling.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Determining Bacterial Burden.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping Guide - JL.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping PCR info.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Andrew/index.html",
+    "items": [
+      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD081409 Andrews CD3 CD28 protocol.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD091009 WT listeria.html"
+    ]
+  },
+  {
+    "listing": "/protocols/index.html",
+    "items": [
+      "/protocols/t_cells/index.html",
+      "/protocols/infections/index.html",
+      "/protocols/mice/index.html",
+      "/protocols/mol_bio/index.html",
+      "/protocols/bioinformatics/index.html",
+      "/protocols/FACS/index.html",
+      "/protocols/human/index.html",
+      "/protocols/recipes/index.html",
+      "/protocols/orga/index.html",
+      "/protocols/Giovanni_s_Protocols/index.html",
+      "/protocols/Goldrath_Protocols/index.html",
+      "/protocols/Nicole_s_protocols/index.html",
+      "/protocols/Top_20/index.html",
+      "/protocols/Crispr Cas9 Electroporation/index.html",
+      "/protocols/Crispr_Design_and_Cloning/index.html",
+      "/protocols/histology/index.html",
+      "/protocols/Mitochondria/index.html",
+      "/protocols/Pertub_Seq/index.html",
+      "/protocols/Transfection and Transduction/index.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Mitochondria/index.html",
+    "items": [
+      "/protocols/Mitochondria/Bodipy Mitotracker Staining Protocol.html",
+      "/protocols/Mitochondria/CB2.Calcium flux assay.html",
+      "/protocols/Mitochondria/CB3.Seahorse assay.html",
+      "/protocols/Mitochondria/CB4.Mitochondria dyes.html",
+      "/protocols/Mitochondria/CB7.ADP_ADT assay.html",
+      "/protocols/Mitochondria/General Seahorse Protocol.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mol_bio/western_blot/index.html",
+    "items": [
+      "/protocols/mol_bio/western_blot/091923 Western blot protocol NES.html",
       "/protocols/mol_bio/western_blot/Cell prep for western.html",
-      "/protocols/mol_bio/ChIP protocol.html",
-      "/protocols/mol_bio/DNA extraction from CD8.html",
-      "/protocols/mol_bio/Cell_Culture/Hemacytometer.html",
-      "/protocols/mol_bio/Hot first strand for probing arrays from cRNA.html",
-      "/protocols/mol_bio/How to make up dNTP stocks.html",
-      "/protocols/mol_bio/Cell_Division_and_Proliferation/Labeling T cells with CFSE.html",
-      "/protocols/mol_bio/LibraryPreparationforCutandRun.html",
-      "/protocols/mol_bio/PCR/PCR master mix recipes.html",
-      "/protocols/mol_bio/Cell_Division_and_Proliferation/Proliferation assay.html",
       "/protocols/mol_bio/western_blot/protein_lysis.html",
-      "/protocols/mol_bio/RNA extraction & cDNA synthesis & RT-qPCR from CD8.html",
       "/protocols/mol_bio/western_blot/Western Blot Protocol.html",
       "/protocols/mol_bio/western_blot/Western blot.html",
       "/protocols/mol_bio/western_blot/Western2.html",
-      "/protocols/mol_bio/Primerdesign.html",
       "/protocols/mol_bio/western_blot/BCA_assay.html",
       "/protocols/mol_bio/western_blot/run_gel.html",
       "/protocols/mol_bio/western_blot/buffers.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mol_bio/RNA_cDNA_qPCR/index.html",
+    "items": [
+      "/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/Agilent Brilliant II SYBR® Green QPCR Master Mix.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/Fisher High Capacity cDNA Reverse Transcription Kit.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation_tissue.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA extraction & cDNA synthesis & RT-qPCR from CD8.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation.html"
     ]
   },
   {
@@ -279,18 +397,36 @@
     ]
   },
   {
-    "listing": "/protocols/FACS/FC6.FACS basic principles/index.html",
+    "listing": "/protocols/FACS/FC5.Spectral course/index.html",
     "items": [
-      "/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html",
-      "/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html"
+      "/protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html",
+      "/protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html",
+      "/protocols/FACS/FC5.Spectral course/2023.02.23-US&APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html",
+      "/protocols/FACS/FC5.Spectral course/Exercise 4B.html",
+      "/protocols/FACS/FC5.Spectral course/Exercise 4B copy.html",
+      "/protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html",
+      "/protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html",
+      "/protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources & Tools - Day 3.html"
     ]
   },
   {
-    "listing": "/protocols/infections/VSV-ova related material/index.html",
+    "listing": "/protocols/FACS/index.html",
     "items": [
-      "/protocols/infections/VSV-ova related material/Diallo et al vsv propagation.html",
-      "/protocols/infections/VSV-ova related material/VSV Stock Production.html",
-      "/protocols/infections/VSV-ova related material/VSV-ova titer 092707  (main 2007 VSV-ova lot).html"
+      "/protocols/FACS/FC6.FACS basic principles/index.html",
+      "/protocols/FACS/FC5.Spectral course/index.html",
+      "/protocols/FACS/FC1.antibody_titration.html",
+      "/protocols/FACS/FC2.surface_staining.html",
+      "/protocols/FACS/FC3.intracellular_staining.html",
+      "/protocols/FACS/FC4.TF_buffer_set.html",
+      "/protocols/FACS/FC7.X20_layout.html"
+    ]
+  },
+  {
+    "listing": "/protocols/infections/lcmv/index.html",
+    "items": [
+      "/protocols/infections/lcmv/CB1.Tissue processing for viral titers.html",
+      "/protocols/infections/lcmv/infection_lcmv_arm.html",
+      "/protocols/infections/lcmv/stock.html"
     ]
   },
   {
@@ -388,58 +524,31 @@
     ]
   },
   {
-    "listing": "/protocols/infections/lcmv/index.html",
+    "listing": "/protocols/infections/VSV-ova related material/index.html",
     "items": [
-      "/protocols/infections/lcmv/infection_lcmv_arm.html",
-      "/protocols/infections/lcmv/stock.html"
+      "/protocols/infections/VSV-ova related material/Diallo et al vsv propagation.html",
+      "/protocols/infections/VSV-ova related material/VSV Stock Production.html",
+      "/protocols/infections/VSV-ova related material/VSV-ova titer 092707  (main 2007 VSV-ova lot).html"
     ]
   },
   {
     "listing": "/protocols/Nicole_s_protocols/index.html",
     "items": [
-      "/protocols/Nicole_s_protocols/012725 NES - Flow cytometry staining.html",
       "/protocols/Nicole_s_protocols/030221 Cell culture media recipies.html",
-      "/protocols/Nicole_s_protocols/04.20.21 Tumor injection protocol.html",
-      "/protocols/Nicole_s_protocols/072226 in vitro tumor growth and injection protocol.html",
       "/protocols/Nicole_s_protocols/080221 in vitro TRM - Zaph lab, NES optimized.html",
-      "/protocols/Nicole_s_protocols/091923 Western blot protocol NES.html",
-      "/protocols/Nicole_s_protocols/Agilent Brilliant II SYBR® Green QPCR Master Mix.html",
-      "/protocols/Nicole_s_protocols/B16 tumor processing protocol.html",
       "/protocols/Nicole_s_protocols/Blood phenotyping P14 and OT1 mice.html",
       "/protocols/Nicole_s_protocols/Blood prep for genotyping.html",
-      "/protocols/Nicole_s_protocols/CB1.Tissue processing for viral titers.html",
       "/protocols/Nicole_s_protocols/CD8 isolation and activation protocol.html",
-      "/protocols/Nicole_s_protocols/Fisher High Capacity cDNA Reverse Transcription Kit.html",
       "/protocols/Nicole_s_protocols/Gut Prep Reagents-MRC.html",
-      "/protocols/Nicole_s_protocols/Gut prep protocol.html",
       "/protocols/Nicole_s_protocols/Qiagen QIAamp® Blood Mini Kit.html",
-      "/protocols/Nicole_s_protocols/Qiagen RNeasy® Mini Kit.html",
-      "/protocols/Nicole_s_protocols/mix_calculation.html"
+      "/protocols/Nicole_s_protocols/Qiagen RNeasy® Mini Kit.html"
     ]
   },
   {
-    "listing": "/protocols/FACS/index.html",
+    "listing": "/protocols/FACS/FC6.FACS basic principles/index.html",
     "items": [
-      "/protocols/FACS/FC6.FACS basic principles/index.html",
-      "/protocols/FACS/FC5.Spectral course/index.html",
-      "/protocols/FACS/FC1.antibody_titration.html",
-      "/protocols/FACS/FC2.surface_staining.html",
-      "/protocols/FACS/FC3.intracellular_staining.html",
-      "/protocols/FACS/FC4.TF_buffer_set.html",
-      "/protocols/FACS/FC7.X20_layout.html"
-    ]
-  },
-  {
-    "listing": "/protocols/FACS/FC5.Spectral course/index.html",
-    "items": [
-      "/protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html",
-      "/protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html",
-      "/protocols/FACS/FC5.Spectral course/2023.02.23-US&APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html",
-      "/protocols/FACS/FC5.Spectral course/Exercise 4B.html",
-      "/protocols/FACS/FC5.Spectral course/Exercise 4B copy.html",
-      "/protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html",
-      "/protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html",
-      "/protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources & Tools - Day 3.html"
+      "/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html",
+      "/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html"
     ]
   },
   {
@@ -478,265 +587,244 @@
     ]
   },
   {
-    "listing": "/protocols/mol_bio/western_blot/index.html",
+    "listing": "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/index.html",
     "items": [
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation_tissue.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA extraction & cDNA synthesis & RT-qPCR from CD8.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/index.html",
+    "items": [
+      "/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/Agilent Brilliant II SYBR® Green QPCR Master Mix.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/index.html",
+    "items": [
+      "/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/Fisher High Capacity cDNA Reverse Transcription Kit.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mol_bio/index.html",
+    "items": [
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/index.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/index.html",
+      "/protocols/mol_bio/cDNA.html",
+      "/protocols/mol_bio/crispr_validation/index.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/index.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/index.html",
+      "/protocols/mol_bio/western_blot/index.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation_tissue.html",
+      "/protocols/mol_bio/western_blot/091923 Western blot protocol NES.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/Agilent Brilliant II SYBR® Green QPCR Master Mix.html",
+      "/protocols/mol_bio/Antibody purification.html",
+      "/protocols/mol_bio/Biotinylation of Ab.html",
       "/protocols/mol_bio/western_blot/Cell prep for western.html",
+      "/protocols/mol_bio/ChIP protocol.html",
+      "/protocols/mol_bio/DNA extraction from CD8.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/Fisher High Capacity cDNA Reverse Transcription Kit.html",
+      "/protocols/mol_bio/Cell_Culture/Hemacytometer.html",
+      "/protocols/mol_bio/Hot first strand for probing arrays from cRNA.html",
+      "/protocols/mol_bio/How to make up dNTP stocks.html",
+      "/protocols/mol_bio/Cell_Division_and_Proliferation/Labeling T cells with CFSE.html",
+      "/protocols/mol_bio/LibraryPreparationforCutandRun.html",
+      "/protocols/mol_bio/PCR/PCR master mix recipes.html",
+      "/protocols/mol_bio/Cell_Division_and_Proliferation/Proliferation assay.html",
       "/protocols/mol_bio/western_blot/protein_lysis.html",
+      "/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA extraction & cDNA synthesis & RT-qPCR from CD8.html",
       "/protocols/mol_bio/western_blot/Western Blot Protocol.html",
       "/protocols/mol_bio/western_blot/Western blot.html",
       "/protocols/mol_bio/western_blot/Western2.html",
+      "/protocols/mol_bio/Primerdesign.html",
       "/protocols/mol_bio/western_blot/BCA_assay.html",
       "/protocols/mol_bio/western_blot/run_gel.html",
       "/protocols/mol_bio/western_blot/buffers.html"
     ]
   },
   {
-    "listing": "/protocols/Mitochondria/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/index.html",
     "items": [
-      "/protocols/Mitochondria/Bodipy Mitotracker Staining Protocol.html",
-      "/protocols/Mitochondria/CB2.Calcium flux assay.html",
-      "/protocols/Mitochondria/CB3.Seahorse assay.html",
-      "/protocols/Mitochondria/CB4.Mitochondria dyes.html",
-      "/protocols/Mitochondria/CB7.ADP_ADT assay.html",
-      "/protocols/Mitochondria/General Seahorse Protocol.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/BTSSR viable  Lymphocyte collection protocol 10222014.html"
     ]
   },
   {
-    "listing": "/protocols/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Laura/index.html",
     "items": [
-      "/protocols/t_cells/index.html",
-      "/protocols/infections/index.html",
-      "/protocols/mice/index.html",
-      "/protocols/mol_bio/index.html",
-      "/protocols/bioinformatics/index.html",
-      "/protocols/FACS/index.html",
-      "/protocols/human/index.html",
-      "/protocols/recipes/index.html",
-      "/protocols/orga/index.html",
-      "/protocols/Giovanni_s_Protocols/index.html",
-      "/protocols/Goldrath_Protocols/index.html",
-      "/protocols/Nicole_s_protocols/index.html",
-      "/protocols/Top_20/index.html",
-      "/protocols/Crispr Cas9 Electroporation/index.html",
-      "/protocols/Crispr_Design_and_Cloning/index.html",
-      "/protocols/histology/index.html",
-      "/protocols/Mitochondria/index.html",
-      "/protocols/Pertub_Seq/index.html",
-      "/protocols/Transfection and Transduction/index.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/Laura/ID2-3Primers.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Andrew/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/index.html",
+    "items": [
+      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/CHIP-seq library Preparation from Bingfei.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/Goldrath_ChIP protocol with dynabeads.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/index.html",
     "items": [
       "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD081409 Andrews CD3 CD28 protocol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD091009 WT listeria.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Anthony/index.html",
-    "items": [
+      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/AD091009 WT listeria.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Andrew/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/BTSSR viable  Lymphocyte collection protocol 10222014.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/CHIP-seq library Preparation from Bingfei.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Cell Trace Violet labeling.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Determining Bacterial Burden.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping Guide - JL.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping PCR info.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/index.html",
-    "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/NES 070515 Immunofluorescence staining protocol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/fixation_permeabilization.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/index.html",
-    "items": [
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/Cholesterol_Amplex.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/Cholesterol_extraction_Sigma.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Kyla/DNA Prep for Genotyping.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Determining Bacterial Burden.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/FilipinIII_stain.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping Guide - JL.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Anthony/Genotyping PCR info.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/Goldrath Lab Fortessa flow.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Goldrath Lab Oligos Database updated at 121213.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Bingfei/Goldrath_ChIP protocol with dynabeads.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Toan/Guava instruction - Lu lab.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Laura/ID2-3Primers.html",
       "/protocols/Goldrath_Protocols/The Master Folder/MRC/IF_Frozen_BioProtocol.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/LLB_GutPrep2017.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Lymphocyte prep_tissues.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/MC38_Growth.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mixed ACT Calculations.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mouse_Haplotype_Table.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/RNA Isolation from Sorted Cells.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/STAINING PROTOCOL FOR FLOW.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIF_ajpheart.00327.2002.html",
-      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIL_prep_MC38_sc_MRC.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Kyla/index.html",
-    "items": [
-      "/protocols/Goldrath_Protocols/The Master Folder/Kyla/DNA Prep for Genotyping.html"
-    ]
-  },
-  {
-    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/index.html",
-    "items": [
+      "/protocols/Goldrath_Protocols/The Master Folder/Ilkka/index.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/ImmGen Cell prep and sorting SOP.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/ImmunohistochemistryProtocol_2.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Infection with LMGP33.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Kyla/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/LLB_GutPrep2017.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/recipes.MSE.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Laura/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Lymphocyte prep_tissues.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Lymphocyte_Separation_Media.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/MC38_Growth.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mixed ACT Calculations.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Mouse_Haplotype_Table.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/NES 070515 Immunofluorescence staining protocol.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/PCR master mix recipe headings.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/PFA - 16 percent.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/RNA Isolation from Sorted Cells.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Toan/RNA extraction using Trizol.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/RetroProduction_Tcells/index.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/STAINING PROTOCOL FOR FLOW.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIF_ajpheart.00327.2002.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/TIL_prep_MC38_sc_MRC.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/TRAIL PCR.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Toan/index.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/WB.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/WB-beginner.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Western_blot_diagram.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/Western_protocol7-7-06.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/aGC reconstitution.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/Histology/fixation_permeabilization.html",
       "/protocols/Goldrath_Protocols/The Master Folder/Eds Histology Protocols/staining tips.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/Old_Protocols/Cell culture.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/IFNgamma in vitro - Mindy.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Isolate spleenocytes.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Precipitation of RNA.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/RNA extraction with Trizol.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Setting up PCR.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Southern Protocol JK.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Staining Blood.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Streptavidin microbeads protocol.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/zd_In vitro IFN_OVAp_PMA.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/zd_Purification.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html"
     ]
   },
   {
-    "listing": "/protocols/Goldrath_Protocols/Old_Protocols/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/index.html",
     "items": [
-      "/protocols/Goldrath_Protocols/Old_Protocols/Cell culture.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/IFNgamma in vitro - Mindy.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Isolate spleenocytes.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Precipitation of RNA.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/RNA extraction with Trizol.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Setting up PCR.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Southern Protocol JK.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Staining Blood.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/Streptavidin microbeads protocol.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/zd_In vitro IFN_OVAp_PMA.html",
-      "/protocols/Goldrath_Protocols/Old_Protocols/zd_Purification.html"
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/ExvivoPolyfunctionality_Gp33.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/Goldrath Lab Fortessa flow.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/MRC/PANELS/PeptideStimulation/index.html"
     ]
   },
   {
-    "listing": "/protocols/mice/index.html",
+    "listing": "/protocols/Goldrath_Protocols/The Master Folder/Toan/index.html",
     "items": [
-      "/protocols/mice/spleen.html",
-      "/protocols/mice/lymphnode.html",
-      "/protocols/mice/genotyping/tails.html",
-      "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
-      "/protocols/mice/Treatments/AntiPD1_CTLA4 in vivo blockade in B16-challenged mice.html",
-      "/protocols/mice/Tumor/B16 Cancer cell culture and injection.html",
-      "/protocols/mice/B16 Takedown 2026-03-25_ATM.html",
-      "/protocols/mice/Bleeding Mice for transduction check_ATM.html",
-      "/protocols/mice/blood.html",
-      "/protocols/mice/Tumor/CRC_Caecum_orthotopic_Materials.html",
-      "/protocols/mice/Tumor/Caecum_orthotopic_protocol_MRC.html",
-      "/protocols/mice/genotyping/DNA extaction from tails.html",
-      "/protocols/mice/Fetal Liver Chimeras.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Toan/Guava instruction - Lu lab.html",
+      "/protocols/Goldrath_Protocols/The Master Folder/Toan/RNA extraction using Trizol.html"
+    ]
+  },
+  {
+    "listing": "/protocols/Goldrath_Protocols/Curated protocols/index.html",
+    "items": [
+      "/protocols/Goldrath_Protocols/Curated protocols/zd_RNA_DNase_cDNA.html"
+    ]
+  },
+  {
+    "listing": "/protocols/mice/Masopust Gut Prep Protocol/index.html",
+    "items": [
       "/protocols/mice/Masopust Gut Prep Protocol/GUT Prep Reagents.html",
-      "/protocols/mice/genotyping/Genotyping PMEL mice by flow cytometry.html",
       "/protocols/mice/Masopust Gut Prep Protocol/Goldrath IEL and LPL Isolation.html",
-      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
-      "/protocols/mice/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html",
-      "/protocols/mice/Liver Preparation Protocol.html",
-      "/protocols/mice/Lymphocyte isolation from mouse tissues.html",
-      "/protocols/mice/genotyping/M1.tail_prep_genotyping.html",
-      "/protocols/mice/Making bone marrow chimeras.html",
-      "/protocols/mice/Masopust Gut Prep Protocol/index.html",
-      "/protocols/mice/Surgery/Mouse Anesthesia.html",
-      "/protocols/mice/Mouse Saliva Test Protocol (Sjogren's Syndrome Project).html",
-      "/protocols/mice/P14 isolation from blood for adoptive transfer.html",
-      "/protocols/mice/genotyping/Phenol Chloroform DNA extaction from tails.html",
-      "/protocols/mice/Treatments/Prep of IL15complexes.html",
-      "/protocols/mice/Tumor/Protocol_Caecum_Orthotopic_MRC.html",
-      "/protocols/mice/Treatments/Supplementing humanized mice with cytokines.html",
-      "/protocols/mice/genotyping/Tail prep.html",
-      "/protocols/mice/spleen&lymph node cell prep.html",
-      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html",
-      "/protocols/mice/Treatments/tamoxifen.html",
-      "/protocols/mice/tissue_prep.html",
-      "/protocols/mice/Gut prep protocol.html",
-      "/protocols/mice/genotyping/index.html",
-      "/protocols/mice/phenotyping/Genotyping OT-I mice by flow cytometry/Genotyping OT-I mice by flow cytometry.html",
-      "/protocols/mice/phenotyping/Genotyping P14 mice by flow cytometry/Genotyping P14 mice by flow cytometry.html",
-      "/protocols/mice/Liberase Skin Protocol_MHY 07082025.html",
-      "/protocols/mice/mouse genotyping protocol.html",
-      "/protocols/mice/Updated Pancreas scDissoc Flow 020425.html"
+      "/protocols/mice/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html"
     ]
   },
   {
-    "listing": "/protocols/mice/genotyping/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/molecular/index.html",
     "items": [
-      "/protocols/mice/genotyping/tails.html",
-      "/protocols/mice/genotyping/PMEL_mice/PMEL_mice.html",
-      "/protocols/mice/genotyping/DNA extaction from tails.html",
-      "/protocols/mice/genotyping/Genotyping PMEL mice by flow cytometry.html",
-      "/protocols/mice/genotyping/hic1_floxed_pcr/index.html",
-      "/protocols/mice/genotyping/M1.tail_prep_genotyping.html",
-      "/protocols/mice/genotyping/Phenol Chloroform DNA extaction from tails.html",
-      "/protocols/mice/genotyping/Tail prep.html",
-      "/protocols/mice/genotyping/etv3_floxed_pcr/index.html"
+      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB2.Mycoplasma_PCR.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.Excel.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/index.html",
+    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/cellular/index.html",
-      "/protocols/Giovanni_s_Protocols/molecular/index.html"
+      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html",
+      "/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html",
+    "listing": "/protocols/Pertub_Seq/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_protocol.html",
-      "/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html"
+      "/protocols/Pertub_Seq/10X_planning_guide.html",
+      "/protocols/Pertub_Seq/sgRNA_Viral_transduction_Wei_2019.html"
     ]
   },
   {
-    "listing": "/protocols/Giovanni_s_Protocols/cellular/index.html",
+    "listing": "/protocols/t_cells/index.html",
     "items": [
-      "/protocols/Giovanni_s_Protocols/cellular/CB8.Ex vivo restim.html"
+      "/protocols/t_cells/CD4/index.html",
+      "/protocols/t_cells/CD8/index.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/index.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/ex_vivo_stimulation.html",
+      "/protocols/t_cells/CD8 activation protocol.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/CD8 isolation and activation.html",
+      "/protocols/t_cells/cd8_selection.html",
+      "/protocols/t_cells/ctv.html",
+      "/protocols/t_cells/ficoll_dead_cells.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/ICS_GP33 peptide restim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/ICS_OVA peptide restim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/In vitro N4 altered peptide ligand OT-I stim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/In vitro OT-I stim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Peptide dose response curve.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Secretome sort and ex vivo stim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Stim with ovap.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Stimulation of Peripheral T cells with anti.html",
+      "/protocols/t_cells/CD4/TH1TH2.html",
+      "/protocols/t_cells/CD4/Th differentiation in vitro.html",
+      "/protocols/t_cells/CD4/Treg isolation.html",
+      "/protocols/t_cells/CD8/trm_in_vitro_differentiation.html"
     ]
   },
   {
-    "listing": "/protocols/bioinformatics/scenic/index.html",
+    "listing": "/protocols/t_cells/Ex_vivo_Stimulation/index.html",
     "items": [
-      "/protocols/bioinformatics/scenic/01_setup_conda_env.html",
-      "/protocols/bioinformatics/scenic/02_prepare_input/index.html",
-      "/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html",
-      "/protocols/bioinformatics/scenic/04_downstream_analysis/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/bioinformatics/examples/index.html",
-    "items": [
-      "/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html"
-    ]
-  },
-  {
-    "listing": "/protocols/bioinformatics/index.html",
-    "items": [
-      "/protocols/bioinformatics/scenic/01_setup_conda_env.html",
-      "/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html",
-      "/protocols/bioinformatics/ucell/index.html",
-      "/protocols/bioinformatics/scenic/02_prepare_input/index.html",
-      "/protocols/bioinformatics/convert_gene_symbol_to_ensembl.html",
-      "/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html",
-      "/protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html",
-      "/protocols/bioinformatics/scenic/04_downstream_analysis/index.html",
-      "/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html",
-      "/protocols/bioinformatics/pca_genes.html",
-      "/protocols/bioinformatics/seurat_coexpression/index.html",
-      "/protocols/bioinformatics/plot_TF_binding_sites/index.html",
-      "/protocols/bioinformatics/bash_snippets.html",
-      "/protocols/bioinformatics/create reference with YFP.html",
-      "/protocols/bioinformatics/introduction-to-deseq2/index.html",
-      "/protocols/bioinformatics/nextflow_rna_seq/index.html",
-      "/protocols/bioinformatics/scenic/index.html",
-      "/protocols/bioinformatics/examples/index.html"
+      "/protocols/t_cells/Ex_vivo_Stimulation/ex_vivo_stimulation.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/CD8 isolation and activation.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/ICS_GP33 peptide restim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/ICS_OVA peptide restim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/In vitro N4 altered peptide ligand OT-I stim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/In vitro OT-I stim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Peptide dose response curve.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Secretome sort and ex vivo stim.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Stim with ovap.html",
+      "/protocols/t_cells/Ex_vivo_Stimulation/Stimulation of Peripheral T cells with anti.html"
     ]
   },
   {
