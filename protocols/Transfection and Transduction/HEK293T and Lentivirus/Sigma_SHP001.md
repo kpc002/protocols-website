@@ -1,26 +1,21 @@
 ---
 title: "Sigma_SHP001"
-description: "Sigma lentiviral particle production and transduction protocol."
+description: "Sigma MISSION Lentiviral Packaging Mix technical bulletin covering component functions, storage, and production of lentiviral particles."
 order: 10
 author: "Goldrath Lab"
 date: last-modified
 ---
 
-[Download the original PDF](Sigma_SHP001.pdf){.btn .btn-primary download="Sigma_SHP001.pdf"}
+[Open the source PDF](Sigma_SHP001.pdf){.btn .btn-primary download="Sigma_SHP001.pdf"}
 
+![page-001](Sigma_SHP001_artifacts/page-001.svg)
 
+![page-002](Sigma_SHP001_artifacts/page-002.svg)
 
+![page-003](Sigma_SHP001_artifacts/page-003.svg)
 
-# Sigma_SHP001
+![page-004](Sigma_SHP001_artifacts/page-004.svg)
 
-![Sigma_SHP001, page 1](Sigma_SHP001-from-pdf-1.png){width=100%}
+![page-005](Sigma_SHP001_artifacts/page-005.svg)
 
-![Sigma_SHP001, page 2](Sigma_SHP001-from-pdf-2.png){width=100%}
-
-![Sigma_SHP001, page 3](Sigma_SHP001-from-pdf-3.png){width=100%}
-
-![Sigma_SHP001, page 4](Sigma_SHP001-from-pdf-4.png){width=100%}
-
-![Sigma_SHP001, page 5](Sigma_SHP001-from-pdf-5.png){width=100%}
-
-![Sigma_SHP001, page 6](Sigma_SHP001-from-pdf-6.png){width=100%}
+![page-006](Sigma_SHP001_artifacts/page-006.svg)

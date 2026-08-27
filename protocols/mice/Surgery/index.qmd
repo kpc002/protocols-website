@@ -1,0 +1,11 @@
+---
+title: "Surgery"
+description: "Mouse surgical procedures and preparation protocols."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+

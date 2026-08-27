@@ -1,82 +1,78 @@
 ---
 title: 10X_planning_guide
-description: Planning guide for designing and preparing 10x Genomics Perturb-seq experiments.
+description: "10x Genomics experimental planning guide for Chromium Single Cell CRISPR Screening, covering study design, sample preparation, and sequencing considerations."
 order: 10
 author: Giovanni Galleti
 date: last-modified
 image: oligo.svg
 ---
 
-[Download the original PDF](10X_planning_guide.pdf){.btn .btn-primary download="10X_planning_guide.pdf"}
+[Open the source PDF](10X_planning_guide.pdf){.btn .btn-primary download="10X_planning_guide.pdf"}
 
+![page-001](10X_planning_guide_artifacts/page-001.svg)
 
+![page-002](10X_planning_guide_artifacts/page-002.svg)
 
-## Chromium Single Cell CRISPR Screening Experimental Planning Guide
+![page-003](10X_planning_guide_artifacts/page-003.svg)
 
-![10X_planning_guide, page 1](10X_planning_guide-from-pdf-1.png){width=100%}
+![page-004](10X_planning_guide_artifacts/page-004.svg)
 
-![10X_planning_guide, page 2](10X_planning_guide-from-pdf-2.png){width=100%}
+![page-005](10X_planning_guide_artifacts/page-005.svg)
 
-![10X_planning_guide, page 3](10X_planning_guide-from-pdf-3.png){width=100%}
+![page-006](10X_planning_guide_artifacts/page-006.svg)
 
-![10X_planning_guide, page 4](10X_planning_guide-from-pdf-4.png){width=100%}
+![page-007](10X_planning_guide_artifacts/page-007.svg)
 
-![10X_planning_guide, page 5](10X_planning_guide-from-pdf-5.png){width=100%}
+![page-008](10X_planning_guide_artifacts/page-008.svg)
 
-![10X_planning_guide, page 6](10X_planning_guide-from-pdf-6.png){width=100%}
+![page-009](10X_planning_guide_artifacts/page-009.svg)
 
-![10X_planning_guide, page 7](10X_planning_guide-from-pdf-7.png){width=100%}
+![page-010](10X_planning_guide_artifacts/page-010.svg)
 
-![10X_planning_guide, page 8](10X_planning_guide-from-pdf-8.png){width=100%}
+![page-011](10X_planning_guide_artifacts/page-011.svg)
 
-![10X_planning_guide, page 9](10X_planning_guide-from-pdf-9.png){width=100%}
+![page-012](10X_planning_guide_artifacts/page-012.svg)
 
-![10X_planning_guide, page 10](10X_planning_guide-from-pdf-10.png){width=100%}
+![page-013](10X_planning_guide_artifacts/page-013.svg)
 
-![10X_planning_guide, page 11](10X_planning_guide-from-pdf-11.png){width=100%}
+![page-014](10X_planning_guide_artifacts/page-014.svg)
 
-![10X_planning_guide, page 12](10X_planning_guide-from-pdf-12.png){width=100%}
+![page-015](10X_planning_guide_artifacts/page-015.svg)
 
-![10X_planning_guide, page 13](10X_planning_guide-from-pdf-13.png){width=100%}
+![page-016](10X_planning_guide_artifacts/page-016.svg)
 
-![10X_planning_guide, page 14](10X_planning_guide-from-pdf-14.png){width=100%}
+![page-017](10X_planning_guide_artifacts/page-017.svg)
 
-![10X_planning_guide, page 15](10X_planning_guide-from-pdf-15.png){width=100%}
+![page-018](10X_planning_guide_artifacts/page-018.svg)
 
-![10X_planning_guide, page 16](10X_planning_guide-from-pdf-16.png){width=100%}
+![page-019](10X_planning_guide_artifacts/page-019.svg)
 
-![10X_planning_guide, page 17](10X_planning_guide-from-pdf-17.png){width=100%}
+![page-020](10X_planning_guide_artifacts/page-020.svg)
 
-![10X_planning_guide, page 18](10X_planning_guide-from-pdf-18.png){width=100%}
+![page-021](10X_planning_guide_artifacts/page-021.svg)
 
-![10X_planning_guide, page 19](10X_planning_guide-from-pdf-19.png){width=100%}
+![page-022](10X_planning_guide_artifacts/page-022.svg)
 
-![10X_planning_guide, page 20](10X_planning_guide-from-pdf-20.png){width=100%}
+![page-023](10X_planning_guide_artifacts/page-023.svg)
 
-![10X_planning_guide, page 21](10X_planning_guide-from-pdf-21.png){width=100%}
+![page-024](10X_planning_guide_artifacts/page-024.svg)
 
-![10X_planning_guide, page 22](10X_planning_guide-from-pdf-22.png){width=100%}
+![page-025](10X_planning_guide_artifacts/page-025.svg)
 
-![10X_planning_guide, page 23](10X_planning_guide-from-pdf-23.png){width=100%}
+![page-026](10X_planning_guide_artifacts/page-026.svg)
 
-![10X_planning_guide, page 24](10X_planning_guide-from-pdf-24.png){width=100%}
+![page-027](10X_planning_guide_artifacts/page-027.svg)
 
-![10X_planning_guide, page 25](10X_planning_guide-from-pdf-25.png){width=100%}
+![page-028](10X_planning_guide_artifacts/page-028.svg)
 
-![10X_planning_guide, page 26](10X_planning_guide-from-pdf-26.png){width=100%}
+![page-029](10X_planning_guide_artifacts/page-029.svg)
 
-![10X_planning_guide, page 27](10X_planning_guide-from-pdf-27.png){width=100%}
+![page-030](10X_planning_guide_artifacts/page-030.svg)
 
-![10X_planning_guide, page 28](10X_planning_guide-from-pdf-28.png){width=100%}
+![page-031](10X_planning_guide_artifacts/page-031.svg)
 
-![10X_planning_guide, page 29](10X_planning_guide-from-pdf-29.png){width=100%}
+![page-032](10X_planning_guide_artifacts/page-032.svg)
 
-![10X_planning_guide, page 30](10X_planning_guide-from-pdf-30.png){width=100%}
+![page-033](10X_planning_guide_artifacts/page-033.svg)
 
-![10X_planning_guide, page 31](10X_planning_guide-from-pdf-31.png){width=100%}
-
-![10X_planning_guide, page 32](10X_planning_guide-from-pdf-32.png){width=100%}
-
-![10X_planning_guide, page 33](10X_planning_guide-from-pdf-33.png){width=100%}
-
-![10X_planning_guide, page 34](10X_planning_guide-from-pdf-34.png){width=100%}
+![page-034](10X_planning_guide_artifacts/page-034.svg)

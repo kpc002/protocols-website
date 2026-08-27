@@ -1,0 +1,11 @@
+---
+title: "PCR"
+description: "Polymerase chain reaction setup and analysis protocols."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+

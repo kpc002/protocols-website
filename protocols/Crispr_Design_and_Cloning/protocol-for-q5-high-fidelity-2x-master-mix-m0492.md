@@ -1,16 +1,16 @@
 ---
 title: "PCR protocol for amplification with Q5 High-Fidelity 2X Master Mix M0492"
-description: "User Manual- PCR protocol for amplification with Q5 High-Fidelity 2X Master Mix M0492."
+description: "NEB protocol for PCR using Q5 High-Fidelity 2X Master Mix, including reaction setup, cycling conditions, and amplification guidance."
 order: 10
 image: 2024_NEB_Logo_lg.png
 author: "New England Biolabs"
 date: last-modified
 ---
 
-[Download the original PDF](protocol-for-q5-high-fidelity-2x-master-mix-m0492.pdf){.btn .btn-primary download="protocol-for-q5-high-fidelity-2x-master-mix-m0492.pdf"}
+[Open the source PDF](protocol-for-q5-high-fidelity-2x-master-mix-m0492.pdf){.btn .btn-primary download="protocol-for-q5-high-fidelity-2x-master-mix-m0492.pdf"}
 
-![](protocol-for-q5-high-fidelity-2x-master-mix-m0492/protocol-for-q5-high-fidelity-2x-master-mix-m0492-1.png)
+![page-001](protocol-for-q5-high-fidelity-2x-master-mix-m0492_artifacts/page-001.svg)
 
-![](protocol-for-q5-high-fidelity-2x-master-mix-m0492/protocol-for-q5-high-fidelity-2x-master-mix-m0492-2.png)
+![page-002](protocol-for-q5-high-fidelity-2x-master-mix-m0492_artifacts/page-002.svg)
 
-![](protocol-for-q5-high-fidelity-2x-master-mix-m0492/protocol-for-q5-high-fidelity-2x-master-mix-m0492-3.png)
+![page-003](protocol-for-q5-high-fidelity-2x-master-mix-m0492_artifacts/page-003.svg)

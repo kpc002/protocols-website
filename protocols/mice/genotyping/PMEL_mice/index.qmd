@@ -1,0 +1,11 @@
+---
+title: "PMEL Mice"
+description: "PMEL mouse genotyping protocols and reference materials."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+

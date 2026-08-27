@@ -31,7 +31,9 @@ Everything you need to know  about lymphocyte isolation from mouse tissues.
 
 Classic protocols for RNA Isolation, cDNA Synthesis, PCRs and Western
 
-### [{{< fa dna >}} Cloning](/protocols/Crispr_Design_and_Cloning/)
+[RNA_cDNA_qPCR](/protocols/mol_bio/RNA_cDNA_qPCR/) | [RNA](/protocols/mol_bio/RNA_cDNA_qPCR/RNA/) | [cDNA](/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/) | [qPCR](/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/)
+
+### [{{< fa dna >}} Crsipr Design and Cloning](/protocols/Crispr_Design_and_Cloning/)
 
 Collected cloning protocols and related source documents moved into the new top-level folder.
 
@@ -83,7 +85,6 @@ How do I book flow time? How do I sort? Where can I find a database of all antib
 
 ### [{{< fa floppy-disk >}} Old Goldrath Protocols](/protocols/Goldrath_Protocols/)
 
-### [{{< fa award >}} Nicole's Protocols](/protocols/Nicole_s_protocols/)
 
 ### [{{< fa dice-d20 >}} Top 20 Work in progress](/protocols/Top_20/)
 

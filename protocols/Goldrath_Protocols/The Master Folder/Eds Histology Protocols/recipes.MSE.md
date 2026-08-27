@@ -1,14 +1,13 @@
 ---
 title: "Lab Recipes"
+description: "Laboratory buffer and reagent recipes, including PBS and AP buffer."
 order: 10
 author: "Goldrath Lab"
 date: last-modified
 ---
 
-[Download the original PDF](recipes.MSE.pdf){.btn .btn-primary download="recipes.MSE.pdf"}
+[Open the source PDF](recipes.MSE.pdf){.btn .btn-primary download="recipes.MSE.pdf"}
 
-![Lab recipes, page 1](recipes.MSE-from-pdf-1.png){fig-alt="Lab recipes, page 1" width=100%}
+![page-01](recipes.MSE_artifacts/page-01.svg)
 
-![Lab recipes, page 2](recipes.MSE-from-pdf-2.png){fig-alt="Lab recipes, page 2" width=100%}
-
-# Lab Recipes
+![page-02](recipes.MSE_artifacts/page-02.svg)

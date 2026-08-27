@@ -1,0 +1,11 @@
+---
+title: "Cell Division and Proliferation"
+description: "Protocols for measuring cell division and proliferation."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+

@@ -1,0 +1,11 @@
+---
+title: "General Cloning"
+description: "General cloning workflows, primers, and supporting protocols."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+

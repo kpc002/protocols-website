@@ -1,104 +1,104 @@
 ---
 title: "User Manual- NucleoBond Xtra Plasmid DNA Purification"
-description: "User manual for purification of high-quality plasmid DNA using NucleoBond Xtra columns."
+description: "User manual for NucleoBond Xtra Midi, Maxi, and related kits for purification of high-quality plasmid DNA."
 order: 10
 image: MN_Raute.png
 author: "Macherey-Nagel"
 date: last-modified
 ---
 
-[Download the original PDF](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual.pdf){.btn .btn-primary download="NucleoBond Xtra Plasmid DNA Purification User Manual.pdf"}
+[Open the source PDF](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual.pdf){.btn .btn-primary download="NucleoBond Xtra Plasmid DNA Purification User Manual.pdf"}
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-01.png)
+![page-001](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-001.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-02.png)
+![page-002](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-002.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-03.png)
+![page-003](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-003.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-04.png)
+![page-004](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-004.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-05.png)
+![page-005](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-005.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-06.png)
+![page-006](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-006.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-07.png)
+![page-007](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-007.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-08.png)
+![page-008](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-008.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-09.png)
+![page-009](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-009.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-10.png)
+![page-010](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-010.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-11.png)
+![page-011](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-011.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-12.png)
+![page-012](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-012.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-13.png)
+![page-013](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-013.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-14.png)
+![page-014](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-014.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-15.png)
+![page-015](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-015.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-16.png)
+![page-016](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-016.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-17.png)
+![page-017](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-017.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-18.png)
+![page-018](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-018.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-19.png)
+![page-019](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-019.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-20.png)
+![page-020](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-020.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-21.png)
+![page-021](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-021.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-22.png)
+![page-022](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-022.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-23.png)
+![page-023](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-023.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-24.png)
+![page-024](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-024.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-25.png)
+![page-025](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-025.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-26.png)
+![page-026](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-026.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-27.png)
+![page-027](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-027.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-28.png)
+![page-028](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-028.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-29.png)
+![page-029](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-029.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-30.png)
+![page-030](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-030.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-31.png)
+![page-031](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-031.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-32.png)
+![page-032](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-032.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-33.png)
+![page-033](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-033.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-34.png)
+![page-034](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-034.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-35.png)
+![page-035](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-035.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-36.png)
+![page-036](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-036.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-37.png)
+![page-037](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-037.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-38.png)
+![page-038](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-038.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-39.png)
+![page-039](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-039.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-40.png)
+![page-040](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-040.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-41.png)
+![page-041](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-041.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-42.png)
+![page-042](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-042.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-43.png)
+![page-043](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-043.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-44.png)
+![page-044](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-044.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-45.png)
+![page-045](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-045.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-46.png)
+![page-046](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-046.svg)
 
-![](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual/NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual-47.png)
+![page-047](NucleoBond%20Xtra%20Plasmid%20DNA%20Purification%20User%20Manual_artifacts/page-047.svg)

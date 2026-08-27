@@ -1,0 +1,11 @@
+---
+title: "Other Infections"
+description: "Additional infection-related protocols and supporting materials."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+

@@ -1,0 +1,11 @@
+---
+title: "Tumor"
+description: "Mouse tumor models, implantation, and tumor-processing protocols."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+
