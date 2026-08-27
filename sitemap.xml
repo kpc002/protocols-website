@@ -101,72 +101,80 @@
     <lastmod>2026-08-27T17:20:01.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/In vitro OT-I stim.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/CB8.Ex vivo restim.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/ICS_GP33 peptide restim.html</loc>
     <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/CD8 isolation and activation.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8/080221 in vitro TRM - Zaph lab, NES optimized.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8/trm_in_vitro_differentiation.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8/index.html</loc>
     <lastmod>2026-08-25T23:42:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/Th differentiation in vitro.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/ficoll_dead_cells.html</loc>
+    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/index.html</loc>
+    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/Treg isolation.html</loc>
     <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/TH1TH2.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/cd8_selection.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8 activation protocol.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/pca_genes.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html</loc>
-    <lastmod>2023-02-08T02:26:27.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/nextflow_rna_seq/index.html</loc>
+    <lastmod>2023-04-27T18:12:21.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/introduction-to-deseq2/index.html</loc>
-    <lastmod>2026-08-12T16:43:11.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/bash_snippets.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/seurat_coexpression/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/create reference with YFP.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/index.html</loc>
+    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/plot_TF_binding_sites/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/examples/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/01_setup_conda_env.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/02_prepare_input/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/04_downstream_analysis/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/ucell/index.html</loc>
+    <lastmod>2023-04-25T23:04:50.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/convert_gene_symbol_to_ensembl.html</loc>
-    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/General Cloning/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/General Cloning/MB1.plasmid_production/index.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/General Cloning/index.html</loc>
@@ -178,39 +186,19 @@
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/10X_planning_guide.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/MB6.Perturb-seq/10X_protocol.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/sgRNA_Viral_transduction_Wei_2019.html</loc>
     <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/cellular/index.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.Excel.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/index.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB3.qPCR.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/index.html</loc>
-    <lastmod>2026-07-28T23:07:35.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mice/Making bone marrow chimeras.html</loc>
@@ -533,6 +521,10 @@
     <lastmod>2026-08-27T17:20:01.000Z</lastmod>
   </url>
   <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/Cell_Culture/CB5.Cell line media.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
+  </url>
+  <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/LibraryPreparationforCutandRun.html</loc>
     <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
@@ -549,8 +541,12 @@
     <lastmod>2026-08-25T23:42:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/index.html</loc>
-    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/Agilent Brilliant II SYBR® Green QPCR Master Mix.html</loc>
+    <lastmod>2026-08-27T21:49:37.970Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/MB3.qPCR.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation.html</loc>
@@ -562,7 +558,7 @@
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/RNA/Qiagen RNeasy® Mini Kit.html</loc>
-    <lastmod>2026-08-27T17:40:28.289Z</lastmod>
+    <lastmod>2026-08-27T21:49:37.957Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/histology/Histology Ultimate Protocol-REVISED.html</loc>
@@ -641,527 +637,11 @@
     <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/Mouse CD8 isolation and CD3 activation.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/LCMV CL13 Titer calculator.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/infection_lcmv_arm.html</loc>
     <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Plating PlatE from frozen 2025-04-17_ATM.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Virus production in 10 cm - PlatE.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Transfection.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Retronectin/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/ca-p transfection of Phoenix.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/Spin Transfection.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and_Transduction.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Mission_shRNA_lentiviral.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Polybrene_Spinfection.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/transduction.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Transduction using retro.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Cloning with HIFI DNA Assembly_KL.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/NucleoBond Xtra Plasmid DNA Purification User Manual.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Example_Amplicon_DNA_Files/index.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Molecular_Cloning_Workflow.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Process G blocks_ATM.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/LsgA Cloning.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC1.antibody_titration.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC4.TF_buffer_set.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Fc block culture.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Antibody titration.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/2023.02.23-US&amp;APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/index.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Exercise 4B.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FACS protocol sheet.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC3.intracellular_staining.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/index.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/LCMV-Cl13 blood phenotyping.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/Diallo et al vsv propagation.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/index.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/stock.html</loc>
-    <lastmod>2024-10-02T18:00:11.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/CB1.Tissue processing for viral titers.html</loc>
-    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Infection with LCMV CL13.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-Ova/index.html</loc>
-    <lastmod>2023-02-21T23:47:40.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Propagate LCMV Clone 13.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/growing_a_stock.html</loc>
-    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/infection.html</loc>
-    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/Listeria_InIAmutant_for_oral_infection.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Vaccinia Stock Production.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Extraction of D…cinia Virus.html</loc>
-    <lastmod>2026-08-27T17:40:28.263Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Vaccinia Titration Plaques.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/retrovirus/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Other/index.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/Electroporation of activated CD8.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/041223 CRISPRCas9 KO in primary T cells for in vivo transfer with Lonza NES - pooled guides.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/Cas9 Nucleofection_ATM.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/062923 CRISPRCas9 KO in primary T cells for in vivo transfer with Lonza - single guides.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/MaxCyte/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/Neon_Cas9_RNP.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/neon_device_man.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/Neon_Electroporation_466243.full.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/index.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/R10 Recipe.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/takedown_media.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/index.html</loc>
-    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/ot1.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/index.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/index.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/SESSION_README_2026-07-31.html</loc>
-    <lastmod>2026-08-12T16:43:11.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/SESSION_README_2026-08-13.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/mixed_transfer_gfp.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/mixed_transfer_ametrine.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/macs_buffer.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/cell_culture_media.html</loc>
-    <lastmod>2024-08-22T17:42:24.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/neon_device_qrc.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/MAN0017851_CRISPR_Cas9_T_cell_gene_editing_using_Neon_UB.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/RNP_Electroporation_Protocol_GoldrathLab.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/Cas9_RNP_electroporation.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/MaxCyte/RNP Electroporation_Protocol_Jinyong for Tianda.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/CB6.CRISPRCas9 KO.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/index.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/Jurkat electroporation.html</loc>
-    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Other/growing sphingomonas and pneumococcus.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/LCMV CL13 Titer calculator.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Tissue and serum collection for viral titer.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/index.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Generation of V… CV-1 Cells.html</loc>
-    <lastmod>2026-08-27T17:40:28.263Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/index.html</loc>
-    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/Listeria production-KPC.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/Listeria production.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/index.html</loc>
-    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/LCMV-Cl13 infection.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-Ova/VSV-Ova Infection.html</loc>
-    <lastmod>2023-02-21T23:47:40.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/infection_lcmv_arm.html</loc>
-    <lastmod>2026-07-28T23:07:35.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/index.html</loc>
-    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/VSV Stock Production.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/VSV-ova titer 092707  (main 2007 VSV-ova lot).html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC7.X20_layout.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Caspase 3_7&amp;7AAD ex vivo staining.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC6.FACS basic principles/index.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Fc block culture 2.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/IFNgamma in vitro.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/TCR signaling phospho-flow.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/AD060409 pSTAT5 Protocol.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources &amp; Tools - Day 3.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Exercise 4B copy.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Phenotyping of OVA specific  memory  CD8  T cells.html</loc>
-    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/GFP:YFP Filters.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC2.surface_staining.html</loc>
-    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/012725 NES - Flow cytometry staining.html</loc>
-    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Sanger Sequencing Preparation.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/guide design and sequence.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/nebuilder-hifi-dna-assembly-reaction-protocol.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/MB4.Cloning with HIFI DNA Assembly_KL.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/index.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/protocol-for-q5-high-fidelity-2x-master-mix-m0492.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Protocol for CRISPR amplicon sequencing 2025-11-06 (etr_PxVJqvYTzT) Custom_low_plex_LsgA_cloning_MRC.html</loc>
-    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Retroviral transduction of CD4+map and insertion_Katia.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Reporter-gene transduction of P14 into LCMV Armstrong infected mice for tissue embedding.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/lentiviral-packaging.printerview.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Sigma_SHP001.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and _Transduction.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/Fugene 6 mediated transfection of Phoenix cell.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/index.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Retronectin/Transduction - High Quality.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Retronectin/NES 042924 CD8 T cell transduction and double transduction.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/RetroProduction_Immunity.html</loc>
-    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Transfection Protocol.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/NES 042924 CD8 T cell transduction and double transduction.html</loc>
     <lastmod>2026-07-31T21:16:28.000Z</lastmod>
   </url>
   <url>
@@ -1169,16 +649,528 @@
     <lastmod>2026-07-31T21:16:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/NES 042924 CD8 T cell transduction and double transduction.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Transfection Protocol.html</loc>
     <lastmod>2026-07-31T21:16:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/infection_lcmv_arm.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/RetroProduction_Immunity.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Retronectin/NES 042924 CD8 T cell transduction and double transduction.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Retronectin/Transduction - High Quality.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/Fugene 6 mediated transfection of Phoenix cell.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and _Transduction.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Sigma_SHP001.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/lentiviral-packaging.printerview.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Reporter-gene transduction of P14 into LCMV Armstrong infected mice for tissue embedding.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Retroviral transduction of CD4+map and insertion_Katia.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Protocol for CRISPR amplicon sequencing 2025-11-06 (etr_PxVJqvYTzT) Custom_low_plex_LsgA_cloning_MRC.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/protocol-for-q5-high-fidelity-2x-master-mix-m0492.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/index.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/MB4.Cloning with HIFI DNA Assembly_KL.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/nebuilder-hifi-dna-assembly-reaction-protocol.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/guide design and sequence.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Sanger Sequencing Preparation.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/012725 NES - Flow cytometry staining.html</loc>
+    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC2.surface_staining.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/GFP:YFP Filters.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Phenotyping of OVA specific  memory  CD8  T cells.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/N9-20017 Rev B_5L UVVBYGR Fluorochrome Guideline.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Exercise 4B copy.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Spectral Cytometry Training Resources &amp; Tools - Day 3.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/2022.11.07 - Panel Design Exercise 2022.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/AD060409 pSTAT5 Protocol.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/TCR signaling phospho-flow.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/IFNgamma in vitro.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Fc block culture 2.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC6.FACS basic principles/index.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Caspase 3_7&amp;7AAD ex vivo staining.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC7.X20_layout.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/VSV-ova titer 092707  (main 2007 VSV-ova lot).html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/VSV Stock Production.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/index.html</loc>
+    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/infection_lcmv_arm.html</loc>
+    <lastmod>2026-07-28T23:07:35.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-Ova/VSV-Ova Infection.html</loc>
+    <lastmod>2023-02-21T23:47:40.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/LCMV-Cl13 infection.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/index.html</loc>
+    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/Listeria production.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/Listeria production-KPC.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/index.html</loc>
+    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Generation of V… CV-1 Cells.html</loc>
+    <lastmod>2026-08-27T21:49:37.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/index.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Tissue and serum collection for viral titer.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/LCMV CL13 Titer calculator.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Other/growing sphingomonas and pneumococcus.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/Jurkat electroporation.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/index.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/CB6.CRISPRCas9 KO.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/MaxCyte/RNP Electroporation_Protocol_Jinyong for Tianda.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/Cas9_RNP_electroporation.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/RNP_Electroporation_Protocol_GoldrathLab.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/MAN0017851_CRISPR_Cas9_T_cell_gene_editing_using_Neon_UB.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/neon_device_qrc.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/cell_culture_media.html</loc>
+    <lastmod>2024-08-22T17:42:24.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/macs_buffer.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/mixed_transfer_ametrine.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/mixed_transfer_gfp.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/SESSION_README_2026-08-13.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/SESSION_README_2026-07-31.html</loc>
+    <lastmod>2026-08-12T16:43:11.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/index.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/index.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/facs_panels/ot1.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/index.html</loc>
+    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/takedown_media.html</loc>
+    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/recipes/R10 Recipe.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/index.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/Neon_Electroporation_466243.full.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/neon_device_man.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Neon/Neon_Cas9_RNP.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/MaxCyte/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/062923 CRISPRCas9 KO in primary T cells for in vivo transfer with Lonza - single guides.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/Cas9 Nucleofection_ATM.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/041223 CRISPRCas9 KO in primary T cells for in vivo transfer with Lonza NES - pooled guides.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr Cas9 Electroporation/Lonza/Electroporation of activated CD8.html</loc>
+    <lastmod>2026-07-30T23:28:14.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Other/index.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/retrovirus/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Vaccinia Titration Plaques.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Extraction of D…cinia Virus.html</loc>
+    <lastmod>2026-08-27T21:49:37.937Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/vaccinia protocols/Vaccinia Stock Production.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/Listeria_InIAmutant_for_oral_infection.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/infection.html</loc>
+    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/listeria/growing_a_stock.html</loc>
+    <lastmod>2022-11-28T00:32:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Propagate LCMV Clone 13.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-Ova/index.html</loc>
+    <lastmod>2023-02-21T23:47:40.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/Infection with LCMV CL13.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/CB1.Tissue processing for viral titers.html</loc>
+    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/lcmv/stock.html</loc>
+    <lastmod>2024-10-02T18:00:11.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/index.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/infections/VSV-ova related material/Diallo et al vsv propagation.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/LCMV-Cl13 blood phenotyping.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_I.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC6.FACS basic principles/Flow_Cytometry_part_II.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/index.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC3.intracellular_staining.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FACS protocol sheet.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Exercise 4B.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/index.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/2023.02.23-US&amp;APAC-Introduction-to-Spectral-Cytometry-Aurora-and-Northern-Lights.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/Introduction to Spectral Cytometry_Aurora_NorthernLights_AuroraCS_v3052024.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC5.Spectral course/2022.11.07 - Unique Fluorochromes Homework Assignment.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Antibody titration.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/Fc block culture.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC4.TF_buffer_set.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/FACS/FC1.antibody_titration.html</loc>
+    <lastmod>2026-08-19T17:55:41.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/LsgA Cloning.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Process G blocks_ATM.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Molecular_Cloning_Workflow.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Example_Amplicon_DNA_Files/index.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/NucleoBond Xtra Plasmid DNA Purification User Manual.html</loc>
+    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Crispr_Design_and_Cloning/Cloning with HIFI DNA Assembly_KL.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Transduction using retro.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/transduction.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Polybrene/Polybrene_Spinfection.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Mission_shRNA_lentiviral.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/HEK293T and Lentivirus/Lentivirus_Production_and_Transduction.html</loc>
+    <lastmod>2026-08-17T23:05:45.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/Spin Transfection.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Other cells/ca-p transfection of Phoenix.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Retronectin/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Transfection.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Virus production in 10 cm - PlatE.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/index.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Transfection and Transduction/Plat_E/Plating PlatE from frozen 2025-04-17_ATM.html</loc>
+    <lastmod>2026-07-31T21:16:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/LCMV CL13 Titer calculator.html</loc>
     <lastmod>2026-07-27T22:36:55.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/CB5.Cell line media.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/Mouse CD8 isolation and CD3 activation.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/Top_20/Spleen and Lymph Node Prep.html</loc>
@@ -1269,8 +1261,12 @@
     <lastmod>2026-08-25T23:42:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/Agilent Brilliant II SYBR® Green QPCR Master Mix.html</loc>
-    <lastmod>2026-08-27T17:40:28.305Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/index.html</loc>
+    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/MB3.qPCR.Excel.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/Fisher High Capacity cDNA Reverse Transcription Kit.html</loc>
@@ -1283,6 +1279,10 @@
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/index.html</loc>
     <lastmod>2022-11-27T21:22:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/Cell_Culture/MB2.Mycoplasma_PCR.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mol_bio/Cell_Culture/Hemacytometer.html</loc>
@@ -1554,7 +1554,7 @@
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mice/genotyping/Qiagen QIAamp® Blood Mini Kit.html</loc>
-    <lastmod>2026-08-27T17:40:28.278Z</lastmod>
+    <lastmod>2026-08-27T21:49:37.948Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/mice/genotyping/Phenol Chloroform DNA extaction from tails.html</loc>
@@ -1609,32 +1609,12 @@
     <lastmod>2026-08-19T17:55:41.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB2.Mycoplasma_PCR.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/MB5.NextGEMSingleCell5_v2_CellSurfaceProtein_RevA.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/index.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/10X_protocol.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB6.Perturb-seq/Perturb-seq_ High throughput functional genomics at single cell resolution - 10x Genomics.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/index.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/molecular/MB1.plasmid_production/Addgene_ Protocol - How to Inoculate a Bacterial Culture.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/Giovanni_s_Protocols/cellular/CB8.Ex vivo restim.html</loc>
-    <lastmod>2026-07-27T22:36:55.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/MB6.Perturb-seq/index.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://kpc002.github.io/protocols-website/protocols/Pertub_Seq/index.html</loc>
@@ -1653,67 +1633,75 @@
     <lastmod>2026-08-17T23:05:45.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/ucell/index.html</loc>
-    <lastmod>2023-04-25T23:04:50.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/General Cloning/MB1.plasmid_production/Addgene_ Protocol - How to Streak a Plate.html</loc>
+    <lastmod>2026-08-27T21:45:15.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/convert_gene_symbol_to_ensembl.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/02_prepare_input/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/examples/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/04_downstream_analysis/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/plot_TF_binding_sites/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/scenic/01_setup_conda_env.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/index.html</loc>
-    <lastmod>2022-11-27T21:22:27.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/seurat_coexpression/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/examples/HIC1-and-TRM-score-human-scRNA/index.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/nextflow_rna_seq/index.html</loc>
-    <lastmod>2023-04-27T18:12:21.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/convert_human_to_mouse_gene_symbols.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/create reference with YFP.html</loc>
     <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/cd8_selection.html</loc>
-    <lastmod>2022-11-29T00:23:20.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/bash_snippets.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/Treg isolation.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/introduction-to-deseq2/index.html</loc>
+    <lastmod>2026-08-12T16:43:11.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/IDR-analysis_for_reproducible_peaks.html</loc>
+    <lastmod>2023-02-08T02:26:27.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/bioinformatics/pca_genes.html</loc>
+    <lastmod>2022-11-28T23:32:49.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8 activation protocol.html</loc>
     <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/index.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/TH1TH2.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD4/Th differentiation in vitro.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/index.html</loc>
     <lastmod>2026-08-25T23:42:28.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/ficoll_dead_cells.html</loc>
-    <lastmod>2022-11-27T23:47:22.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8/trm_in_vitro_differentiation.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8/index.html</loc>
-    <lastmod>2026-08-25T23:42:28.000Z</lastmod>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/CD8 isolation and activation.html</loc>
+    <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/CD8/080221 in vitro TRM - Zaph lab, NES optimized.html</loc>
-    <lastmod>2026-08-27T17:20:01.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/ICS_GP33 peptide restim.html</loc>
+    <loc>https://kpc002.github.io/protocols-website/protocols/t_cells/Ex_vivo_Stimulation/In vitro OT-I stim.html</loc>
     <lastmod>2026-08-24T16:50:03.000Z</lastmod>
   </url>
   <url>
