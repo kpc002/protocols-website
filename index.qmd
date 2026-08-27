@@ -3,8 +3,8 @@ title: "Lab Protocols"
 toc: true
 ---
 
-This is my private collection of lab protocols.  
-Most of them are from by time as a postdoc at the Goldrath Lab
+This is a collection of protocols curated from the Goldrath Lab.
+
 
 ::: {.callout-note}
 All protocols without warranty. 
@@ -80,8 +80,6 @@ Potions tutorial and cell media recipes.
 ### [{{< fa address-card >}} Organizational](/protocols/orga)
 
 How do I book flow time? How do I sort? Where can I find a database of all antibodies.
-
-### [{{< fa robot >}} Giovanni's Protocols](/protocols/Giovanni_s_Protocols/)
 
 ### [{{< fa floppy-disk >}} Old Goldrath Protocols](/protocols/Goldrath_Protocols/)
 
