@@ -10,6 +10,23 @@ image: Fortessa-X20-Banner-Image.webp
 
 ## FACS
 
+### Cytek Aurora
+
+[Online calendar](https://www.brownbearsw.com/cal/Aurora5l) for booking flow time\
+
+Password: nsb
+
+::: {.callout-note}
+## Cytek Aurora Panel Guide
+[Cytek Aurora 5L panel template](PanelTemplate_Cytek%20Aurora%205L.md)
+:::
+
+::: {.callout-note}
+## Aurora Antibody List
+
+[{{< fa table >}} Open the Aurora antibody list](https://docs.google.com/spreadsheets/d/1eiHDt0hwP7nyqPgHLqCL-pEZeDtHPEbt/edit?gid=1844045050#gid=1844045050)
+:::
+
 ### X-20
 
 [Online calendar](https://www.brownbearsw.com/cal/x-20) for booking flow time\

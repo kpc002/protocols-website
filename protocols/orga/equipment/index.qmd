@@ -1,0 +1,11 @@
+---
+title: "Equipment"
+description: "Equipment operation, maintenance, training, and laboratory safety procedures."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd"]
+  sort: title
+  fields: [title, description, author]
+---
+
