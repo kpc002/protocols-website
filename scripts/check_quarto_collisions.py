@@ -20,9 +20,9 @@ INDEX_FILENAMES = {"index.md", "index.qmd"}
 
 def iter_relevant_files(root: Path):
     for path in root.rglob("*"):
-        if not path.is_file():
-            continue
         if any(part in EXCLUDED_PARTS for part in path.parts):
+            continue
+        if not path.is_file():
             continue
         suffix = path.suffix.lower()
         if suffix in RENDERABLE_SUFFIXES or suffix == HTML_SUFFIX:

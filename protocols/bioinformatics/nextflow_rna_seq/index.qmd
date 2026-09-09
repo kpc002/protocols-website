@@ -74,7 +74,7 @@ Importing the data into R is quite easy. One of the outputs of the pipeline is a
 The file can be found in the follwoing location: `./02_RNA-Seq/star_salmon/salmon.merged.gene_counts.rds`. For the analysis, you don't need to use the supercomputer anymore. Any laptop should be fast enough. So copy that file to your computer.
 We can then import that, make some minor adjustments and finally run DESeq2.
 
-```{r}
+```r
 #| message: false
 #| warning: false
 suppressPackageStartupMessages({
@@ -110,7 +110,7 @@ dds <- DESeq(dds)
 
 ### PCA plots
 
-```{r}
+```r
 #| fig-cap: PCA plots of the dataset
 #| label: fig-pca-lots
 #| fig-subcap: 
@@ -125,7 +125,7 @@ plotPCA(vsd, intgroup="replicate") + theme_max()
 
 ### DE-genes
 
-```{r}
+```r
 #| label: tbl-de-genes
 #| tbl-cap: "DE genes"
 

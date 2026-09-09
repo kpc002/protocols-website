@@ -57,63 +57,26 @@ XDG_CACHE_HOME=/tmp/protocols-quarto-cache quarto render path/to/protocol.md
 - To skip executable code, use `quarto render --no-execute`; `--execute false` is parsed as a file named `false` and fails with `pandoc: false: withBinaryFile: does not exist`.
 - `quarto preview protocols` can still block on the bioinformatics R pages. When the R environment is unavailable, preview the already-rendered site instead: `python3 -m http.server 4200 --bind 127.0.0.1 --directory _site`, then open `http://127.0.0.1:4200/protocols/`.
 
-### Full R render remains environment-dependent
+### R examples are static during website builds
 
-The bioinformatics tutorials use R and Bioconductor. The lockfile requires R 4.1.2 and Bioconductor 3.14. Full rendering can fail locally when the R library is incomplete or network access is unavailable.
+The bioinformatics tutorials contain example R code, but the publishing job does not execute it. The examples in `nextflow_rna_seq/index.qmd` use ordinary highlighted `r` code fences, and the DESeq2 tutorial disables execution. This keeps website publishing independent of the legacy R 4.1.2/Bioconductor 3.14 environment recorded in `renv.lock`.
 
-Typical errors:
-
-- `Bioconductor version cannot be validated; no internet connection`
-- `there is no package called 'ggplot2'`
-- `The project is out-of-sync`
-
-`renv::restore()` only installs packages already recorded in `renv.lock`. When source code uses packages not recorded in the lockfile, install them deliberately and then snapshot. Do not run `snapshot()` merely to silence an unknown discrepancy.
-
-```bash
-RENV_CONFIG_SANDBOX_ENABLED=FALSE Rscript -e 'renv::status()'
-RENV_CONFIG_SANDBOX_ENABLED=FALSE Rscript -e 'renv::restore(prompt = FALSE)'
-RENV_CONFIG_SANDBOX_ENABLED=FALSE Rscript -e 'renv::snapshot(prompt = FALSE)'
-```
-
-`.renvignore` excludes generated Quarto output while retaining the bioinformatics source files for dependency discovery:
-
-```text
-_site/
-_freeze/
-.quarto/
-site_libs/
-protocols/**/index_files/
-```
+Use a separate compatible R environment when running those analyses interactively. Restoring or upgrading `renv.lock` is no longer part of the website deployment.
 
 Non-blocking Quarto warnings still present in legacy bioinformatics content:
 
 - Unresolved DESeq2 cross-references such as `@fig-pca` and `@tbl-counts`; fix the labels or remove the references.
 - `quarto-ext/lightbox` is built into current Quarto; remove the legacy extension with `quarto remove extension quarto-ext/lightbox` when ready.
 
-## GitHub Actions RCurl failure and fix
+## GitHub Actions R setup failure and fix
 
-GitHub Actions run `32753258355` failed during `renv::restore()`. The root error was RCurl:
+GitHub Actions run `34385521545` failed before rendering because `setup-r` could no longer install R 4.1.2 on Ubuntu 22.04:
 
 ```text
-checking for curl-config... no
-Cannot find curl-config
-ERROR: configuration failed for package 'RCurl'
+Failed to install R: The process '/usr/bin/sudo' failed with exit code 100
 ```
 
-All listed Bioconductor failures were downstream of RCurl: `GenomeInfoDb` requires RCurl, and the rest of the failed Bioconductor packages depend on that chain.
-
-The fix is implemented in `.github/workflows/publish.yml`: after `Set up R` and before `Restore R packages`, the runner installs the required Ubuntu packages:
-
-```yaml
-      - name: Install R system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install --yes cmake libcurl4-openssl-dev libpng-dev pandoc
-```
-
-`libcurl4-openssl-dev` provides the missing `curl-config` executable required to compile RCurl. `cmake`, `libpng-dev`, and `pandoc` satisfy other system requirements reported by `renv::restore()`.
-
-After pushing this workflow change, verify that the `Restore R packages` step installs RCurl successfully before Quarto begins rendering.
+The workflow no longer installs R or restores `renv`, because the website does not need to execute the tutorial examples. It now checks out the repository, installs Quarto, renders all 454 pages, and publishes `_site` to `cf-pages`.
 
 ## Publish successfully
 
@@ -130,7 +93,7 @@ git diff --cached --stat
 2. Commit and push `main`:
 
 ```bash
-git commit -m "Install R dependencies for publishing"
+git commit -m "Fix Quarto deployment"
 git push origin main
 ```
 
