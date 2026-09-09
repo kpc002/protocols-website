@@ -16,4 +16,5 @@ image: google-docs.png
 -   {{< fa table >}} [Sequencing locations](https://docs.google.com/spreadsheets/d/1H9cSiVSO0FYxkyqtBPZyvI1-oPblD3vOYQCLnUo5xv8)
 -   {{< fa table >}} [Common lab items](https://docs.google.com/spreadsheets/d/1tSRXyKz9n9WWk9ZljzXI1Oth4GLOBhEErUUEMqD-7kk)
 -   {{< fa table >}} [Antibody Titration Database](https://amonell.github.io/Titration_Analysis/#protein=CCR7&fluor=BV421&experiment=2026_04_12_titrations_CCR7)
+-   {{< fa table >}} [-80C Freezer Map](https://docs.google.com/spreadsheets/d/1Nz3TI-a1e9wWP9zoWJeaJkeUzLHaLI6ExIKE7NHgub0/edit?gid=0#gid=0)
 -   {{< fa file-lines >}} [Contact list](https://docs.google.com/document/d/1MCm60H54kiaxOakKtFf6-cmaS-pi4HjfB3UfZWSqqM8)

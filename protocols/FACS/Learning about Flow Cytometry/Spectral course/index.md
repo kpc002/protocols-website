@@ -6,10 +6,11 @@ author: Giovanni Galleti
 date: last-modified
 image: oligo.svg
 listing:
-  type: default
+  type: table
   contents:
+    - "/*/index.?(q)md"
     - "*.md"
-  fields: [image, title, description]
+  fields: [title, description, author]
   sort: title
   page-size: 20
 ---

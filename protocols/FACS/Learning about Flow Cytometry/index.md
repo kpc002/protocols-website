@@ -1,17 +1,17 @@
 ---
-title: FACS Basic Principles
+title: Learning about Flow Cytometry
 description: Introductory flow-cytometry training on instrumentation, controls, gating, analysis, and experimental best practices.
 order: 10
 author: Giovanni Galleti
 date: last-modified
 image: oligo.svg
 listing:
-  type: grid
+  type: table
   contents:
+    - "/*/index.?(q)md"
     - "Flow_Cytometry_part_*.md"
-  fields: [image, title, description]
+  fields: [title, description, author]
   sort: title
-  grid-columns: 3
   page-size: 20
 ---
 

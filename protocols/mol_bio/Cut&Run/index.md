@@ -1,12 +1,14 @@
 ---
-title: "Cell Culture"
-description: "Cell culture maintenance, counting, and preparation protocols."
+title: "CUT&RUN and ChIP"
+description: "Chromatin immunoprecipitation, CUT&RUN, and sequencing-library preparation protocols."
 order: 10
 listing:
   type: table
-  contents: ["*.md", "*.qmd"]
-  sort: title
+  contents: "*.md"
   fields: [title, description, author]
+  sort: title
+---
+
 ---
 
 <span class="visually-hidden">{{< fa file-lines >}}</span>

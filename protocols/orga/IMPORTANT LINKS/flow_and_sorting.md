@@ -18,7 +18,7 @@ Password: nsb
 
 ::: {.callout-note}
 ## Cytek Aurora Panel Guide
-[Cytek Aurora 5L panel template](PanelTemplate_Cytek%20Aurora%205L.md)
+[Cytek Aurora 5L panel template](../../FACS/General%20FACS%20protocols/PanelTemplate_Cytek%20Aurora%205L.md)
 :::
 
 ::: {.callout-note}
@@ -27,10 +27,16 @@ Password: nsb
 [{{< fa table >}} Open the Aurora antibody list](https://docs.google.com/spreadsheets/d/1eiHDt0hwP7nyqPgHLqCL-pEZeDtHPEbt/edit?gid=1844045050#gid=1844045050)
 :::
 
+
+
+
+
 ### X-20
 
 [Online calendar](https://www.brownbearsw.com/cal/x-20) for booking flow time\
 Password: nsb
+
+[{{< fa table >}} X-20 layout](../../FACS/General%20FACS%20protocols/FC7.X20_layout.md)
 
 ::: {.callout-note collapse="true"}
 ## BD FACS LSRFortessa X-20 Filter Guide
@@ -59,6 +65,9 @@ Password: nsb
 | BD Horizon Brilliant Violet 786                                      | 780/60           | 750 LP      |
 :::
 
+
+
+
 ### Fortessa
 
 [Online calendar](https://www.brownbearsw.com/freecal/NSBFortessa) for booking time\
@@ -83,9 +92,14 @@ Password:: NSB
 | BD Horizon Brilliant Violet 510, BD Horizon V500, AmCyan, Ametrine   | 525/50           | 505 LP      |
 :::
 
+
+
+
+
 ## Sorting
+
+Schedule appointment with [Na Zhang](mailto:)
+ They will add you to slack channel once you are approved.
 
 [Online calendar](https://www.brownbearsw.com/cal/ucsdfacsaria1) for booking time. Need to e-mail too for assisted sort.\
 Password: 5307c
-
-Schedule appointment with [Hoi "Kathy" Law](mailto:h5law@ucsd.edu)
