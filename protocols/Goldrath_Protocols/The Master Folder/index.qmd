@@ -22,9 +22,6 @@ Browse protocols in this folder.
 | [Andrew](Andrew/index.qmd) |
 | [Anthony](Anthony/index.qmd) |
 | [Eds Histology Protocols](Eds%20Histology%20Protocols/index.qmd) |
-| [Ilkka](Ilkka/index.qmd) |
-| [Kyla](Kyla/index.qmd) |
-| [Laura](Laura/index.qmd) |
 | [MRC](MRC/index.qmd) |
 
 ## Files
