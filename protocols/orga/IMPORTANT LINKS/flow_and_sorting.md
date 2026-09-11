@@ -98,8 +98,6 @@ Password:: NSB
 
 ## Sorting
 
-Schedule appointment with [Na Zhang](mailto:)
+Schedule appointment with [Na Zhang](mailto:naz222@ucsd.edu)
  They will add you to slack channel once you are approved.
 
-[Online calendar](https://www.brownbearsw.com/cal/ucsdfacsaria1) for booking time. Need to e-mail too for assisted sort.\
-Password: 5307c

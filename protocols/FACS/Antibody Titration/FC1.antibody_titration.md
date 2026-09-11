@@ -1,5 +1,5 @@
 ---
-title: FC1.antibody_titration
+title: Antibody_titration
 description: Protocol for titrating flow-cytometry antibodies to identify an optimal
   staining concentration.
 order: 10

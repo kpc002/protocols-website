@@ -1,5 +1,5 @@
 ---
-title: "Antibody titration"
+title: "Antibody titration for Intracellular Antibodies"
 description: "Antibody titration"
 order: 10
 author: Kelsey Bennion

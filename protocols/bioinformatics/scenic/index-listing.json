@@ -1,0 +1,9 @@
+{
+  "listing": "/protocols/bioinformatics/scenic/index.html",
+  "items": [
+    "/protocols/bioinformatics/scenic/01_setup_conda_env.html",
+    "/protocols/bioinformatics/scenic/02_prepare_input/index.html",
+    "/protocols/bioinformatics/scenic/03_run_pySCENIC/index.html",
+    "/protocols/bioinformatics/scenic/04_downstream_analysis/index.html"
+  ]
+}
