@@ -1,6 +1,6 @@
 ---
-title: "Genotyping PCR info"
-description: 'Genotyping PCR info'
+title: "Genotyping PCR info for Vhl flox, Hif1a flox, Hif2a flox"
+description: 'Genotyping PCR info for Vhl flox, Hif1a flox, Hif2a flox'
 order: 10
 author: "Anthony Phan"
 date: last-modified

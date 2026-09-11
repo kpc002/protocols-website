@@ -2,6 +2,7 @@ project:
   type: website
   pre-render:
     - python3 scripts/check_quarto_collisions.py
+  # Keep rendered HTML in the site output directory, never beside source files.
   output-dir: _site
 
 website:

@@ -27,6 +27,25 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           path: .
+
+      - name: Verify rendered output is isolated
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import sys
+
+          excluded = {".git", "_site", "_freeze", "node_modules"}
+          collisions = []
+          for html in Path(".").rglob("*.html"):
+              if any(part in excluded for part in html.parts):
+                  continue
+              if any(html.with_suffix(suffix).exists() for suffix in (".md", ".qmd", ".ipynb")):
+                  collisions.append(str(html))
+          if collisions:
+              print("Generated HTML appeared beside source files:")
+              print("\n".join(collisions))
+              sys.exit(1)
+          PY
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

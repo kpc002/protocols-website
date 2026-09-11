@@ -19,7 +19,6 @@ Browse or search protocols and laboratory resources from the Goldrath Lab.
 
 | Folder |
 |---|
-| [Curated protocols](Curated%20protocols/index.qmd) |
 | [Old Protocols](Old_Protocols/) |
 | [The Master Folder](The%20Master%20Folder/index.qmd) |
 
