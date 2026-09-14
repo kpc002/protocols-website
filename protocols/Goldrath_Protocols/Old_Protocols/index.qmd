@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Old Protocols"
 description: "Legacy protocols from the Goldrath Lab."
 author: "Goldrath Lab"

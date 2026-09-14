@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Cell Division and Proliferation"
 description: "Protocols for measuring cell division and proliferation."
 order: 10

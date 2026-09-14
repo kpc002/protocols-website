@@ -23,7 +23,7 @@ Activate T cells using [CD8 Selection and Activation](/protocols/t_cells/cd8_sel
 **Derived from: Maximilian Heeg.**
 
 1. Prewarm the centrifuge to 37°C.
-2. Thaw 2 mL retrovirus in a water bath. See [Make Retrovirus](/protocols/infections/retrovirus) for virus production.
+2. Thaw 2 mL retrovirus in a water bath. See [Make Retrovirus](/protocols/Crispr_Design_and_Cloning/retrovirus) for virus production.
 3. Make a 70× Polybrene mixture for each 100 µL needed:
    - 8 µL Polybrene
    - 10 µL BME (mercaptoethanol)

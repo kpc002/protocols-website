@@ -1,8 +1,11 @@
 ---
-order: 10
+search: false
 title: "Recipes"
-image: 'cake.svg'
+image: 'Cell_Culture_Media/cake.svg'
 description: "More than just cakes."
-listing: 
+listing:
   type: grid
+  contents:
+    - "*/index.?(q)md"
+    - "*.md"
 ---

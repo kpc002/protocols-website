@@ -1,5 +1,5 @@
 ---
-order: 2
+search: false
 title: "Infections"
 image: 'adeno-virus.svg'
 listing: 

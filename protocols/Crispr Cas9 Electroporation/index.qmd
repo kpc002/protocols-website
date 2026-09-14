@@ -1,4 +1,5 @@
 ---
+search: false
 title: "CRISPR-Cas9 Electroporation"
 description: "Electroporation and nucleofection protocol collections for CRISPR-Cas9 workflows."
 author: "Goldrath Lab"

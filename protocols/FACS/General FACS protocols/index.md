@@ -1,4 +1,5 @@
 ---
+search: false
 title: General FACS Protocols
 description: Core flow-cytometry staining, intracellular staining, signaling, viability, buffer, and instrument-layout protocols.
 order: 20

@@ -1,5 +1,5 @@
 ---
-order: 3
+search: false
 title: "Mice"
 image: 'mouse-gray.svg'
 listing: 

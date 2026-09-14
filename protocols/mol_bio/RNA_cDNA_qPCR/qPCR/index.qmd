@@ -1,4 +1,5 @@
 ---
+search: false
 title: "qPCR"
 description: "Protocols for quantitative PCR."
 order: 3

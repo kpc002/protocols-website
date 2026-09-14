@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Vivarium cage card"
 description: "Protocols and laboratory resources from the Goldrath Lab."
 order: 10

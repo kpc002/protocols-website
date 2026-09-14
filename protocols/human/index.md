@@ -1,7 +1,7 @@
 ---
+search: false
 title: Human Protocols
 description: Human PBMC, tumor-processing, cryopreservation, stimulation, and flow-analysis protocols.
-order: 10
 author: Giovanni Galleti
 date: last-modified
 image: oligo.svg

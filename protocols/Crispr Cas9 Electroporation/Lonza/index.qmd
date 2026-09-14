@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Lonza Electroporation"
 description: "CRISPR-Cas9 and nucleofection protocols for Lonza systems."
 author: "Goldrath Lab"

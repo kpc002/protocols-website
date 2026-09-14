@@ -1,4 +1,5 @@
 ---
+search: false
 order: 100
 title: "Examples"
 description: Example real-life workflows

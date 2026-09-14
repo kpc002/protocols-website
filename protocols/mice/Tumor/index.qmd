@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Tumor"
 description: "Mouse tumor models, implantation, and tumor-processing protocols."
 order: 10
@@ -8,4 +9,3 @@ listing:
   sort: title
   fields: [title, description, author]
 ---
-

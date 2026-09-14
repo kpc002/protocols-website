@@ -1,5 +1,5 @@
 ---
-order: 5
+search: false
 title: "Bioinformatics"
 image: 'ucell/ucell_files/figure-markdown_github/seurat_workflow-3.png'
 listing: 

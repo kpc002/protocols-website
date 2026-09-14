@@ -1,4 +1,5 @@
 ---
+search: false
 order: 90
 title: "SCENIC"
 description: Documentation for my SCENCIC analysis

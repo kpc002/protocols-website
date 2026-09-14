@@ -1,5 +1,5 @@
 ---
-order: 4
+search: false
 title: "Molecular biology"
 description: "Protocols and reference materials for routine molecular biology workflows, including cell culture, PCR, RNA and cDNA preparation, qPCR, chromatin assays, western blotting, and CRISPR validation."
 image: 'agarose-gel.svg'

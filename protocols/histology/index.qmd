@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Histology Protocols"
 description: "Histology-related protocols and laboratory resources."
 author: "Goldrath Lab"

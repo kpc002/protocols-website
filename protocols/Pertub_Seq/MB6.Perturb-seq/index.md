@@ -1,4 +1,5 @@
 ---
+search: false
 title: Perturb-seq
 description: Planning, experimental, and technical resources for single-cell CRISPR screening with Perturb-seq.
 order: 10

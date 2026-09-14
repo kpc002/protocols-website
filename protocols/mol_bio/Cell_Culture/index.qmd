@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Cell Culture"
 description: "Cell culture maintenance, counting, and preparation protocols."
 order: 10

@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Masopust Gut Prep Protocol"
 description: "Gut preparation, reagent, and lymphocyte isolation protocols adapted from the Masopust laboratory."
 order: 10

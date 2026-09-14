@@ -1,4 +1,5 @@
 ---
+search: false
 title: Miscellaneous FACS Resources
 description: Supplemental flow-cytometry references, including Fc-blocking and fluorophore filter guidance.
 order: 30

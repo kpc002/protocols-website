@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Ex vivo stimulation"
 description: "Protocols for peptide restimulation, activation, and ex vivo T-cell assays."
 order: 3

@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Surgery"
 description: "Mouse surgical procedures and preparation protocols."
 order: 10
@@ -8,4 +9,3 @@ listing:
   sort: title
   fields: [title, description, author]
 ---
-

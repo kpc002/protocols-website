@@ -1,4 +1,5 @@
 ---
+search: false
 title: Spectral Cytometry
 description: Spectral cytometry training decks, panel-design exercises, fluorochrome guidance, and course resources.
 order: 10

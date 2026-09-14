@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Perturb-seq"
 description: "Perturb-seq planning guides and sgRNA viral transduction resources."
 author: "Goldrath Lab"

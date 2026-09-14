@@ -26,8 +26,58 @@ website:
     collapse-level: 1
     search: true
     style: "docked"
-    contents: 
-      - auto: protocols/**
+    contents:
+      - section: "Bioinformatics"
+        href: protocols/bioinformatics/index.md
+        contents: "protocols/bioinformatics/**"
+      - section: "CRISPR-Cas9 Electroporation"
+        href: "protocols/Crispr Cas9 Electroporation/index.qmd"
+        contents: "protocols/Crispr Cas9 Electroporation/**"
+      - section: "Cloning Protocols"
+        href: protocols/Crispr_Design_and_Cloning/index.qmd
+        contents: "protocols/Crispr_Design_and_Cloning/**"
+      - section: "FACS Protocols"
+        href: protocols/FACS/index.md
+        contents: "protocols/FACS/**"
+      - section: "General Cloning"
+        href: "protocols/General Cloning/index.qmd"
+        contents: "protocols/General Cloning/**"
+      - section: "Goldrath Protocols"
+        href: protocols/Goldrath_Protocols/index.qmd
+        contents: "protocols/Goldrath_Protocols/**"
+      - section: "Histology Protocols"
+        href: protocols/histology/index.qmd
+        contents: "protocols/histology/**"
+      - section: "Human Protocols"
+        href: protocols/human/index.md
+        contents: "protocols/human/**"
+      - section: "Infections"
+        href: protocols/infections/index.md
+        contents: "protocols/infections/**"
+      - section: "Mice"
+        href: protocols/mice/index.md
+        contents: "protocols/mice/**"
+      - section: "Mitochondria"
+        href: protocols/Mitochondria/index.qmd
+        contents: "protocols/Mitochondria/**"
+      - section: "Molecular biology"
+        href: protocols/mol_bio/index.md
+        contents: "protocols/mol_bio/**"
+      - section: "Organizational"
+        href: protocols/orga/index.md
+        contents: "protocols/orga/**"
+      - section: "Perturb-seq"
+        href: protocols/Pertub_Seq/index.qmd
+        contents: "protocols/Pertub_Seq/**"
+      - section: "Recipes"
+        href: protocols/recipes/index.md
+        contents: "protocols/recipes/**"
+      - section: "T cells"
+        href: protocols/t_cells/index.qmd
+        contents: "protocols/t_cells/**"
+      - section: "Transfection and Transduction"
+        href: "protocols/Transfection and Transduction/index.qmd"
+        contents: "protocols/Transfection and Transduction/**"
       - text: "---"
       - contribute.md
   

@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Other cells"
 description: "Transfection and spin-transfection protocols for Phoenix and other cell workflows."
 author: "Goldrath Lab"

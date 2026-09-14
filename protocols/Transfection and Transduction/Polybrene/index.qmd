@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Polybrene"
 description: "Protocols for Plat-E retroviral production, polybrene-mediated transduction, and related workflows."
 author: "Goldrath Lab"

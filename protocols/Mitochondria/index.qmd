@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Mitochondria"
 description: "Protocols for calcium flux, Seahorse analysis, mitochondria dyes, and related metabolic assays."
 author: "Goldrath Lab"

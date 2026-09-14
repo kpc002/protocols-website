@@ -1,4 +1,5 @@
 ---
+search: false
 order: 3
 listing: 
   type: grid

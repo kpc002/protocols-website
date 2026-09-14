@@ -1,4 +1,5 @@
 ---
+search: false
 title: Plasmid Production
 description: Bacterial culture, colony isolation, and plasmid DNA purification protocols and manuals.
 order: 10

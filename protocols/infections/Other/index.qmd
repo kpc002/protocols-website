@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Other Infections"
 description: "Additional infection-related protocols and supporting materials."
 order: 10
@@ -8,4 +9,3 @@ listing:
   sort: title
   fields: [title, description, author]
 ---
-

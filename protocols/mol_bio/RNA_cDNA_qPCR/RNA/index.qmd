@@ -1,4 +1,5 @@
 ---
+search: false
 title: "RNA"
 description: "Protocols for RNA isolation and preparation."
 order: 1

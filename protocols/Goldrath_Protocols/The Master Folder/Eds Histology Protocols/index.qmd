@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Eds Histology Protocols"
 description: "Protocols and laboratory resources from the Goldrath Lab."
 order: 10

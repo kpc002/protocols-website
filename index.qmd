@@ -1,4 +1,5 @@
 ---
+search: false
 title: "Lab Protocols"
 toc: true
 ---
@@ -35,11 +36,11 @@ Classic protocols for RNA Isolation, cDNA Synthesis, PCRs and Western
 
 ### [{{< fa dna >}} Crsipr Design and Cloning](/protocols/Crispr_Design_and_Cloning/)
 
-Collected cloning protocols and related source documents moved into the new top-level folder.
+Collected protocols for Crispr Design and Cloning
 
 ### [{{< fa screwdriver-wrench >}} General Cloning](/protocols/General%20Cloning/)
 
-General cloning workflows and supporting protocols that are organized separately from the CRISPR design and cloning collection.
+General cloning workflows and supporting protocols
 
 ### [{{< fa microscope >}} Histology](/protocols/histology/)
 

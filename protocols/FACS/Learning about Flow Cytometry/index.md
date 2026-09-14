@@ -1,7 +1,8 @@
 ---
+search: false
 title: Learning about Flow Cytometry
 description: Introductory flow-cytometry training on instrumentation, controls, gating, analysis, and experimental best practices.
-order: 10
+order: 100
 author: Giovanni Galleti
 date: last-modified
 image: oligo.svg

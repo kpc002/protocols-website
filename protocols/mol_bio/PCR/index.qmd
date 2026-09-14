@@ -1,4 +1,5 @@
 ---
+search: false
 title: "PCR"
 description: "Polymerase chain reaction setup and analysis protocols."
 order: 10

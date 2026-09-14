@@ -17,7 +17,7 @@ See [CD8 Selection and Activation](/protocols/t_cells/cd8_selection.html)
 -   Prewarm centrifuge to 37°C
 
 -   Thaw virus (2ml) in water bath\
-    [How to make retrovirus](/protocols/infections/retrovirus)
+    [How to make retrovirus](/protocols/Crispr_Design_and_Cloning/retrovirus)
 
 -   Make Polybrene mix (70x)\
     For 100ul
