@@ -4,7 +4,7 @@ description: BD Pharmingen transcription-factor buffer-set guidance for cell fix
   permeabilization, intracellular and intranuclear flow-cytometry staining, including
   reagent preparation, wash conditions, storage, and safety information.
 order: 10
-author: Giovanni Galleti
+author: BD Pharmingen
 date: last-modified
 image: oligo.svg
 ---

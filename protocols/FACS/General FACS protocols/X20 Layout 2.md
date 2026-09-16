@@ -1,5 +1,5 @@
 ---
-title: "X20 Layout 2"
+title: "Panel Template X20"
 description: "Interactive LSRFortessa X-20 fluorochrome and optical-filter configuration reference with row colors preserved from the Excel workbook."
 order: 11
 author: "Giovanni Galleti"
