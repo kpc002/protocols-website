@@ -4,7 +4,7 @@ order: 11
 author: Maximilian Heeg
 date: last-modified
 description: 
-  Designing Primers (not only for CRISPR Validation)
+  Designing Primers for CRISPR Validation, qPCR
 image: oligo.svg
 ---
 

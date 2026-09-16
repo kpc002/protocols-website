@@ -80,7 +80,7 @@ codex
 ```
 
 For the login-status check, browser sign-in steps, and the September 14, 2026
-login example, see [`CODEX_LOGIN_README.md`](CODEX_LOGIN_README.md). A saved
+login example, see [`CODEX_LOGIN_README.md`](readme/CODEX_LOGIN_README.md). A saved
 login normally survives a terminal restart, so `codex login` is only needed
 when `codex login status` says you are signed out.
 

@@ -1,15 +1,15 @@
 ---
 search: false
-title: "RNA, c-DNA, and qPCR"
-description: "Protocols for RNA isolation, cDNA synthesis, and quantitative PCR."
-order: 3
+title: "Metabolism"
+description: "Protocols for cholesterol extraction, cholesterol measurement, and Filipin III staining."
 listing:
-  type: grid
-  contents:  
-    - "/*/index.?(q)md"
+  type: table
+  contents: ["*.md", "*.qmd"]
   sort: title
-  fields: [title, description]
+  fields: [title, description, author]
 ---
+
+Browse protocols for measuring and staining cellular cholesterol.
 
 <span class="visually-hidden">{{< fa file-lines >}}</span>
 

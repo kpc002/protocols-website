@@ -4,21 +4,79 @@ title: "Crispr_Design_and_Cloning"
 description: "Cloning protocols and related source documents collected in one place."
 author: "Goldrath Lab"
 listing:
-  id: main-protocols
-  type: table
-  contents: "*.md"
-  exclude:
-    - filename: "nebuilder-hifi-dna-assembly-reaction-protocol.md"
-    - filename: "NucleoBond Xtra Plasmid DNA Purification User Manual.md"
-    - filename: "protocol-for-q5-high-fidelity-2x-master-mix-m0492.md"
-  sort: title
-  fields: [image, title, author, description]
-  filter-ui: true
-  sort-ui: true
+  - id: guide-primer-design
+    type: table
+    contents:
+      - "guide design and sequence.md"
+      - "Primerdesign.md"
+    sort: title
+    fields: [title, author, description]
+    filter-ui: true
+    sort-ui: true
+  - id: cloning
+    type: table
+    contents:
+      - "Molecular_Cloning_Workflow.md"
+      - "LsgA Cloning.md"
+      - "MB4.Cloning with HIFI DNA Assembly_KL.md"
+      - "Process G blocks_ATM.md"
+    sort: title
+    fields: [title, author, description]
+    filter-ui: true
+    sort-ui: true
+  - id: sequencing-validation
+    type: table
+    contents:
+      - "Sanger Sequencing Preparation.md"
+      - "crispr_validation/index.md"
+    sort: title
+    fields: [title, author, description]
+    filter-ui: true
+    sort-ui: true
+  - id: amplicon-sequencing
+    type: table
+    contents:
+      - "Protocol for CRISPR amplicon sequencing 2025-11-06 (etr_PxVJqvYTzT) Custom_low_plex_LsgA_cloning_MRC.md"
+      - "Example_Amplicon_DNA_Files/index.md"
+    sort: title
+    fields: [title, author, description]
+    filter-ui: true
+    sort-ui: true
+  - id: product-manuals
+    type: table
+    contents:
+      - "nebuilder-hifi-dna-assembly-reaction-protocol.md"
+      - "NucleoBond Xtra Plasmid DNA Purification User Manual.md"
+      - "protocol-for-q5-high-fidelity-2x-master-mix-m0492.md"
+    sort: title
+    fields: [title, author, description]
+    filter-ui: true
+    sort-ui: true
 ---
 
-Browse the cloning protocols collected in this folder.
+Browse the Crispr Design and Cloning protocols on this page.
 
-## Protocols
+## Guide and Primer Design
 
-<div id="main-protocols"></div>
+::: {#guide-primer-design}
+:::
+
+## Cloning
+
+::: {#cloning}
+:::
+
+## Sequencing and Validation
+
+::: {#sequencing-validation}
+:::
+
+## Amplicon Sequencing
+
+::: {#amplicon-sequencing}
+:::
+
+## Product Manual
+
+::: {#product-manuals}
+:::

@@ -1,4 +1,5 @@
 ---
+search: false
 title: "PCR protocol for amplification with Q5 High-Fidelity 2X Master Mix M0492"
 description: "NEB protocol for PCR using Q5 High-Fidelity 2X Master Mix, including reaction setup, cycling conditions, and amplification guidance."
 order: 10

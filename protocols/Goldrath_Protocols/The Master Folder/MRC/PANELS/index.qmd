@@ -20,6 +20,5 @@ Browse protocols in this folder.
 
 | Folder |
 |---|
-| [PeptideStimulation](PeptideStimulation/index.qmd) |
 
 ## Files

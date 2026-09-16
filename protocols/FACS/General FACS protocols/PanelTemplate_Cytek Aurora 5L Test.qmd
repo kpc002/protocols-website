@@ -1,0 +1,134 @@
+---
+title: "PanelTemplate Cytek Aurora 5L Test"
+description: "Interactive Cytek Aurora 5L panel template with color-coded laser channels and editable Panel 1 and Panel 2 staining panels."
+author: "Kelsey Bennion"
+order: 11
+date: last-modified
+---
+
+# PanelTemplate Cytek Aurora 5L Test
+
+Use the search box to filter the panel template. The final two columns are editable for planning; changes remain in this browser session only.
+
+[Download the original DOCX](PanelTemplate_Cytek%20Aurora%205L%20Test.docx){.btn .btn-primary download="PanelTemplate_Cytek Aurora 5L Test.docx"}
+
+<section class="panel-template-test" aria-label="Cytek Aurora 5L panel template">
+<label class="panel-template-search-label" for="panel-template-filter">Search channels, filters, or fluorochromes</label>
+<input id="panel-template-filter" class="panel-template-filter" type="search" placeholder="For example: BV421, UV, CD8" autocomplete="off">
+<p id="panel-template-results" class="panel-template-results" aria-live="polite"></p>
+<div class="table-responsive">
+<table id="panel-template-table" class="panel-template-table">
+<thead>
+<tr><th>Laser</th><th>Channel</th><th>Bandpass Filter (nm)</th><th>Primary Fluorochrome</th><th>Other Fluorochromes</th><th>Panel 1</th><th>Panel 2</th></tr>
+</thead>
+<tbody>
+<tr class="laser-uv" data-search="ultraviolet 355nm 20mw uv1 373/15 spark uv 387 "><td>Ultraviolet 355nm 20mW</td><td>UV1</td><td>373/15</td><td>Spark UV 387</td><td></td><td><input aria-label="Panel 1 for UV1" type="text" value=""></td><td><input aria-label="Panel 2 for UV1" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv2 388/15 buv395 starbright uv 400"><td></td><td>UV2</td><td>388/15</td><td>BUV395</td><td>StarBright UV 400</td><td><input aria-label="Panel 1 for UV2" type="text" value="CD19"></td><td><input aria-label="Panel 2 for UV2" type="text" value="CD45.1"></td></tr>
+<tr class="laser-uv" data-search=" uv3 428/15  "><td></td><td>UV3</td><td>428/15</td><td></td><td></td><td><input aria-label="Panel 1 for UV3" type="text" value=""></td><td><input aria-label="Panel 2 for UV3" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv4 443/15 fvs440uv "><td></td><td>UV4</td><td>443/15</td><td>FVS440UV</td><td></td><td><input aria-label="Panel 1 for UV4" type="text" value=""></td><td><input aria-label="Panel 2 for UV4" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv5 458/15  "><td></td><td>UV5</td><td>458/15</td><td></td><td></td><td><input aria-label="Panel 1 for UV5" type="text" value=""></td><td><input aria-label="Panel 2 for UV5" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv6 473/15 alexa fluor 350 starbright uv 445, live/dead blue"><td></td><td>UV6</td><td>473/15</td><td>Alexa Fluor 350</td><td>StarBright UV 445, Live/Dead Blue</td><td><input aria-label="Panel 1 for UV6" type="text" value=""></td><td><input aria-label="Panel 2 for UV6" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv7 514/28 buv496 starbright uv 510, dapi"><td></td><td>UV7</td><td>514/28</td><td>BUV496</td><td>StarBright UV 510, DAPI</td><td><input aria-label="Panel 1 for UV7" type="text" value=""></td><td><input aria-label="Panel 2 for UV7" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv8 542/28  "><td></td><td>UV8</td><td>542/28</td><td></td><td></td><td><input aria-label="Panel 1 for UV8" type="text" value=""></td><td><input aria-label="Panel 2 for UV8" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv9 582/31 buv563 starbright uv 575"><td></td><td>UV9</td><td>582/31</td><td>BUV563</td><td>StarBright UV 575</td><td><input aria-label="Panel 1 for UV9" type="text" value=""></td><td><input aria-label="Panel 2 for UV9" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv10 613/31 buv615 starbright uv 605"><td></td><td>UV10</td><td>613/31</td><td>BUV615</td><td>StarBright UV 605</td><td><input aria-label="Panel 1 for UV10" type="text" value="CD45.1"></td><td><input aria-label="Panel 2 for UV10" type="text" value="CD4"></td></tr>
+<tr class="laser-uv" data-search=" uv11 664/27 buv661 starbright uv 665"><td></td><td>UV11</td><td>664/27</td><td>BUV661</td><td>StarBright UV 665</td><td><input aria-label="Panel 1 for UV11" type="text" value=""></td><td><input aria-label="Panel 2 for UV11" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv12 692/28  "><td></td><td>UV12</td><td>692/28</td><td></td><td></td><td><input aria-label="Panel 1 for UV12" type="text" value=""></td><td><input aria-label="Panel 2 for UV12" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv13 720/29  "><td></td><td>UV13</td><td>720/29</td><td></td><td></td><td><input aria-label="Panel 1 for UV13" type="text" value=""></td><td><input aria-label="Panel 2 for UV13" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv14 750/30 buv737 starbright uv 740"><td></td><td>UV14</td><td>750/30</td><td>BUV737</td><td>StarBright UV 740</td><td><input aria-label="Panel 1 for UV14" type="text" value=""></td><td><input aria-label="Panel 2 for UV14" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv15 780/30  "><td></td><td>UV15</td><td>780/30</td><td></td><td></td><td><input aria-label="Panel 1 for UV15" type="text" value=""></td><td><input aria-label="Panel 2 for UV15" type="text" value=""></td></tr>
+<tr class="laser-uv" data-search=" uv16 812/34 buv805 starbright uv 795"><td></td><td>UV16</td><td>812/34</td><td>BUV805</td><td>StarBright UV 795</td><td><input aria-label="Panel 1 for UV16" type="text" value="CD8b"></td><td><input aria-label="Panel 2 for UV16" type="text" value="CD8b"></td></tr>
+<tr class="laser-violet" data-search="violet 405nm 100mw v1 428/15 bv421 "><td>Violet 405nm 100mW</td><td>V1</td><td>428/15</td><td>BV421</td><td></td><td><input aria-label="Panel 1 for V1" type="text" value="Xcr1"></td><td><input aria-label="Panel 2 for V1" type="text" value="Thy1"></td></tr>
+<tr class="laser-violet" data-search=" v2 443/15 superbright 436 alexa fluor 405, vio bright v423, spark violet 423, starbright violet 440"><td></td><td>V2</td><td>443/15</td><td>SuperBright 436</td><td>Alexa Fluor 405, Vio Bright V423, Spark Violet 423, StarBright Violet 440</td><td><input aria-label="Panel 1 for V2" type="text" value=""></td><td><input aria-label="Panel 2 for V2" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v3 458/15 ef450 v450, pacific blue, vf450, vioblue , ebfp , ebfp2"><td></td><td>V3</td><td>458/15</td><td>eF450</td><td>V450, Pacific Blue, vF450, VioBlue , eBFP , eBFP2</td><td><input aria-label="Panel 1 for V3" type="text" value=""></td><td><input aria-label="Panel 2 for V3" type="text" value="TNF"></td></tr>
+<tr class="laser-violet" data-search=" v4 473/15 sytox blue "><td></td><td>V4</td><td>473/15</td><td>SYTOX Blue</td><td></td><td><input aria-label="Panel 1 for V4" type="text" value=""></td><td><input aria-label="Panel 2 for V4" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v5 508/20 bv480 v500, spark violet 500, starbright violet 475"><td></td><td>V5</td><td>508/20</td><td>BV480</td><td>V500, Spark Violet 500, StarBright Violet 475</td><td><input aria-label="Panel 1 for V5" type="text" value="TIM3"></td><td><input aria-label="Panel 2 for V5" type="text" value="TIM3"></td></tr>
+<tr class="laser-violet" data-search=" v6 525/17 starbright violet 515 mametrine"><td></td><td>V6</td><td>525/17</td><td>StarBright Violet 515</td><td>mAmetrine</td><td><input aria-label="Panel 1 for V6" type="text" value=""></td><td><input aria-label="Panel 2 for V6" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v7 542/17 bv510 spark violet 538, viogreen , live/dead fixable aqua"><td></td><td>V7</td><td>542/17</td><td>BV510</td><td>Spark Violet 538, VioGreen , Live/Dead Fixable Aqua</td><td><input aria-label="Panel 1 for V7" type="text" value="CD62L"></td><td><input aria-label="Panel 2 for V7" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v8 581/19 bv570 starbright violet 570, pacific orange"><td></td><td>V8</td><td>581/19</td><td>BV570</td><td>StarBright Violet 570, Pacific Orange</td><td><input aria-label="Panel 1 for V8" type="text" value="CD44"></td><td><input aria-label="Panel 2 for V8" type="text" value="CD44"></td></tr>
+<tr class="laser-violet" data-search=" v9 598/20  "><td></td><td>V9</td><td>598/20</td><td></td><td></td><td><input aria-label="Panel 1 for V9" type="text" value=""></td><td><input aria-label="Panel 2 for V9" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v10 615/20 bv605 superbright 600, starbright violet 610, mkeima"><td></td><td>V10</td><td>615/20</td><td>BV605</td><td>SuperBright 600, StarBright Violet 610, mKeima</td><td><input aria-label="Panel 1 for V10" type="text" value=""></td><td><input aria-label="Panel 2 for V10" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v11 664/27 bv650 superbright 645, starbright violet 670"><td></td><td>V11</td><td>664/27</td><td>BV650</td><td>SuperBright 645, StarBright Violet 670</td><td><input aria-label="Panel 1 for V11" type="text" value="Slamf6"></td><td><input aria-label="Panel 2 for V11" type="text" value="Ki67"></td></tr>
+<tr class="laser-violet" data-search=" v12 692/28  "><td></td><td>V12</td><td>692/28</td><td></td><td></td><td><input aria-label="Panel 1 for V12" type="text" value=""></td><td><input aria-label="Panel 2 for V12" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v13 720/29 bv711 superbright 702, starbright violet 710"><td></td><td>V13</td><td>720/29</td><td>BV711</td><td>SuperBright 702, StarBright Violet 710</td><td><input aria-label="Panel 1 for V13" type="text" value="CD11b"></td><td><input aria-label="Panel 2 for V13" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v14 750/30 bv750 starbright violet 760"><td></td><td>V14</td><td>750/30</td><td>BV750</td><td>StarBright Violet 760</td><td><input aria-label="Panel 1 for V14" type="text" value=""></td><td><input aria-label="Panel 2 for V14" type="text" value=""></td></tr>
+<tr class="laser-violet" data-search=" v15 780/30 bv786 bv785, superbright 780, starbright violet 790"><td></td><td>V15</td><td>780/30</td><td>BV786</td><td>BV785, SuperBright 780, StarBright Violet 790</td><td><input aria-label="Panel 1 for V15" type="text" value="PD1"></td><td><input aria-label="Panel 2 for V15" type="text" value="PD1"></td></tr>
+<tr class="laser-violet" data-search=" v16 812/34  "><td></td><td>V16</td><td>812/34</td><td></td><td></td><td><input aria-label="Panel 1 for V16" type="text" value=""></td><td><input aria-label="Panel 2 for V16" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search="blue 488nm 50mw blue 488nm 50mw b1 508/20 bb515 viobright b515, vio b515, novafluor blue 510, egfp , zsgreen"><td>Blue 488nm 50mW Blue 488nm 50mW</td><td>B1</td><td>508/20</td><td>BB515</td><td>VioBright B515, Vio B515, NovaFluor Blue 510, eGFP , ZsGreen</td><td><input aria-label="Panel 1 for B1" type="text" value=""></td><td><input aria-label="Panel 2 for B1" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b2 525/17 fitc af488, viobright fitc, kiravia blue 520, cfse"><td></td><td>B2</td><td>525/17</td><td>FITC</td><td>AF488, VioBright FITC, KIRAVIA Blue 520, CFSE</td><td><input aria-label="Panel 1 for B2" type="text" value="CX3CR1"></td><td><input aria-label="Panel 2 for B2" type="text" value="TCF1"></td></tr>
+<tr class="laser-blue" data-search=" b3 542/17 rb545 af532, spark blue 550, novafluor blue 530, novafluor blue 555, eyfp , mvenus"><td></td><td>B3</td><td>542/17</td><td>RB545</td><td>AF532, Spark Blue 550, NovaFluor Blue 530, NovaFluor Blue 555, eYFP , mVenus</td><td><input aria-label="Panel 1 for B3" type="text" value=""></td><td><input aria-label="Panel 2 for B3" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b4 581/19 starbright blue 580 spark blue 574"><td></td><td>B4</td><td>581/19</td><td>StarBright Blue 580</td><td>Spark Blue 574</td><td><input aria-label="Panel 1 for B4" type="text" value=""></td><td><input aria-label="Panel 2 for B4" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b5 598/20 novafluor blue 585 "><td></td><td>B5</td><td>598/20</td><td>NovaFluor Blue 585</td><td></td><td><input aria-label="Panel 1 for B5" type="text" value=""></td><td><input aria-label="Panel 2 for B5" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b6 615/20 bb630 starbright blue 615, novafluor blue 610 30s, novafluor blue 610-70s"><td></td><td>B6</td><td>615/20</td><td>BB630</td><td>StarBright Blue 615, NovaFluor Blue 610 30S, NovaFluor Blue 610-70S</td><td><input aria-label="Panel 1 for B6" type="text" value=""></td><td><input aria-label="Panel 2 for B6" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b7 661/17 bb660 "><td></td><td>B7</td><td>661/17</td><td>BB660</td><td></td><td><input aria-label="Panel 1 for B7" type="text" value=""></td><td><input aria-label="Panel 2 for B7" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b8 679/18 percp starbright blue 675, novafluor blue 660 120s"><td></td><td>B8</td><td>679/18</td><td>PerCP</td><td>StarBright Blue 675, NovaFluor Blue 660 120S</td><td><input aria-label="Panel 1 for B8" type="text" value=""></td><td><input aria-label="Panel 2 for B8" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b9 697/19 percp-cy5.5 bb700, starbright blue 700"><td></td><td>B9</td><td>697/19</td><td>PerCP-Cy5.5</td><td>BB700, StarBright Blue 700</td><td><input aria-label="Panel 1 for B9" type="text" value="NK1.1"></td><td><input aria-label="Panel 2 for B9" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b10 717/20 percp-ef710 percp-vio700"><td></td><td>B10</td><td>717/20</td><td>PerCP-eF710</td><td>PerCP-Vio700</td><td><input aria-label="Panel 1 for B10" type="text" value=""></td><td><input aria-label="Panel 2 for B10" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b11 738/21  "><td></td><td>B11</td><td>738/21</td><td></td><td></td><td><input aria-label="Panel 1 for B11" type="text" value=""></td><td><input aria-label="Panel 2 for B11" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b12 760/23 bb755 starbright blue 765"><td></td><td>B12</td><td>760/23</td><td>BB755</td><td>StarBright Blue 765</td><td><input aria-label="Panel 1 for B12" type="text" value=""></td><td><input aria-label="Panel 2 for B12" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b13 783/23  "><td></td><td>B13</td><td>783/23</td><td></td><td></td><td><input aria-label="Panel 1 for B13" type="text" value=""></td><td><input aria-label="Panel 2 for B13" type="text" value=""></td></tr>
+<tr class="laser-blue" data-search=" b14 812/34 rb780 bb790, starbright blue 810"><td></td><td>B14</td><td>812/34</td><td>RB780</td><td>BB790, StarBright Blue 810</td><td><input aria-label="Panel 1 for B14" type="text" value=""></td><td><input aria-label="Panel 2 for B14" type="text" value="Granzyme B"></td></tr>
+<tr class="laser-green" data-search="green 561nm 50mw yg1 577/20 pe alexa fluor 555, starbright yellow 575, novafluor yellow 570, spark yg 570, spark yg 581, tdtomato , rfp, dsred"><td>Green 561nm 50mW</td><td>YG1</td><td>577/20</td><td>PE</td><td>Alexa Fluor 555, StarBright Yellow 575, NovaFluor Yellow 570, Spark YG 570, Spark YG 581, tdTomato , RFP, DsRed</td><td><input aria-label="Panel 1 for YG1" type="text" value="CD101"></td><td><input aria-label="Panel 2 for YG1" type="text" value="TOX"></td></tr>
+<tr class="laser-green" data-search=" yg2 598/20 ry586 novafluor yellow 590, spark yg 593"><td></td><td>YG2</td><td>598/20</td><td>RY586</td><td>NovaFluor Yellow 590, Spark YG 593</td><td><input aria-label="Panel 1 for YG2" type="text" value=""></td><td><input aria-label="Panel 2 for YG2" type="text" value=""></td></tr>
+<tr class="laser-green" data-search=" yg3 615/20 pe-cf594 pe-texas red, pe-ef610, pe-dazzle 594, pe-vio615, starbright yellow 605, alexa fluor 594, novafluor yellow 610, mcherry"><td></td><td>YG3</td><td>615/20</td><td>PE-CF594</td><td>PE-Texas Red, PE-eF610, PE-Dazzle 594, PE-Vio615, StarBright Yellow 605, Alexa Fluor 594, NovaFluor Yellow 610, mCherry</td><td><input aria-label="Panel 1 for YG3" type="text" value=""></td><td><input aria-label="Panel 2 for YG3" type="text" value="FOXP3"></td></tr>
+<tr class="laser-green" data-search=" yg4 661/17 pi pe-fire 640, starbright yellow 665, novafluor yellow 660, 7-aad"><td></td><td>YG4</td><td>661/17</td><td>PI</td><td>PE-Fire 640, StarBright Yellow 665, NovaFluor Yellow 660, 7-AAD</td><td><input aria-label="Panel 1 for YG4" type="text" value=""></td><td><input aria-label="Panel 2 for YG4" type="text" value=""></td></tr>
+<tr class="laser-green" data-search=" yg5 679/18 pe-cy5 "><td></td><td>YG5</td><td>679/18</td><td>PE-Cy5</td><td></td><td><input aria-label="Panel 1 for YG5" type="text" value=""></td><td><input aria-label="Panel 2 for YG5" type="text" value=""></td></tr>
+<tr class="laser-green" data-search=" yg6 697/19 novafluor yellow 690 "><td></td><td>YG6</td><td>697/19</td><td>NovaFluor Yellow 690</td><td></td><td><input aria-label="Panel 1 for YG6" type="text" value=""></td><td><input aria-label="Panel 2 for YG6" type="text" value=""></td></tr>
+<tr class="laser-green" data-search=" yg7 720/29 pe-cy5.5 pe-fire 700, starbright yellow 720, novafluor yellow 700, novafluor yellow 730"><td></td><td>YG7</td><td>720/29</td><td>PE-Cy5.5</td><td>PE-Fire 700, StarBright Yellow 720, NovaFluor Yellow 700, NovaFluor Yellow 730</td><td><input aria-label="Panel 1 for YG7" type="text" value=""></td><td><input aria-label="Panel 2 for YG7" type="text" value=""></td></tr>
+<tr class="laser-green" data-search=" yg8 750/30  "><td></td><td>YG8</td><td>750/30</td><td></td><td></td><td><input aria-label="Panel 1 for YG8" type="text" value=""></td><td><input aria-label="Panel 2 for YG8" type="text" value=""></td></tr>
+<tr class="laser-green" data-search=" yg9 780/30 pe-cy7 pe-vio770, starbright yellow 800, novafluor yellow 755"><td></td><td>YG9</td><td>780/30</td><td>PE-Cy7</td><td>PE-Vio770, StarBright Yellow 800, NovaFluor Yellow 755</td><td><input aria-label="Panel 1 for YG9" type="text" value="CXCR6"></td><td><input aria-label="Panel 2 for YG9" type="text" value="IL2"></td></tr>
+<tr class="laser-green" data-search=" yg10 812/34 pe-fire 810 "><td></td><td>YG10</td><td>812/34</td><td>PE-Fire 810</td><td></td><td><input aria-label="Panel 1 for YG10" type="text" value=""></td><td><input aria-label="Panel 2 for YG10" type="text" value=""></td></tr>
+<tr class="laser-red" data-search="red 640nm 80mw r1 661/17 apc styox red, cy5"><td>Red 640nm 80mW</td><td>R1</td><td>661/17</td><td>APC</td><td>STYOX Red, Cy5</td><td><input aria-label="Panel 1 for R1" type="text" value=""></td><td><input aria-label="Panel 2 for R1" type="text" value=""></td></tr>
+<tr class="laser-red" data-search=" r2 679/18 af647 ef660, vio r667, vio bright r667, novafluor red 660, novafluor blue 660 40s, mirfp670"><td></td><td>R2</td><td>679/18</td><td>AF647</td><td>eF660, Vio R667, Vio Bright R667, NovaFluor Red 660, NovaFluor Blue 660 40S, miRFP670</td><td><input aria-label="Panel 1 for R2" type="text" value=""></td><td><input aria-label="Panel 2 for R2" type="text" value=""></td></tr>
+<tr class="laser-red" data-search=" r3 697/19 novafluor red 700 alexa fluor 660, spark nir 685, novafluor red 685, mirfp"><td></td><td>R3</td><td>697/19</td><td>NovaFluor Red 700</td><td>Alexa Fluor 660, Spark NIR 685, NovaFluor Red 685, miRFP</td><td><input aria-label="Panel 1 for R3" type="text" value=""></td><td><input aria-label="Panel 2 for R3" type="text" value=""></td></tr>
+<tr class="laser-red" data-search=" r4 717/20 af700 red 718, apc-r700, vio bright r720, redfluor710, novafluor 710"><td></td><td>R4</td><td>717/20</td><td>AF700</td><td>Red 718, APC-R700, Vio Bright R720, redFluor710, NovaFluor 710</td><td><input aria-label="Panel 1 for R4" type="text" value="CD11c"></td><td><input aria-label="Panel 2 for R4" type="text" value=""></td></tr>
+<tr class="laser-red" data-search=" r5 738/21 novafluor red 725 spark red 718"><td></td><td>R5</td><td>738/21</td><td>NovaFluor Red 725</td><td>Spark Red 718</td><td><input aria-label="Panel 1 for R5" type="text" value=""></td><td><input aria-label="Panel 2 for R5" type="text" value=""></td></tr>
+<tr class="laser-red" data-search=" r6 760/23  "><td></td><td>R6</td><td>760/23</td><td></td><td></td><td><input aria-label="Panel 1 for R6" type="text" value=""></td><td><input aria-label="Panel 2 for R6" type="text" value=""></td></tr>
+<tr class="laser-red" data-search=" r7 783/23 apc-ef780 apc-cy7, apc-h7, apc-vio770, apc-fire 750, novafluor red 755, ghost dye red 780"><td></td><td>R7</td><td>783/23</td><td>APC-eF780</td><td>APC-Cy7, APC-H7, APC-Vio770, APC-Fire 750, NovaFluor Red 755, Ghost Dye Red 780</td><td><input aria-label="Panel 1 for R7" type="text" value="Live/Dead"></td><td><input aria-label="Panel 2 for R7" type="text" value="Live/Dead"></td></tr>
+<tr class="laser-red" data-search=" r8 812/34 apc-fire 810"><td></td><td>R8</td><td>812/34</td><td>APC-Fire 810</td><td></td><td><input aria-label="Panel 1 for R8" type="text" value=""></td><td><input aria-label="Panel 2 for R8" type="text" value=""></td></tr>
+</tbody>
+</table>
+</div>
+<button id="panel-template-clear" class="btn btn-outline-secondary" type="button">Clear editable panels</button>
+</section>
+
+<style>
+.panel-template-test { margin-top: 1.25rem; }
+.panel-template-search-label { display: block; font-weight: 600; margin-bottom: .35rem; }
+.panel-template-filter { width: min(30rem, 100%); padding: .45rem .6rem; border: 1px solid color-mix(in srgb, currentColor 30%, transparent); border-radius: .3rem; color: inherit; background: var(--bs-body-bg, white); }
+.panel-template-results { margin: .5rem 0; font-size: .9rem; opacity: .8; }
+.panel-template-table { width: 100%; border-collapse: collapse; }
+.panel-template-table th, .panel-template-table td { padding: .4rem .5rem; vertical-align: top; }
+.panel-template-table tbody tr:not(:last-child) td { border-bottom: 1px solid rgba(0, 0, 0, .35); }
+.panel-template-table thead { color: #fff; background: #343a40; }
+.panel-template-table tbody tr { color: #111; }
+.panel-template-table .laser-uv { background: #ff00ff; }
+.panel-template-table .laser-violet { background: #653365; color: #fff; }
+.panel-template-table .laser-blue { background: #6464ff; color: #fff; }
+.panel-template-table .laser-green { background: #47d459; }
+.panel-template-table .laser-red { background: #ff0000; color: #fff; }
+.panel-template-table input { width: 100%; min-width: 10rem; padding: .35rem .45rem; border: 1px solid rgba(0, 0, 0, .35); border-radius: .25rem; color: #111; background: rgba(255, 255, 255, .92); }
+#panel-template-clear { margin-top: .75rem; }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const filter = document.getElementById("panel-template-filter");
+  const rows = [...document.querySelectorAll("#panel-template-table tbody tr")];
+  const results = document.getElementById("panel-template-results");
+  const updateRows = () => {
+    const query = filter.value.trim().toLowerCase();
+    const visible = rows.filter(row => {
+      const matches = row.dataset.search.includes(query);
+      row.hidden = !matches;
+      return matches;
+    }).length;
+    results.textContent = `${visible} of ${rows.length} detector rows shown`;
+  };
+  filter.addEventListener("input", updateRows);
+  document.getElementById("panel-template-clear").addEventListener("click", () => {
+    document.querySelectorAll("#panel-template-table tbody input").forEach(input => { input.value = ""; });
+  });
+  updateRows();
+});
+</script>

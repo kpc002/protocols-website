@@ -11,6 +11,7 @@ listing:
   contents:
     - "/*/index.?(q)md"
     - "Flow_Cytometry_part_*.md"
+    - "flow_principles.md"
   fields: [title, description, author]
   sort: title
   page-size: 20

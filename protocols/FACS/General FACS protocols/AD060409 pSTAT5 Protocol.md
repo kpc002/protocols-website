@@ -1,5 +1,6 @@
 ---
 title: "pSTAT5 Protocol"
+description: "Intracellular phospho-flow protocol for measuring pSTAT5 after cytokine stimulation, including fixation, permeabilization, antibody staining, and flow-cytometry analysis."
 order: 10
 author: "Goldrath Lab"
 date: last-modified

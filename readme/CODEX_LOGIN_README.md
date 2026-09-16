@@ -73,4 +73,4 @@ or by the workspace administrator. If the normal browser flow stalls, retry
 
 See the official OpenAI documentation for [Codex authentication](https://learn.chatgpt.com/docs/auth)
 and the [Codex CLI](https://learn.chatgpt.com/docs/codex/cli). For installation
-and updates on this computer, see [`codex install.md`](codex%20install.md).
+and updates on this computer, see [`codex install.md`](../codex%20install.md).

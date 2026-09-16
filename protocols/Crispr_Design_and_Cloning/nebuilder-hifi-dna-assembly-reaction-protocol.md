@@ -1,4 +1,5 @@
 ---
+search: false
 title: "nebuilder-hifi-dna-assembly-reaction-protocol"
 description: "NEBuilder HiFi DNA Assembly protocol for joining double-stranded DNA fragments into a cloning construct using HiFi DNA Assembly Master Mix."
 order: 10

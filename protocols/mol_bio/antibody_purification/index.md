@@ -1,14 +1,12 @@
 ---
 search: false
-title: "RNA, c-DNA, and qPCR"
-description: "Protocols for RNA isolation, cDNA synthesis, and quantitative PCR."
-order: 3
+title: "Antibody Purification"
+description: "Protocols for antibody purification and biotinylation."
 listing:
-  type: grid
-  contents:  
-    - "/*/index.?(q)md"
+  type: table
+  contents: ["*.md", "*.qmd"]
   sort: title
-  fields: [title, description]
+  fields: [title, description, author]
 ---
 
 <span class="visually-hidden">{{< fa file-lines >}}</span>

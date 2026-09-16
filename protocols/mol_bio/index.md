@@ -4,18 +4,16 @@ title: "Molecular biology"
 description: "Protocols and reference materials for routine molecular biology workflows, including cell culture, PCR, RNA and cDNA preparation, qPCR, chromatin assays, western blotting, and CRISPR validation."
 image: 'agarose-gel.svg'
 listing: 
-  type: table
+  type: grid
   contents:
     - "/*/index.?(q)md"
-    - "*.md"
-    - "*.qmd"
-  fields: [title, description, author]
+  fields: [title, description]
   sort: title
 ---
 
 Browse protocols and reference materials for routine molecular biology workflows, including cell culture, PCR, RNA and cDNA preparation, qPCR, chromatin assays, western blotting, and CRISPR validation.
 
-<span class="visually-hidden">{{< fa file-lines >}}</span>
+<span class="visually-hidden">{{< fa-regular fa-folder>}}</span>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {

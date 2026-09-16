@@ -1,6 +1,6 @@
 ---
-title: "Caspase 3_7&7AAD ex vivo staining"
-description: "Caspase 3_7&7AAD ex vivo staining"
+title: "Caspase 3_7 & 7AAD ex vivo staining"
+description: "Caspase 3_7 & 7AAD ex vivo staining"
 order: 10
 author: Kelsey Bennion
 date: last-modified

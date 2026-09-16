@@ -1,4 +1,5 @@
 ---
+search: false
 title: "User Manual- NucleoBond Xtra Plasmid DNA Purification"
 description: "User manual for NucleoBond Xtra Midi, Maxi, and related kits for purification of high-quality plasmid DNA."
 order: 10

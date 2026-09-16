@@ -5,7 +5,7 @@ description: Flow-cytometry staining protocols, spectral cytometry training, pan
 date: last-modified
 image: oligo.svg
 listing:
-  type: table
+  type: grid
   contents: "/*/index.?(q)md"
   fields: [title, description, author]
 ---
