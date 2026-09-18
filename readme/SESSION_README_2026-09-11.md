@@ -151,7 +151,7 @@ Use relative Markdown links from the file containing the link. For example,
 two files in the same directory should link like this:
 
 ```markdown
-[Retroviral transduction](transduction.md)
+Retroviral transduction → transduction.md
 ```
 
 Do not repeat the parent path inside a relative link. That caused this broken

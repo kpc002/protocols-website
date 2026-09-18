@@ -16,13 +16,10 @@ listing:
     - "Gut prep protocol.md"
     - "IF_Frozen_BioProtocol.md"
     - "LLB_GutPrep2017.md"
-    - "Lymphocyte prep_tissues.md"
     - "MAN0017851_CRISPR_Cas9_T_cell_gene_editing_using_Neon_UB.md"
     - "MC38_Growth.md"
     - "MYCO_PCR.md"
     - "Mission_shRNA_lentiviral.md"
-    - "Mixed ACT Calculations.md"
-    - "Mouse_Haplotype_Table.md"
     - "Neon_Cas9_RNP.md"
     - "Neon_Electroporation_466243.full.md"
     - "Protocol_Caecum_Orthotopic_MRC.md"
@@ -51,7 +48,6 @@ Browse protocols in this folder.
 
 | Folder |
 |---|
-| [PANELS](PANELS/index.qmd) |
 | [RetroProduction_Tcells](RetroProduction_Tcells/index.qmd) |
 
 ## Files

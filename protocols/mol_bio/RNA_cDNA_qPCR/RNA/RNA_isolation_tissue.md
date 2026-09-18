@@ -53,7 +53,7 @@ image: rna.svg
 
 -   Dilute RNA into 96-well plate to the same concentration across all samples (5μg)
 
--   Follow [SuperScript IV protocol](/protocols/mol_bio/cDNA.html#cdna-preparation-using-superscript-iv) including RNA H
+-   Follow [SuperScript IV protocol](../cDNA/cDNA.md#cdna-preparation-using-superscript-iv) including RNA H
 
     ::: callout-tip
     Instead of incubate the combined reaction mixture at 50--55°C for 10 minutes, incubate it for 60min

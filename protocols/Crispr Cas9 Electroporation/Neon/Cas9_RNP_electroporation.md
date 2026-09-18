@@ -166,7 +166,7 @@ Check the amount of crRNA, tracrRNA and Cas9 protein mixture before the reaction
 
 ## Validation
 
-See here for [Validation using Sanger](/protocols/mol_bio/crispr_validation)
+See here for [Validation using Sanger](../../Crispr_Design_and_Cloning/crispr_validation/index.md)
 
 ## Acknowledgement
 

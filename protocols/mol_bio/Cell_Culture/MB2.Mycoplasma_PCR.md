@@ -84,6 +84,6 @@ Perform the PCR using the following program:
 
 Run the samples on a 1.5% agarose gel. An example is shown below:
 
-![Contam pict](media/image1.jpeg)
+![Contam pict](../../recipes/Cell_Culture_Media/media/image1.jpeg)
 
 Figure 1. Image showing mycoplasma contamination as detected by PCR.

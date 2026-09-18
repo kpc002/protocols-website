@@ -6,9 +6,10 @@ order: 11
 date: last-modified
 ---
 
-# PanelTemplate Cytek Aurora 5L Test
+<br><br>
 
-Use the search box to filter the panel template. The final three columns (Panel 1, Panel 2, and Panel 3) are editable for planning; changes remain in this browser session only.
+Use the search box to filter the panel template. Scroll right to see the editable columns. <br>
+The final three columns (Panel 1, Panel 2, and Panel 3) are editable for planning; changes remain in this browser session only.
 
 [Download the original DOCX](PanelTemplate_Cytek%20Aurora%205L%20Test.docx){.btn .btn-primary download="PanelTemplate_Cytek Aurora 5L Test.docx"}
 
@@ -109,6 +110,30 @@ Use the search box to filter the panel template. The final three columns (Panel 
 .panel-template-table .laser-red { background: #ff0000; color: #fff; }
 .panel-template-table input { width: 100%; min-width: 10rem; padding: .35rem .45rem; border: 1px solid rgba(0, 0, 0, .35); border-radius: .25rem; color: #111; background: rgba(255, 255, 255, .92); }
 #panel-template-clear { margin-top: .75rem; }
+
+@media print {
+  @page { size: landscape; margin: .35in; }
+  .panel-template-test { margin-top: 0; font-size: 7pt; }
+  .panel-template-search-label,
+  .panel-template-filter,
+  .panel-template-results,
+  #panel-template-clear,
+  .panel-template-test > p { display: none !important; }
+  .panel-template-test .table-responsive { max-width: none; overflow: visible !important; }
+  .panel-template-table { width: 100%; min-width: 0; max-width: none; table-layout: fixed; font-size: 6.5pt; }
+  .panel-template-table th, .panel-template-table td { padding: .16rem .2rem; overflow-wrap: anywhere; word-break: break-word; }
+  .panel-template-table th:nth-child(1), .panel-template-table td:nth-child(1) { width: 16%; }
+  .panel-template-table th:nth-child(2), .panel-template-table td:nth-child(2) { width: 7%; }
+  .panel-template-table th:nth-child(3), .panel-template-table td:nth-child(3) { width: 8%; }
+  .panel-template-table th:nth-child(4), .panel-template-table td:nth-child(4) { width: 14%; }
+  .panel-template-table th:nth-child(5), .panel-template-table td:nth-child(5) { width: 27%; }
+  .panel-template-table th:nth-child(6), .panel-template-table td:nth-child(6),
+  .panel-template-table th:nth-child(7), .panel-template-table td:nth-child(7),
+  .panel-template-table th:nth-child(8), .panel-template-table td:nth-child(8) { width: 9.333%; }
+  .panel-template-table thead { display: table-header-group; }
+  .panel-template-table tr { break-inside: avoid; page-break-inside: avoid; }
+  .panel-template-table input { min-width: 0; padding: 0; border: 0; border-radius: 0; color: inherit; background: transparent; font: inherit; line-height: 1.1; }
+}
 </style>
 
 <script>

@@ -18,7 +18,7 @@ Password: nsb
 
 ::: {.callout-note}
 ## Cytek Aurora Panel Guide
-[Cytek Aurora 5L panel template](../../FACS/General%20FACS%20protocols/PanelTemplate_Cytek%20Aurora%205L.md)
+[Cytek Aurora 5L panel template](../../FACS/General%20FACS%20protocols/PanelTemplate_Cytek%20Aurora%205L%20Test.qmd)
 :::
 
 ::: {.callout-note}
@@ -36,7 +36,7 @@ Password: nsb
 [Online calendar](https://www.brownbearsw.com/cal/x-20) for booking flow time\
 Password: nsb
 
-[{{< fa table >}} X-20 layout](../../FACS/General%20FACS%20protocols/FC7.X20_layout.md)
+[{{< fa table >}} X-20 layout](../../FACS/General%20FACS%20protocols/X20%20Layout%202.md)
 
 ::: {.callout-note collapse="true"}
 ## BD FACS LSRFortessa X-20 Filter Guide
@@ -98,6 +98,5 @@ Password:: NSB
 
 ## Sorting
 
-Schedule appointment with [Na Zhang](mailto:naz222@ucsd.edu)
- They will add you to slack channel once you are approved.
-
+Schedule appointment with [Na Zhang](mailto:naz222@ucsd.edu).
+She will add you to slack channel once you are approved.

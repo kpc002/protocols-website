@@ -32,4 +32,4 @@ image: rna.svg
 Make sure to take off all ethanol (with P10)
 :::
 
-Continue with [cDNA Synthesis](/protocols/mol_bio/cDNA.html)
+Continue with [cDNA Synthesis](../cDNA/cDNA.md)

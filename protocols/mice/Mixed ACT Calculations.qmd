@@ -1,0 +1,290 @@
+---
+title: "Mixed ACT Calculations"
+description: "Interactive calculator for mixing CD8 T-cell populations, checking Ametrine ratios, and preparing final ACT mixes."
+order: 10
+author: "Goldrath Lab"
+date: last-modified
+toc: true
+---
+
+This calculator is adapted from `Mixed ACT Calculations.xlsx`. Enter values in the input fields; calculated cell counts and volumes update immediately.
+
+[Download the source workbook](Mixed%20ACT%20Calculations.xlsx){.btn .btn-primary download="Mixed ACT Calculations.xlsx"}
+
+<section class="act-card" aria-labelledby="act-inputs-heading">
+<h2 id="act-inputs-heading">1. Cell counts and staining inputs</h2>
+<p>Wash each population twice with PBS and resuspend in the listed volume. Concentrations are corrected or hemocytometer counts in cells/mL.</p>
+<div class="act-population-grid">
+<article class="act-population">
+<h3>CD45.1 population</h3>
+<label>Population label <input id="population-a-name" type="text" value="shCD19"></label>
+<label>Total volume <span><input id="population-a-volume" type="number" min="0" step="0.1" value="1.6"> mL</span></label>
+<label>Concentration <span><input id="population-a-concentration" type="number" min="0" step="10000" value="3400000"> cells/mL</span></label>
+<label>Ametrine-positive fraction <span><input id="population-a-ametrine" type="number" min="0" max="100" step="0.1" value="54.3"> %</span></label>
+<label>Cells to stain <span><input id="stain-cells-a" type="number" min="0" step="10000" value="100000"> cells</span></label>
+<label>Stain volume <span><input id="stain-volume-a" type="number" min="0" step="10" value="100"> µL</span></label>
+<div class="act-results">
+<div><span>Total cells</span><output id="population-a-total-cells"></output></div>
+<div><span>Ametrine-positive concentration</span><output id="population-a-ametrine-concentration"></output></div>
+<div><span>Total Ametrine-positive cells</span><output id="population-a-total-ametrine"></output></div>
+<div><span>Volume for first stain</span><output id="population-a-stain-volume"></output></div>
+</div>
+</article>
+
+<article class="act-population">
+<h3>CD45.1.2 population</h3>
+<label>Population label <input id="population-b-name" type="text" value="shSrebf2"></label>
+<label>Total volume <span><input id="population-b-volume" type="number" min="0" step="0.1" value="1.6"> mL</span></label>
+<label>Concentration <span><input id="population-b-concentration" type="number" min="0" step="10000" value="4100000"> cells/mL</span></label>
+<label>Ametrine-positive fraction <span><input id="population-b-ametrine" type="number" min="0" max="100" step="0.1" value="22"> %</span></label>
+<label>Cells to stain <span><input id="stain-cells-b" type="number" min="0" step="10000" value="100000"> cells</span></label>
+<label>Stain volume <span><input id="stain-volume-b" type="number" min="0" step="10" value="100"> µL</span></label>
+<div class="act-results">
+<div><span>Total cells</span><output id="population-b-total-cells"></output></div>
+<div><span>Ametrine-positive concentration</span><output id="population-b-ametrine-concentration"></output></div>
+<div><span>Total Ametrine-positive cells</span><output id="population-b-total-ametrine"></output></div>
+<div><span>Volume for first stain</span><output id="population-b-stain-volume"></output></div>
+</div>
+</article>
+</div>
+
+<div class="act-subcard">
+<h3>Staining panel</h3>
+<p>Use the workbook’s panel as a starting point: CD8a, CD45.1, CD45.2, Va2, and AmCyan (Ametrine/BV510).</p>
+</div>
+</section>
+
+<section class="act-card" aria-labelledby="attempt-one-heading">
+<h2 id="attempt-one-heading">2. Attempt 1: Ametrine-balanced mini-mix</h2>
+<p>The workbook solves <strong>x + y = target cells</strong> and <strong>fraction A × x = fraction B × y</strong> so the Ametrine-positive cell numbers are equal.</p>
+<label class="act-inline-label">Mini-mix target <span><input id="mini-target" type="number" min="0" step="10000" value="500000"> total cells</span></label>
+<div class="act-table-wrap"><table class="act-table">
+<thead><tr><th>Population</th><th>Cells</th><th>Volume</th></tr></thead>
+<tbody>
+<tr><th id="attempt1-name-a">CD45.1</th><td><output id="attempt1-cells-a"></output></td><td><output id="attempt1-volume-a"></output></td></tr>
+<tr><th id="attempt1-name-b">CD45.1.2</th><td><output id="attempt1-cells-b"></output></td><td><output id="attempt1-volume-b"></output></td></tr>
+<tr class="act-total-row"><th>Total</th><td><output id="attempt1-total-cells"></output></td><td><output id="attempt1-total-volume"></output></td></tr>
+</tbody></table></div>
+
+<h3>Flow results and correction factors</h3>
+<div class="act-ratio-grid">
+<label>Expected CD45.1 <span><input id="expected-a" type="number" min="0.1" step="0.1" value="50"> %</span></label>
+<label>Expected CD45.1.2 <span><input id="expected-b" type="number" min="0.1" step="0.1" value="50"> %</span></label>
+<label>Observed CD45.1 <span><input id="attempt1-observed-a" type="number" min="0" max="100" step="0.1" value="45"> %</span></label>
+<label>Observed CD45.1.2 <span><input id="attempt1-observed-b" type="number" min="0" max="100" step="0.1" value="55"> %</span></label>
+</div>
+<div class="act-results act-results-three">
+<div><span>CD45.1 correction</span><output id="attempt1-correction-a"></output></div>
+<div><span>CD45.1.2 correction</span><output id="attempt1-correction-b"></output></div>
+<div><span>Correction meaning</span><output id="correction-note">Observed ÷ expected</output></div>
+</div>
+</section>
+
+<section class="act-card" aria-labelledby="attempt-two-heading">
+<h2 id="attempt-two-heading">3. Attempt 2: Corrected mini-mix</h2>
+<p>Attempt 2 applies the Attempt 1 correction factors to the balanced mini-mix.</p>
+<div class="act-table-wrap"><table class="act-table">
+<thead><tr><th>Population</th><th>Corrected cells</th><th>Volume</th></tr></thead>
+<tbody>
+<tr><th id="attempt2-name-a">CD45.1</th><td><output id="attempt2-cells-a"></output></td><td><output id="attempt2-volume-a"></output></td></tr>
+<tr><th id="attempt2-name-b">CD45.1.2</th><td><output id="attempt2-cells-b"></output></td><td><output id="attempt2-volume-b"></output></td></tr>
+<tr class="act-total-row"><th>Total</th><td><output id="attempt2-total-cells"></output></td><td><output id="attempt2-total-volume"></output></td></tr>
+</tbody></table></div>
+
+<h3>Post-correction flow results</h3>
+<div class="act-ratio-grid">
+<label>Observed CD45.1 <span><input id="attempt2-observed-a" type="number" min="0" max="100" step="0.1" value="49"> %</span></label>
+<label>Observed CD45.1.2 <span><input id="attempt2-observed-b" type="number" min="0" max="100" step="0.1" value="51"> %</span></label>
+</div>
+<div class="act-results act-results-three">
+<div><span>CD45.1 status</span><output id="attempt2-status-a"></output></div>
+<div><span>CD45.1.2 status</span><output id="attempt2-status-b"></output></div>
+<div><span>Check criterion</span><output>Within ±5 percentage points</output></div>
+</div>
+</section>
+
+<section class="act-card" aria-labelledby="final-mix-heading">
+<h2 id="final-mix-heading">4. Final mix for adoptive cell transfer</h2>
+<div class="act-grid">
+<label>Number of mice <input id="mice-number" type="number" min="1" step="1" value="9"></label>
+<label>Final volume per mouse <span><input id="injection-volume" type="number" min="0" step="10" value="200"> µL</span></label>
+</div>
+<p class="act-note">Attempt 1 uses 2× the mini-mix cells; Attempt 2 uses 4×, matching the workbook note that 4× is needed for a 2-million-cell mix.</p>
+<div class="act-final-grid">
+<article class="act-subcard"><h3>Attempt 1 final mix</h3><table class="act-table"><thead><tr><th></th><th>Per mouse</th><th>For all mice</th></tr></thead><tbody>
+<tr><th id="final1-name-a">CD45.1 cells</th><td><output id="final1-cells-a-mouse"></output></td><td><output id="final1-cells-a-all"></output></td></tr>
+<tr><th id="final1-name-b">CD45.1.2 cells</th><td><output id="final1-cells-b-mouse"></output></td><td><output id="final1-cells-b-all"></output></td></tr>
+<tr><th>Total cells</th><td><output id="final1-total-cells-mouse"></output></td><td><output id="final1-total-cells-all"></output></td></tr>
+<tr><th>Volume</th><td><output id="final1-volume-mouse"></output></td><td><output id="final1-volume-all"></output></td></tr>
+<tr><th>Volume to add/remove</th><td><output id="final1-add-mouse"></output></td><td><output id="final1-add-all"></output></td></tr>
+</tbody></table></article>
+
+<article class="act-subcard"><h3>Attempt 2 final mix</h3><table class="act-table"><thead><tr><th></th><th>Per mouse</th><th>For all mice</th></tr></thead><tbody>
+<tr><th id="final2-name-a">CD45.1 cells</th><td><output id="final2-cells-a-mouse"></output></td><td><output id="final2-cells-a-all"></output></td></tr>
+<tr><th id="final2-name-b">CD45.1.2 cells</th><td><output id="final2-cells-b-mouse"></output></td><td><output id="final2-cells-b-all"></output></td></tr>
+<tr><th>Total cells</th><td><output id="final2-total-cells-mouse"></output></td><td><output id="final2-total-cells-all"></output></td></tr>
+<tr><th>Volume</th><td><output id="final2-volume-mouse"></output></td><td><output id="final2-volume-all"></output></td></tr>
+<tr><th>Volume to add/remove</th><td><output id="final2-add-mouse"></output></td><td><output id="final2-add-all"></output></td></tr>
+</tbody></table></article>
+</div>
+</section>
+
+<style>
+.act-card { --act-accent: #2c7a7b; --act-soft: color-mix(in srgb, var(--act-accent) 12%, transparent); border: 1px solid color-mix(in srgb, currentColor 18%, transparent); border-radius: .75rem; padding: 1.25rem; margin: 1.25rem 0; box-shadow: 0 2px 8px rgb(0 0 0 / 6%); }
+.act-card h2, .act-card h3 { margin-top: 0; }
+.act-card h3 { font-size: 1.05rem; }
+.act-population-grid, .act-final-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+.act-population, .act-subcard { border: 1px solid color-mix(in srgb, currentColor 14%, transparent); border-radius: .6rem; padding: 1rem; }
+.act-population label, .act-grid label, .act-ratio-grid label { display: flex; flex-direction: column; gap: .3rem; margin: .65rem 0; font-weight: 600; }
+.act-population label span, .act-grid label span, .act-ratio-grid label span, .act-inline-label span { display: flex; align-items: center; gap: .4rem; font-weight: 400; }
+.act-card input { width: 10rem; max-width: 100%; padding: .4rem .5rem; border: 1px solid color-mix(in srgb, currentColor 30%, transparent); border-radius: .3rem; color: inherit; background: var(--bs-body-bg, white); }
+.act-card input[type="text"] { width: 100%; }
+.act-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .65rem; margin-top: 1rem; }
+.act-results div { background: var(--act-soft); border-radius: .45rem; padding: .65rem .8rem; }
+.act-results span { display: block; font-size: .8rem; }
+.act-results output { display: block; margin-top: .15rem; color: var(--act-accent); font-weight: 700; }
+.act-results-three { grid-template-columns: repeat(3, minmax(150px, 1fr)); }
+.act-grid, .act-ratio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem 1.25rem; }
+.act-inline-label { display: flex; align-items: center; gap: .6rem; font-weight: 600; margin: .8rem 0; }
+.act-subcard { margin-top: 1rem; }
+.act-subcard p:last-child, .act-note { margin-bottom: 0; }
+.act-table-wrap { overflow-x: auto; }
+.act-table { width: 100%; border-collapse: collapse; }
+.act-table th, .act-table td { padding: .5rem .6rem; border-bottom: 1px solid color-mix(in srgb, currentColor 14%, transparent); text-align: left; vertical-align: top; }
+.act-table thead th { background: var(--act-soft); }
+.act-table output { font-weight: 600; white-space: nowrap; }
+.act-total-row th, .act-total-row td { font-weight: 700; }
+.act-note { font-size: .88rem; opacity: .8; }
+@media (max-width: 640px) { .act-results-three { grid-template-columns: 1fr; } .act-inline-label { align-items: flex-start; flex-direction: column; } }
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const getElement = identifier => document.getElementById(identifier);
+  const getNumber = identifier => {
+    const value = Number.parseFloat(getElement(identifier).value);
+    return Number.isFinite(value) ? value : NaN;
+  };
+  const formatNumber = (value, digits = 0) => Number.isFinite(value)
+    ? value.toLocaleString(undefined, { maximumFractionDigits: digits })
+    : "—";
+  const formatMeasurement = (value, unit, digits = 2) => Number.isFinite(value)
+    ? `${formatNumber(value, digits)} ${unit}`
+    : "—";
+  const setOutput = (identifier, value, unit, digits = 2) => {
+    getElement(identifier).textContent = unit ? formatMeasurement(value, unit, digits) : formatNumber(value, digits);
+  };
+  const setLabel = (identifier, value) => { getElement(identifier).textContent = value; };
+
+  function populationValues(prefix) {
+    const volume = getNumber(`population-${prefix}-volume`);
+    const concentration = getNumber(`population-${prefix}-concentration`);
+    const fraction = getNumber(`population-${prefix}-ametrine`) / 100;
+    const totalCells = volume * concentration;
+    const ametrineConcentration = concentration * fraction;
+    const totalAmetrine = totalCells * fraction;
+    const stainCells = getNumber(`stain-cells-${prefix}`);
+    const stainVolume = concentration > 0 ? stainCells / concentration * 1000 : NaN;
+    return { concentration, fraction, totalCells, ametrineConcentration, totalAmetrine, stainVolume };
+  }
+
+  function setPopulationOutputs(prefix, values) {
+    setOutput(`population-${prefix}-total-cells`, values.totalCells, "cells");
+    setOutput(`population-${prefix}-ametrine-concentration`, values.ametrineConcentration, "cells/mL");
+    setOutput(`population-${prefix}-total-ametrine`, values.totalAmetrine, "cells");
+    setOutput(`population-${prefix}-stain-volume`, values.stainVolume, "µL", 2);
+  }
+
+  function setMiniMixOutputs(prefix, cells, volume, digits = 0) {
+    setOutput(`${prefix}-cells-a`, cells.a, "cells", digits);
+    setOutput(`${prefix}-cells-b`, cells.b, "cells", digits);
+    setOutput(`${prefix}-total-cells`, cells.a + cells.b, "cells", digits);
+    setOutput(`${prefix}-volume-a`, volume.a, "µL", 2);
+    setOutput(`${prefix}-volume-b`, volume.b, "µL", 2);
+    setOutput(`${prefix}-total-volume`, volume.a + volume.b, "µL", 2);
+  }
+
+  function setFinalOutputs(prefix, miniCells, multiplier, populationA, populationB, mice, injectionVolume) {
+    const cellsPerMouse = { a: miniCells.a * multiplier, b: miniCells.b * multiplier };
+    const cellsForAll = { a: cellsPerMouse.a * mice, b: cellsPerMouse.b * mice };
+    const volumePerMouse = {
+      a: populationA.concentration > 0 ? cellsPerMouse.a / populationA.concentration * 1000 : NaN,
+      b: populationB.concentration > 0 ? cellsPerMouse.b / populationB.concentration * 1000 : NaN
+    };
+    const volumeForAll = { a: volumePerMouse.a * mice, b: volumePerMouse.b * mice };
+    const totalCellsPerMouse = cellsPerMouse.a + cellsPerMouse.b;
+    const totalCellsForAll = cellsForAll.a + cellsForAll.b;
+    const totalVolumePerMouse = volumePerMouse.a + volumePerMouse.b;
+    const totalVolumeForAll = volumeForAll.a + volumeForAll.b;
+    setOutput(`${prefix}-cells-a-mouse`, cellsPerMouse.a, "cells");
+    setOutput(`${prefix}-cells-a-all`, cellsForAll.a, "cells");
+    setOutput(`${prefix}-cells-b-mouse`, cellsPerMouse.b, "cells");
+    setOutput(`${prefix}-cells-b-all`, cellsForAll.b, "cells");
+    setOutput(`${prefix}-total-cells-mouse`, totalCellsPerMouse, "cells");
+    setOutput(`${prefix}-total-cells-all`, totalCellsForAll, "cells");
+    setOutput(`${prefix}-volume-mouse`, totalVolumePerMouse, "µL", 2);
+    setOutput(`${prefix}-volume-all`, totalVolumeForAll, "µL", 2);
+    setOutput(`${prefix}-add-mouse`, injectionVolume - totalVolumePerMouse, "µL", 2);
+    setOutput(`${prefix}-add-all`, injectionVolume * mice - totalVolumeForAll, "µL", 2);
+  }
+
+  function ratioStatus(observed, expected) {
+    return Number.isFinite(observed) && Number.isFinite(expected) && Math.abs(observed - expected) <= 5 ? "OK" : "Review";
+  }
+
+  function calculate() {
+    const populationA = populationValues("a");
+    const populationB = populationValues("b");
+    setPopulationOutputs("a", populationA);
+    setPopulationOutputs("b", populationB);
+    const nameA = getElement("population-a-name").value || "CD45.1";
+    const nameB = getElement("population-b-name").value || "CD45.1.2";
+    ["attempt1-name-a", "attempt2-name-a", "final1-name-a", "final2-name-a"].forEach(identifier => setLabel(identifier, identifier.startsWith("final") ? `${nameA} cells` : nameA));
+    ["attempt1-name-b", "attempt2-name-b", "final1-name-b", "final2-name-b"].forEach(identifier => setLabel(identifier, identifier.startsWith("final") ? `${nameB} cells` : nameB));
+
+    const miniTarget = getNumber("mini-target");
+    const fractionTotal = populationA.fraction + populationB.fraction;
+    const miniCells = {
+      b: fractionTotal > 0 ? miniTarget * populationA.fraction / fractionTotal : NaN,
+      a: fractionTotal > 0 ? miniTarget - miniTarget * populationA.fraction / fractionTotal : NaN
+    };
+    const miniVolume = {
+      a: populationA.concentration > 0 ? miniCells.a / populationA.concentration * 1000 : NaN,
+      b: populationB.concentration > 0 ? miniCells.b / populationB.concentration * 1000 : NaN
+    };
+    setMiniMixOutputs("attempt1", miniCells, miniVolume);
+
+    const expectedA = getNumber("expected-a");
+    const expectedB = getNumber("expected-b");
+    const observedA = getNumber("attempt1-observed-a");
+    const observedB = getNumber("attempt1-observed-b");
+    const correctionA = expectedA > 0 ? observedA / expectedA : NaN;
+    const correctionB = expectedB > 0 ? observedB / expectedB : NaN;
+    setOutput("attempt1-correction-a", correctionA, "×", 3);
+    setOutput("attempt1-correction-b", correctionB, "×", 3);
+
+    const correctedCells = {
+      a: correctionA > 0 ? miniCells.a / correctionA : NaN,
+      b: correctionB > 0 ? miniCells.b / correctionB : NaN
+    };
+    const correctedVolume = {
+      a: populationA.concentration > 0 ? correctedCells.a / populationA.concentration * 1000 : NaN,
+      b: populationB.concentration > 0 ? correctedCells.b / populationB.concentration * 1000 : NaN
+    };
+    setMiniMixOutputs("attempt2", correctedCells, correctedVolume);
+
+    const postObservedA = getNumber("attempt2-observed-a");
+    const postObservedB = getNumber("attempt2-observed-b");
+    setLabel("attempt2-status-a", ratioStatus(postObservedA, expectedA));
+    setLabel("attempt2-status-b", ratioStatus(postObservedB, expectedB));
+
+    const mice = getNumber("mice-number");
+    const injectionVolume = getNumber("injection-volume");
+    setFinalOutputs("final1", miniCells, 2, populationA, populationB, mice, injectionVolume);
+    setFinalOutputs("final2", correctedCells, 4, populationA, populationB, mice, injectionVolume);
+  }
+
+  document.addEventListener("input", calculate);
+  calculate();
+});
+</script>
