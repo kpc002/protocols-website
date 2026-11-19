@@ -36,7 +36,10 @@ Password: nsb
 [Online calendar](https://www.brownbearsw.com/cal/x-20) for booking flow time\
 Password: nsb
 
+::: {.callout-note}
+## X-20 Panel Guide
 [{{< fa table >}} X-20 layout](../../FACS/General%20FACS%20protocols/X20%20Layout%202.md)
+:::
 
 ::: {.callout-note collapse="true"}
 ## BD FACS LSRFortessa X-20 Filter Guide

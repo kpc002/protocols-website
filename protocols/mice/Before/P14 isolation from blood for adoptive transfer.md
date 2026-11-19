@@ -4,7 +4,7 @@ description: "P14 isolation from blood for adoptive transfer"
 order: 10
 author: Kelsey Bennion
 date: last-modified
-image: blood_sample.svg
+image: ../blood_sample.svg
 ---
 
 **Isolating P14 from blood of donor mice for adoptive transfer**

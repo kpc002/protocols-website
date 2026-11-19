@@ -1,0 +1,11 @@
+---
+search: false
+title: "Before"
+description: "Mouse preparation, planning, and pre-experiment protocols."
+order: 10
+listing:
+  type: table
+  contents: ["*.md", "*.qmd", "*/index.qmd"]
+  sort: title
+  fields: [title, description, author]
+---

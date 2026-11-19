@@ -5,7 +5,7 @@ author: Nicole Sharping
 date: last-modified
 description: 
   Get lymphocytes from intestine
-image: lymphnode.png
+image: ../lymphnode.png
 ---
 
 **IEL and Lamina Propria prep**

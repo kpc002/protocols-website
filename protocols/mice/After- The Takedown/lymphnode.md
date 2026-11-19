@@ -5,7 +5,7 @@ author: Maximilian Heeg
 date: last-modified
 description: 
   Get lymphocytes from an lymphnode
-image: lymphnode.png
+image: ../lymphnode.png
 ---
 
 ## Breaking the tissue and collect the cells

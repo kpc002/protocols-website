@@ -3,7 +3,7 @@ order: 10
 title: "B16 Takedown 2026-03-25_ATM"
 author: Alex Monell
 date: last-modified
-image: dna.svg
+image: ../dna.svg
 description: "B16 tumor experiment takedown workflow for harvesting and processing spleen, draining lymph node, and tumor tissues."
 ---
 
@@ -45,7 +45,7 @@ Export Generated On:
 - Go down to mouse room and extract tissues.
 - Come upstairs and add collagenase to the collagenase
 
-![Image](protocols/Alex/Takedown/B16 Takedown 2026-03-25_ATM_artifacts/image_000000_d3170b15ea9490de74238612badcedc9c566fc3aa59583fbed73cd2869cef453.png)
+![Image](../protocols/Alex/Takedown/B16 Takedown 2026-03-25_ATM_artifacts/image_000000_d3170b15ea9490de74238612badcedc9c566fc3aa59583fbed73cd2869cef453.png)
 
 ## B16 Tumor processing protocol obtained from Nicole. Thanks Nicole
 
@@ -77,7 +77,7 @@ Export Generated On:
 - Fill to top with RP5 then spin at 1600 rpm for 4 min.
 - Resuspend pellet in 1mL RP5 - cells are now ready to transfer to plates for staining.
 
-![Image](protocols/Alex/Takedown/B16 Takedown 2026-03-25_ATM_artifacts/image_000001_0a90fec5f778cc128ed5d34572cad7c3dafac27c73186701623ee8b7d63d970c.png)
+![Image](../protocols/Alex/Takedown/B16 Takedown 2026-03-25_ATM_artifacts/image_000001_0a90fec5f778cc128ed5d34572cad7c3dafac27c73186701623ee8b7d63d970c.png)
 
 ## Staining
 

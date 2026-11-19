@@ -4,7 +4,7 @@ description: "Making bone marrow chimeras"
 order: 10
 author: Kelsey Bennion
 date: last-modified
-image: blood_sample.svg
+image: ../blood_sample.svg
 ---
 
 **Bone marrow chimeras**

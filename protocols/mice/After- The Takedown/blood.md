@@ -5,7 +5,7 @@ author: Maximilian Heeg
 date: last-modified
 description: 
   Lymphocyte isolation from blood
-image: blood_sample.svg
+image: ../blood_sample.svg
 ---
 
 -   collect blood in PBS + 0.5% EDTA tubes
