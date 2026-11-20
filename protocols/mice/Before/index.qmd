@@ -4,8 +4,29 @@ title: "Before"
 description: "Mouse preparation, planning, and pre-experiment protocols."
 order: 10
 listing:
-  type: table
-  contents: ["*.md", "*.qmd", "*/index.qmd"]
-  sort: title
-  fields: [title, description, author]
+  - id: protocols
+    type: table
+    contents: ["/*.md", "/*.qmd"]
+    sort: title
+    fields: [title, description, author]
+  - id: tumor-protocols
+    type: table
+    contents: ["Tumor/*.md"]
+    sort: title
+    fields: [title, description, author]
 ---
+
+## Protocols
+
+::: {#protocols}
+:::
+
+## Tumor protocols
+
+<details>
+<summary>Show Tumor protocols</summary>
+
+::: {#tumor-protocols}
+:::
+
+</details>

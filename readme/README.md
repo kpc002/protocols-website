@@ -98,3 +98,4 @@ git push origin main
 ```
 
 3. Open the GitHub Actions page and wait for `Quarto Publish` to complete. On success, the workflow writes `_site` to `cf-pages`, which Cloudflare Pages serves.
+c

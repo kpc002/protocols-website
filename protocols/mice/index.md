@@ -3,16 +3,16 @@ search: false
 title: "Mice"
 image: 'mouse-gray.svg'
 listing:
-  - id: experiment-stages
+  - id: before-during-after-takedown
     type: grid
     contents:
       - "Before/index.qmd"
-      - "After- The Takedown/index.qmd"
       - "During/index.qmd"
+      - "After/index.qmd"
     sort: false
     sort-ui: false
     filter-ui: false
-  - id: other-folders
+  - id: genotype-and-phenotype
     type: grid
     contents:
       - "genotyping/index.qmd"
@@ -24,12 +24,12 @@ listing:
 
 All protocols related to mice and tissue / organ processing.
 
-## Experiment stages
+## Before, During, After Takedown
 
-::: {#experiment-stages}
+::: {#before-during-after-takedown}
 :::
 
-## Other folders
+## Genotype and Phenotype
 
-::: {#other-folders}
+::: {#genotype-and-phenotype}
 :::

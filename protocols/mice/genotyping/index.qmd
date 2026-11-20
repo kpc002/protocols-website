@@ -4,7 +4,7 @@ order: 90
 title: "Genotyping"
 image: 'hic1_floxed_pcr/Hic1_floxed.jpg'
 listing: 
-  type: grid
+  type: table
 ---
 
 PCR protocols for mouse genotyping.

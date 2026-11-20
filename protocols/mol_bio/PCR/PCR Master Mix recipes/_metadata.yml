@@ -1,0 +1,5 @@
+search: false
+format:
+  html:
+    css: pcr-calculator.css
+    include-after-body: pcr-calculator.html

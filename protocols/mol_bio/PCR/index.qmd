@@ -4,22 +4,29 @@ title: "PCR"
 description: "Polymerase chain reaction setup and analysis protocols."
 order: 10
 listing:
-  type: table
-  contents: ["*.md", "*.qmd"]
-  sort: title
-  fields: [title, description, author]
+  - id: protocols
+    type: table
+    contents: ["/*.md", "/*.qmd"]
+    sort: title
+    fields: [title, description, author]
+  - id: pcr-master-mix-recipes
+    type: table
+    contents: ["PCR Master Mix recipes/*.md"]
+    sort: title
+    fields: [title, description, author]
 ---
 
-<span class="visually-hidden">{{< fa file-lines >}}</span>
+## Protocols
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".quarto-listing-container-table .listing-title").forEach((link) => {
-    if (link.querySelector(".fa-file-lines")) return;
-    const icon = document.createElement("i");
-    icon.className = "fa-solid fa-file-lines";
-    icon.setAttribute("aria-hidden", "true");
-    link.prepend(icon, " ");
-  });
-});
-</script>
+::: {#protocols}
+:::
+
+## PCR master mix recipes
+
+<details>
+<summary>Show PCR master mix recipes</summary>
+
+::: {#pcr-master-mix-recipes}
+:::
+
+</details>

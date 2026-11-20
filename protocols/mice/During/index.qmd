@@ -4,8 +4,44 @@ title: "During"
 description: "Mouse treatment, procedure, and in-experiment protocols."
 order: 20
 listing:
-  type: table
-  contents: ["*.md", "*.qmd", "*/index.qmd"]
-  sort: title
-  fields: [title, description, author]
+  - id: protocols
+    type: table
+    contents: ["/*.md", "/*.qmd"]
+    sort: title
+    fields: [title, description, author]
+  - id: surgery-protocols
+    type: table
+    contents: ["Surgery/*.md", "Surgery/*.qmd"]
+    sort: title
+    fields: [title, description, author]
+  - id: treatment-protocols
+    type: table
+    contents: ["Treatments/*.md", "Treatments/*.qmd"]
+    sort: title
+    fields: [title, description, author]
 ---
+
+## Protocols
+
+::: {#protocols}
+:::
+
+## Surgery protocols
+
+<details>
+<summary>Show Surgery protocols</summary>
+
+::: {#surgery-protocols}
+:::
+
+</details>
+
+## Treatment protocols
+
+<details>
+<summary>Show Treatment protocols</summary>
+
+::: {#treatment-protocols}
+:::
+
+</details>

@@ -1,0 +1,57 @@
+<script>
+(() => {
+  // Only the workbook's two formula forms are supported: A1*B2 and SUM(B3:B10).
+  // Read the original values once so calculated display text never becomes input.
+  document.querySelectorAll('.pcr-calculator').forEach((calculator) => {
+    const cells = new Map(Array.from(calculator.querySelectorAll('[data-cell]'),
+      (cell) => [cell.dataset.cell, {
+        element: cell,
+        formula: cell.dataset.formula,
+        value: cell.textContent.trim()
+      }]));
+    const inputs = Array.from(calculator.querySelectorAll('.pcr-reaction-input'));
+    const format = (value) => Number.isFinite(value) ? String(Number(value.toFixed(8))) : '—';
+
+    const update = () => {
+      const cache = new Map();
+      inputs.forEach((input) => {
+        const count = input.valueAsNumber;
+        const valid = input.value.trim() !== '' && Number.isSafeInteger(count) && count >= 0;
+        input.setAttribute('aria-invalid', String(!valid));
+        calculator.querySelector(`#${input.id}-error`).textContent = valid ? '' : 'Enter a whole number of reactions (0 or more).';
+        cache.set(input.dataset.reactionCell, valid ? count : NaN);
+        cells.get(input.dataset.reactionCell).element.textContent = valid ? String(count) : '—';
+      });
+      const evaluate = (reference, visiting = new Set()) => {
+        if (cache.has(reference)) return cache.get(reference);
+        const cell = cells.get(reference);
+        if (!cell || visiting.has(reference)) return NaN;
+        visiting.add(reference);
+        let result = NaN;
+        if (!cell.formula) {
+          result = Number(cell.value);
+        } else {
+          const product = /^=([A-Z]+\d+)\*([A-Z]+\d+)$/.exec(cell.formula);
+          const sum = /^=SUM\(([A-Z]+)(\d+):([A-Z]+)(\d+)\)$/.exec(cell.formula);
+          if (product) {
+            result = evaluate(product[1], visiting) * evaluate(product[2], visiting);
+          } else if (sum && sum[1] === sum[3]) {
+            result = 0;
+            for (let row = Number(sum[2]); row <= Number(sum[4]); row += 1) {
+              result += evaluate(`${sum[1]}${row}`, visiting);
+            }
+          }
+        }
+        visiting.delete(reference);
+        cache.set(reference, result);
+        return result;
+      };
+      cells.forEach((cell, reference) => {
+        if (cell.formula) cell.element.textContent = format(evaluate(reference));
+      });
+    };
+    inputs.forEach((input) => input.addEventListener('input', update));
+    update();
+  });
+})();
+</script>

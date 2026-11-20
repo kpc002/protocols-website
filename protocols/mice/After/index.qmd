@@ -1,0 +1,32 @@
+---
+search: false
+title: "After the Takedown"
+description: "Mouse tissue collection, processing, and post-experiment protocols."
+order: 30
+listing:
+  - id: protocols
+    type: table
+    contents: ["/*.md", "/*.qmd"]
+    sort: title
+    fields: [title, description, author]
+  - id: masopust-protocols
+    type: table
+    contents: ["Masopust Gut Prep Protocol/*.md", "Masopust Gut Prep Protocol/*.qmd"]
+    sort: title
+    fields: [title, description, author]
+---
+
+## Protocols
+
+::: {#protocols}
+:::
+
+## Masopust Gut Prep Protocol
+
+<details>
+<summary>Show Masopust Gut Prep Protocol files</summary>
+
+::: {#masopust-protocols}
+:::
+
+</details>

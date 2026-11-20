@@ -1,0 +1,14 @@
+---
+title: "PCR Master Mix recipes"
+description: "Interactive calculators for PCR master mixes."
+author: "Goldrath Lab"
+listing:
+  type: table
+  contents: ["*.md"]
+  sort: title
+  fields: [title, description]
+  filter-ui: true
+  sort-ui: true
+---
+
+Choose a recipe, then enter the number of reactions needed in its highlighted box.

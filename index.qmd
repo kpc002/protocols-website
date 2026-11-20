@@ -32,8 +32,6 @@ Everything you need to know  about lymphocyte isolation from mouse tissues.
 
 Classic protocols for RNA Isolation, cDNA Synthesis, PCRs and Western
 
-[RNA_cDNA_qPCR](/protocols/mol_bio/RNA_cDNA_qPCR/) | [RNA](/protocols/mol_bio/RNA_cDNA_qPCR/RNA/) | [cDNA](/protocols/mol_bio/RNA_cDNA_qPCR/cDNA/) | [qPCR](/protocols/mol_bio/RNA_cDNA_qPCR/qPCR/)
-
 ### [{{< fa dna >}} Crispr Design and Cloning](/protocols/Crispr_Design_and_Cloning/)
 
 Collected protocols for Crispr Design and Cloning
