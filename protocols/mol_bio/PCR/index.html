@@ -56,8 +56,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap-1156576e2c098b449a4a7d9f7836ad7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/bootstrap/bootstrap-dark-2d02d222c184387e9d4c9e4573317ab6.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../../../site_libs/bootstrap/bootstrap-1156576e2c098b449a4a7d9f7836ad7c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-protocols .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -100,7 +98,29 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-protocols'] = new List('listing-protocols', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-pcr-master-mix-recipes .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-pcr-master-mix-recipes'] = new List('listing-pcr-master-mix-recipes', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -1158,175 +1178,17 @@ window.Quarto = {
  <span class="menu-text">PCR master mix recipes</span></a>
   </div>
 </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" aria-controls="quarto-sidebar-section-23" aria-expanded="false">
- <span class="menu-text" id="quarto-sidebar-section-23-label">PCR Master Mix recipes</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
-      </div>
-      <ul id="quarto-sidebar-section-23" aria-labelledby="quarto-sidebar-section-23-label" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Bhlhe40.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bhlhe40</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Cre.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cre</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Cre Reporter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cre Reporter</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/dLCK Cre.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">dLCK Cre</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/E2-2 Conditional.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">E2-2 Conditional</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/E2-2 Reporter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">E2-2 Reporter</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/E2Aflox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">E2Aflox</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/ER cre.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ER cre</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/FOXO1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FOXO1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/HEB KO.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HEB KO</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/HEBflox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HEBflox</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/HIF2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HIF2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/HIFVHL.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HIFVHL</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Id2flox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Id2flox</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Id2flox Alt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Id2flox Alt</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Id2flox_current.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Id2flox_current</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Id3flox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Id3flox</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Id3flox current.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Id3flox current</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/NKT (va14g).html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">NKT (va14g)</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/OT-I.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">OT-I</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/P14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">P14</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/PLZF Cre.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PLZF Cre</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Tbetflox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tbetflox</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/USP1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">USP1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../protocols/Goldrath_Protocols/The Master Folder/PCR Master Mix recipes/Zeb2flox.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Zeb2flox</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/Goldrath_Protocols/Old_Protocols/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-24-label">Old Protocols</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" aria-controls="quarto-sidebar-section-24" aria-expanded="false" aria-label="Toggle section: Old Protocols">
+ <span class="menu-text" id="quarto-sidebar-section-23-label">Old Protocols</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-23" aria-controls="quarto-sidebar-section-23" aria-expanded="false" aria-label="Toggle section: Old Protocols">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-24" aria-labelledby="quarto-sidebar-section-24-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-23" aria-labelledby="quarto-sidebar-section-23-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/Goldrath_Protocols/Old_Protocols/Cell culture.html" class="sidebar-item-text sidebar-link">
@@ -1400,12 +1262,12 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/histology/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-25-label">Histology Protocols</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" aria-controls="quarto-sidebar-section-25" aria-expanded="false" aria-label="Toggle section: Histology Protocols">
+ <span class="menu-text" id="quarto-sidebar-section-24-label">Histology Protocols</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-24" aria-controls="quarto-sidebar-section-24" aria-expanded="false" aria-label="Toggle section: Histology Protocols">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-25" aria-labelledby="quarto-sidebar-section-25-label" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-24" aria-labelledby="quarto-sidebar-section-24-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/histology/cryosectioning.html" class="sidebar-item-text sidebar-link">
@@ -1549,12 +1411,12 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/human/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-26-label">Human Protocols</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" aria-controls="quarto-sidebar-section-26" aria-expanded="false" aria-label="Toggle section: Human Protocols">
+ <span class="menu-text" id="quarto-sidebar-section-25-label">Human Protocols</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-25" aria-controls="quarto-sidebar-section-25" aria-expanded="false" aria-label="Toggle section: Human Protocols">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-26" aria-labelledby="quarto-sidebar-section-26-label" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-25" aria-labelledby="quarto-sidebar-section-25-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/human/BTSSR viable  Lymphocyte collection protocol 10222014.html" class="sidebar-item-text sidebar-link">
@@ -1644,21 +1506,21 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-27-label">Infections</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" aria-controls="quarto-sidebar-section-27" aria-expanded="false" aria-label="Toggle section: Infections">
+ <span class="menu-text" id="quarto-sidebar-section-26-label">Infections</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-26" aria-controls="quarto-sidebar-section-26" aria-expanded="false" aria-label="Toggle section: Infections">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-27" aria-labelledby="quarto-sidebar-section-27-label" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-26" aria-labelledby="quarto-sidebar-section-26-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/lcmv/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-28-label">LCMV</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" aria-controls="quarto-sidebar-section-28" aria-expanded="false" aria-label="Toggle section: LCMV">
+ <span class="menu-text" id="quarto-sidebar-section-27-label">LCMV</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-27" aria-controls="quarto-sidebar-section-27" aria-expanded="false" aria-label="Toggle section: LCMV">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-28" aria-labelledby="quarto-sidebar-section-28-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-27" aria-labelledby="quarto-sidebar-section-27-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/infections/lcmv/CB1.Tissue processing for viral titers.html" class="sidebar-item-text sidebar-link">
@@ -1682,12 +1544,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/listeria/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-29-label">Listeria</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-29" aria-controls="quarto-sidebar-section-29" aria-expanded="false" aria-label="Toggle section: Listeria">
+ <span class="menu-text" id="quarto-sidebar-section-28-label">Listeria</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-28" aria-controls="quarto-sidebar-section-28" aria-expanded="false" aria-label="Toggle section: Listeria">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-29" aria-labelledby="quarto-sidebar-section-29-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-28" aria-labelledby="quarto-sidebar-section-28-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/infections/listeria/infection.html" class="sidebar-item-text sidebar-link">
@@ -1741,12 +1603,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/VSV-Ova/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-30-label">VSV</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-30" aria-controls="quarto-sidebar-section-30" aria-expanded="false" aria-label="Toggle section: VSV">
+ <span class="menu-text" id="quarto-sidebar-section-29-label">VSV</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-29" aria-controls="quarto-sidebar-section-29" aria-expanded="false" aria-label="Toggle section: VSV">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-30" aria-labelledby="quarto-sidebar-section-30-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-29" aria-labelledby="quarto-sidebar-section-29-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/infections/VSV-Ova/Diallo et al vsv propagation.html" class="sidebar-item-text sidebar-link">
@@ -1776,12 +1638,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/LCMV_CLONE13/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-31-label">LCMV Clone 13</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-31" aria-controls="quarto-sidebar-section-31" aria-expanded="false" aria-label="Toggle section: LCMV Clone 13">
+ <span class="menu-text" id="quarto-sidebar-section-30-label">LCMV Clone 13</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-30" aria-controls="quarto-sidebar-section-30" aria-expanded="false" aria-label="Toggle section: LCMV Clone 13">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-31" aria-labelledby="quarto-sidebar-section-31-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-30" aria-labelledby="quarto-sidebar-section-30-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/infections/LCMV_CLONE13/Infection with LCMV CL13.html" class="sidebar-item-text sidebar-link">
@@ -1817,12 +1679,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/vaccinia protocols/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-32-label">vaccinia protocols</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-32" aria-controls="quarto-sidebar-section-32" aria-expanded="false" aria-label="Toggle section: vaccinia protocols">
+ <span class="menu-text" id="quarto-sidebar-section-31-label">vaccinia protocols</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-31" aria-controls="quarto-sidebar-section-31" aria-expanded="false" aria-label="Toggle section: vaccinia protocols">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-32" aria-labelledby="quarto-sidebar-section-32-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-31" aria-labelledby="quarto-sidebar-section-31-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/infections/vaccinia protocols/Extraction of D…cinia Virus.html" class="sidebar-item-text sidebar-link">
@@ -1852,12 +1714,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/infections/Other/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-33-label">Other Infections</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-33" aria-controls="quarto-sidebar-section-33" aria-expanded="false" aria-label="Toggle section: Other Infections">
+ <span class="menu-text" id="quarto-sidebar-section-32-label">Other Infections</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-32" aria-controls="quarto-sidebar-section-32" aria-expanded="false" aria-label="Toggle section: Other Infections">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-33" aria-labelledby="quarto-sidebar-section-33-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-32" aria-labelledby="quarto-sidebar-section-32-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/infections/Other/growing sphingomonas and pneumococcus.html" class="sidebar-item-text sidebar-link">
@@ -1871,21 +1733,21 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-34-label">Mice</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-34" aria-controls="quarto-sidebar-section-34" aria-expanded="false" aria-label="Toggle section: Mice">
+ <span class="menu-text" id="quarto-sidebar-section-33-label">Mice</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-33" aria-controls="quarto-sidebar-section-33" aria-expanded="false" aria-label="Toggle section: Mice">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-34" aria-labelledby="quarto-sidebar-section-34-label" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-33" aria-labelledby="quarto-sidebar-section-33-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/Before/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-35-label">Before</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-35" aria-controls="quarto-sidebar-section-35" aria-expanded="false" aria-label="Toggle section: Before">
+ <span class="menu-text" id="quarto-sidebar-section-34-label">Before</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-34" aria-controls="quarto-sidebar-section-34" aria-expanded="false" aria-label="Toggle section: Before">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-35" aria-labelledby="quarto-sidebar-section-35-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-34" aria-labelledby="quarto-sidebar-section-34-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/Before/Fetal Liver Chimeras.html" class="sidebar-item-text sidebar-link">
@@ -1895,12 +1757,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/Before/Tumor/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-36-label">Tumor</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-36" aria-controls="quarto-sidebar-section-36" aria-expanded="false" aria-label="Toggle section: Tumor">
+ <span class="menu-text" id="quarto-sidebar-section-35-label">Tumor</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-35" aria-controls="quarto-sidebar-section-35" aria-expanded="false" aria-label="Toggle section: Tumor">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-36" aria-labelledby="quarto-sidebar-section-36-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-35" aria-labelledby="quarto-sidebar-section-35-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/Before/Tumor/04.20.21 Tumor injection protocol.html" class="sidebar-item-text sidebar-link">
@@ -1968,12 +1830,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/phenotyping/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-37-label">Phenotyping</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-37" aria-controls="quarto-sidebar-section-37" aria-expanded="false" aria-label="Toggle section: Phenotyping">
+ <span class="menu-text" id="quarto-sidebar-section-36-label">Phenotyping</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-36" aria-controls="quarto-sidebar-section-36" aria-expanded="false" aria-label="Toggle section: Phenotyping">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-37" aria-labelledby="quarto-sidebar-section-37-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-36" aria-labelledby="quarto-sidebar-section-36-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/phenotyping/Blood phenotyping P14 and OT1 mice.html" class="sidebar-item-text sidebar-link">
@@ -1989,12 +1851,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/phenotyping/PMEL_mice/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-38-label">PMEL Mice</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-38" aria-controls="quarto-sidebar-section-38" aria-expanded="false" aria-label="Toggle section: PMEL Mice">
+ <span class="menu-text" id="quarto-sidebar-section-37-label">PMEL Mice</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-37" aria-controls="quarto-sidebar-section-37" aria-expanded="false" aria-label="Toggle section: PMEL Mice">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-38" aria-labelledby="quarto-sidebar-section-38-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-37" aria-labelledby="quarto-sidebar-section-37-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/phenotyping/PMEL_mice/PMEL_mice.html" class="sidebar-item-text sidebar-link">
@@ -2032,12 +1894,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/During/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-39-label">During</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-39" aria-controls="quarto-sidebar-section-39" aria-expanded="false" aria-label="Toggle section: During">
+ <span class="menu-text" id="quarto-sidebar-section-38-label">During</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-38" aria-controls="quarto-sidebar-section-38" aria-expanded="false" aria-label="Toggle section: During">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-39" aria-labelledby="quarto-sidebar-section-39-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-38" aria-labelledby="quarto-sidebar-section-38-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/During/Bleeding Mice for transduction check_ATM.html" class="sidebar-item-text sidebar-link">
@@ -2047,12 +1909,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/During/Treatments/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-40-label">Treatments</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-40" aria-controls="quarto-sidebar-section-40" aria-expanded="false" aria-label="Toggle section: Treatments">
+ <span class="menu-text" id="quarto-sidebar-section-39-label">Treatments</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-39" aria-controls="quarto-sidebar-section-39" aria-expanded="false" aria-label="Toggle section: Treatments">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-40" aria-labelledby="quarto-sidebar-section-40-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-39" aria-labelledby="quarto-sidebar-section-39-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/During/Treatments/AntiPD1_CTLA4 in vivo blockade in B16-challenged mice.html" class="sidebar-item-text sidebar-link">
@@ -2082,12 +1944,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/During/Surgery/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-41-label">Surgery</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-41" aria-controls="quarto-sidebar-section-41" aria-expanded="false" aria-label="Toggle section: Surgery">
+ <span class="menu-text" id="quarto-sidebar-section-40-label">Surgery</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-40" aria-controls="quarto-sidebar-section-40" aria-expanded="false" aria-label="Toggle section: Surgery">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-41" aria-labelledby="quarto-sidebar-section-41-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-40" aria-labelledby="quarto-sidebar-section-40-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/During/Surgery/Mouse Anesthesia.html" class="sidebar-item-text sidebar-link">
@@ -2112,73 +1974,73 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../protocols/mice/After- The Takedown/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-42-label">After the Takedown</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-42" aria-controls="quarto-sidebar-section-42" aria-expanded="false" aria-label="Toggle section: After the Takedown">
+            <a href="../../../protocols/mice/After/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text" id="quarto-sidebar-section-41-label">After the Takedown</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-41" aria-controls="quarto-sidebar-section-41" aria-expanded="false" aria-label="Toggle section: After the Takedown">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-42" aria-labelledby="quarto-sidebar-section-42-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-41" aria-labelledby="quarto-sidebar-section-41-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/spleen.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/spleen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Spleen processing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/lymphnode.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/lymphnode.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lymphnode processing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/B16 Takedown 2026-03-25_ATM.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/B16 Takedown 2026-03-25_ATM.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">B16 Takedown 2026-03-25_ATM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/B16 tumor processing protocol.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/B16 tumor processing protocol.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">B16 tumor processing protocol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/blood.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/blood.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Blood processing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Gut Prep Reagents-MRC.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Gut Prep Reagents-MRC.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Gut Prep Reagents-MRC</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../protocols/mice/After- The Takedown/Masopust Gut Prep Protocol/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-43-label">Masopust Gut Prep Protocol</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-43" aria-controls="quarto-sidebar-section-43" aria-expanded="false" aria-label="Toggle section: Masopust Gut Prep Protocol">
+            <a href="../../../protocols/mice/After/Masopust Gut Prep Protocol/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text" id="quarto-sidebar-section-42-label">Masopust Gut Prep Protocol</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-42" aria-controls="quarto-sidebar-section-42" aria-expanded="false" aria-label="Toggle section: Masopust Gut Prep Protocol">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-43" aria-labelledby="quarto-sidebar-section-43-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-42" aria-labelledby="quarto-sidebar-section-42-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Masopust Gut Prep Protocol/Goldrath IEL and LPL Isolation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Masopust Gut Prep Protocol/Goldrath IEL and LPL Isolation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Goldrath IEL and LPL Isolation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Masopust Gut Prep Protocol/GUT Prep Reagents.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Masopust Gut Prep Protocol/GUT Prep Reagents.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GUT Prep Reagents</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Masopust Gut Prep Protocol/LP Isolation (updated April 2012).html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">LP Isolation (updated April 2012)</span></a>
   </div>
 </li>
@@ -2186,61 +2048,61 @@ window.Quarto = {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Liver Preparation Protocol.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Liver Preparation Protocol.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liver Preparation Protocol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Lymphocyte isolation from mouse tissues.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Lymphocyte isolation from mouse tissues.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lymphocyte isolation from mouse tissues</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Lymphocyte prep_tissues.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Lymphocyte prep_tissues.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lymphocyte prep_tissues</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/spleen&amp;lymph node cell prep.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/spleen&amp;lymph node cell prep.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">spleen&amp;lymph node cell prep</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/TIF_ajpheart.00327.2002.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TIF_ajpheart.00327.2002</span></a>
+  <a href="../../../protocols/mice/After/TIF_ajpheart.00327.2002.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Isolation of interstitial fluid from rat hearts</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/TIL_prep_MC38_sc_MRC.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/TIL_prep_MC38_sc_MRC.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TIL_prep_MC38_sc_MRC</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/tissue_prep.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/tissue_prep.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lymphocyte isolation from mouse tissues</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Gut prep protocol.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Gut prep protocol.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Gut prep protocol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Liberase Skin Protocol_MHY 07082025.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Liberase Skin Protocol_MHY 07082025.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liberase Skin Protocol</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mice/After- The Takedown/Updated Pancreas scDissoc Flow 020425.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../protocols/mice/After/Updated Pancreas scDissoc Flow 020425.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Updated Pancreas Single-Cell Dissociation for Flow</span></a>
   </div>
 </li>
@@ -2249,12 +2111,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mice/genotyping/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-44-label">Genotyping</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-44" aria-controls="quarto-sidebar-section-44" aria-expanded="false" aria-label="Toggle section: Genotyping">
+ <span class="menu-text" id="quarto-sidebar-section-43-label">Genotyping</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-43" aria-controls="quarto-sidebar-section-43" aria-expanded="false" aria-label="Toggle section: Genotyping">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-44" aria-labelledby="quarto-sidebar-section-44-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-43" aria-labelledby="quarto-sidebar-section-43-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mice/genotyping/tails.html" class="sidebar-item-text sidebar-link">
@@ -2322,12 +2184,12 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/Mitochondria/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-45-label">Mitochondria</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-45" aria-controls="quarto-sidebar-section-45" aria-expanded="false" aria-label="Toggle section: Mitochondria">
+ <span class="menu-text" id="quarto-sidebar-section-44-label">Mitochondria</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-44" aria-controls="quarto-sidebar-section-44" aria-expanded="false" aria-label="Toggle section: Mitochondria">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-45" aria-labelledby="quarto-sidebar-section-45-label" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-44" aria-labelledby="quarto-sidebar-section-44-label" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/Mitochondria/Bodipy Mitotracker Staining Protocol.html" class="sidebar-item-text sidebar-link">
@@ -2369,30 +2231,30 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-46-label">Molecular biology</span></a>
-            <button type="button" class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-46" aria-controls="quarto-sidebar-section-46" aria-expanded="true" aria-label="Toggle section: Molecular biology">
+ <span class="menu-text" id="quarto-sidebar-section-45-label">Molecular biology</span></a>
+            <button type="button" class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-45" aria-controls="quarto-sidebar-section-45" aria-expanded="true" aria-label="Toggle section: Molecular biology">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-46" aria-labelledby="quarto-sidebar-section-46-label" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-45" aria-labelledby="quarto-sidebar-section-45-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-47-label">RNA, c-DNA, and qPCR</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-47" aria-controls="quarto-sidebar-section-47" aria-expanded="false" aria-label="Toggle section: RNA, c-DNA, and qPCR">
+ <span class="menu-text" id="quarto-sidebar-section-46-label">RNA, c-DNA, and qPCR</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-46" aria-controls="quarto-sidebar-section-46" aria-expanded="false" aria-label="Toggle section: RNA, c-DNA, and qPCR">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-47" aria-labelledby="quarto-sidebar-section-47-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-46" aria-labelledby="quarto-sidebar-section-46-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/RNA/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-48-label">RNA</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-48" aria-controls="quarto-sidebar-section-48" aria-expanded="false" aria-label="Toggle section: RNA">
+ <span class="menu-text" id="quarto-sidebar-section-47-label">RNA</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-47" aria-controls="quarto-sidebar-section-47" aria-expanded="false" aria-label="Toggle section: RNA">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-48" aria-labelledby="quarto-sidebar-section-48-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-47" aria-labelledby="quarto-sidebar-section-47-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/RNA/RNA_isolation.html" class="sidebar-item-text sidebar-link">
@@ -2434,12 +2296,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/cDNA/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-49-label">cDNA</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-49" aria-controls="quarto-sidebar-section-49" aria-expanded="false" aria-label="Toggle section: cDNA">
+ <span class="menu-text" id="quarto-sidebar-section-48-label">cDNA</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-48" aria-controls="quarto-sidebar-section-48" aria-expanded="false" aria-label="Toggle section: cDNA">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-49" aria-labelledby="quarto-sidebar-section-49-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-48" aria-labelledby="quarto-sidebar-section-48-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/cDNA/cDNA.html" class="sidebar-item-text sidebar-link">
@@ -2457,12 +2319,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/qPCR/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-50-label">qPCR</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-50" aria-controls="quarto-sidebar-section-50" aria-expanded="false" aria-label="Toggle section: qPCR">
+ <span class="menu-text" id="quarto-sidebar-section-49-label">qPCR</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-49" aria-controls="quarto-sidebar-section-49" aria-expanded="false" aria-label="Toggle section: qPCR">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-50" aria-labelledby="quarto-sidebar-section-50-label" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="quarto-sidebar-section-49" aria-labelledby="quarto-sidebar-section-49-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mol_bio/RNA_cDNA_qPCR/qPCR/Agilent Brilliant II SYBR® Green QPCR Master Mix.html" class="sidebar-item-text sidebar-link">
@@ -2488,12 +2350,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/western_blot/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-51-label">Western Blot</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-51" aria-controls="quarto-sidebar-section-51" aria-expanded="false" aria-label="Toggle section: Western Blot">
+ <span class="menu-text" id="quarto-sidebar-section-50-label">Western Blot</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-50" aria-controls="quarto-sidebar-section-50" aria-expanded="false" aria-label="Toggle section: Western Blot">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-51" aria-labelledby="quarto-sidebar-section-51-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-50" aria-labelledby="quarto-sidebar-section-50-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mol_bio/western_blot/091923 Western blot protocol NES.html" class="sidebar-item-text sidebar-link">
@@ -2577,12 +2439,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/Cell_Division_and_Proliferation/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text" id="quarto-sidebar-section-52-label">Cell Division and Proliferation</span></a>
-            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-52" aria-controls="quarto-sidebar-section-52" aria-expanded="false" aria-label="Toggle section: Cell Division and Proliferation">
+ <span class="menu-text" id="quarto-sidebar-section-51-label">Cell Division and Proliferation</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-51" aria-controls="quarto-sidebar-section-51" aria-expanded="false" aria-label="Toggle section: Cell Division and Proliferation">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-52" aria-labelledby="quarto-sidebar-section-52-label" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-51" aria-labelledby="quarto-sidebar-section-51-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mol_bio/Cell_Division_and_Proliferation/Cell Trace Violet labeling.html" class="sidebar-item-text sidebar-link">
@@ -2612,12 +2474,12 @@ window.Quarto = {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../../../protocols/mol_bio/PCR/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text" id="quarto-sidebar-section-53-label">PCR</span></a>
-            <button type="button" class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-53" aria-controls="quarto-sidebar-section-53" aria-expanded="true" aria-label="Toggle section: PCR">
+ <span class="menu-text" id="quarto-sidebar-section-52-label">PCR</span></a>
+            <button type="button" class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-52" aria-controls="quarto-sidebar-section-52" aria-expanded="true" aria-label="Toggle section: PCR">
               <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
             </button> 
       </div>
-      <ul id="quarto-sidebar-section-53" aria-labelledby="quarto-sidebar-section-53-label" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-52" aria-labelledby="quarto-sidebar-section-52-label" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../../protocols/mol_bio/PCR/DNA extraction from CD8.html" class="sidebar-item-text sidebar-link">
@@ -2648,12 +2510,167 @@ window.Quarto = {
  <span class="menu-text">How to make up dNTP stocks</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text" id="quarto-sidebar-section-53-label">PCR Master Mix recipes</span></a>
+            <button type="button" class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-53" aria-controls="quarto-sidebar-section-53" aria-expanded="false" aria-label="Toggle section: PCR Master Mix recipes">
+              <i class="bi bi-chevron-right ms-2" aria-hidden="true"></i>
+            </button> 
+      </div>
+      <ul id="quarto-sidebar-section-53" aria-labelledby="quarto-sidebar-section-53-label" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../protocols/mol_bio/PCR/PCR master mix recipes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PCR master mix recipes</span></a>
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Bhlhe40.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Bhlhe40</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Cre.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Cre Reporter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cre Reporter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/dLCK Cre.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">dLCK Cre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/E2-2 Conditional.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">E2-2 Conditional</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/E2-2 Reporter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">E2-2 Reporter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/E2Aflox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">E2Aflox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/ER cre.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ER cre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/FOXO1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FOXO1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HEB KO.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HEB KO</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HEBflox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HEBflox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HIF2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HIF2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HIFVHL.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HIFVHL</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id2flox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Id2flox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id2flox Alt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Id2flox Alt</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id2flox_current.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Id2flox_current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id3flox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Id3flox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id3flox current.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Id3flox current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/NKT (va14g).html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NKT (va14g)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/OT-I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OT-I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/P14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">P14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/PLZF Cre.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PLZF Cre</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Tbetflox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tbetflox</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/USP1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">USP1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Zeb2flox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Zeb2flox</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -3469,8 +3486,15 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#protocols" id="toc-protocols" class="nav-link active" data-scroll-target="#protocols">Protocols</a></li>
+  <li><a href="#pcr-master-mix-recipes" id="toc-pcr-master-mix-recipes" class="nav-link" data-scroll-target="#pcr-master-mix-recipes">PCR master mix recipes</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/kpc002/protocols-website/edit/main/protocols/mol_bio/PCR/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kpc002/protocols-website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
@@ -3500,27 +3524,13 @@ window.Quarto = {
 </header>
 
 
-<p><span class="visually-hidden"><i class="fa-solid fa-file-lines" aria-label="file-lines"></i></span></p>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".quarto-listing-container-table .listing-title").forEach((link) => {
-    if (link.querySelector(".fa-file-lines")) return;
-    const icon = document.createElement("i");
-    icon.className = "fa-solid fa-file-lines";
-    icon.setAttribute("aria-hidden", "true");
-    link.prepend(icon, " ");
-  });
-});
-</script>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<section id="protocols" class="level2">
+<h2 class="anchored" data-anchor-id="protocols">Protocols</h2>
+<div id="listing-protocols" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-protocols-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-protocols'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
       <option value="listing-title-sort" data-direction="asc">
@@ -3621,12 +3631,375 @@ Description
 
 </tr>
 
-<tr data-index="5" data-listing-date-sort="1789771028000" data-listing-file-modified-sort="1789771028000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="46" data-listing-word-count-sort="9061" data-listing-title-sort="PCR master mix recipes" data-listing-filename-sort="PCR master mix recipes.md">
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="pcr-master-mix-recipes" class="level2">
+<h2 class="anchored" data-anchor-id="pcr-master-mix-recipes">PCR master mix recipes</h2>
+<details>
+<summary>
+Show PCR master mix recipes
+</summary>
+<div id="listing-pcr-master-mix-recipes" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-pcr-master-mix-recipes-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-pcr-master-mix-recipes'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+<th>
+Description
+</th>
+
+<th>
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="563" data-listing-title-sort="Bhlhe40" data-listing-filename-sort="Bhlhe40.md">
 <td>
-<a href="../../../protocols/mol_bio/PCR/PCR master mix recipes.html" class="title listing-title">PCR master mix recipes</a>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Bhlhe40.html" class="title listing-title">Bhlhe40</a>
 </td>
 <td>
-<span class="listing-description">Interactive PCR master mix recipes from the workbook.</span>
+<span class="listing-description">Interactive PCR master mix calculator from the Bhlhe40 sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="330" data-listing-title-sort="Cre" data-listing-filename-sort="Cre.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Cre.html" class="title listing-title">Cre</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Cre sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="2" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="397" data-listing-title-sort="Cre Reporter" data-listing-filename-sort="Cre Reporter.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Cre Reporter.html" class="title listing-title">Cre Reporter</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Cre Reporter sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="3" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1297" data-listing-title-sort="E2-2 Conditional" data-listing-filename-sort="E2-2 Conditional.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/E2-2 Conditional.html" class="title listing-title">E2-2 Conditional</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the E2-2 Conditional sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="4" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="842" data-listing-title-sort="E2-2 Reporter" data-listing-filename-sort="E2-2 Reporter.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/E2-2 Reporter.html" class="title listing-title">E2-2 Reporter</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the E2-2 Reporter sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="5" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367" data-listing-title-sort="E2Aflox" data-listing-filename-sort="E2Aflox.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/E2Aflox.html" class="title listing-title">E2Aflox</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the E2Aflox sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="6" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="246" data-listing-title-sort="ER cre" data-listing-filename-sort="ER cre.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/ER cre.html" class="title listing-title">ER cre</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the ER cre sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="7" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="331" data-listing-title-sort="FOXO1" data-listing-filename-sort="FOXO1.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/FOXO1.html" class="title listing-title">FOXO1</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the FOXO1 sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="8" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="371" data-listing-title-sort="HEB KO" data-listing-filename-sort="HEB KO.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HEB KO.html" class="title listing-title">HEB KO</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the HEB KO sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="9" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354" data-listing-title-sort="HEBflox" data-listing-filename-sort="HEBflox.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HEBflox.html" class="title listing-title">HEBflox</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the HEBflox sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="10" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="236" data-listing-title-sort="HIF2" data-listing-filename-sort="HIF2.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HIF2.html" class="title listing-title">HIF2</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the HIF2 sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="11" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="236" data-listing-title-sort="HIFVHL" data-listing-filename-sort="HIFVHL.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/HIFVHL.html" class="title listing-title">HIFVHL</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the HIFVHL sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="12" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="349" data-listing-title-sort="Id2flox" data-listing-filename-sort="Id2flox.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id2flox.html" class="title listing-title">Id2flox</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Id2flox sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="13" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="246" data-listing-title-sort="Id2flox Alt" data-listing-filename-sort="Id2flox Alt.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id2flox Alt.html" class="title listing-title">Id2flox Alt</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Id2flox Alt sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="14" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="332" data-listing-title-sort="Id2flox_current" data-listing-filename-sort="Id2flox_current.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id2flox_current.html" class="title listing-title">Id2flox_current</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Id2flox_current sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="15" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="393" data-listing-title-sort="Id3flox" data-listing-filename-sort="Id3flox.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id3flox.html" class="title listing-title">Id3flox</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Id3flox sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="16" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="390" data-listing-title-sort="Id3flox current" data-listing-filename-sort="Id3flox current.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Id3flox current.html" class="title listing-title">Id3flox current</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Id3flox current sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="17" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340" data-listing-title-sort="NKT (va14g)" data-listing-filename-sort="NKT (va14g).md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/NKT (va14g).html" class="title listing-title">NKT (va14g)</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the NKT (va14g) sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="18" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="335" data-listing-title-sort="OT-I" data-listing-filename-sort="OT-I.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/OT-I.html" class="title listing-title">OT-I</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the OT-I sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="19" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328" data-listing-title-sort="P14" data-listing-filename-sort="P14.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/P14.html" class="title listing-title">P14</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the P14 sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="20" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346" data-listing-title-sort="PLZF Cre" data-listing-filename-sort="PLZF Cre.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/PLZF Cre.html" class="title listing-title">PLZF Cre</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the PLZF Cre sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="21" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="352" data-listing-title-sort="Tbetflox" data-listing-filename-sort="Tbetflox.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Tbetflox.html" class="title listing-title">Tbetflox</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Tbetflox sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="22" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1145" data-listing-title-sort="USP1" data-listing-filename-sort="USP1.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/USP1.html" class="title listing-title">USP1</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the USP1 sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="23" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="353" data-listing-title-sort="Zeb2flox" data-listing-filename-sort="Zeb2flox.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/Zeb2flox.html" class="title listing-title">Zeb2flox</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the Zeb2flox sheet.</span>
+</td>
+<td>
+<span class="listing-author">Goldrath Lab</span>
+</td>
+
+</tr>
+
+<tr data-index="24" data-listing-date-sort="1795218836000" data-listing-file-modified-sort="1795218836000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="336" data-listing-title-sort="dLCK Cre" data-listing-filename-sort="dLCK Cre.md">
+<td>
+<a href="../../../protocols/mol_bio/PCR/PCR Master Mix recipes/dLCK Cre.html" class="title listing-title">dLCK Cre</a>
+</td>
+<td>
+<span class="listing-description">Interactive PCR master mix calculator from the dLCK Cre sheet.</span>
 </td>
 <td>
 <span class="listing-author">Goldrath Lab</span>
@@ -3637,7 +4010,14 @@ Description
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+</details>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -4205,4 +4585,4 @@ Description
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/kpc002/protocols-website/edit/main/protocols/mol_bio/PCR/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kpc002/protocols-website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kpc002/protocols-website/edit/main/protocols/mol_bio/PCR/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/kpc002/protocols-website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
